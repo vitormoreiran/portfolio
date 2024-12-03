@@ -5,20 +5,20 @@
     box-sizing: border-box;
 }
 
-/* Fundo preto para todo o site */
+/* Corpo do site com fundo preto */
 body {
-    background-color: #000; /* Fundo preto */
-    overflow-x: hidden; /* Impede rolagem lateral */
+    overflow-x: hidden;
     height: 100%;
-    font-family: 'Figtree', sans-serif; /* Definir Figtree como a fonte padrão */
-    color: #fff; /* Texto branco por padrão */
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: 'Figtree', sans-serif; /* Fonte padrão */
 }
 
 /* Configurando o vídeo de fundo */
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Tamanho da tela inteira */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -34,138 +34,87 @@ body {
     z-index: -1;
 }
 
-/* Estilo para o título */
+/* Estilo para o título principal */
 .title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Figtree', sans-serif;
-    font-weight: 100;
+    font-weight: 50;
     font-size: 4.625rem;
     line-height: 1.2;
-    color: #fff; /* Título branco */
-    text-shadow: 0 -0.2em 0.12em rgba(255, 255, 255, 0.44); /* Blur reduzido */
+    color: rgba(255, 255, 255, 0.88);
+    text-shadow: 0 -0.4em 0.1em rgba(255, 255, 255, 0.44); /* Ajuste no blur */
     z-index: 1;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .title {
-        font-size: 2.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .title {
-        font-size: 1.8rem;
-    }
-}
-
-/* Nova seção - 3 colunas */
+/* Seção com 3 colunas */
 .section {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #000;
+    min-height: 100vh;
 }
 
+/* Estilo das colunas */
 .column {
     width: 30%;
     padding: 20px;
 }
 
+/* Estilo dos títulos nas colunas */
 .column h3 {
-    font-family: 'Figtree', sans-serif;
     font-weight: 500;
-    font-size: 2.625rem; /* Heading2 */
-    color: #fff; /* Cabeçalhos em branco */
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.column p {
-    font-family: 'Figtree', sans-serif;
-    font-weight: 400;
-    font-size: 1rem; /* Bodycopy */
-    color: #fff; /* Texto em branco */
-}
-
+/* Lista de contatos */
 .column ul {
     list-style-type: none;
     padding: 0;
 }
 
 .column ul li {
-    font-family: 'Figtree', sans-serif;
     font-weight: 400;
-    font-size: 1.1rem; /* Bodycopy */
-    color: #fff; /* Texto em branco */
+    font-size: 1.1rem;
+    color: #007bff;
     margin: 10px 0;
 }
 
-/* Estilo da galeria de imagens */
+/* Galeria de imagens */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    grid-template-rows: repeat(3, 1fr); /* 3 linhas */
-    gap: 20px;
+    gap: 10px; /* Menor distância entre as imagens */
 }
 
 .gallery-item {
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    padding: 10px;
 }
 
 .gallery-item img {
     width: 100%;
-    height: auto;
-    max-width: 200px;
-    max-height: 120px;
+    height: 120px;
     object-fit: cover;
+    border: none; /* Remover borda */
 }
 
 .gallery-item h4 {
-    font-family: 'Figtree', sans-serif;
+    margin-top: 6px; /* Alinhamento do texto com 6px de distância da imagem */
+    font-size: 1rem;
     font-weight: 400;
-    font-size: 1rem; /* Caption */
-    color: #fff; /* Legenda da imagem em branco */
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com transparência para contraste */
-    padding: 5px;
-    text-align: center;
-    margin-top: 10px;
+    color: #fff;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-/* Fontes personalizadas */
-.bodycopy {
-    font-family: 'Figtree', sans-serif;
+/* Estilos para o texto da coluna de conteúdo */
+.column p {
     font-weight: 400;
-    font-size: 16px; /* Bodycopy */
-    color: #fff; /* Texto branco */
-}
-
-.heading1 {
-    font-family: 'Figtree', sans-serif;
-    font-weight: 500;
-    font-size: 64px; /* Heading1 */
-    color: #fff; /* Título branco */
-}
-
-.heading2 {
-    font-family: 'Figtree', sans-serif;
-    font-weight: 500;
-    font-size: 42px; /* Heading2 */
-    color: #fff; /* Título secundário branco */
-}
-
-.caption {
-    font-family: 'Figtree', sans-serif;
-    font-weight: 300;
-    font-size: 14px; /* Caption */
-    color: #fff; /* Legenda da imagem em branco */
+    font-size: 1rem;
+    color: #bbb;
 }
