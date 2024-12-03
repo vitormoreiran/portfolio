@@ -11,27 +11,38 @@ body {
     height: 100%; /* Garantindo que o body ocupe 100% da altura */
 }
 
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Evitar rolagem lateral */
+body {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
 /* Configurando o vídeo de fundo */
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Tamanho da tela inteira */
-    overflow: hidden; /* Garante que o vídeo não saia da tela */
+    height: 100vh; /* Tamanho da tela inicial */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilo para o vídeo */
 .background-video {
+    width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
+    height: 100%; /* Garante que o vídeo ocupe toda a altura disponível */
+    object-fit: contain; /* Ajusta o vídeo sem cortar, mantendo a proporção */
     position: absolute;
-    top: 50%; /* Centraliza o vídeo verticalmente */
-    left: 50%; /* Centraliza o vídeo horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste perfeito para o centro */
-    width: 100vw; /* O vídeo vai ocupar 100% da largura da tela */
-    height: auto; /* A altura será ajustada proporcionalmente ao vídeo */
-    min-height: 100vh; /* Garante que a altura mínima seja 100% da altura da tela */
-    object-fit: cover; /* Faz o vídeo cobrir a tela sem distorção */
-    z-index: -1; /* Coloca o vídeo atrás do título */
+    top: 0;
+    left: 0;
 }
-
 /* Estilo para o título */
 .title {
     position: absolute;
