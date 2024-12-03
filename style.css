@@ -74,9 +74,9 @@ body {
     min-height: 100vh; /* Garantir que ocupe toda a altura da tela */
 }
 
-/* Cada coluna vai ocupar 30% da largura e ter um padding */
+/* Cada coluna vai ocupar 33.33% da largura e ter um padding */
 .column {
-    flex: 1;
+    width: 33.33%; /* 3 colunas com a largura de 33.33% */
     padding: 20px;
     box-sizing: border-box;
 }
