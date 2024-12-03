@@ -45,4 +45,25 @@ body {
     font-weight: 100; /* Garantindo que seja o peso Thin (100) */
     font-size: 2.625rem; /* Tamanho de fonte em rem (aproximadamente 42px) */
     line-height: 1.2;
-    color: rgba(255, 255,
+    color: rgba(255, 255, 255, 0.88); /* Cor branca com 88% de opacidade */
+    text-shadow: 0 -0.7em 0.23em rgba(255, 255, 255, 0.44); /* Sombra do texto */
+    z-index: 1; /* Garantir que o título fique sobre o vídeo */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.2rem; /* Reduzindo o tamanho da fonte para telas menores */
+        line-height: 1.4; /* Ajuste no espaçamento */
+        top: 40%; /* Ajustando a posição vertical */
+    }
+}
+
+/* Responsividade para telas muito pequenas (como celulares) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem; /* Fontes menores para telas muito pequenas */
+        line-height: 1.4;
+        top: 35%; /* Ajustando a posição vertical para centralizar melhor */
+    }
+}
