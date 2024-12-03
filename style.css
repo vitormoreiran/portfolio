@@ -64,38 +64,24 @@ body {
     }
 }
 
-/* Garantindo que o vídeo ocupe toda a tela em modo retrato (vertical) */
-@media (orientation: portrait) {
-    .background-video {
-        width: auto; /* O vídeo será ajustado para a largura máxima */
-        height: 100%; /* O vídeo ocupará 100% da altura */
-        object-fit: cover; /* Preenche o espaço cortando as laterais */
-    }
-}
-
-/* Garantindo que o vídeo ocupe toda a tela em modo paisagem (horizontal) */
-@media (orientation: landscape) {
-    .background-video {
-        width: 100%; /* O vídeo ocupará 100% da largura */
-        height: auto; /* A altura será ajustada proporcionalmente */
-        object-fit: cover; /* Preenche o espaço cortando o topo e a parte inferior */
-    }
-
-
 /* Nova seção - 3 colunas */
 .section {
     display: flex;
     justify-content: space-between;
+    gap: 20px; /* Espaçamento entre as colunas */
     padding: 50px;
     background-color: #f4f4f4;
     min-height: 100vh; /* Garantir que ocupe toda a altura da tela */
 }
 
+/* Cada coluna vai ocupar 30% da largura e ter um padding */
 .column {
-    width: 30%; /* Cada coluna ocupa 30% da largura da tela */
+    flex: 1;
     padding: 20px;
+    box-sizing: border-box;
 }
 
+/* Títulos dentro das colunas */
 .column h3 {
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
@@ -104,6 +90,7 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Estilo do texto dentro das colunas */
 .column p {
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
@@ -111,6 +98,7 @@ body {
     color: #555;
 }
 
+/* Lista de contatos */
 .column ul {
     list-style-type: none;
     padding: 0;
@@ -133,8 +121,6 @@ body {
 }
 
 .gallery-item {
-    width: 100%;
-    height: 100%;
     background-color: #ccc; /* Cor temporária para cada imagem */
     display: flex;
     justify-content: center;
@@ -148,7 +134,6 @@ body {
     object-fit: cover;
 }
 
-/* Estilo para o título das imagens */
 .gallery-item h4 {
     position: absolute;
     color: white;
@@ -157,5 +142,4 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     border-radius: 5px;
-}
 }
