@@ -71,17 +71,17 @@ body {
 .section {
     display: flex;
     justify-content: space-between;
-    padding: 20px; /* Margem mínima */
+    padding: 5px; /* Margem mínima */
     background-color: #000;
     min-height: 100vh;
-    border-top: 1px solid rgba(255, 255, 255, 0.06); /* Linha de separação */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06); /* Linha de separação */
+    border-left: 1px solid rgba(255, 255, 255, 0.06); /* Linha de separação à esquerda */
+    border-right: 1px solid rgba(255, 255, 255, 0.06); /* Linha de separação à direita */
 }
 
 /* Estilo das colunas */
 .column {
-    width: 30%;
-    padding: 10px;
+    width: 33%; /* Ajustando o tamanho das colunas */
+    padding: 5px; /* Reduzindo o padding */
 }
 
 /* Estilo dos títulos nas colunas */
