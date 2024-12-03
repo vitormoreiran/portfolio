@@ -39,24 +39,11 @@ body {
     transform: translate(-50%, -50%); /* Ajuste perfeito para o centro */
     font-family: 'Figtree', sans-serif; /* Fonte Figtree Thin */
     font-weight: 100; /* Peso Thin */
-    font-size: 6.5625rem; /* Tamanho de fonte em rem */
+    font-size: 4.625rem; /* Tamanho de fonte em rem */
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.88); /* Cor branca com 88% de opacidade */
     text-shadow: 0 -0.7em 0.23em rgba(255, 255, 255, 0.44); /* Sombra do texto */
     z-index: 1; /* Garante que o título fique sobre o vídeo */
-}
-.subtitle {
-    position: absolute;
-    top: 55%; /* Coloca o subtítulo abaixo do título */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste perfeito para o centro */
-    font-family: 'Figtree', sans-serif; /* Fonte Figtree Medium */
-    font-weight: 500; /* Peso Medium */
-    font-size: 1.25rem; /* Tamanho da fonte do subtítulo */
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.88); /* Cor branca com 88% de opacidade */
-    text-shadow: 0 -0.7em 0.23em rgba(255, 255, 255, 0.44); /* Sombra do texto */
-    z-index: 1; /* Garante que o subtítulo fique sobre o vídeo */
 }
 
 /* Responsividade para telas pequenas */
