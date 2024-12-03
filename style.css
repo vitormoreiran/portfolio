@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
-/* Definindo o fundo preto para o site */
+/* Fundo preto para todo o site */
 body {
-    background-color: #000; /* Fundo preto para o site */
-    overflow-x: hidden; /* Impede a rolagem horizontal */
-    height: 100%; /* Garantindo que o body ocupe 100% da altura */
-    color: #fff; /* Definindo a cor do texto para branco */
+    background-color: #000; /* Fundo preto */
+    overflow-x: hidden; /* Impede rolagem lateral */
+    height: 100%;
+    font-family: 'Figtree', sans-serif; /* Definir Figtree como a fonte padrão */
+    color: #fff; /* Texto branco por padrão */
 }
 
 /* Configurando o vídeo de fundo */
@@ -18,51 +19,46 @@ body {
     position: relative;
     width: 100%;
     height: 100vh; /* Tamanho da tela inteira */
-    overflow: hidden; /* Garante que o vídeo não saia da tela */
+    overflow: hidden;
 }
 
 /* Estilo para o vídeo */
 .background-video {
     position: absolute;
-    top: 50%; /* Centraliza o vídeo verticalmente */
-    left: 50%; /* Centraliza o vídeo horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste perfeito para o centro */
-    width: 100%; /* O vídeo vai ocupar 100% da largura da tela */
-    height: 100%; /* O vídeo vai ocupar 100% da altura da tela */
-    object-fit: cover; /* Faz o vídeo cobrir a tela sem distorção */
-    z-index: -1; /* Coloca o vídeo atrás do título */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* Estilo para o título */
 .title {
     position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste perfeito para o centro */
-    font-family: 'Figtree', sans-serif; /* Fonte Figtree Thin */
-    font-weight: 100; /* Peso Thin */
-    font-size: 4.625rem; /* Tamanho de fonte em rem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Figtree', sans-serif;
+    font-weight: 100;
+    font-size: 4.625rem;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.88); /* Cor branca com 88% de opacidade */
-    text-shadow: 0 -0.2em 0.12em rgba(255, 255, 255, 0.44); /* Sombra do texto com blur menor */
-    z-index: 1; /* Garante que o título fique sobre o vídeo */
+    color: #fff; /* Título branco */
+    text-shadow: 0 -0.2em 0.12em rgba(255, 255, 255, 0.44); /* Blur reduzido */
+    z-index: 1;
 }
 
-/* Responsividade para telas pequenas */
+/* Responsividade */
 @media (max-width: 768px) {
     .title {
-        font-size: 2.2rem; /* Reduzindo o tamanho da fonte para telas menores */
-        line-height: 1.4;
-        top: 40%; /* Ajustando a posição vertical */
+        font-size: 2.2rem;
     }
 }
 
-/* Responsividade para telas muito pequenas (como celulares) */
 @media (max-width: 480px) {
     .title {
-        font-size: 1.8rem; /* Fontes menores para telas muito pequenas */
-        line-height: 1.4;
-        top: 35%; /* Ajustando a posição vertical para centralizar melhor */
+        font-size: 1.8rem;
     }
 }
 
@@ -70,37 +66,30 @@ body {
 .section {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Espaçamento entre as colunas */
     padding: 50px;
     background-color: #f4f4f4;
-    min-height: 100vh; /* Garantir que ocupe toda a altura da tela */
 }
 
-/* Cada coluna vai ocupar 33.33% da largura e ter um padding */
 .column {
-    width: 33.33%; /* 3 colunas com a largura de 33.33% */
+    width: 30%;
     padding: 20px;
-    box-sizing: border-box;
 }
 
-/* Títulos dentro das colunas */
 .column h3 {
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 2.625rem; /* Heading2 */
+    color: #fff; /* Cabeçalhos em branco */
     margin-bottom: 1rem;
 }
 
-/* Estilo do texto dentro das colunas */
 .column p {
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
-    color: #555;
+    font-size: 1rem; /* Bodycopy */
+    color: #fff; /* Texto em branco */
 }
 
-/* Lista de contatos */
 .column ul {
     list-style-type: none;
     padding: 0;
@@ -109,8 +98,8 @@ body {
 .column ul li {
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
-    font-size: 1.1rem;
-    color: #007bff;
+    font-size: 1.1rem; /* Bodycopy */
+    color: #fff; /* Texto em branco */
     margin: 10px 0;
 }
 
@@ -123,65 +112,60 @@ body {
 }
 
 .gallery-item {
-    background-color: #ccc; /* Cor temporária para cada imagem */
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
     display: flex;
-    flex-direction: column; /* Ajustando para que o título fique abaixo da imagem */
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    text-align: center;
+    padding: 10px;
 }
 
 .gallery-item img {
-    width: 200px;
-    height: 120px;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 120px;
     object-fit: cover;
 }
 
-/* Estilo para o título das imagens */
 .gallery-item h4 {
-    margin-top: 10px; /* Alinhando o título abaixo da imagem */
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-size: 1rem; /* Caption */
+    color: #fff; /* Legenda da imagem em branco */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com transparência para contraste */
     padding: 5px;
-    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
 }
 
-/* Estilos para as fontes do site */
-
-/* Bodycopy (16px) */
+/* Fontes personalizadas */
 .bodycopy {
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
-    font-size: 1rem; /* 16px */
-    line-height: 1.6;
-    color: #333;
+    font-size: 16px; /* Bodycopy */
+    color: #fff; /* Texto branco */
 }
 
-/* Heading1 (64px) */
 .heading1 {
     font-family: 'Figtree', sans-serif;
-    font-weight: 700; /* Peso mais forte para títulos principais */
-    font-size: 4rem; /* 64px */
-    line-height: 1.2;
-    color: #333;
+    font-weight: 500;
+    font-size: 64px; /* Heading1 */
+    color: #fff; /* Título branco */
 }
 
-/* Heading2 (42px) */
 .heading2 {
     font-family: 'Figtree', sans-serif;
-    font-weight: 600; /* Peso intermediário */
-    font-size: 2.625rem; /* 42px */
-    line-height: 1.3;
-    color: #333;
+    font-weight: 500;
+    font-size: 42px; /* Heading2 */
+    color: #fff; /* Título secundário branco */
 }
 
-/* Caption (14px) */
 .caption {
     font-family: 'Figtree', sans-serif;
-    font-weight: 400;
-    font-size: 0.875rem; /* 14px */
-    line-height: 1.4;
-    color: #555;
+    font-weight: 300;
+    font-size: 14px; /* Caption */
+    color: #fff; /* Legenda da imagem em branco */
 }
