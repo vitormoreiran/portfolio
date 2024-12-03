@@ -27,10 +27,11 @@ body {
 .background-video {
     position: absolute;
     top: 50%; /* Posiciona o vídeo no meio da tela verticalmente */
-    left: 0; /* Alinha à esquerda da tela */
-    transform: translateY(-50%); /* Ajuste para centralizar o vídeo verticalmente */
+    left: 50%; /* Posiciona o vídeo no meio da tela horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centralizar o vídeo */
     width: 100%; /* O vídeo vai ocupar toda a largura da tela */
     height: auto; /* A altura será ajustada proporcionalmente ao vídeo */
+    min-height: 100%; /* Garante que a altura mínima do vídeo seja 100% da tela */
     object-fit: cover; /* Faz o vídeo cobrir toda a tela horizontalmente sem cortar */
     z-index: -1; /* Garantir que o vídeo fique atrás do título */
 }
