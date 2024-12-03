@@ -37,8 +37,9 @@ body {
     top: 50%; /* Centralizando verticalmente */
     left: 50%; /* Centralizando horizontalmente */
     transform: translate(-50%, -50%); /* Ajuste perfeito para o centro */
-    font-family: 'Figtree', sans-serif; /* Fonte Figtree aplicada */
-    font-size: 1.2em;
+    font-family: 'Figtree', sans-serif; /* Fonte Figtree Thin aplicada */
+    font-weight: 100; /* Figtree Thin é o peso 100 */
+    font-size: 2.625rem; /* Tamanho de fonte em rem (aproximadamente 42px) */
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.88); /* Cor branca com 88% de opacidade */
     text-shadow: 0 -0.7em 0.23em rgba(255, 255, 255, 0.44); /* Sombra do texto */
@@ -48,7 +49,7 @@ body {
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .title {
-        font-size: 1em; /* Reduzindo o tamanho da fonte */
+        font-size: 2.2rem; /* Reduzindo o tamanho da fonte para telas menores */
         line-height: 1.4; /* Ajuste no espaçamento */
         top: 40%; /* Ajustando a posição vertical */
     }
@@ -57,7 +58,7 @@ body {
 /* Responsividade para telas muito pequenas (como celulares) */
 @media (max-width: 480px) {
     .title {
-        font-size: 0.9em; /* Fontes menores para telas pequenas */
+        font-size: 1.8rem; /* Fontes menores para telas muito pequenas */
         line-height: 1.4;
         top: 35%; /* Ajustando a posição vertical para centralizar melhor */
     }
