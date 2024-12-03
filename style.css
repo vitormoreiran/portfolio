@@ -23,12 +23,13 @@ body {
 
 /* Estilo para o vídeo */
 .background-video {
-    width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
-    height: 100%; /* Garante que o vídeo ocupe toda a altura disponível */
-    object-fit: contain; /* Ajusta o vídeo sem cortar, mantendo a proporção */
-    position: absolute;
+    position: absolute; /* Posicionando o vídeo de forma absoluta */
     top: 0;
-    left: 0;
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translateX(-50%); /* Garantindo o vídeo centralizado */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo cobrir toda a tela sem cortar */
 }
 
 /* Estilo para o título */
