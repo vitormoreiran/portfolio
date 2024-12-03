@@ -8,32 +8,27 @@
 /* Evitar rolagem lateral */
 body {
     overflow-x: hidden; /* Impede a rolagem horizontal */
-    height: 100%; /* Garantindo que o body ocupe 100% da altura */
 }
 
 /* Configurando o vídeo de fundo */
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* A altura da tela será automaticamente ajustada */
+    height: 100vh; /* Tamanho da tela inicial */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Garantir que o fundo seja visível caso o vídeo não preencha completamente */
 }
 
 /* Estilo para o vídeo */
 .background-video {
+    width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
+    height: 100%; /* Garante que o vídeo ocupe toda a altura disponível */
+    object-fit: contain; /* Ajusta o vídeo sem cortar, mantendo a proporção */
     position: absolute;
-    top: 50%; /* Posiciona o vídeo no meio da tela verticalmente */
-    left: 50%; /* Posiciona o vídeo no meio da tela horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centralizar o vídeo */
-    width: 100%; /* O vídeo vai ocupar toda a largura da tela */
-    height: auto; /* A altura será ajustada proporcionalmente ao vídeo */
-    min-height: 100%; /* Garante que a altura mínima do vídeo seja 100% da tela */
-    object-fit: cover; /* Faz o vídeo cobrir toda a tela horizontalmente sem cortar */
-    z-index: -1; /* Garantir que o vídeo fique atrás do título */
+    top: 0;
+    left: 0;
 }
 
 /* Estilo para o título */
@@ -42,9 +37,8 @@ body {
     top: 50%; /* Centralizando verticalmente */
     left: 50%; /* Centralizando horizontalmente */
     transform: translate(-50%, -50%); /* Ajuste perfeito para o centro */
-    font-family: 'Figtree', sans-serif; /* Fonte Figtree Thin aplicada */
-    font-weight: 100; /* Garantindo que seja o peso Thin (100) */
-    font-size: 2.625rem; /* Tamanho de fonte em rem (aproximadamente 42px) */
+    font-family: 'Figtree', sans-serif; /* Fonte Figtree aplicada */
+    font-size: 1.2em;
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.88); /* Cor branca com 88% de opacidade */
     text-shadow: 0 -0.7em 0.23em rgba(255, 255, 255, 0.44); /* Sombra do texto */
@@ -54,7 +48,7 @@ body {
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .title {
-        font-size: 2.2rem; /* Reduzindo o tamanho da fonte para telas menores */
+        font-size: 1em; /* Reduzindo o tamanho da fonte */
         line-height: 1.4; /* Ajuste no espaçamento */
         top: 40%; /* Ajustando a posição vertical */
     }
@@ -63,7 +57,7 @@ body {
 /* Responsividade para telas muito pequenas (como celulares) */
 @media (max-width: 480px) {
     .title {
-        font-size: 1.8rem; /* Fontes menores para telas muito pequenas */
+        font-size: 0.9em; /* Fontes menores para telas pequenas */
         line-height: 1.4;
         top: 35%; /* Ajustando a posição vertical para centralizar melhor */
     }
