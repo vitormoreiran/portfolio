@@ -5,16 +5,12 @@
     box-sizing: border-box;
 }
 
-/* Evitar rolagem lateral */
+/* Definindo o fundo preto para o site */
 body {
+    background-color: #000; /* Fundo preto para o site */
     overflow-x: hidden; /* Impede a rolagem horizontal */
     height: 100%; /* Garantindo que o body ocupe 100% da altura */
-}
-
-/* Garantindo que não haja margens no body */
-body, html {
-    margin: 0;
-    padding: 0;
+    color: #fff; /* Definindo a cor do texto para branco */
 }
 
 /* Configurando o vídeo de fundo */
@@ -48,7 +44,7 @@ body, html {
     font-size: 4.625rem; /* Tamanho de fonte em rem */
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.88); /* Cor branca com 88% de opacidade */
-    text-shadow: 0 -0.4em 0.23em rgba(255, 255, 255, 0.44); /* Sombra do texto */
+    text-shadow: 0 -0.2em 0.12em rgba(255, 255, 255, 0.44); /* Sombra do texto com blur menor */
     z-index: 1; /* Garante que o título fique sobre o vídeo */
 }
 
@@ -129,6 +125,7 @@ body, html {
 .gallery-item {
     background-color: #ccc; /* Cor temporária para cada imagem */
     display: flex;
+    flex-direction: column; /* Ajustando para que o título fique abaixo da imagem */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -140,8 +137,9 @@ body, html {
     object-fit: cover;
 }
 
+/* Estilo para o título das imagens */
 .gallery-item h4 {
-    position: absolute;
+    margin-top: 10px; /* Alinhando o título abaixo da imagem */
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
