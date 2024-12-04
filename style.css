@@ -62,8 +62,8 @@ body {
     font-weight: 100; /* Mais fino */
     font-size: 7rem; /* Tamanho ajustado */
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.88); /* Opacidade de 88% */
-    text-shadow: 0 0.2em 0.05em rgba(255, 255, 255, 0.22); /* Sombra mais fina e próxima */
+    color: rgba(255, 255, 255, 0.77); /* Opacidade de 88% */
+    text-shadow: 0 -0.2em 0.077em rgba(255, 255, 255, 0.22); /* Sombra mais fina e próxima */
     z-index: 1;
 }
 
