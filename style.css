@@ -67,7 +67,7 @@ body {
     z-index: 1;
 }
 
-/* Configuração da seção */
+/* Configurando a seção */
 .section {
     display: flex;
     justify-content: space-between;
@@ -81,16 +81,19 @@ body {
     padding: 0 15px;
 }
 
+/* Aba de contato com largura reduzida */
 .column:first-child {
-    flex: 0.5; /* Reduz largura da aba de contato */
+    flex: 0.5;
 }
 
+/* Aba de galeria com largura aumentada */
 .column:nth-child(2) {
-    flex: 1.5; /* Aumenta largura da galeria */
+    flex: 1.5;
 }
 
+/* Aba sobre com largura padrão */
 .column:last-child {
-    flex: 1; /* Mantém tamanho da aba sobre */
+    flex: 1;
 }
 
 .column h3 {
@@ -99,7 +102,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Links sem cor azul e sublinhado */
+/* Estilo dos links */
 .column ul li a {
     text-decoration: none; /* Remove sublinhado */
     color: inherit; /* Usa a cor padrão do texto */
@@ -108,6 +111,7 @@ body {
     transition: transform 0.2s ease; /* Animação sutil */
 }
 
+/* Efeito de hover nos links */
 .column ul li a:hover {
     transform: scale(1.05); /* Leve zoom no hover */
 }
@@ -115,35 +119,4 @@ body {
 /* Galeria */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    gap: 15px;
-}
-
-.gallery-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinha o conteúdo ao início */
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    max-height: 150px; /* Aumenta altura máxima das imagens */
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.gallery-item p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #ccc;
-    text-align: left; /* Alinha o texto à esquerda */
-}
-
-/* Texto da coluna "Sobre" */
-.column p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #ccc;
-    text-align: justify;
-}
+    grid-template-columns: repeat(3, 1fr);
