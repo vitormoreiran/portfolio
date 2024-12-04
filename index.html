@@ -1,90 +1,69 @@
-/* Estilos gerais */
-body {
-    font-family: 'Figtree', sans-serif;
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção Contato -->
+        <div class="contact">
+            <h3>CONTATO</h3>
+            <ul>
+                <li><a href="mailto:seuemail@exemplo.com">Email ↗</a></li>
+                <li><a href="https://instagram.com/seuperfil" target="_blank">Instagram ↗</a></li>
+            </ul>
+        </div>
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding: 20px;
-    gap: 20px;
-}
+        <!-- Galeria -->
+        <div class="gallery-section">
+            <p>Criando na intersecção entre arte, tecnologia e design.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <p>SSA Mapping Festival</p>
+                </div>
+                <div class="gallery-item">
+                    <p>Tatuagem - Banda Raça</p>
+                </div>
+                <div class="gallery-item">
+                    <p>Fogosa 2.2</p>
+                </div>
+                <div class="gallery-item">
+                    <p>ABOL HA</p>
+                </div>
+                <div class="gallery-item">
+                    <p>BRIFW 3</p>
+                </div>
+                <div class="gallery-item">
+                    <p>LoveCore 3</p>
+                </div>
+                <div class="gallery-item">
+                    <p>Cosme e Damião</p>
+                </div>
+                <div class="gallery-item">
+                    <p>SEED</p>
+                </div>
+                <div class="gallery-item">
+                    <p>Interact With The Screen</p>
+                </div>
+            </div>
+        </div>
 
-/* Contato */
-.contact {
-    font-size: 1rem;
-}
-
-.contact h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact ul li {
-    margin: 10px 0;
-}
-
-.contact ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contact ul li a:hover {
-    color: #007bff;
-}
-
-/* Galeria */
-.gallery-section {
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.gallery-section p {
-    margin-bottom: 20px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.gallery-item {
-    background-color: #222;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.gallery-item p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-/* Descrição */
-.description {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.description p {
-    margin-bottom: 20px;
-}
-
-.description ol {
-    padding-left: 20px;
-    list-style: decimal;
-}
-
-.description ol li {
-    margin-bottom: 10px;
-}
+        <!-- Texto -->
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id augue sit amet est rutrum feugiat.</p>
+            <ol>
+                <li>Praese Vita</li>
+                <li>Nulla Vehicu Al</li>
+                <li>UkamCors</li>
+                <li>Dictum Magna</li>
+                <li>Cursus Ex</li>
+                <li>Suspendis Est</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
