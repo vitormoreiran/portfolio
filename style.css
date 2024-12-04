@@ -57,7 +57,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     font-size: 7rem;
@@ -69,6 +69,27 @@ body {
     white-space: nowrap;
 }
 
+/* Ajustes de responsividade para o título */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 5rem; /* Diminui o tamanho da fonte em telas menores */
+        letter-spacing: 0.15em; /* Ajusta o espaçamento */
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem; /* Diminui ainda mais o tamanho da fonte */
+        letter-spacing: 0.1em; /* Ajusta o espaçamento */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem; /* Tamanho bem reduzido em telas pequenas */
+        letter-spacing: 0.05em; /* Menos espaçamento */
+    }
+}
 
 /* Configurando a seção */
 .section {
@@ -121,15 +142,14 @@ body {
 }
 
 /* Galeria */
-/* Galeria responsiva */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 15px; /* Ajustando o espaço entre as imagens */
 }
 
-/* Ajustar o número de colunas em telas menores */
-@media (max-width: 768px) {
+/* Ajuste para telas menores (tablet e abaixo) */
+@media (max-width: 1024px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
@@ -137,10 +157,9 @@ body {
 
 @media (max-width: 480px) {
     .gallery {
-        grid-template-columns: 1fr; /* 1 coluna em telas ainda menores */
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
     }
 }
-
 
 /* Estilo das imagens da galeria */
 .gallery-item {
@@ -150,11 +169,10 @@ body {
 .gallery-item img {
     width: 100%;
     height: auto; /* Ajuste automático da altura */
-    max-height: 200px; /* Limitar altura das imagens (ajuste conforme necessário) */
+    max-height: 200px; /* Limitar altura das imagens */
     object-fit: cover;
     border: none;
 }
-
 
 /* Estilo do texto das imagens */
 .gallery-item p {
