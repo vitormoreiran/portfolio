@@ -135,10 +135,11 @@ body {
 .gallery-item img {
     width: 100%;
     height: auto; /* Ajuste automático da altura */
-    max-height: 120px; /* Limita a altura das imagens */
-    object-fit: cover; /* Garante que as imagens fiquem proporcionais */
-    border: none; /* Remover borda */
+    max-height: 200px; /* Limitar altura das imagens (ajuste conforme necessário) */
+    object-fit: cover;
+    border: none;
 }
+
 
 /* Estilo do texto das imagens */
 .gallery-item p {
