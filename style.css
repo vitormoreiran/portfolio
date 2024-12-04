@@ -57,7 +57,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -50%);
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     font-size: 7rem;
@@ -67,6 +67,9 @@ body {
     letter-spacing: 0.22em;
     z-index: 1;
     white-space: nowrap;
+    width: 90%; /* Impede que o título saia da tela */
+    text-align: center;
+    word-wrap: break-word; /* Quebra a palavra se necessário */
 }
 
 /* Ajustes de responsividade para o título */
@@ -79,21 +82,22 @@ body {
 
 @media (max-width: 768px) {
     .title {
-        font-size: 3rem; /* Diminui ainda mais o tamanho da fonte */
-        letter-spacing: 0.1em; /* Ajusta o espaçamento */
+        font-size: 4rem; /* Diminui ainda mais o tamanho da fonte */
+        letter-spacing: 0.12em; /* Ajusta o espaçamento */
     }
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 2.5rem; /* Tamanho bem reduzido em telas pequenas */
-        letter-spacing: 0.05em; /* Menos espaçamento */
+        font-size: 3rem; /* Tamanho bem reduzido em telas pequenas */
+        letter-spacing: 0.08em; /* Menos espaçamento */
     }
 }
 
 /* Configurando a seção */
 .section {
     display: flex;
+    flex-wrap: wrap; /* Permite que as colunas se reorganizem quando necessário */
     justify-content: space-between;
     padding: 20px;
     background-color: #111;
@@ -104,27 +108,36 @@ body {
 /* Ajustando a largura das colunas */
 .column {
     padding: 0 15px;
+    flex: 1 1 30%; /* Definindo a largura das colunas em 30% */
+    box-sizing: border-box;
 }
 
 /* Aba de contato com largura reduzida */
 .column:first-child {
-    flex: 0.5;
+    flex: 1 1 25%;
 }
 
 /* Aba de galeria com largura aumentada */
 .column:nth-child(2) {
-    flex: 1.5;
+    flex: 1 1 40%;
 }
 
 /* Aba sobre com largura padrão */
 .column:last-child {
-    flex: 1;
+    flex: 1 1 30%;
 }
 
-.column h3 {
-    font-size: 1.8rem;
-    color: #fff;
-    margin-bottom: 10px;
+/* Ajustes para a responsividade das colunas */
+@media (max-width: 1024px) {
+    .column {
+        flex: 1 1 45%; /* Ajusta para duas colunas em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%; /* Colunas empilhadas em dispositivos menores */
+    }
 }
 
 /* Estilo dos links */
