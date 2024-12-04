@@ -68,6 +68,7 @@ body {
 }
 
 /* Configuração da seção */
+/* Configuração da seção */
 .section {
     display: flex;
     justify-content: space-between;
@@ -88,6 +89,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Lista de contatos */
 .column ul {
     list-style: none;
     padding: 0;
@@ -99,13 +101,15 @@ body {
 }
 
 .column ul li a {
-    text-decoration: none;
-    color: #00aaff;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Usa a cor padrão */
+    font-style: italic; /* Texto em itálico */
+    font-weight: 300; /* Fonte mais fina */
+    transition: transform 0.2s ease; /* Animação sutil */
 }
 
 .column ul li a:hover {
-    color: #00ffff;
+    transform: scale(1.05); /* Leve destaque no hover */
 }
 
 /* Galeria */
@@ -116,7 +120,9 @@ body {
 }
 
 .gallery-item {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo ao início */
 }
 
 .gallery-item img {
@@ -131,6 +137,7 @@ body {
     margin-top: 10px;
     font-size: 1rem;
     color: #ccc;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 /* Texto da coluna "Sobre" */
