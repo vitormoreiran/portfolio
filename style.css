@@ -59,15 +59,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Archivo', sans-serif;
-    font-weight: 100; /* Fonte fina */
+    font-weight: 100;
     font-size: 7rem;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.4); /* Opacidade ajustada */
-    text-shadow: 0 -0.3em 2em rgba(255, 255, 255, 0.7); /* Sombra mais visível e mais suave */
-    letter-spacing: 0.22em; /* Aumentando o espaçamento entre as letras */
+    color: rgba(255, 255, 255, 0.8); /* Opacidade aumentada */
+    text-shadow: 0 -0.2em 0.5em rgba(255, 255, 255, 0.6); /* Sombra mais visível e suave */
+    letter-spacing: 0.22em;
     z-index: 1;
-    white-space: nowrap; /* Garantir que o texto não quebre em duas linhas */
+    white-space: nowrap;
 }
+
 
 /* Configurando a seção */
 .section {
