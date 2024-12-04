@@ -121,7 +121,7 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 20px; /* Maior distância entre as imagens */
+    gap: 15px; /* Ajustando o espaço entre as imagens */
 }
 
 /* Estilo das imagens da galeria */
@@ -131,8 +131,9 @@ body {
 
 .gallery-item img {
     width: 100%;
-    height: 150px; /* Aumentando a altura das imagens */
-    object-fit: cover;
+    height: auto; /* Ajuste automático da altura */
+    max-height: 120px; /* Limita a altura das imagens */
+    object-fit: cover; /* Garante que as imagens fiquem proporcionais */
     border: none; /* Remover borda */
 }
 
