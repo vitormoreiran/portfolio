@@ -63,7 +63,7 @@ body {
     font-size: 7rem;
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.77); /* Opacidade ajustada */
-    text-shadow: 0 -0.02em 0.22em rgba(255, 255, 255, 0.22); /* Sombra ajustada para ficar mais para cima */
+    text-shadow: 0 -0.502em 0.66em rgba(255, 255, 255, 0.22); /* Sombra ajustada para ficar mais para cima */
     letter-spacing: 0.22em; /* Aumentando o espaçamento entre as letras */
     z-index: 1;
 }
