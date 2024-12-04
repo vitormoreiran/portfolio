@@ -52,24 +52,36 @@ body {
     z-index: -1;
 }
 
-/* Estilo para o título principal */
-.title {
+/* Estilo para o contêiner do título e subtítulo */
+.title-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -50%); /* Centraliza o contêiner */
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    z-index: 1;
+}
+
+/* Estilo do título */
+.title {
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     font-size: 7rem;
     line-height: 1.2;
     color: rgba(244, 244, 244, 0.8); /* Opacidade aumentada */
-    text-shadow: 0 -0.2em 0.33em rgba(255, 255, 255, 0.6); /* Sombra mais visível e suave */
+    text-shadow: 0 -0.2em 0.33em rgba(255, 255, 255, 0.6); /* Sombra ajustada */
     letter-spacing: 0.22em;
-    z-index: 1;
     white-space: nowrap;
     width: 90%; /* Impede que o título saia da tela */
-    text-align: center;
     word-wrap: break-word; /* Quebra a palavra se necessário */
+}
+
+/* Estilo do subtítulo */
+.subtitle {
+    font-size: 1rem;
+    color: rgba(220, 220, 220, 0.8); /* Cor mais acinzentada, mas ainda com bom contraste */
+    font-weight: 300;
+    margin-top: 10px; /* Espaço entre o título e o subtítulo */
 }
 
 /* Ajustes de responsividade para o título */
@@ -78,6 +90,9 @@ body {
         font-size: 5rem; /* Diminui o tamanho da fonte em telas menores */
         letter-spacing: 0.15em; /* Ajusta o espaçamento */
     }
+    .subtitle {
+        font-size: 0.9rem; /* Diminui o tamanho do subtítulo em telas menores */
+    }
 }
 
 @media (max-width: 768px) {
@@ -85,12 +100,18 @@ body {
         font-size: 4rem; /* Diminui ainda mais o tamanho da fonte */
         letter-spacing: 0.12em; /* Ajusta o espaçamento */
     }
+    .subtitle {
+        font-size: 0.8rem; /* Ajusta o subtítulo para telas menores */
+    }
 }
 
 @media (max-width: 480px) {
     .title {
         font-size: 3rem; /* Tamanho bem reduzido em telas pequenas */
         letter-spacing: 0.08em; /* Menos espaçamento */
+    }
+    .subtitle {
+        font-size: 0.7rem; /* Ajuste no tamanho do subtítulo em telas muito pequenas */
     }
 }
 
