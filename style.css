@@ -67,75 +67,76 @@ body {
     z-index: 1;
 }
 
-/* Seção com 3 colunas */
+/* Configuração da seção */
 .section {
     display: flex;
     justify-content: space-between;
-    padding: 5px; /* Margem mínima */
-    background-color: #000;
-    min-height: 100vh;
-    border-left: 1px solid rgba(255, 255, 255, 0.06); /* Linha de separação à esquerda */
-    border-right: 1px solid rgba(255, 255, 255, 0.06); /* Linha de separação à direita */
+    padding: 20px;
+    background-color: #111;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Estilo das colunas */
 .column {
-    width: 33%; /* Ajustando o tamanho das colunas */
-    padding: 5px; /* Reduzindo o padding */
+    flex: 1;
+    padding: 0 15px;
 }
 
-/* Estilo dos títulos nas colunas */
 .column h3 {
-    font-weight: 500;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
     color: #fff;
+    margin-bottom: 10px;
 }
 
-/* Lista de contatos */
 .column ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .column ul li {
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: #007bff;
-    margin: 10px 0;
+    font-size: 1.2rem;
+    margin: 8px 0;
 }
 
-/* Galeria de imagens */
+.column ul li a {
+    text-decoration: none;
+    color: #00aaff;
+    transition: color 0.3s ease;
+}
+
+.column ul li a:hover {
+    color: #00ffff;
+}
+
+/* Galeria */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 10px; /* Menor distância entre as imagens */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 15px;
 }
 
 .gallery-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 120px;
+    height: auto;
+    max-height: 120px;
     object-fit: cover;
-    border: none; /* Remover borda */
+    border-radius: 5px;
 }
 
-.gallery-item h4 {
-    margin-top: 6px; /* Alinhamento do texto com 6px de distância da imagem */
-    font-size: 0.875rem; /* Título menor */
-    font-weight: 400;
-    color: #d0d0d0; /* Cor mais clara para o título */
-    text-align: left; /* Alinha o texto à esquerda */
-}
-
-/* Estilos para o texto da coluna de conteúdo */
-.column p {
-    font-weight: 400;
+.gallery-item p {
+    margin-top: 10px;
     font-size: 1rem;
-    color: #bbb;
+    color: #ccc;
+}
+
+/* Texto da coluna "Sobre" */
+.column p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ccc;
+    text-align: justify;
 }
