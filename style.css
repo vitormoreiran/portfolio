@@ -58,12 +58,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Archivo', sans-serif; /* Alterado para a fonte Archivo */
-    font-weight: 100; /* Mais fino */
-    font-size: 7rem; /* Tamanho ajustado */
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100; /* Fonte fina */
+    font-size: 7rem;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.77); /* Opacidade de 88% */
-    text-shadow: 0 -0.2em 0.077em rgba(255, 255, 255, 0.22); /* Sombra mais fina e próxima */
+    color: rgba(255, 255, 255, 0.77); /* Opacidade ajustada */
+    text-shadow: 0 0.2em 0.077em rgba(255, 255, 255, 0.22); /* Sombra ajustada para ficar mais para cima */
+    letter-spacing: 0.22em; /* Aumentando o espaçamento entre as letras */
     z-index: 1;
 }
 
