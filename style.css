@@ -121,11 +121,26 @@ body {
 }
 
 /* Galeria */
+/* Galeria responsiva */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 15px; /* Ajustando o espaço entre as imagens */
 }
+
+/* Ajustar o número de colunas em telas menores */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 coluna em telas ainda menores */
+    }
+}
+
 
 /* Estilo das imagens da galeria */
 .gallery-item {
