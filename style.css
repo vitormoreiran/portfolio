@@ -79,8 +79,19 @@ body {
 }
 
 .column {
-    flex: 1;
     padding: 0 15px;
+}
+
+.column:first-child {
+    flex: 0.5; /* Reduz largura da aba de contato */
+}
+
+.column:nth-child(2) {
+    flex: 1.5; /* Aumenta largura da galeria */
+}
+
+.column:last-child {
+    flex: 1; /* Mantém tamanho da aba sobre */
 }
 
 .column h3 {
@@ -89,27 +100,17 @@ body {
     margin-bottom: 10px;
 }
 
-/* Lista de contatos */
-.column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.column ul li {
-    font-size: 1.2rem;
-    margin: 8px 0;
-}
-
+/* Links sem cor azul e sublinhado */
 .column ul li a {
     text-decoration: none; /* Remove sublinhado */
-    color: inherit; /* Usa a cor padrão */
-    font-style: italic; /* Texto em itálico */
+    color: inherit; /* Usa a cor padrão do texto */
+    font-style: italic; /* Itálico */
     font-weight: 300; /* Fonte mais fina */
     transition: transform 0.2s ease; /* Animação sutil */
 }
 
 .column ul li a:hover {
-    transform: scale(1.05); /* Leve destaque no hover */
+    transform: scale(1.05); /* Leve zoom no hover */
 }
 
 /* Galeria */
@@ -128,7 +129,7 @@ body {
 .gallery-item img {
     width: 100%;
     height: auto;
-    max-height: 120px;
+    max-height: 150px; /* Aumenta altura máxima das imagens */
     object-fit: cover;
     border-radius: 5px;
 }
