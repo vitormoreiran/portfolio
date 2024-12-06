@@ -1,0 +1,49 @@
+/* Configurando a seção */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ajustando a largura das colunas */
+.column {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #d0d0d0;
+    font-style: italic;
+    font-weight: 300;
+    transition: transform 0.2s ease;
+}
+
+.column ul li a:hover {
+    transform: scale(1.05);
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+/* Estilo para o bloco "Sobre" */
+.about {
+    width: 20%;
+    color: #fff;
+    text-align: right;
+}
