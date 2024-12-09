@@ -1,101 +1,13 @@
-/* Estilo base para textos do cabeçalho e rodapé */
-
-.fixed-header .site-title {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 700; /* Negrito para destaque */
-    font-size: 1.5rem; /* Tamanho maior para hierarquia */
-    color: #f4f4f4; /* Texto claro */
-    letter-spacing: 0.1em; /* Espaçamento entre letras */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    text-decoration: none; /* Remove sublinhado nos links */
-    cursor: pointer; /* Indica que é clicável */
-    transition: color 0.3s ease; /* Transição suave para mudanças de cor */
-}
-.fixed-header .section-title {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 300; /* Texto mais leve */
-    font-size: 1.2rem; /* Tamanho médio */
-    color: rgba(244, 244, 244, 0.8); /* Cor um pouco mais apagada */
-    letter-spacing: 0.05em; /* Pequeno espaçamento */
-    text-transform: capitalize; /* Primeira letra maiúscula */
-    transition: transform 0.3s ease, color 0.3s ease; /* Suavidade em efeitos */
-}
-
-.fixed-footer .category-title {font-family: 'Archivo', sans-serif;
-    font-weight: 500; /* Espessura moderada */
-    font-size: 1rem; /* Texto pequeno */
-    color: rgba(244, 244, 244, 0.8); /* Cor mais clara */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    cursor: pointer; /* Indica que é clicável */
-    transition: color 0.3s ease; /* Suavidade na mudança de cor */}
-
-.fixed-footer .project-nav {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 100; /* Espessura máxima de finura */
-    font-size: 1.1rem; /* Tamanho uniforme */
-    color: #f4f4f4; /* Cor clara */
-    white-space: nowrap; /* Evita quebra de linha nos textos */
-}
 
 
-.fixed-footer .category-title:hover {
-    color: #ff5733; /* Tom quente ao passar o mouse */
-}
-
-/* Estilo para a navegação de projetos no footer */
-.fixed-footer .project-nav {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 400; /* Texto regular */
-    font-size: 1.2rem; /* Texto maior */
-    color: #fff; /* Texto branco */
-    text-transform: none; /* Mantém o formato original */
-    letter-spacing: 0.1em; /* Pequeno espaçamento */
-    cursor: pointer; /* Indica que é clicável */
-    transition: transform 0.3s ease, color 0.3s ease; /* Suavidade em efeitos */
-}
-
-.fixed-footer .project-nav:hover {
-    color: #00bcd4; /* Destaque em azul claro */
-    transform: translateX(10px); /* Move ligeiramente para a direita */
-}
-
-
-/* Cabeçalho fixo */
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 72px;
-    background: rgba(0, 0, 0, 0);
-    display: flex;
-    justify-content: space-between; /* Elementos nos cantos */
-    align-items: top; /* Centraliza verticalmente */
-    padding: 0 0px;
-    z-index: 1000;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0); /* Sombra sutil */
-}
-
-/* Rodapé fixo */
-.fixed-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 72px;
-    background: rgba(0, 0, 0, 0);
-    display: flex;
-    justify-content: space-between; /* Elementos nos cantos */
-    align-items: end; /* Centraliza verticalmente */
-    padding: 0 0px;
-    z-index: 1000;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0); /* Sombra invertida */
-}
 
 /* Espaços reservados para conteúdo */
 main {
     padding-top: 0px; /* Espaço para o cabeçalho fixo */
     padding-bottom: 92px; /* Espaço para o rodapé fixo */
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%); /* Degradê do preto */
+    color: #d0d0d0; /* Cor da fonte em cinza claro */
+    font-family: 'Archivo', sans-serif; /* Alterado para a fonte Archivo */
 }
 
 /* Container para o vídeo de fundo */
@@ -105,6 +17,51 @@ main {
     height: 100vh; /* Ocupa a altura total da janela */
     overflow: hidden;
 }
+.video-container,
+.image-text-section {
+    background: transparent; /* Evita a cor de fundo aparecendo entre as seções */
+}
+
+div.image-text-section .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 80px; /* Remover qualquer padding superior desnecessário */
+    background: transparent; /* Garantir que o fundo seja transparente */
+}
+.image-text-section .custom-text-container { /* Classes mais específicas */
+    margin-top: 80px;
+    text-align: center;
+}
+
+.text-container {
+    margin-top: 80px; /* Espaço entre imagens e texto */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Limita a largura do texto */
+    margin-left: auto;  /* Centraliza o texto horizontalmente */
+    margin-right: auto; /* Centraliza o texto horizontalmente */
+}
+
+
+.text-container h2 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em; /* 10% do tamanho da fonte */
+}
+
+.text-container p {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #000;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0em; /* 5% do tamanho da fonte */
+}
+
+
 
 .title-container-canaa {
     position: absolute;
@@ -112,7 +69,7 @@ main {
     right: 0; /* Alinha ao lado direito da tela */
     transform: translate(0, 100%); /* Centraliza verticalmente no canto direito */
     text-align: right; /* Alinha o texto à direita */
-    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com leve transparência */
+
     padding-top: 10px; /* Adiciona um espaçamento interno */
     padding-bottom: 20px; /* Adiciona um espaçamento interno */
     padding-left: 40px; /* Adiciona um espaçamento interno */
@@ -140,7 +97,7 @@ main {
     font-family: 'Archivo', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    color: rgba(200, 200, 200, 0.8); /* Cor mais acinzentada para o subtítulo */
+    color: rgba(255, 255, 255, 0.8); /* Cor mais acinzentada para o subtítulo */
     margin-top: 10px; /* Espaço entre título e subtítulo */
 
 }
@@ -160,6 +117,8 @@ main {
 
 
 
+
+
 /* Container para o slideshow */
 .slideshow-container {
     display: flex;
@@ -167,7 +126,7 @@ main {
     align-items: center; /* Alinha ao centro vertical */
     margin: 100px; /* Deixa o espaço de 300px em cima do conteúdo */
     flex-wrap: wrap; /* Permite que o conteúdo se reorganize quando a tela for menor */
-    gap: 20px; /* Adiciona espaçamento entre o vídeo e o texto */
+    gap: 0px; /* Adiciona espaçamento entre o vídeo e o texto */
 }
 
 /* Container do vídeo */
@@ -197,7 +156,8 @@ main {
 /* Caixa de texto */
 .text-container-canaa {
     width: 860px; /* Largura fixa da caixa de texto */
-    height: 600px; /* Altura fixa de 600px */
+    min-height: 600px; /* Altura fixa de 600px */
+    max-height: 900px; /* Altura fixa de 600px */
     background-color: transparent; /* Remover a cor de fundo */
     border: 1px solid #ccc; /* Bordas cinzas com tamanho de 1px */
     padding: 20px; /* Padding interno da caixa de texto */
@@ -205,7 +165,6 @@ main {
     padding-right: 60px; /* Padding maior à direita */
     margin-left: -1px; /* Espaço entre a caixa de texto e o vídeo */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    overflow-y: auto; /* Permite rolagem se o conteúdo ultrapassar a altura */
     display: flex; /* Flexbox para alinhar o conteúdo */
     flex-direction: column; /* Organiza os elementos em coluna */
     justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
@@ -216,7 +175,7 @@ main {
 .text-container-canaa h2 {
     font-family: 'Archivo', sans-serif;
     font-size: 1.5rem; /* Tamanho do título */
-    color: #fff; /* Cor do título */
+    color: #000; /* Cor do título */
     margin-bottom: 10px; /* Espaçamento abaixo do título */
     letter-spacing: 0.02em; /* Espaçamento entre caracteres */
 }
@@ -226,98 +185,14 @@ main {
     font-family: 'Archivo', sans-serif;
     font-size: 1rem; /* Tamanho do texto dos parágrafos */
     font-weight: 100;
-    color: #fff; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     line-height: 2; /* Altura da linha para melhorar a legibilidade */
     margin-bottom: 15px; /* Espaçamento entre os parágrafos */
     letter-spacing: 0.02em; /* Espaçamento entre caracteres dos parágrafos */
 }
 
-/* Responsividade para telas menores */
-@media screen and (max-width: 1200px) {
-    .slideshow-container {
-        width: 100%; /* Ocupa toda a largura da tela */
-        justify-content: space-between; /* Organiza os elementos lado a lado */
-    }
-
-    .video-container-canaa {
-        width: 50%; /* Ajusta o tamanho do vídeo para 50% da tela */
-        height: 50vw; /* Altura proporcional à largura da tela */
-    }
-
-    .text-container-canaa {
-        width: 50%; /* Ajusta a caixa de texto para 50% da tela */
-        height: 50vw; /* Altura proporcional à largura da tela */
-        margin-left: 0; /* Remove o espaço à esquerda */
-        padding: 40px; /* Ajusta o padding */
-        text-align: left; /* Alinha o texto à esquerda */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .slideshow-container {
-        flex-direction: column; /* Organiza os elementos verticalmente em telas muito pequenas */
-        gap: 20px; /* Adiciona espaçamento entre o vídeo e o texto */
-    }
-
-    .video-container-canaa,
-    .text-container-canaa {
-        width: 100%; /* Faz com que ambos os elementos ocupem 100% da largura da tela */
-        height: auto; /* Ajusta a altura proporcionalmente */
-    }
-
-    .text-container-canaa {
-        padding: 40px; /* Adiciona padding igual de todos os lados */
-        text-align: left; /* Alinha o texto à esquerda em telas menores */
-        height: auto; /* Ajusta a altura da caixa de texto */
-    }
-}
 
 
-/* Estilo do texto "Nova Canaã" */
-.fixed-header .section-title {
-    position: relative; /* Necessário para posicionar a lista */
-    font-family: 'Archivo', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: rgba(244, 244, 244, 0.8); /* Cor padrão */
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-/* Lista oculta inicialmente */
-.fixed-header .hover-list {
-    position: absolute;
-    top: 100%; /* Alinha a lista logo abaixo do texto */
-    right: 0; /* Alinha ao canto direito */
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
-    padding: 10px 20px;
-    list-style: none;
-    border-radius: 6px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
-    display: none; /* Inicialmente oculta */
-    z-index: 100; /* Certifica-se de que estará acima de outros elementos */
-}
-
-/* Estilo dos itens da lista */
-.fixed-header .hover-list li {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #fff;
-    text-align: right; /* Alinha o texto à direita */
-    padding: 5px 0;
-    transition: color 0.3s ease;
-}
-
-.fixed-header .hover-list li:hover {
-    color: #ffcc00; /* Cor de destaque ao passar o mouse */
-}
-
-/* Torna a lista visível no hover */
-.fixed-header .section-title:hover .hover-list {
-    display: block; /* Exibe a lista */
-}zq
 
 .image-container {
     display: flex; /* Coloca as imagens lado a lado */
@@ -338,29 +213,6 @@ main {
 
 .image-container .image-927 {
     width: calc(927 / 1527 * 80%); /* Proporção em relação à largura total */
-}
-
-.text-container {
-    margin-top: 60px; /* Espaço entre imagens e texto */
-    text-align: center; /* Centraliza o texto */
-    max-width: 800px; /* Limita a largura do texto */
-}
-
-.text-container h2 {
-    font-family: 'Archivo', sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 10px;
-    letter-spacing: 0.05em; /* 10% do tamanho da fonte */
-}
-
-.text-container p {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    color: #fff;
-    line-height: 2;
-    letter-spacing: 0em; /* 5% do tamanho da fonte */
 }
 
 
@@ -421,25 +273,118 @@ main {
     text-align: center; /* Centraliza o texto */
     width: 100%; /* Garante que ocupe toda a largura da tela */
     margin-top: 20px; /* Adiciona um pequeno espaçamento superior */
+    color:#4d4d4d;
 }
 
 
-/* Responsividade apenas para a seção final */
+
+
+/* RESPONSIVIDADE */
+
+/* Responsividade para telas menores que 1200px */
+@media screen and (max-width: 1200px) {
+    .slideshow-container {
+        display: flex; /* Usamos flexbox para alinhar os elementos */
+        flex-direction: column; /* Empilhando o vídeo e o texto verticalmente */
+        justify-content: center; /* Centralizando verticalmente */
+        align-items: center; /* Centralizando horizontalmente */
+        width: 100%; /* Ocupa toda a largura da tela */
+        gap: 20px; /* Espaço entre o vídeo e a caixa de texto */
+        text-align: center; /* Garante que o texto da caixa de texto seja centralizado */
+    }
+
+    .video-container-canaa,
+    .text-container-canaa {
+        width: 100%; /* Ambos os elementos ocupam toda a largura da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+        box-sizing: border-box; /* Inclui padding no cálculo de largura/altura */
+    }
+
+    .video-container-canaa {
+        max-height: 50vh; /* Define um limite de altura para o vídeo */
+        object-fit: cover; /* Ajusta o vídeo para cobrir o espaço sem distorção */
+    }
+
+    .text-container-canaa {
+        padding: 20px; /* Ajusta o padding */
+        text-align: center; /* Garante que o texto dentro de .text-container-canaa seja centralizado */
+    }
+}
+
+/* Responsividade para telas menores que 768px */
+/* Responsividade para telas menores que 768px */
 @media screen and (max-width: 768px) {
-    .custom-final-section {
-        flex-direction: column; /* Organiza os elementos em coluna */
-        gap: 12px; /* Maior espaçamento entre os elementos */
-    }
-
-    .custom-image-gallery {
-        width: 100%; /* A galeria ocupa toda a largura */
-        grid-template-columns: 1fr; /* Coloca as imagens em uma coluna */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
-
-    .custom-video-container {
-        width: 100%; /* O vídeo ocupa toda a largura */
-        height: auto; /* Ajusta a altura automaticamente */
-        padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
-    }
+    /* Container para o slideshow */
+.slideshow-container {
+    display: flex;
+    
+    flex-direction: column; /* Empilha o vídeo e o texto verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 100%; /* Ocupa toda a largura da tela */
+    gap: -1px; /* Adiciona espaçamento entre o vídeo e o texto */
+    text-align: center; /* Centraliza o texto na caixa de texto */
+    margin: 0; /* Remove qualquer margem */
+    margin-top: 60px;
+    padding: 0; /* Remove qualquer preenchimento */
 }
+
+/* Ajuste do vídeo */
+.video-container-canaa {
+    width: 100%; /* O vídeo ocupa toda a largura da tela */
+    height: 50vh; /* Define uma altura relativa ao tamanho da tela */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo do vídeo dentro do contêiner */
+.video-container-canaa video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* O vídeo ocupa toda a largura */
+    height: 100%; /* O vídeo ocupa toda a altura */
+    object-fit: cover; /* Ajusta o vídeo para cobrir a área sem distorção */
+}
+
+/* Caixa de texto */
+.text-container-canaa {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 860px; /* Limita a largura máxima */
+    padding: 0px; /* Adiciona preenchimento */
+    box-sizing: border-box; /* Inclui padding no cálculo de largura/altura */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 0px; /* Espaço superior entre o vídeo e o texto */
+    
+}
+
+/* Título dentro da caixa de texto */
+.text-container-canaa h2 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.5rem; /* Tamanho do título */
+    color: #000;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+}
+
+/* Parágrafos dentro da caixa de texto */
+.text-container-canaa p {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #000;
+    line-height: 2;
+    margin-bottom: 15px;
+    letter-spacing: 0.02em;
+}
+.subtitle-canaa {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8); /* Cor mais acinzentada para o subtítulo */
+    margin-top: 10px; /* Espaço entre título e subtítulo */
+
+}
+}
+

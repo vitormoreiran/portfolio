@@ -1,3 +1,20 @@
+/* Esconde a barra de rolagem, mas permite rolagem */
+html, body {
+    overflow: hidden; /* Oculta a barra de rolagem */
+    height: 100%; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+/* Contêiner principal onde o conteúdo pode rolar */
+body {
+    overflow-y: scroll; /* Permite a rolagem vertical */
+    -ms-overflow-style: none;  /* Para o IE e Edge */
+    scrollbar-width: none;  /* Para Firefox */
+}
+
+/* Para garantir que o conteúdo seja rolável, aplicando overflow-y no body */
+body::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome, Safari, e outros */
+}
 /* Resetando margens e padding */
 * {
     margin: 0;
@@ -111,7 +128,6 @@ body {
 /* Ajustando a largura das colunas */
 .column {
     padding: 0 15px;
-    flex: 1 1 30%; /* Definindo a largura das colunas em 30% */
     box-sizing: border-box;
 }
 
@@ -122,12 +138,12 @@ body {
 
 /* Aba de galeria com largura aumentada */
 .column:nth-child(2) {
-    flex: 1 1 40%;
+    flex: 1 1 45%; /* Ajuste para a galeria ocupar mais espaço */
 }
 
 /* Aba sobre com largura padrão */
 .column:last-child {
-    flex: 1 1 30%;
+    flex: 1 1 25%; /* Ajuste para a seção sobre ocupar um espaço adequado */
 }
 
 /* Ajustes para a responsividade das colunas */
@@ -157,6 +173,93 @@ body {
     transform: scale(1.05); /* Leve zoom no hover */
 }
 
+
+/* Estilo do menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px; /* Altura reduzida do menu */
+}
+
+/* Botões do menu */
+.menu-item {
+    flex: 1;
+    text-align: center;
+    color: #d0d0d0;
+    font-size: calc(0.8rem * 0.2vw); /* Tamanho de texto responsivo que começa com 1.1rem e aumenta conforme a largura da tela */
+    font-weight: 200;
+    text-transform: uppercase;
+    position: relative; /* Necessário para o dropdown */
+    padding: 0 15px;
+    line-height: 20px; /* Centraliza o texto verticalmente */
+    height: 100%; /* Garantia de ocupar toda a altura do menu */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Efeito de hover nos botões */
+.menu-item:hover {
+    transform: scale(1);
+}
+
+/* Estilo da lista suspensa */
+.dropdown {
+    display: none; /* Oculta a lista inicialmente */
+    position: absolute;
+    bottom: 100%; /* Faz a lista aparecer acima do botão */
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.95); /* Fundo escuro translúcido */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: calc(0.6rem + 0.2vw);
+    list-style: none;
+    white-space: nowrap;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+/* Exibe todas as listas ao passar o mouse sobre qualquer item do menu */
+.menu:hover .dropdown {
+    display: block;
+}
+
+/* Exibe a lista ao passar o mouse sobre o item específico */
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Estilo dos itens da lista */
+.dropdown li {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Remove a borda do último item */
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+/* Links dos itens */
+.dropdown li a {
+    text-decoration: none;
+    color: #d0d0d0;
+    transition: color 0.2s ease;
+}
+
+/* Hover nos links */
+.dropdown li a:hover {
+    color: #ffffff;
+}
+
 /* Galeria */
 .gallery {
     display: grid;
@@ -180,14 +283,39 @@ body {
 /* Estilo das imagens da galeria */
 .gallery-item {
     text-align: left; /* Alinha o texto à esquerda */
+    position: relative; /* Necessário para a sobreposição */
+    overflow: hidden;
 }
 
+/* Estilo das imagens da galeria */
 .gallery-item img {
     width: 100%;
-    height: auto; /* Ajuste automático da altura */
-    max-height: 200px; /* Limitar altura das imagens */
-    object-fit: cover;
+    height: 100%; /* Ajuste para a altura da imagem acompanhar a largura */
+    object-fit: contain; /* Alinha a imagem dentro do contêiner sem cortar */
     border: none;
+}
+/* Imagem de hover */
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Inicialmente oculta */
+    pointer-events: none; /* Impede interação com a imagem sobreposta */
+}
+
+/* Exibir a imagem de hover ao passar o mouse */
+.gallery-item:hover .overlay-image {
+    display: block;
+}
+
+/* Estilo do vídeo */
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Estilo do texto das imagens */
@@ -195,5 +323,187 @@ body {
     font-size: 1rem;
     color: #d0d0d0; /* Cor do texto */
     margin-top: 8px;
-    font-weight: 300; /* Peso mais leve */
+    font-weight: 1  00; /* Peso mais leve */
 }
+
+/* Seção da Galeria */
+.gallery-section {
+    padding: 40px 20px;
+    background: #111; /* Fundo escuro para destacar as imagens */
+    color: #fff;
+    text-align: center;
+}
+
+/* Container para a galeria e sobre */
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo da Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 10px; /* Espaço entre as imagens */
+    width: 75%; /* Ocupa 75% da largura disponível */
+    height: 100%; /* Garantir que a galeria ocupe toda a altura do contêiner */
+}
+
+/* Itens da Galeria */
+.gallery-item {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Garantir que o item ocupe toda a altura */
+    overflow: hidden;
+}
+
+.gallery-item video,
+.gallery-item img {
+    width: 100%; /* Faz o conteúdo ocupar 100% da largura */
+    height: 100%; /* Faz o conteúdo ocupar 100% da altura */
+    object-fit: cover; /* Garante que o conteúdo preencha a área sem distorcer a proporção */
+    border: none;
+}
+
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column; /* Colunas empilhadas em telas menores */
+    }
+    .gallery {
+        grid-template-columns: 1fr; /* Galeria em 1 coluna */
+        width: 100%; /* A galeria ocupa toda a largura */
+    }
+  
+}
+
+/* Estilo para o bloco "Sobre" */
+.about {
+    width: 20%; /* 20% da largura para o "Sobre" */
+    color: #fff;
+    text-align: right; /* Alinha o texto à direita */
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+.about {
+    width: 100%; /* "Sobre" ocupa toda a largura em telas pequenas */
+}
+}
+
+
+/* Sobreposição */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 15px;
+    text-align: center;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1rem;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Torna a sobreposição visível */
+}
+
+
+/* Estilo geral do rodapé */
+.footer {
+    background: #111; /* Fundo preto/cinza escuro */
+    color: #d0d0d0; /* Texto em cinza claro */
+    font-size: 0.9rem;
+    padding: 20px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Conteúdo principal do rodapé */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre colunas */
+    margin-bottom: 20px;
+}
+
+/* Seções individuais */
+.footer-section {
+    flex: 1 1 30%; /* Cada seção ocupa 30% do espaço */
+    min-width: 200px; /* Garante que não encolham demais */
+    text-align: right;
+}
+
+/* Títulos das seções */
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Listas de links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #d0d0d0;
+    transition: color 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+/* Mensagem final */
+.footer-section p {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Botão voltar ao topo */
+.back-to-top {
+    text-decoration: none;
+    font-weight: 500;
+    color: #d0d0d0;
+    margin-top: 5px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+    color: #ffffff;

@@ -1,0 +1,242 @@
+/* ----------------------------------------------------- HEADER */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 10px 10px;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+/* ----------------------------------------------------- ESQUERDA*/
+.fixed-header .site-title {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left; 
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background-color: #000000; 
+}
+
+/* Torna a lista visível no hover para .site-title */
+.fixed-header .site-title:hover .hover-list {
+    display: block;
+    position: absolute; 
+    left: 0; 
+    top: 100%;
+    width: 100%; 
+    text-align: left;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+/* Ajustando o alinhamento da lista dentro de .site-title */
+.fixed-header .site-title .hover-list {
+    text-align: left;
+}
+
+/* Estilo dos itens da lista dentro do .site-title */
+.fixed-header .site-title .hover-list li {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 20px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Destaque no hover dos itens dentro da lista */
+.fixed-header .site-title .hover-list li:hover {
+    background-color: #808080;
+    color: #fff;
+}
+
+
+
+
+
+/* ----------------------------------------------------- DIREITA */
+.fixed-header .section-title {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: right; 
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background-color: #000000; 
+    
+}
+
+/* Lista oculta inicialmente */
+.fixed-header .hover-list {
+    position: absolute; /* Posição absoluta em relação ao elemento pai */
+    top: 100%; /* Alinha abaixo do elemento pai */
+    right: 0; /* Alinha ao canto direito da tela */
+    background-color: #606060; /* Cor de fundo */
+    list-style: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0); /* Sombra opcional */
+    display: none; /* Inicialmente invisível */
+    z-index: 100; /* Certifica-se de que está acima de outros elementos */
+    min-width: 300px; /* Largura mínima da lista */
+    min-height: 0px; /* Altura mínima da lista */
+    text-align: right; /* Texto alinhado à direita */
+    margin-right: -10px;
+    margin-top: 10px;
+}
+
+/* Estilo dos itens da lista */
+.fixed-header .hover-list li {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: right;
+    padding: 20px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Destaque no hover */
+.fixed-header .hover-list li:hover {
+    background-color: #808080;
+    color: #fff;
+}
+
+/* Torna a lista visível no hover */
+.fixed-header .section-title:hover .hover-list {
+    display: block;
+}
+
+/* Melhorando a interação da .section-title */
+
+/* Configuração do hover que cobre o título e a lista */
+.fixed-header .site-title:hover .hover-list,
+.fixed-header .site-title .hover-list:hover,
+.fixed-header .section-title:hover .hover-list,
+.fixed-header .section-title .hover-list:hover {
+    display: block; /* Mantém a lista visível */
+}
+
+/* Expandir a área de hover do título */
+.fixed-header .site-title:hover::after,
+.fixed-header .section-title:hover::after {
+    content: ''; /* Cria um pseudo-elemento visível apenas para hover */
+    position: absolute;
+    top: 100%; /* Começa logo abaixo do título */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Altura suficiente para cobrir a margem */
+}
+
+/* Configuração do hover para a lista e título */
+.fixed-header .site-title:hover .hover-list,
+.fixed-header .site-title .hover-list:hover,
+.fixed-header .section-title:hover .hover-list,
+.fixed-header .section-title .hover-list:hover {
+    display: block; /* Mantém a lista visível */
+}
+
+
+/* ----------------------------------------------------- FOOTER */
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: end; 
+    padding: 10px 10px;
+    z-index: 1000;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0); 
+}
+
+/* ----------------------------------------------------- ESQUERDA */
+.fixed-footer .category-title {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #fff; 
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block; 
+    position: relative;
+    z-index: 1; 
+}
+
+.fixed-footer .category-title::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; 
+    z-index: -1; 
+}
+
+/* ----------------------------------------------------- DIREITA */
+.fixed-footer .project-nav {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    color: #fff; /* Texto visível */
+    text-transform: none;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1; 
+}
+
+.fixed-footer .project-nav::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: -1;
+}
+
+
+
+
+/* Para os links sem estilização */
+.fixed-header .site-title a,
+.fixed-header .section-title a, 
+.fixed-footer .category-title a,
+.fixed-footer .project-nav a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+

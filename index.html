@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.......................</title>
+    <title>Vitor Moreiran - Portfólio</title>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
 </head>
 <body>
-
+    <header class="fixed-header">
+        <div class="site-title"> 
+            <a href="../index.html" title="Voltar para a página inicial">vitormoreiran</a>
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Página Inicial">Página Inicial</a></li>
+                <li><a href="../sobre.html" title="Sobre">Sobre</a></li>
+                <li><a href="../contato.html" title="Contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="section-title">
+            HOME
+            <!-- Lista que aparece ao passar o mouse -->
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 1</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 2</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 3</a></li>
+            </ul>
+        </div>
+    </header>
+    
     <div class="video-container">
         <video class="background-video" autoplay playsinline muted loop>
-            <source src="assets/0000.mp4" type="video/mp4">
+            <source src="assets/HOME/0000.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
         <div class="title-container">
@@ -27,25 +47,38 @@
     <div class="gallery-section">
         <div class="gallery-container">
             <div class="gallery">
-                <div class="gallery-item">
-                    <img src="assets/horizontal-light-1.svg" alt="Imagem 1">
+                <div class="gallery-item" data-description="Projeto 1" data-hover="assets/HOME/img-1-v2.png">
+                    <video src="assets/HOME/vid-1.mp4" autoplay loop muted playsinline></video>
+                    <!-- Imagem sobreposta ao vídeo -->
+                    <img src="assets/HOME/img-1-v2.png" class="overlay-image" />
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/horizontal-light-1.svg" alt="Imagem 2">
+                <div class="gallery-item" data-description="Projeto 1" data-hover="assets/HOME/img-2-v2.png">
+                    <video src="assets/HOME/vid-2.mp4" autoplay loop muted playsinline></video>
+                    <!-- Imagem sobreposta ao vídeo -->
+                    <img src="assets/HOME/img-1-v2.png" class="overlay-image" />
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/horizontal-light-1.svg" alt="Imagem 3">
+                <div class="gallery-item" data-description="Projeto 1" data-hover="assets/HOME/img-4-v2.png">
+                    <video src="assets/HOME/vid-3.mp4" autoplay loop muted playsinline></video>
+                    <!-- Imagem sobreposta ao vídeo -->
+                    <img src="assets/HOME/img-1-v2.png" class="overlay-image" />
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/horizontal-light-1.svg" alt="Imagem 4">
+                
+                
+            
+                <div class="gallery-item" data-description="Projeto 2: Uma análise visual do impacto da moda sustentável no mercado de consumo." data-hover="assets/HOME/img-2-v2.png">
+                    <img src="assets/HOME/img-2-v1.png" alt="Imagem 2">
                 </div>
+                
             </div>
+            
             <div class="about">
                 <h3>Sobre</h3>
-                <p>Texto sobre a galeria ou o projeto...</p>
+                <p id="about-description">Escolha uma imagem para ver a descrição.</p>
             </div>
         </div>
     </div>
+    
+    
    
 
     <!-- Menu de categorias com listas -->
@@ -53,7 +86,7 @@
     <div class="menu-item" style="background-color: #5a5a5a;">
         Música & Eventos
         <ul class="dropdown">
-            <li><a href="/projects/canaa.html">Festival XYZ</a></li>
+            <li><a href="projects/canaa.html">Nova Canaã</a></li>
             <li><a href="#">Evento ABC</a></li>
             <li><a href="#">Show 123</a></li>
         </ul>
@@ -80,7 +113,6 @@
             <li><a href="#">NFT Gallery</a></li>
             <li><a href="#">NFT Brasil</a></li>
             <li><a href="#">Projeção</a></li>
-            <li><a href="#">Outros</a></li>
         </ul>
     </div>
 </div>
@@ -92,12 +124,7 @@
         </div>
         <!-- Navegação -->
         <div class="footer-section">
-            <h4>Navegação</h4>
-            <ul>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#menu">Projetos</a></li>
-            </ul>
+           
         </div>
         <!-- Mensagem Final -->
         <div class="footer-section">
@@ -111,9 +138,9 @@
     </div>
     <div class="footer-bottom">
         <p>© 2024 Vitor Moreiran. Todos os direitos reservados.</p>
-        <a href="#" class="back-to-top">Voltar ao topo ↑</a>
     </div>
 </footer>
+<script src="scripts/script-home.js"></script>
 
 </body>
 </html>

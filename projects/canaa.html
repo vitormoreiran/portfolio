@@ -8,12 +8,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/canaa.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
 </head>
 <body>
     <header class="fixed-header">
-        <div class="site-title"> <a href="../index.html">vitormoreiran</a></div>
-        <div class="section-title">Nova Canaã</div>
+        <div class="site-title"> 
+            <a href="../index.html" title="Voltar para a página inicial">vitormoreiran</a>
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Página Inicial">Página Inicial</a></li>
+                <li><a href="../sobre.html" title="Sobre">Sobre</a></li>
+                <li><a href="../contato.html" title="Contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="section-title">
+            Nova Canaa
+            <!-- Lista que aparece ao passar o mouse -->
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 1</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 2</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 3</a></li>
+            </ul>
+        </div>
     </header>
+    
+    
     <div class="video-container">
         <video class="background-video-canaa-1" autoplay playsinline muted loop>
             <source src="../assets/CAND/00410.mp4" type="video/mp4">
@@ -27,20 +45,19 @@
                 das Crianças
             </div>
         
-            <div class="subtitle">
+            <div class="subtitle-canaa">
                 Nova Canaã - Jardim Vera Cruz - São Paulo Brasil
             </div>
         </div>
     </div>
     <main>
-
         <div class="image-text-section">
             <div class="image-container">
                 <img src="../assets/CAND/00409.png" alt="Imagem 1" class="image-600">
                 <img src="../assets/CAND/00408.png" alt="Imagem 2" class="image-927">
             </div>
             <div class="text-container">
-                <h2> A Festa das Crianças de Nova Canaã</h2>
+                <h2>A Festa das Crianças de Nova Canaã</h2>
                 <p>
                     Em 2024, a tradicional festa das crianças da Comunidade Nova Canaã, no Jardim Vera Cruz (Zona Sul de São Paulo),
                     levou alegria e doces para mais de 40 crianças. Organizada por Priscila Valentina, em parceria com grupos locais,
@@ -49,8 +66,7 @@
                 </p>
             </div>
         </div>
-        
-
+    
         <div class="slideshow-container">
             <div class="video-container-canaa">
                 <video autoplay muted>
@@ -104,17 +120,18 @@
             <p>São Paulo - 2024</p>
         </div>
         
-
-
-       
-       
-
         <footer class="fixed-footer">
-            <div class="category-title">2024</div>
-            <div class="project-nav">>>></div>
+            <div class="category-title">
+                <a href="../index.html" title="Voltar para a página inicial"> >>>>> </a>
+            </div>
+            
+            <div class="project-nav">
+                <a href="../index.html" title="Próximo Projeto">>>>>></a>
+            </div>
+            
         </footer>
 
-        <script src="../scripts/script.js"></script>
+        <script src="../scripts/script-canaa.js"></script>
     </main>
 </body>
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página com Div Fixa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/comercial.css">
+  <link rel="stylesheet" href="../styles/header-footer.css">
+</head>
+
+<body>
+    <header class="fixed-header">
+        <div class="site-title"> 
+            <a href="../index.html" title="Voltar para a página inicial">vitormoreiran</a>
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Página Inicial">Página Inicial</a></li>
+                <li><a href="../sobre.html" title="Sobre">Sobre</a></li>
+                <li><a href="../contato.html" title="Contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="section-title">
+            Nova Canaa
+            <!-- Lista que aparece ao passar o mouse -->
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 1</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 2</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 3</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="fixed-div">
+        <!-- Conteúdo fixo aqui -->
+        <h2>Conteúdo Fixo</h2>
+        <p>Esta div não rola com o restante da página.</p>
+      </div>
+    
+      <div class="scroll-content">
+        <!-- Imagens aqui -->
+        <img src="../assets/brifw/img-0.png" alt="Imagem 1">
+        <img src="../assets/brifw/img-1.png" alt="Imagem 1">
+        <img src="../assets/brifw/img-2.png" alt="Imagem 1">
+        <img src="../assets/brifw/oc-1.png" alt="Imagem 1">
+        <img src="../assets/brifw/oc-2.png" alt="Imagem 1">
+        <img src="../assets/brifw/oc-3.png" alt="Imagem 1">
+        <img src="../assets/brifw/oc-4.png" alt="Imagem 1">
+        <img src="../assets/brifw/oc-5.png" alt="Imagem 1">
+        <img src="../assets/brifw/bri-2.gif" alt="Imagem 1">
+        <img src="../assets/brifw/bri-3.gif" alt="Imagem 1">
+        <img src="../assets/brifw/brif-1.png" alt="Imagem 1">
+        <video id="video" width="100%" autoplay loop muted>
+            <source src="../assets/brifw/bri-1.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+    
+        <!-- Adicione mais imagens conforme necessário -->
+      </div>
+      <footer class="fixed-footer">
+        <div class="category-title">
+            <a href="../index.html" title="Voltar para a página inicial"> >>>>> </a>
+        </div>
+        
+        <div class="project-nav">
+            <a href="../index.html" title="Próximo Projeto">>>>>></a>
+        </div>
+        
+    </footer>
+    <script>
+        // Ajusta a velocidade do vídeo para 0.75x
+        const video = document.getElementById('video');
+        video.playbackRate = 0.75;
+      </script>
+</body>
+</html>
