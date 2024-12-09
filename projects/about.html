@@ -1,46 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFTBrasil</title>
+    <title>Sobre</title>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/nftbrasil.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="stylesheet" href="../styles/about.css">
 </head>
 <body>
     <header class="fixed-header">
-        <div class="site-title">vitormoreiran</div>
-        <div class="section-title">sobre</div>
-    </header>
-    <main class="sobre-container">
-        <section class="sobre-header">
-            <h1>Sobre Mim</h1>
-            <p>Olá, sou Vitor Moreiran, designer, criativa e entusiasta de tecnologias emergentes.</p>
-        </section>
-
-        <section class="sobre-texto">
-            <p>Com uma abordagem holística, meu trabalho integra design, arte e inovação para criar soluções que impactam de forma positiva. Tenho trabalhado em diversas áreas como música, moda e marketing, sempre buscando promover a inclusão e sustentabilidade. Meu foco é criar narrativas únicas que conectam tecnologia com o futuro, oferecendo projetos inovadores e personalizados.</p>
-        </section>
-
-        <section class="sobre-habilidades">
-            <h2>Minhas Habilidades</h2>
-            <ul>
-                <li>Design Gráfico</li>
-                <li>UX/UI Design</li>
-                <li>Inteligência Artificial</li>
-                <li>3D e Realidade Aumentada</li>
-                <li>Blockchain</li>
-                <li>Criação de Identidades Visuais</li>
+        <div class="site-title"> 
+            <a href="../index.html" title="Voltar para a página inicial">vitormoreiran</a>
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Página Inicial">Página Inicial</a></li>
+                <li><a href="../sobre.html" title="Sobre">Sobre</a></li>
+                <li><a href="../contato.html" title="Contato">Contato</a></li>
             </ul>
-        </section>
+        </div>
+        <div class="section-title">
+            HOME
+            <!-- Lista que aparece ao passar o mouse -->
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 1</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 2</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 3</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="video-container about-video">
+        <video class="background-video" autoplay playsinline muted loop>
+            <source src="../assets/about/0050.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="about-text-container">
+            <h1 class="about-title">Olá! Me chamo <br> Vitor Moreiran</h1>
+            <p class="about-subtitle">
+                <br>
+                Sou um Criador Digital que atua na integração de arte, tecnologia e comunicação. Designer autoditada há 6 anos, meu objetivo é criar projetos visuais que unem criatividade, tecnologia e propósito. Trabalho em áreas como moda, música, marketing e artes, sempre buscando traduzir ideias em criações autênticas e inspiradoras.
 
-        <section class="sobre-contato">
-            <p>Interessado em trabalhar comigo ou discutir um projeto? Entre em contato!</p>
-            <a href="mailto:contato@vitormoreiran.com">Solicite um Projeto</a>
-        </section>
-    </main>
+               Gosto de explorar formas inovadoras de contar histórias e de encontrar soluções que sejam ao mesmo tempo bonitas e significativas. Cada projeto é uma oportunidade de trazer algo único e com impacto positivo.
+            </p>
+                <p class="about-subtitle"> 
+                <br><br>       
+                Se você tem uma ideia e quer colocá-la no mundo de forma especial, vamos conversar! 
+                <br>Entre em contato.
+                
+                
+            </p>
+        </div>
+    </div>
+    
+   
+       
+
+<!-- Menu de categorias com listas -->
+<div class="menu">
+    <div class="menu-item" style="background-color: #5a5a5a;">
+        Clipes e Visualizers
+        <ul class="dropdown">
+            <li><a href="projects/canaa.html">Tatuagem</a></li>
+            <li><a href="#">SINGLE 1</a></li>
+            <li><a href="#">FOGOSA 2.2</a></li>
+        </ul>
+    </div>
+    <div class="menu-item" style="background-color: #4a4a4a;">
+        Moda & Tecnologia
+        <ul class="dropdown">
+            <li><a href="#">S.E.E.D</a></li>
+            <li><a href="#">LOVECORE 3</a></li>
+            <li><a href="#">KASORARO</a></li>
+        </ul>
+    </div>
+    <div class="menu-item" style="background-color: #3a3a3a;">
+        Marketing Criativo
+        <ul class="dropdown">
+            <li><a href="#">CRM</a></li>
+            <li><a href="projects/comercial.html">INSTITUCIONAL</a></li>
+            <li><a href="#">BRANDING</a></li>
+        </ul>
+    </div>
+    <div class="menu-item" style="background-color: #2a2a2a;">
+        Artes
+        <ul class="dropdown">
+            <li><a href="#">NFT BRASIL</a></li>
+            <li><a href="#">COLECIONÁVEIS DIGITAIS</a></li>
+            <li><a href="projects/canaa.html">NOVA CANAÃ</a></li>
+        </ul>
+    </div>
+</div>
+
+    
+      <div class="footer-bottom">
+        <p>© 2024 Vitor Moreiran. Todos os direitos reservados.</p>
+    </div>
+
+<script src="scripts/script-home.js"></script>
+
 </body>
 </html>

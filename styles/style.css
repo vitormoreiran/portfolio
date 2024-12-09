@@ -491,3 +491,52 @@ body {
     color: #ffffff;
   }
   
+
+
+  /* ABOUT _____________________________________________________________------*/ 
+
+  /* Configuração do vídeo para a página "Sobre" */
+.about-video {
+    position: relative;
+}
+
+/* Contêiner de texto alinhado à esquerda, no canto direito */
+.about-text-container {
+    position: absolute;
+    top: 50%;
+    right: 6%; /* Ajuste a distância da borda direita */
+    transform: translateY(-50%);
+    z-index: 2;
+    text-align: right;
+    color: white;
+    width: 30%; /* Largura máxima do texto */
+}
+
+/* Título e subtítulo */
+.about-title {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.about-subtitle {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Degradê do preto para transparente, da direita para a esquerda */
+.about-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Altere para ajustar o tamanho do degradê */
+    height: 100%;
+    background: linear-gradient(to left, black, transparent);
+    z-index: 1;
+}
