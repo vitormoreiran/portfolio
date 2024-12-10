@@ -94,9 +94,53 @@ a {
 }
 
 .image-section img:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
+.image-section::after {
+  content: ""; /* Necessário para criar o pseudo-elemento */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6vh; /* 6% da altura da tela */
+  background: linear-gradient(to top, black, transparent);
+  pointer-events: none; /* Para garantir que a camada não interfira nos cliques nas imagens */
+  margin-bottom: 30px;
+}
+
+
+
+.image-section-three {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*3 colunas */
+  gap: 12px;
+  margin-left: 24px;
+}
+
+.image-section-three img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image-section-three img:hover {
+  transform: scale(1.025);
+}
+
+
+.image-section-three::after {
+  content: ""; /* Necessário para criar o pseudo-elemento */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6vh; /* 6% da altura da tela */
+  background: linear-gradient(to top, black, transparent);
+  pointer-events: none; /* Para garantir que a camada não interfira nos cliques nas imagens */
+  margin-bottom: 30px;
+}
 
 .brifw-video {
   width: 100%; /* Faz o vídeo ocupar 100% da largura disponível */
