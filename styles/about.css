@@ -73,3 +73,39 @@ a {
     color: inherit; /* Herda a cor do elemento pai */
     text-decoration: none; /* Remove o sublinhado */
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .sobre-texto {
+        max-width: 75%; /* Aumenta a largura da área até 75% da tela */
+        font-size: calc(1rem + 0.5vw); /* Tamanho da fonte ajustado proporcionalmente à largura da tela */
+        line-height: calc(1.4rem + 0.5vw); /* Ajusta o espaçamento entre linhas proporcionalmente */
+        margin: 0 auto; /* Mantém centralizado */
+        padding: 0 16px; /* Adiciona um pouco de espaçamento lateral */
+    }
+
+    .sobre-header h1 {
+        font-size: calc(2rem + 1vw); /* Título também se ajusta proporcionalmente */
+        margin-bottom: 20px; /* Mantém um espaçamento agradável */
+    }
+
+    .sobre-habilidades {
+        grid-template-columns: 1fr; /* Muda para uma coluna em telas menores */
+        gap: 20px; /* Reduz o espaçamento entre itens */
+    }
+
+    .sobre-habilidades li {
+        font-size: 1rem; /* Ajusta o tamanho da fonte das habilidades */
+    }
+
+    .sobre-contato a {
+        font-size: 1rem; /* Ajusta o botão de contato */
+        padding: 10px 20px; /* Reduz o espaçamento do botão */
+    }
+}

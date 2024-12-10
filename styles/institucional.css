@@ -212,3 +212,34 @@ a {
     text-align: justify; /* Justifica o texto */
     line-height: 1rem;
 }
+
+/*--------------------------------------------------------------RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .image-section,
+  .image-section-three {
+      grid-template-columns: 1fr; /* As imagens ocupam uma única coluna */
+  }
+
+  .image-section img,
+  .image-section-three img {
+      width: 100%; /* As imagens continuam ocupando 100% da largura */
+  }
+
+  h2 {
+      font-size: 1rem; /* Reduz proporcionalmente o tamanho do texto do título */
+      line-height: 1.2rem; /* Ajusta o espaçamento entre linhas */
+      padding: 0 16px; /* Reduz o padding lateral */
+  }
+
+  p {
+      font-size: 0.8rem; /* Reduz proporcionalmente o tamanho do texto do parágrafo */
+      line-height: 1.1rem; /* Ajusta o espaçamento entre linhas */
+      padding: 0 16px; /* Reduz o padding lateral */
+  }
+
+  .footer-bottom {
+      font-size: 0.7rem; /* Diminui o tamanho do texto no rodapé */
+      line-height: 0.9rem; /* Ajusta o espaçamento entre linhas */
+  }
+}

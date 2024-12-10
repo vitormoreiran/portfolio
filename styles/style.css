@@ -370,7 +370,7 @@ body {
 
 
 /* Ajustes responsivos */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .gallery-container {
         flex-direction: column; /* Colunas empilhadas em telas menores */
     }
@@ -411,15 +411,10 @@ body {
 }
 
 /* Estilo para telas menores */
-@media (max-width: 768px) {
+/* Estilo para telas menores */
+@media (max-width: 1200px) {
     .about {
-        width: 100%; /* O "Sobre" ocupa toda a largura em telas menores */
-        position: sticky; /* Fica visível durante o scroll */
-        top: 0; /* Ajusta a distância do topo */
-        background-color: transparent; /* Fundo transparente também em telas pequenas */
-        padding: 15px; /* Ajuste o espaçamento */
-        font-size: 0.9rem; /* Mantém o tamanho do texto em telas menores */
-        line-height: 1.3rem; /* Mantém o espaçamento entre linhas */
+        display: none; /* Oculta o bloco "Sobre" em telas menores */
     }
 }
 
@@ -579,4 +574,34 @@ body {
     height: 100vh; /* Faz o iframe ocupar toda a altura da tela */
     border: none; /* Remove a borda do iframe */
     filter: grayscale(100%) contrast(100%); /* Aplica o efeito preto e branco */
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .about-text-container {
+        width: 75%; /* Aumenta a largura para ocupar mais espaço */
+        align-self: center;
+    }
+
+    .about-title {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+    }
+
+    .about-subtitle {
+        font-size: 1rem; /* Reduz o tamanho do subtítulo */
+        line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    }
+    .about-video::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%; /* Altere para ajustar o tamanho do degradê */
+        height: 100%;
+        background: linear-gradient(to top, black, transparent);
+        z-index: 1;
+    }
+    
 }
