@@ -1,0 +1,170 @@
+
+
+
+
+
+/* ________________________________________________________________________________________________________________________________Geral */
+html, body {
+  overflow: hidden; /* Oculta a barra de rolagem */
+  height: 100%; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+/* Contêiner principal onde o conteúdo pode rolar */
+body {
+  overflow-y: scroll; /* Permite a rolagem vertical */
+  -ms-overflow-style: none;  /* Para o IE e Edge */
+  scrollbar-width: none;  /* Para Firefox */
+  font-family: 'Archivo', sans-serif;
+  color:#fff;
+  background-color: #000;
+}
+
+/* Para garantir que o conteúdo seja rolável, aplicando overflow-y no body */
+body::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem no Chrome, Safari, e outros */
+}
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/*__________________conteúdo*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 24px;
+}
+
+.info-section {
+  flex: 1;
+  max-width: 33%;
+}
+
+h2 {
+  margin-top: 120px;
+  position: fixed; /* Fixa a posição do container na página */
+    left: 0; /* Alinha à esquerda da página */
+    padding: 0 24px; /* Deixa 24px de espaço nas laterais */
+    z-index: 10; /* Para garantir que fique acima de outros conteúdos */
+    max-width: 25%;
+
+    color: #fff; /* Definir a cor do texto */
+    font-family: Archivo, sans-serif; /* Definir uma fonte legível */
+    font-weight: 400;
+}
+p{
+  margin-top: 150px;
+  position: fixed; /* Fixa a posição do container na página */
+    left: 0; /* Alinha à esquerda da página */
+    padding: 0 24px; /* Deixa 24px de espaço nas laterais */
+    z-index: 10; /* Para garantir que fique acima de outros conteúdos */
+    max-width: 25%;
+
+    color: #fff; /* Definir a cor do texto */
+    font-family: Archivo, sans-serif; /* Definir uma fonte legível */
+    font-weight: 100;
+    text-align: left; /* Justifica o texto */
+    line-height: 1.5rem;
+    
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.image-section {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 2 colunas */
+  gap: 12px;
+  margin-left: 24px;
+}
+
+.image-section img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image-section img:hover {
+  transform: scale(1.05);
+}
+
+
+.brifw-video {
+  width: 100%; /* Faz o vídeo ocupar 100% da largura disponível */
+  height: auto; /* Mantém a proporção do vídeo */
+  object-fit: cover; /* Garante que o vídeo ocupe todo o espaço da área sem distorcer */
+}
+
+.text-box {
+  right: ;
+  padding: 120px; /* Padding interno de 120px */
+  margin: 60px 0; /* Margem vertical de 60px */
+  text-align: center; /* Centraliza o texto */
+}
+
+
+
+/* ___________________________________________________________________________________________________________________________MODAL*/
+
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escurecido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden; /* Evita que conteúdo maior que o modal seja exibido */
+}
+
+/* Contêiner com padding */
+.modal-content {
+  padding: 60px; /* Espaço ao redor da imagem */
+  box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagem dentro do modal */
+#modal img {
+  max-width: calc(100vw - 120px); /* Compensa o padding horizontal (60px * 2) */
+  max-height: calc(100vh - 120px); /* Compensa o padding vertical (60px * 2) */
+  object-fit: contain; /* Ajusta proporcionalmente a imagem */
+  border-radius: 5px; /* Opcional, pode ser removido */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra leve para destaque */
+}
+
+/* Mostra o modal quando a classe 'hidden' é removida */
+#modal:not(.hidden) {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.footer-bottom {
+
+  text-align: end;
+  font-size: small;
+  color: #fff; /* Definir a cor do texto */
+    font-family: Archivo, sans-serif; /* Definir uma fonte legível */
+    font-weight: 100;
+    text-align: justify; /* Justifica o texto */
+    line-height: 1rem;
+}

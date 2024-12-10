@@ -383,20 +383,46 @@ body {
 
 /* Estilo para o bloco "Sobre" */
 .about {
-    width: 20%; /* 20% da largura para o "Sobre" */
+    width: 20%; /* Largura da seção */
     color: #fff;
     text-align: right; /* Alinha o texto à direita */
+    position:flex; /* Posiciona em relação ao contêiner pai */
+    bottom: 0; /* Alinha ao final da seção */
+    right: 0; /* Mantém no lado direito */
+    z-index: 10; /* Garante que o texto fique acima de outros elementos */
+    background-color: transparent; /* Fundo transparente */
+    padding: 10px; /* Espaçamento interno */
+    font-family: 'Archivo', sans-serif; /* Aplica a fonte Archivo */
+    font-weight: 100; /* Peso da fonte para o texto */
+    font-size: 0.9rem; /* Tamanho do texto */
+    line-height: 1.3rem; /* Espaçamento entre linhas */
+    padding-top: 640px;
 }
 
+/* Estilo para o título "Sobre" */
 .about h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Tamanho do título */
+    font-weight: 100; /* Peso do título */
     margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9); /* Cor do título */
+    letter-spacing: 1rem; /* Espaçamento entre caracteres */
+    text-align: right;
+    padding-right: -10px;
 }
+
+/* Estilo para telas menores */
 @media (max-width: 768px) {
-.about {
-    width: 100%; /* "Sobre" ocupa toda a largura em telas pequenas */
+    .about {
+        width: 100%; /* O "Sobre" ocupa toda a largura em telas menores */
+        position: sticky; /* Fica visível durante o scroll */
+        top: 0; /* Ajusta a distância do topo */
+        background-color: transparent; /* Fundo transparente também em telas pequenas */
+        padding: 15px; /* Ajuste o espaçamento */
+        font-size: 0.9rem; /* Mantém o tamanho do texto em telas menores */
+        line-height: 1.3rem; /* Mantém o espaçamento entre linhas */
+    }
 }
-}
+
 
 
 /* Sobreposição */
@@ -504,12 +530,13 @@ body {
 .about-text-container {
     position: absolute;
     top: 50%;
-    right: 6%; /* Ajuste a distância da borda direita */
+    right: 2%; /* Ajuste a distância da borda direita */
     transform: translateY(-50%);
     z-index: 2;
     text-align: right;
     color: white;
-    width: 30%; /* Largura máxima do texto */
+    width: 25%; /* Largura máxima do texto */
+    
 }
 
 /* Título e subtítulo */
@@ -527,6 +554,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.8);
+    
 }
 
 /* Degradê do preto para transparente, da direita para a esquerda */
@@ -539,4 +567,16 @@ body {
     height: 100%;
     background: linear-gradient(to left, black, transparent);
     z-index: 1;
+}
+
+
+/* Estilo para o iframe */
+#pdf-frame {
+    position: absolute; /* Para que ocupe toda a tela */
+    top: 0px; /* Aplicando o padding negativo de 40px para cima */
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Faz o iframe ocupar toda a altura da tela */
+    border: none; /* Remove a borda do iframe */
+    filter: grayscale(100%) contrast(100%); /* Aplica o efeito preto e branco */
 }

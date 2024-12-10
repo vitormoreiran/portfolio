@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo e Carta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/comercial.css">
+  <link rel="stylesheet" href="../styles/header-footer.css">
+</head>
+
+<body>
+    <header class="fixed-header">
+        <div class="site-title"> 
+            <a href="../index.html" title="Voltar para a página inicial">vitormoreiran</a>
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Página Inicial">Página Inicial</a></li>
+                <li><a href="../sobre.html" title="Sobre">Sobre</a></li>
+                <li><a href="../contato.html" title="Contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="section-title">
+            BRIFW
+            <!-- Lista que aparece ao passar o mouse -->
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 1</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 2</a></li>
+                <li><a href="../index.html" title="Voltar para a página inicial">Item 3</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h1>Visualização do PDF</h1>
+    <canvas id="pdf-canvas"></canvas>
+
+    <iframe src="../assets/CV+CL-VitorMoreiran.pdf" id="pdf-frame"></iframe>
+
+
+    
+    <footer class="fixed-footer">
+        <div class="category-title">
+            <a href="../index.html" title="Voltar para a página inicial"> <<<<< </a>
+        </div>
+        
+        <div class="project-nav">
+            <a href="../index.html" title="Próximo Projeto">>>>>></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+</body>
+</html>

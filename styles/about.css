@@ -60,3 +60,16 @@
     background: #f4f4f4;
     color: #000;
 }
+
+
+/* Remove a formatação padrão dos links */
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+/* Caso queira garantir que um link específico (como o do WhatsApp) também não tenha formatação */
+.whatsapp-link {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
