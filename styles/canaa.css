@@ -5,8 +5,8 @@
 main {
     padding-top: 0px; /* Espaço para o cabeçalho fixo */
     padding-bottom: 92px; /* Espaço para o rodapé fixo */
-    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%); /* Degradê do preto */
-    color: #d0d0d0; /* Cor da fonte em cinza claro */
+    background: linear-gradient(to bottom, #000000 0%, #131313 100%); /* Degradê do preto */
+    color: #ebebeb; /* Cor da fonte em cinza claro */
     font-family: 'Archivo', sans-serif; /* Alterado para a fonte Archivo */
 }
 
@@ -46,7 +46,7 @@ div.image-text-section .image-container {
 .text-container h2 {
     font-family: 'Archivo', sans-serif;
     font-size: 1.5rem;
-    color: #000;
+    color: #ececec;
     margin-bottom: 10px;
     letter-spacing: 0.05em; /* 10% do tamanho da fonte */
 }
@@ -55,7 +55,7 @@ div.image-text-section .image-container {
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     font-size: 1rem;
-    color: #000;
+    color: #ececec;
     line-height: 2;
     text-align: center;
     letter-spacing: 0em; /* 5% do tamanho da fonte */
@@ -159,7 +159,7 @@ div.image-text-section .image-container {
     min-height: 600px; /* Altura fixa de 600px */
     max-height: 900px; /* Altura fixa de 600px */
     background-color: transparent; /* Remover a cor de fundo */
-    border: 1px solid #ccc; /* Bordas cinzas com tamanho de 1px */
+    border: 1px solid #424242; /* Bordas cinzas com tamanho de 1px */
     padding: 20px; /* Padding interno da caixa de texto */
     padding-left: 60px; /* Padding maior à esquerda */
     padding-right: 60px; /* Padding maior à direita */
@@ -185,7 +185,7 @@ div.image-text-section .image-container {
     font-family: 'Archivo', sans-serif;
     font-size: 1rem; /* Tamanho do texto dos parágrafos */
     font-weight: 100;
-    color: #000000; /* Cor do texto */
+    color: #ececec;; /* Cor do texto */
     line-height: 2; /* Altura da linha para melhorar a legibilidade */
     margin-bottom: 15px; /* Espaçamento entre os parágrafos */
     letter-spacing: 0.02em; /* Espaçamento entre caracteres dos parágrafos */
@@ -273,7 +273,7 @@ div.image-text-section .image-container {
     text-align: center; /* Centraliza o texto */
     width: 100%; /* Garante que ocupe toda a largura da tela */
     margin-top: 20px; /* Adiciona um pequeno espaçamento superior */
-    color:#4d4d4d;
+    color:#c2c2c2;
 }
 
 
@@ -372,7 +372,7 @@ div.image-text-section .image-container {
     font-family: 'Archivo', sans-serif;
     font-size: 1rem;
     font-weight: 100;
-    color: #000;
+    color: #c2c2c2;
     line-height: 2;
     margin-bottom: 15px;
     letter-spacing: 0.02em;
