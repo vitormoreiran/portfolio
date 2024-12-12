@@ -37,7 +37,7 @@ div.image-text-section .image-container {
 .text-container {
     margin-top: 80px; /* Espaço entre imagens e texto */
     text-align: center; /* Centraliza o texto */
-    max-width: 800px; /* Limita a largura do texto */
+    max-width: 900px; /* Limita a largura do texto */
     margin-left: auto;  /* Centraliza o texto horizontalmente */
     margin-right: auto; /* Centraliza o texto horizontalmente */
 }
@@ -74,6 +74,22 @@ div.image-text-section .image-container {
     padding-bottom: 20px; /* Adiciona um espaçamento interno */
     padding-left: 40px; /* Adiciona um espaçamento interno */
     padding-right: 200px; /* Adiciona um espaçamento interno */
+    z-index: 1;
+    width: auto; /* A largura do contêiner é determinada pelo tamanho do texto */
+    max-width: 90%; /* Limita a largura máxima do contêiner */
+}
+
+.title-container-geral {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Alinha ao lado direito da tela */
+    transform: translate(0, 100%); /* Centraliza verticalmente no canto direito */
+    text-align: right; /* Alinha o texto à direita */
+    background-color: rgba(0, 0, 0, 0.666);
+    padding-top: 10px; /* Adiciona um espaçamento interno */
+    padding-bottom: 20px; /* Adiciona um espaçamento interno */
+    padding-left: 40px; /* Adiciona um espaçamento interno */
+    padding-right: 40px; /* Adiciona um espaçamento interno */
     z-index: 1;
     width: auto; /* A largura do contêiner é determinada pelo tamanho do texto */
     max-width: 90%; /* Limita a largura máxima do contêiner */
@@ -175,7 +191,7 @@ div.image-text-section .image-container {
 .text-container-canaa h2 {
     font-family: 'Archivo', sans-serif;
     font-size: 1.5rem; /* Tamanho do título */
-    color: #000; /* Cor do título */
+    color: #ffffff; /* Cor do título */
     margin-bottom: 10px; /* Espaçamento abaixo do título */
     letter-spacing: 0.02em; /* Espaçamento entre caracteres */
 }
@@ -246,6 +262,7 @@ div.image-text-section .image-container {
     border-radius: 6px; /* Bordas arredondadas nas imagens */
 }
 
+
 /* Container do vídeo personalizado */
 .custom-video-container {
     width: 40%; /* Define a largura do vídeo */
@@ -274,6 +291,56 @@ div.image-text-section .image-container {
     width: 100%; /* Garante que ocupe toda a largura da tela */
     margin-top: 20px; /* Adiciona um pequeno espaçamento superior */
     color:#c2c2c2;
+}
+
+
+/*_______________________________SEED _________________________________-*/
+
+.custom-image-gallery-seed {
+    display: grid; /* Usando grid para criar uma grade */
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas */
+    grid-template-rows: repeat(2, 1fr); /* Cria 2 linhas */
+    gap: 6px; /* Espaçamento de 6px entre as imagens */
+    width: 80%; /* Ocupa 50% da largura da seção */
+    height: 806px; /* Altura maior para a galeria de imagens */
+}
+
+/* As imagens na galeria se ajustam à proporção com base na altura da galeria */
+.custom-image-gallery img-seed {
+    width: 100%; /* As imagens preenchem a largura das células da grid */
+    height: 100%; /* As imagens preenchem a altura das células da grid */
+    object-fit: cover; /* Cobre a área sem distorcer */
+    border-radius: 6px; /* Bordas arredondadas nas imagens */
+}
+
+.image-container video {
+    height: calc(70vh); /* Altura fixa em relação à viewport */
+    max-height: 60%; /* Altura máxima em relação ao contêiner */
+    object-fit: cover; /* Ajuste interno para o conteúdo do vídeo */
+}
+
+.image-container video.image-600 {
+    aspect-ratio: 1 / 1; /* Proporção quadrada */
+    width: auto; /* Ajusta automaticamente a largura */
+}
+
+.image-container video.image-927 {
+    aspect-ratio: 16 / 9; /* Proporção paisagem */
+    width: auto; /* Ajusta automaticamente a largura */
+}
+
+.video-player-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center; /* Centraliza o player, se necessário */
+}
+
+.video-player-container video {
+    cursor: pointer; /* Indica que o vídeo é clicável */
+    width: 100%; /* Ajusta para largura total do contêiner */
+    max-width: 1200px; /* Limita o tamanho máximo do vídeo */
+    height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 8px; /* Opcional: adiciona bordas arredondadas */
 }
 
 
