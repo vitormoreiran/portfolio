@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/3D.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="site-title"> 
+            <a href="../index.html" title="Voltar para a página inicial">vitormoreiran</a>
+            <ul class="hover-list">
+                <li><a href="../index.html" title="Página Inicial">Página Inicial</a></li>
+                <li><a href="sobre.html" title="Sobre">Sobre</a></li>
+                <li><a href="contato.html" title="Contato">CV</a></li>
+            </ul>
+        </div>
+        <div class="section-title">
+            SOBRE
+        </div>
+    </header>
+    
+    <canvas id="bg-canvas"></canvas>
+   
+    <footer class="fixed-footer">
+        <div class="category-title">
+            <a href="../index.html" title="Voltar para a página inicial"> <<<<< </a>
+        </div>
+        
+        <div class="project-nav">
+            <a href="../index.html" title="Próximo Projeto">>>>>></a>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>© 2024 Vitor Moreiran. Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Carregar os módulos ES do Three.js -->
+    <script type="module">
+      import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.150.0/build/three.module.js';
+      import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js';
+
+      // Configuração da cena, câmera e renderizador
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({
+          canvas: document.querySelector('#bg-canvas'),
+          antialias: true,
+      });
+
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+
+      // Adicionando luz
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+      scene.add(ambientLight);
+
+      // Carregando o modelo GLTF
+      const loader = new GLTFLoader();
+      loader.load(
+          'assets/obj1.glb',  // Certifique-se de que o caminho esteja correto em relação ao seu arquivo .html
+          (gltf) => {
+              const model = gltf.scene;
+              model.scale.set(1, 1, 1); // Ajuste de escala (opcional)
+              scene.add(model);
+              animate();
+          },
+          undefined,
+          (error) => console.error('Erro ao carregar o modelo:', error)
+      );
+
+      // Configuração da câmera
+      camera.position.set(0, 1, 5);
+
+      // Ajustar a tela ao redimensionar
+      window.addEventListener('resize', () => {
+          renderer.setSize(window.innerWidth, window.innerHeight);
+          camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
+      });
+
+      // Função de animação
+      function animate() {
+          requestAnimationFrame(animate);
+          renderer.render(scene, camera);
+      }
+    </script>
+</body>
+</html>
