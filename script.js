@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeModalBtn.addEventListener('click', closeModal);
 
     // Carrega os projetos do JSON e cria os cards dinamicamente
-    fetch('assets/json/data.json')
+    fetch('data/data.json')
         .then(response => response.json())
         .then(data => {
             data.projects.forEach(project => {
@@ -99,3 +99,4 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Erro ao carregar os dados do JSON:', error));
 });
+
