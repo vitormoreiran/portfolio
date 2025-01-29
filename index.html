@@ -1,149 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitor Moreiran - Portfólio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header-footer.css">
+    <title>Portfolio - Vitor Moreiran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="fixed-header">
-        <div class="site-title"> 
-            <a href="index.html" title="Voltar para a página inicial">vitormoreiran</a>
-            <ul class="hover-list">
-                <li><a href="index.html" title="Página Inicial">Página Inicial</a></li>
-                <li><a href="projects/about.html" title="Sobre">Sobre</a></li>
-                <li><a href="projects/contato.html" title="Contato">Currículo</a></li>
-            </ul>
-        </div>
-        <div class="section-title">
-            HOME
-            <!-- Lista que aparece ao passar o mouse -->
-          <!--  <ul class="hover-list">
-                <li><a href="../index.html" title="Voltar para a página inicial">Item 1</a></li>
-                <li><a href="../index.html" title="Voltar para a página inicial">Item 2</a></li>
-                <li><a href="../index.html" title="Voltar para a página inicial">Item 3</a></li>
-            </ul>-->
-        </div>
-    </header>
+
+    <nav class="main-nav">
+        <a href="#introduction" class="nav-link">
+            <span class="separator">〇</span> INÍCIO
+        </a>
+        <a href="#projects" class="nav-link">
+            <span class="separator">〇</span> PROJETOS
+        </a>
+        <a href="#about" class="nav-link">
+            <span class="separator">〇</span> SOBRE
+        </a>
+        <a href="#services-id" class="nav-link">
+            <span class="separator">〇</span> SERVIÇOS
+        </a>
+        <a href="#contact" class="nav-link">
+            <span class="separator">〇</span> CONTATO
+        </a>
+    </nav>
     
-    <div class="video-container">
-        <video class="background-video" autoplay playsinline muted loop>
-            <source src="assets/HOME/0000.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos HTML5.
-        </video>
-        <div class="title-container">
-            <div class="title">
-                Vitor Moreiran
-            </div>
-            <div class="subtitle">
-                Digital Creator
-            </div>
+    <div class="intro">
+        <!-- Gradiente -->
+        <div class="gradient">
+            <!--<img src="banner.png" alt="Imagem sobre o portfólio">-->    
         </div>
-    </div>
-   
-       
-    
 
-    <div class="gallery-section">
-        <div class="gallery-container">
-            <div class="gallery">
-               
-                    <a href="projects/tatuagem.html"title="Assista aqui" target="_blank" rel="noopener noreferrer">
-                        <div class="gallery-item" 
-                                data-description="O clipe Tatuagem, do single homônimo lançado em 2024 pela banda de rock independente Raça sob o selo Balaclava Records, foi uma verdadeira imersão criativa. A banda confiou à Rebu Digital a produção deste trabalho, e participei ativamente de todas as etapas: da concepção visual à edição final. O resultado é uma obra audiovisual que traduz a intensidade da música e reforça o poder da colaboração artística."
-                                data-hover="assets/HOME/img-2-v2.png">
-                                <video src="assets/HOME/vid-2.mp4" autoplay loop muted playsinline></video>
-                                <!-- Imagem sobreposta ao vídeo -->
-                                <img src="assets/HOME/img-1-v2.png" class="overlay-image" />
-                            </div>
-                    </a>
+        <!-- Wrapper Principal -->
+        <div class="content-wrapper">
+            <!-- Texto de Introdução + Serviços -->
+            <div class="left-content">
+                <section id="introduction">
+                    <h1>Olá!</h1>
+                    <p>
+                        Me chamo <strong>Vitor Moreiran</strong>, trabalho com 
+                        <strong>imagem, vídeo e áudio</strong> em contato com 
+                        clientes e marcas independentemente e em agências de alta performance desde 2020.
+                    </p>
+                    <p>
+                        Ao longo dos anos venho construindo um portfólio técnico e experimental que busca explorar funcionalidades diversas no uso de tecnologias de edição e criação de recursos digitais, com inspirações na <strong>cultura virtual, história da arte</strong> e <strong>moda</strong>.
+                    </p>
+                    <a href="#services" class="cta-button">Navegue pelos meus projetos</a>
+                </section>
 
-                    <a href="projects/seed.html"title="Assista aqui" target="_blank" rel="noopener noreferrer">
-                            <div class="gallery-item" 
-                                data-description="Durante a residência artística S.E.E.D + Bosque Gracias São Paulo 2024, trabalhei ao lado de artistas de todo o Brasil para criar obras colaborativas destinadas à Zora, uma plataforma que conecta artistas ao universo web3. Uma das produções mais marcantes foi o vídeo realizado com Gabriel Koi e Raiana Moraes: recriei em 3D o galpão que abrigou a residência, transformando-o em cenário para narrar a história da SEED. Meu papel incluiu modelagem 3D e edição, enquanto Gabriel capturou as texturas e Raiana deu voz à narrativa."
-                                data-hover="assets/HOME/img-4-v2.png">
-                                <video src="assets/HOME/vid-3.mp4" autoplay loop muted playsinline></video>
-                                <!-- Imagem sobreposta ao vídeo -->
-                                <img src="assets/HOME/img-1-v2.png" class="overlay-image" />
-                            </div>
-                        </a>
-
-                    <a href="projects/canaa.html"title="Ir para a página do projeto" target="_blank" rel="noopener noreferrer">
-                        <div class="gallery-item" 
-                            data-description="A tradicional Festa das Crianças de Nova Canaã trouxe alegria para mais de 40 crianças da comunidade no Jardim Vera Cruz, Zona Sul de São Paulo, em 2024. Organizada por Priscila Valentina, a celebração foi viabilizada por doações e rifas solidárias. Inspirada pela causa, contribui criando materiais visuais estratégicos que impulsionaram a campanha, aumentando seu alcance e mobilizando ainda mais apoiadores para transformar sonhos em realidade."
-                            data-hover="assets/HOME/img-1-v2.png">
-                            <video src="assets/HOME/vid-1.mp4" autoplay loop muted playsinline></video>
-                            <!-- Imagem sobreposta ao vídeo -->
-                            <img src="assets/HOME/img-1-v2.png" class="overlay-image" />
-                        </div>
-
-                    </a>
-                        <a href="projects/institucional-brifw.html" title="Visite a página do projeto" target="_blank"><div class="gallery-item" 
-                            data-description="A BRIFW une o espírito da cultura brasileira e latina ao futuro da criação digital. Moda, arte, beleza e design ganham vida por meio de ferramentas como CGI, inteligência artificial, blockchain e realidades expandidas. Em 2022, durante o primeiro evento phygital da plataforma, atuei no fortalecimento da presença digital da marca, cuidando da divulgação nas redes sociais e apoiando projetos de design interno. A BRIFW é um convite para repensar processos criativos e se inspirar com pioneiros da tecnologia aplicada à arte."
-                            data-hover="assets/HOME/img-3-v2.png">
-                            <video src="assets/HOME/vid-4.mp4" autoplay loop muted playsinline></video>
-                            <!-- Imagem sobreposta ao vídeo -->
-                            <img src="assets/HOME/img-1-v2.png" class="overlay-image" />
-                        </div>
-                    </a>
-                        
-            
+                <!-- Área de Serviços -->
+                <section id="services">
+                    <div class="service-card"><img src="assets/image/perfil.png"></div>
+                    <div class="service-card"><img src="assets/image/obraas.png"></div>
+                </section>
             </div>
-            
-            <div class="about">
-                <h3>SOBRE</h3>
-                <p id="about-description">Escolha uma imagem para ver a descrição.</p>
-            </div>
+
+            <!-- Área de Sobre -->
+            <section id="banner3">
+                <div class="banner3-banner">
+                    <img src="assets/image/sobre-img.png" alt="Imagem sobre o portfólio">
+                </div>
+            </section>
         </div>
     </div>
 
+    <div class="filter-menu">
+        <div class="categories">
+            <p><strong>PROJETOS</strong></p>
+            <span class="separator">\</span>
+            <span class="category">COMERCIAL</span>
+            <span class="separator">\</span>
+            <span class="category">AUTORAL</span>
+            <span class="separator">\</span>
+            <span class="category">VÍDEO</span>
+            <span class="separator">\</span>
+            <span class="category">3D</span>
+            <span class="separator">\</span>
+            <span class="category">SOCIAL</span>
+            <span class="separator">\</span>
+        </div>
+    </div>
 
-<!-- Menu de categorias com listas -->
-<div class="menu">
-    <div class="menu-item" style="background-color: #5a5a5a;">
-        Clipes e Visualizers
-        <ul class="dropdown">
-            <li><a href="projects/tatuagem.html">Tatuagem</a></li>
-            <li><a href="projects/3D.html">SINGLE 1</a></li>
-            <li><a href="#">FOGOSA 2.2</a></li>
-        </ul>
-    </div>
-    <div class="menu-item" style="background-color: #4a4a4a;">
-        Moda & Tecnologia
-        <ul class="dropdown">
-            <li><a href="#">S.E.E.D</a></li>
-            <li><a href="#">LOVECORE 3</a></li>
-            <li><a href="#">KASORARO</a></li>
-        </ul>
-    </div>
-    <div class="menu-item" style="background-color: #3a3a3a;">
-        Marketing Criativo
-        <ul class="dropdown">
-            <li><a href="projects/institucional-autopass.html">CRM</a></li>
-            <li><a href="projects/institucional-brifw.html">INSTITUCIONAL</a></li>
-            <li><a href="projects/institucional-exemplo.html">BRANDING</a></li>
-        </ul>
-    </div>
-    <div class="menu-item" style="background-color: #2a2a2a;">
-        Artes
-        <ul class="dropdown">
-            <li><a href="https://www.instagram.com/p/C__RihDPkZn/?img_index=1">NFT BRASIL</a></li>
-            <li><a href="https://zora.co/@vitormoreiran">COLECIONÁVEIS DIGITAIS</a></li>
-            <li><a href="projects/canaa.html">NOVA CANAÃ</a></li>
-        </ul>
-    </div>
-</div>
-
+    <section id="projects">
+        <div class="projects-container">
+            <!-- Os cards serão gerados dinamicamente aqui -->
+        </div>
+    </section>
     
-      <div class="footer-bottom">
-        <p>© 2024 Vitor Moreiran. Todos os direitos reservados.</p>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">X</button>
+            <img id="modal-image" src="" alt="Detalhes do Projeto">
+            <div id="modal-details"></div>
+            <a id="modal-link" href="#" target="_blank">Acessar link</a>
+        </div>
     </div>
+    
+ <!-- <section id="conjunto">
+        <img src="assets/image/cards-conjunto.png" alt="Banner Image" class="banner-image">
+    </section>-->  
+        
+    
 
-<script src="scripts/script-home.js"></script>
+    <section id="about">
+        <div class="about-wrapper">
+            <!-- Texto principal -->
+            <div class="about-text">
+                <h2 class="section-title">SOBRE</h2>
+                <p class="about-description">
+                    Olá! Me chamo <strong>Vitor Moreiran</strong>. Sou um artista visual e criativo multidisciplinar de 25 anos, com experiência em design, edição de vídeo e modelagem 3D desde 2020. Minha formação em Publicidade e Propaganda pela UFPR me ajudou a desenvolver uma abordagem técnica estratégica para conectar narrativas visuais expressivas com o uso experimental de tecnologias emergentes.<br><br>
+                    Já atuei em agências enquanto criativo, desenvolvendo campanhas e conteúdos para canais digitais, incluindo posts interativos, vídeos, animações e e-mails marketing. Trabalhei com marcas de moda, saúde, varejo e tecnologia, sempre focando em soluções visuais inovadoras e impactantes que garantissem engajamento e performance.<br><br>
+                    Como artista, exploro a interseção entre arte e tecnologia, criando projetos que combinam storytelling visual e ferramentas digitais. Participei de exposições como o NFT Brasil (Pavilhão da Bienal, São Paulo) e o SSA Mapping Festival (Mercado Modelo, Salvador), apresentando obras que integram narrativas imersivas, modelagem 3D e sistemas reativos a som.<br><br>
+                    Meu objetivo é colaborar com projetos que desafiem o convencional, utilizando design, tecnologia e criatividade para contar histórias de forma visualmente marcante, impactando públicos de maneira autêntica e transformadora.
+                </p>
+                <div class="about-links">
+                    <a href="#" class="link">Linkedin</a>
+                    <a href="#" class="link">Behance</a>
+                    <a href="#" class="link">Whatsapp</a>
+                    <a href="#" class="link">Zora</a>
+                    <a href="#" class="link">X</a>
+                    <a href="#" class="link">Instagram</a>
+                    <a href="#" class="link">Opensea</a>
+                    <a href="mailto:vitormoreiran@gmail.com" class="link">E-mail</a>
+                </div>
+            </div>
 
+            <!-- Bloco de serviços e formulário -->
+            <div class="services-form">
+                <!-- Serviços -->
+                <div id="services-id" class="services">
+                    <h2 class="section-title">SERVIÇOS</h2>
+                    <p class="services-description">
+                        Criação de Logotipo ▪ Identidade Visual ▪ Campanhas Multicanal ▪ Modelagem e Animação 3D.   <br><br>
+                        Inclui briefing, pesquisa, desenvolvimento de propostas, ajustes e entregas de arquivos em diversos formatos.
+                    </p>
+                    <p class="contact-info">
+                        <strong>Vitor Moreiran</strong><br>
+                        <a href="mailto:vitormoreiran@gmail.com">vitormoreiran@gmail.com</a><br>
+                        +55 (12) 99145-2549
+                    </p>
+                </div>
+
+                <!-- Formulário -->
+                <form class="contact-form" action="https://formspree.io/f/myzkwyyv" method="POST">
+                    <p class="form-intro">Tem interesse, sugestão ou feedback? Entre em contato por aqui:</p>
+                    <div class="form-fields">
+                        <input type="text" class="form-input" name="name" placeholder="Nome" required>
+                        <input type="email" class="form-input" name="email" placeholder="E-mail" required>
+                    </div>
+                    <textarea class="form-textarea" name="message" placeholder="Escreva sua mensagem aqui" required></textarea>
+                    <button type="submit" class="form-submit">Enviar</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <!-- Banner inferior -->
+        <div class="about-banner"><!--<img src="Frame 67.png" alt="Imagem sobre o portfólio"> --> </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
