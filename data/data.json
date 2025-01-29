@@ -116,7 +116,7 @@
             "description": "Instalação interativa em vídeo, utilizando captação infravermelha e projeção em telas analógicas.",
             "category": "AUTORAL > VÍDEO > 2024",
             "image": "assets/image/preview/screen-preview.png",
-            "modalImage": "assets/image/cards/screen-preview.png",
+            "modalImage": "assets/image/cards/screen-card.png",
             "link": "https://zora.co/collect/zora:0xd5fa58b8ce342c89e7864e01f18233fc07983e78/97",
             "details": "Mais informações sobre o projeto SCREEEN."
         },
@@ -237,7 +237,7 @@
             "description": "Projeto de mapping 3D reativo, criado para interagir com diferentes camadas de áudio no Mercado Modelo de Salvador.",
             "category": "AUTORAL > VIDEO MAPPING > 2024",
             "image": "assets/image/preview/single1-preview.png",
-            "modalImage": "assets/image/cards/3dstudies-card.png",
+            "modalImage": "assets/image/cards/single-card.png",
             "link": "#",
             "details": "Mais informações sobre os estudos 3D."
         }
