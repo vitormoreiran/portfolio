@@ -5,7 +5,7 @@
             "subtitle": "UX/UI DESIGN",
             "description": "Protótipo interativo de aplicativo de restaurante com fluxo de pedido em grupo feito no Figma.",
             "category": "COMERCIAL > PROTÓTIPO > 2024",
-            "image": "assets/image/cards/food-app-preview.png",
+            "image": "/assets/image/cards/food-app-preview.png",
             "link": "https://drive.google.com/drive/folders/1nGv8PYzatV0bqt8QQ66tSKUTkYCCrRsj?usp=sharing",
             "details": "Mais informações sobre o projeto FOOD APP."
         },
@@ -14,7 +14,7 @@
             "subtitle": "Social ID",
             "description": "Desenvolvimento de campanhas e identidade visual para redes sociais.",
             "category": "COMERCIAL > BRANDING > 2024",
-            "image": "assets/image/cards/food-app-preview.png",
+            "image": "/assets/image/cards/food-app-preview.png",
             "link": "http://behance.net/gallery/142890267/SOCIAL-ID-2021-2022",
             "details": "Mais informações sobre o projeto Social ID."
         }
