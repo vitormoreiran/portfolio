@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Carrega os projetos do JSON e cria os cards dinamicamente
     fetch('data/data.json')
-
         .then(response => response.json())
         .then(data => {
             data.projects.forEach(project => {
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.classList.add('cta-button-fixed');
                 button.textContent = 'DETALHES';
                 button.addEventListener('click', () => {
-                    openModal(project.image, project.link, project.details);
+                    openModal(project.modalImage, project.link, project.details);
                 });
 
                 cardTextDiv.appendChild(textContentDiv);
@@ -100,4 +99,3 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Erro ao carregar os dados do JSON:', error));
 });
-
