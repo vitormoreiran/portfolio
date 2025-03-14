@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EU NÃO CONHEÇO VOCÊm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 100vh;
+            overflow-x: hidden; /* Evita rolagem horizontal */
+        }
+
+        .scroll-container {
+            width: 100vw; /* Ocupa toda a largura da tela */
+            height: 100vh; /* Altura total da tela */
+            overflow-y: auto; /* Permite rolagem vertical */
+            scrollbar-width: thin; /* Ajusta tamanho do scrollbar */
+            scrollbar-color: #888 #333; /* Cor do scrollbar (Firefox) */
+        }
+
+        /* Scrollbar para Chrome e Edge */
+        .scroll-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+
+        .scroll-container::-webkit-scrollbar-track {
+            background: #333;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .image-container img {
+            max-width: 100%; /* Ajusta a largura da imagem para telas menores */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll-container">
+        <div class="image-container">
+            <img src="sua-imagem.jpg" alt="OUTRA VEZ a festa é, assim como a guerra, um encontro de forças opostas criando um espaço que só existe através do conflito, do contraste e da sobreposição de um lado sobre o outro. 
+
+mas ao contrário da guerra que define o tempo vivido em territórios imaginários na defesa ou expansão da posse onde seus envolvidos tem a ciência de quem são.
+
+a festa cria um não-tempo.
+
+nesse espaço onde você e eu e o outro nos cruzamos enquanto conduzimos o que temos, quem fomos e quem seremos durante essas poucas horas que estamos juntos.
+
+eu não conheço você. 
+
+não existe a pista de dança sem o silencio do seu quarto
+não existe a festa se não houver a guerra
+não existe a vida se você não for morrer
+não existe quem dá se você só recebe
+não existe ninguém aqui se você não estiver 
+não existe diferença se tudo for oposto
+
+agir em coletivo demanda a fabricação constante de narrativas individuais que projetam intensões nos materiais disponíveis para construir narrativas coletivas que possam demarcar territórios
+
+a construção coletiva de espaços torna todos os envolvidos em responsáveis pela ascensão e pela queda deles
+
+aqui nos manifestamos no campo físico da matéria, nos dispusemos a sair de nossos lares no tempo que pudemos o fazer para agir de forma instintiva na descoberta de outra coisa, coisa diferente, coisa nova, não conhecida, não vista e não precificada com a intenção de produzir algum valor do tempo que nos resta. 
+
+aqui eu, você e o outro fazemos o nosso espaço existir, talvez você tenha emprestado a sua cara para vir, talvez eu tenha aberto todas as gavetas do quarto dele procurando por algum sinal que ele ainda me ame, mas você nem eu podemos indicar o que o outro fez, ele nunca fez nada. só fez a festa com o que trouxemos. 
+
+e assim a festa não é minha nem sua nem nossa a festa é do outro, e pelo outro nós trouxemos o que tinhamos de melhor para ofertar e construir esse espaço que você está, aproveite o que você está fazendo como se estivesse em guerra. talvez você esteja. 
+
+vai ter outra festa do outro outro que talvez toque outra música em outra guerra e logo vem outro vídeo com outra pessoa falando outras coisas que são tão importantes quanto outra coisa. 
+
+talvez você possa escolher outras batalhas e outras festas e outras pessoas e outras roupas e outras línguas mas o espaço sempre vai ser esse que você escolhe produzir e por eu e o outro também poderem escolher, ele sempre será a guerra, mesmo que eu não te conheça.">
+        </div>
+    </div>
+
+</body>
+</html>
