@@ -677,18 +677,6 @@
     transform: scale(1.02);
 }
 
-.work-image-container {
-    height: 120px; /* Mantém a altura original dos cards */
-    overflow: hidden;
-}
-
-.work-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left;
-}
-
 
 /* Estilo CV Minimalista */
 /* Estilo CV Minimalista - Atualizado */
@@ -856,5 +844,82 @@
     
     .cv-side-section:first-child {
         display: none;
+    }
+}
+
+/* =========================== */
+/* CV LAYOUT ENHANCEMENTS */
+/* =========================== */
+#cv.content-div {
+    display: flex;
+    gap: var(--space-xxl); /* 64px gap between columns */
+    align-items: flex-start;
+    padding: var(--space-xxl) 0; /* 64px vertical padding */
+}
+
+.column-1 {
+    position: sticky;
+    top: 120px; /* Matches header height */
+    width: 30%;
+    padding-right: var(--space-lg);
+}
+
+.column-2 {
+    width: 70%;
+}
+
+/* =========================== */
+/* TYPOGRAPHY HIERARCHY */
+/* =========================== */
+.cv-name {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-xs);
+}
+
+.cv-section-title {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: var(--space-xs);
+    margin-bottom: var(--space-lg);
+}
+
+.cv-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-xxs);
+}
+
+/* =========================== */
+/* GALLERY INTEGRATION */
+/* =========================== */
+.projects-container {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+
+.project-card {
+    scroll-snap-align: start;
+    height: 100vh;
+    min-height: 800px;
+}
+
+/* =========================== */
+/* RESPONSIVE ADJUSTMENTS */
+/* =========================== */
+@media (max-width: 1024px) {
+    #cv.content-div {
+        flex-direction: column;
+    }
+    
+    .column-1, .column-2 {
+        width: 100%;
+    }
+    
+    .column-1 {
+        position: static;
+        margin-bottom: var(--space-xl);
     }
 }

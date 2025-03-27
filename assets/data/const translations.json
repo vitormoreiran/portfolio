@@ -1,0 +1,26 @@
+const translations = {
+    en: {
+        // Header
+        "menu.home": "HOME",
+        "menu.about": "ABOUT",
+        "menu.cv": "CV",
+        "menu.gallery": "GALLERY",
+        
+        // CV Page
+        "cv.tagline": "Graphic Designer Specializing in Branding and Multimedia",
+        
+        // Shared Components
+        "work.together": "Interested in working together?",
+        "work.contact": "Let's talk"
+    },
+    pt: {
+        "menu.home": "INÍCIO",
+        "menu.about": "SOBRE",
+        "menu.cv": "CURRÍCULO",
+        "menu.gallery": "GALERIA",
+        "cv.tagline": "Designer Gráfico Especialista em Branding e Multimídia",
+        "work.together": "Interessado em trabalhar juntos?",
+        "work.contact": "Vamos conversar"
+    }
+    // Add other languages...
+};
