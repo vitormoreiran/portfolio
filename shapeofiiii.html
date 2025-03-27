@@ -17,9 +17,9 @@
             <div class="brand-text">vitormoreiran</div>
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="me.html">ABOUT</a></li>
+                    <li><a href="cv.html">CV</a></li>
                     <li><a href="#">GALLERY</a></li>
                 </ul>
             </nav>
@@ -192,99 +192,8 @@
         </div>
     </div>
 </footer>
-<script>
-const userLang = navigator.language || navigator.userLanguage;
-if (userLang.startsWith('pt')) {
- document.documentElement.lang = 'pt-br'; // Automatically set language to pt-br
-} else {
- document.documentElement.lang = 'en'; // Default to English
-}
-</script>
 
-
-<script>
-// Get the button and the current theme
-const modeToggleBtn = document.getElementById('mode-toggle');
-const body = document.body;
-
-// Check if dark mode was already set in localStorage
-if (localStorage.getItem('theme') === 'dark') {
- body.classList.add('dark-mode');
- modeToggleBtn.innerText = ''; // Change the button icon to the sun for dark mode
-} else {
- modeToggleBtn.innerText = ''; // Default to the moon for light mode
-}
-
-// Add event listener to the button to toggle dark mode
-modeToggleBtn.addEventListener('click', () => {
- body.classList.toggle('dark-mode');
-
- // Change button icon based on the current mode
- if (body.classList.contains('dark-mode')) {
-     modeToggleBtn.innerText = ''; // Sun for dark mode
-     localStorage.setItem('theme', 'dark'); // Save the user's preference
- } else {
-     modeToggleBtn.innerText = ''; // Moon for light mode
-     localStorage.setItem('theme', 'light'); // Save the user's preference
- }
-});
-</script>
-
-<script>
-// Check if the user has a preferred theme set in their system (Dark or Light)
-const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-// Set the theme based on system preference
-const body = document.body;
-if (prefersDarkMode) {
-body.classList.add('dark-mode');
-} else {
-body.classList.remove('dark-mode');
-}
-
-// Listen for changes in system theme preference and update the website theme accordingly
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-if (e.matches) {
- body.classList.add('dark-mode');
-} else {
- body.classList.remove('dark-mode');
-}
-});
-</script>
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-const bannerItems = document.querySelectorAll('.banner-item');
-let currentIndex = 0;
-
-// Debug: Check if bannerItems are being selected
-console.log('Banner items found:', bannerItems.length);
-
-if (bannerItems.length > 0) {
-// Function to show the next image in the sequence
-function showNextImage() {
- // Hide the current image
- bannerItems[currentIndex].style.opacity = 0;
-
- // Update index to next image
- currentIndex = (currentIndex + 1) % bannerItems.length;
-
- // Show the next image
- bannerItems[currentIndex].style.opacity = 1;
-}
-
-// Initialize the first image to be visible
-bannerItems[currentIndex].style.opacity = 1;
-
-// Set interval to switch images every 4 seconds (4000ms)
-setInterval(showNextImage, 4000);
-} else {
-console.log('No banner items found!');
-}
-});
-</script>
+<script src="assets/js/main.js"></script>
 
 
 </body>

@@ -16,7 +16,7 @@
             <div class="brand-text"><a href="intro.html">vitormoreiran</a></div>
             <nav>
                 <ul>
-                    <li><a href="intro.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="me.html">ABOUT</a></li>
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="#">GALLERY</a></li>
@@ -114,67 +114,6 @@
         </div>
     </footer>
     
-    <script>
-        const userLang = navigator.language || navigator.userLanguage;
-        if (userLang.startsWith('pt')) {
-            document.documentElement.lang = 'pt-br';
-        } else {
-            document.documentElement.lang = 'en';
-        }
-    </script>
-    <script>
-        const modeToggleBtn = document.getElementById('mode-toggle');
-        const body = document.body;
-        if (localStorage.getItem('theme') === 'dark') {
-            body.classList.add('dark-mode');
-            modeToggleBtn.innerText = '';
-        } else {
-            modeToggleBtn.innerText = '';
-        }
-        modeToggleBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                modeToggleBtn.innerText = '';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                modeToggleBtn.innerText = '';
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    </script>
-    <script>
-        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const body = document.body;
-        if (prefersDarkMode) {
-            body.classList.add('dark-mode');
-        } else {
-            body.classList.remove('dark-mode');
-        }
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (e.matches) {
-                body.classList.add('dark-mode');
-            } else {
-                body.classList.remove('dark-mode');
-            }
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const bannerItems = document.querySelectorAll('.banner-item');
-            let currentIndex = 0;
-            console.log('Banner items found:', bannerItems.length);
-            if (bannerItems.length > 0) {
-                function showNextImage() {
-                    bannerItems[currentIndex].style.opacity = 0;
-                    currentIndex = (currentIndex + 1) % bannerItems.length;
-                    bannerItems[currentIndex].style.opacity = 1;
-                }
-                bannerItems[currentIndex].style.opacity = 1;
-                setInterval(showNextImage, 4000);
-            } else {
-                console.log('No banner items found!');
-            }
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
