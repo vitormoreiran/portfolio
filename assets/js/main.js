@@ -1,3 +1,13 @@
+// Função para carregar componentes (header e footer)
+function loadComponent(elementSelector, filePath) {
+    fetch(filePath)
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector(elementSelector).innerHTML = data;
+        })
+        .catch(error => console.error(`Erro ao carregar ${filePath}:`, error));
+}
+
 // Language detection and setting
 const userLang = navigator.language || navigator.userLanguage;
 if (userLang.startsWith('pt')) {
@@ -13,9 +23,9 @@ const body = document.body;
 // Check if dark mode was already set in localStorage
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
-    modeToggleBtn.innerText = ''; // Change the button icon to the sun for dark mode
+    modeToggleBtn.innerText = '🌙'; // Change the button icon to the moon for dark mode (assuming the moon icon)
 } else {
-    modeToggleBtn.innerText = ''; // Default to the moon for light mode
+    modeToggleBtn.innerText = '🌙'; // Default to the moon for light mode
 }
 
 // Add event listener to the button to toggle dark mode
@@ -24,10 +34,10 @@ modeToggleBtn.addEventListener('click', () => {
 
     // Change button icon based on the current mode
     if (body.classList.contains('dark-mode')) {
-        modeToggleBtn.innerText = ''; // Sun for dark mode
+        modeToggleBtn.innerText = '🌞'; // Sun for dark mode
         localStorage.setItem('theme', 'dark'); // Save the user's preference
     } else {
-        modeToggleBtn.innerText = ''; // Moon for light mode
+        modeToggleBtn.innerText = '🌙'; // Moon for light mode
         localStorage.setItem('theme', 'light'); // Save the user's preference
     }
 });
@@ -72,4 +82,8 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.log('No banner items found!');
     }
+
+    // Carregar o header e footer em todas as páginas
+    loadComponent("header", "assets/components/header.html");
+    loadComponent("footer", "assets/components/footer.html");
 });
