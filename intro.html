@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do site para SEO e acessibilidade.">
+    <meta name="keywords" content="design, 3D, arte digital, portfólio">
+    <meta name="author" content="Vitor Moreiran">
+    <title>Vitor Moreiran - Intro</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Only one CSS file now -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-div">
+            <div class="brand-text"><a href="intro.html">vitormoreiran</a></div>
+            <nav>
+                <ul>
+                    <li><a href="intro.html">HOME</a></li>
+                    <li><a href="me.html">ABOUT</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="header-div">
+            <div class="video-container">
+                <video class="background-video" autoplay playsinline muted loop>
+                    <source src="assets/images/0000.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <div class="title-container">
+                    <div class="title-video">Vitor Moreiran</div>
+                    <div class="subtitle-video">Creative Strategist | Digital Storyteller | 3D Designer</div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="centered-text">
+            <div class="extra1-r">
+                I create digital realities that push the boundaries of storytelling and technology, <br> crafting experiences that captivate and connect.
+            </div>
+        </section>
+        
+        <br><br>
+        
+        <section class="work-section">
+            <div class="work-preview">
+                <div class="work-info">
+                    <img src="assets/images/preview-icon-04.png" alt="Ícone" class="work-icon">
+                    <p class="work-description">SHAPE OF IIII</p>
+                </div>
+                <div class="work-image-container">
+                    <img src="assets/images/workpreview-shape.png" alt="Prévia do trabalho" class="work-image">
+                </div>
+            </div>
+            <div class="work-preview">
+                <div class="work-info">
+                    <img src="assets/images/preview-icon-03.png" alt="Ícone" class="work-icon">
+                    <p class="work-description">KIDS</p>
+                </div>
+                <div class="work-image-container">
+                    <img src="assets/images/workpreview-kids.png" alt="Prévia do trabalho" class="work-image">
+                </div>
+            </div>
+            <div class="work-preview">
+                <div class="work-info">
+                    <img src="assets/images/preview-icon-02.png" alt="Ícone" class="work-icon">
+                    <p class="work-description">ZALGO</p>
+                </div>
+                <div class="work-image-container">
+                    <img src="assets/images/workpreview-zalgo.png" alt="Prévia do trabalho" class="work-image">
+                </div>
+            </div>
+            <div class="work-preview">
+                <div class="work-info">
+                    <img src="assets/images/preview-icon-01.png" alt="Ícone" class="work-icon">
+                    <p class="work-description">ME</p>
+                </div>
+                <div class="work-image-container">
+                    <img src="assets/images/workpreview-me.png" alt="Prévia do trabalho" class="work-image">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section class="centered-text">
+        <h1 class="centered-title-2">
+            <br><br>
+            Interested in working together? 
+            <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20working%20together!" target="_blank" class="underline-link">Let's talk</a>
+            <br><br>
+        </h1>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <p class="footer-logo">Vitor Moreiran</p>
+         <!--   <p class="footer-description">Design Estratégico e Multimídia</p>-->
+        </div>
+        <div class="footer-right">
+            <p><a href="mailto:vitormoreiran@gmail.com" class="footer-link">vitormoreiran@gmail.com</a></p>
+            <p><a href="tel:+5512991452549" class="footer-link">+55 (12) 99145-2549</a></p>
+            <p>São Paulo, SP - Brasil</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/vitormoreiran" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/vitormoreiran" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.behance.net/vitormoreiran" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/behance.svg" alt="Behance"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('pt')) {
+            document.documentElement.lang = 'pt-br';
+        } else {
+            document.documentElement.lang = 'en';
+        }
+    </script>
+    <script>
+        const modeToggleBtn = document.getElementById('mode-toggle');
+        const body = document.body;
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            modeToggleBtn.innerText = '';
+        } else {
+            modeToggleBtn.innerText = '';
+        }
+        modeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                modeToggleBtn.innerText = '';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                modeToggleBtn.innerText = '';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+    <script>
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const body = document.body;
+        if (prefersDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (e.matches) {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const bannerItems = document.querySelectorAll('.banner-item');
+            let currentIndex = 0;
+            console.log('Banner items found:', bannerItems.length);
+            if (bannerItems.length > 0) {
+                function showNextImage() {
+                    bannerItems[currentIndex].style.opacity = 0;
+                    currentIndex = (currentIndex + 1) % bannerItems.length;
+                    bannerItems[currentIndex].style.opacity = 1;
+                }
+                bannerItems[currentIndex].style.opacity = 1;
+                setInterval(showNextImage, 4000);
+            } else {
+                console.log('No banner items found!');
+            }
+        });
+    </script>
+</body>
+</html>
