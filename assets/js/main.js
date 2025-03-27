@@ -61,29 +61,3 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
     }
 });
 
-// Banner item rotation functionality
-document.addEventListener("DOMContentLoaded", function() {
-    const bannerItems = document.querySelectorAll('.banner-item');
-    let currentIndex = 0;
-
-    if (bannerItems.length > 0) {
-        // Function to show the next image in the sequence
-        function showNextImage() {
-            bannerItems[currentIndex].style.opacity = 0;
-            currentIndex = (currentIndex + 1) % bannerItems.length;
-            bannerItems[currentIndex].style.opacity = 1;
-        }
-
-        // Initialize the first image to be visible
-        bannerItems[currentIndex].style.opacity = 1;
-
-        // Set interval to switch images every 4 seconds (4000ms)
-        setInterval(showNextImage, 4000);
-    } else {
-        console.log('No banner items found!');
-    }
-
-    // Carregar o header e footer em todas as páginas
-    loadComponent("header", "assets/components/header.html");
-    loadComponent("footer", "assets/components/footer.html");
-});
