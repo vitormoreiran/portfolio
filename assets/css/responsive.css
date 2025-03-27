@@ -1,0 +1,216 @@
+
+/* =========================== */
+/*         GENERAL LAYOUT      */
+/* =========================== */
+
+/* Tablets and Mobile */
+@media (max-width: 1024px) {
+
+    .content-div {
+        gap: 1rem;
+        margin: 1rem 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust images in column-1 and gallery-div-1 */
+    .column-1 img, .gallery-div-1 img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Ensure the gallery items are properly sized */
+    .gallery-div-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Adjust images inside the gallery */
+    .gallery-div-1 img {
+        width: 100%; /* Ensure images take full width */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 300px; /* Limit maximum width to control image size */
+    }
+
+    /* Make sure text content and preview divs align */
+    .text-line {
+        text-align: center;
+    }
+
+    .work-preview-div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Menu adjustments */
+    .menu-div {
+        padding: 0 16px 8px;
+    }
+
+    /* Centered title and description styles */
+    .centered-title {
+        font-size: 1.75rem;
+    }
+
+    .centered-description {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+}
+
+/* =========================== */
+/*          FOOTER             */
+/* =========================== */
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* =========================== */
+/*        MENU DIV            */
+/* =========================== */
+
+@media (max-width: 768px) {
+    .menu-div {
+        width: 100%;
+        height: 80px;
+        padding: 0 16px 8px;
+    }
+
+    .menu-div .brand-text {
+        font-size: 1.5rem;
+    }
+
+    .menu-div nav ul {
+        gap: 1rem;
+    }
+
+    .menu-div nav a {
+        font-size: 0.9rem;
+    }
+}
+
+/* =========================== */
+/*         GALLERY 2           */
+/* =========================== */
+@media (max-width: 1024px) {
+    .gallery-div-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  /* Center align the gallery items */
+        gap: 1rem;
+    }
+
+    .gallery-item {
+        width: 100%; /* Make gallery items adjust to 100% width */
+        max-width: 300px; /* Limit maximum size */
+        height: auto;
+    }
+
+    .description h2 {
+        font-size: 1.25rem;
+    }
+
+    .description p {
+        font-size: 0.875rem;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .vertical-banner {
+        width: 100%;
+        max-width: 1080px; /* Maximum width */
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        min-height: 300px; /* Minimum height for the container */
+    }
+
+    .banner-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    .banner-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the entire space */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .vertical-banner {
+        width: 100%;
+        height: auto;
+        min-height: 250px; /* Set a minimum height to maintain proportions */
+    }
+    .banner-item {
+        width: 100%; /* Ensure the banner items scale appropriately */
+        height: 100%; /* Adjust based on content */
+    }
+
+    .content-div {
+        flex-direction: column;
+    }
+
+    .text-line {
+        order: -1; /* Move para cima da column-1 */
+    }
+
+    .column-1 {
+        order: 1; /* Mantém a imagem no meio */
+    }
+
+    .gallery-div-1 {
+        order: 2; /* Mantém a galeria abaixo */
+    }
+}
+
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .vertical-banner {
+        width: 100%;
+        height: auto;
+        min-height: 200px; /* Set a smaller minimum height for smaller screens */
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* =========================== */
+/*      WORK PREVIEW DIV       */
+/* =========================== */
+
+@media (max-width: 1024px) {
+    .work-preview-div {
+        width: 100%; /* Work preview should use full width */
+        max-width: 900px; /* Limit maximum size */
+        margin: 0 auto;
+    }
+}
+

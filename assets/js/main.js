@@ -1,13 +1,3 @@
-// Função para carregar componentes (header e footer)
-function loadComponent(elementSelector, filePath) {
-    fetch(filePath)
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector(elementSelector).innerHTML = data;
-        })
-        .catch(error => console.error(`Erro ao carregar ${filePath}:`, error));
-}
-
 // Language detection and setting
 const userLang = navigator.language || navigator.userLanguage;
 if (userLang.startsWith('pt')) {
@@ -23,9 +13,9 @@ const body = document.body;
 // Check if dark mode was already set in localStorage
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
-    modeToggleBtn.innerText = '🌙'; // Change the button icon to the moon for dark mode (assuming the moon icon)
+    modeToggleBtn.innerText = ''; // Change the button icon to the sun for dark mode
 } else {
-    modeToggleBtn.innerText = '🌙'; // Default to the moon for light mode
+    modeToggleBtn.innerText = ''; // Default to the moon for light mode
 }
 
 // Add event listener to the button to toggle dark mode
@@ -34,10 +24,10 @@ modeToggleBtn.addEventListener('click', () => {
 
     // Change button icon based on the current mode
     if (body.classList.contains('dark-mode')) {
-        modeToggleBtn.innerText = '🌞'; // Sun for dark mode
+        modeToggleBtn.innerText = ''; // Sun for dark mode
         localStorage.setItem('theme', 'dark'); // Save the user's preference
     } else {
-        modeToggleBtn.innerText = '🌙'; // Moon for light mode
+        modeToggleBtn.innerText = ''; // Moon for light mode
         localStorage.setItem('theme', 'light'); // Save the user's preference
     }
 });
@@ -61,3 +51,25 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
     }
 });
 
+// Banner item rotation functionality
+document.addEventListener("DOMContentLoaded", function() {
+    const bannerItems = document.querySelectorAll('.banner-item');
+    let currentIndex = 0;
+
+    if (bannerItems.length > 0) {
+        // Function to show the next image in the sequence
+        function showNextImage() {
+            bannerItems[currentIndex].style.opacity = 0;
+            currentIndex = (currentIndex + 1) % bannerItems.length;
+            bannerItems[currentIndex].style.opacity = 1;
+        }
+
+        // Initialize the first image to be visible
+        bannerItems[currentIndex].style.opacity = 1;
+
+        // Set interval to switch images every 4 seconds (4000ms)
+        setInterval(showNextImage, 4000);
+    } else {
+        console.log('No banner items found!');
+    }
+});

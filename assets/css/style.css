@@ -13,19 +13,55 @@
     /*          VARIÁVEIS          */
     /* =========================== */
     :root {
-        --primary-color: #0F0F0F;
-        --secondary-color: #050505;
-        --background-color: #F2F2F2;
-        --font-primary: 'Space Grotesk', sans-serif;
-        --font-secondary: 'MingLiU', serif;
-        --max-width: 1400px;
-        --spacing: 20px;
-        --background-light: #F2F2F2;
-        --background-dark: #222222;
-        --text-light: #ffffff;
-        --text-dark: #040404;
-    }
+    /* Colors/Fonts */
+    --primary-color: #0F0F0F;
+    --secondary-color: #050505;
+    --background-color: #F2F2F2;
+    --font-primary: 'Space Grotesk', sans-serif;
+    --font-secondary: 'MingLiU', serif;
+    --max-width: 1400px;
+    --background-light: #F2F2F2;
+    --background-dark: #222222;
+    --text-light: #ffffff;
+    --text-dark: #040404;
 
+    /* Spacing System */
+    --space-unit: 8px;
+    --space-xxs: calc(var(--space-unit) * 0.5);  /* 4px */
+    --space-xs: var(--space-unit);               /* 8px */
+    --space-sm: calc(var(--space-unit) * 2);     /* 16px */
+    --space-md: calc(var(--space-unit) * 3);     /* 24px */
+    --space-lg: calc(var(--space-unit) * 4);     /* 32px */
+    --space-xl: calc(var(--space-unit) * 6);     /* 48px */
+    --space-xxl: calc(var(--space-unit) * 8);    /* 64px */
+    --space-xxxl: calc(var(--space-unit) * 10); /* 80px */
+    --space-4xl: calc(var(--space-unit) * 12); /* 96px - for future use */
+
+    /* Component Spacing */
+    --header-spacing: var(--space-md);
+    --section-spacing: var(--space-xxl);
+    --component-spacing: var(--space-lg);
+    --text-spacing: var(--space-sm);
+}
+
+/* Utility Classes (consistent naming) */
+.m-0 { margin: 0; }
+.m-xs { margin: var(--space-xs); }
+.m-sm { margin: var(--space-sm); }
+/* ... */
+
+.p-0 { padding: 0; }
+.p-xs { padding: var(--space-xs); }
+.p-sm { padding: var(--space-sm); }
+/* ... */
+
+.mt-xxs { margin-top: var(--space-xxs); }
+.mt-xs { margin-top: var(--space-xs); }
+/* ... */
+
+.section-spacing {
+    margin-bottom: var(--section-spacing); /* Now points to --space-xxl (64px) */
+}
     /* =========================== */
     /*         RESET CSS           */
     /* =========================== */
@@ -91,9 +127,7 @@
         transition: background-color 0.3s ease;
     }
 
-    .mode-toggle-btn:hover {
-        background-color: var(--secondary-color);
-    }
+  
 
     .mode-toggle-btn:focus {
         outline: none;
@@ -107,6 +141,7 @@
     max-width: 1400px;
     height: auto;
     object-fit: cover;
+    margin-bottom: var(--space-xl); /* 48px spacing below header */    
 }
 
 /* =========================== */
@@ -116,13 +151,13 @@
     width: 1400px;
     max-width: var(--max-width);
     position: relative;
-    margin: 0 auto;
+    margin-bottom: var(--section-spacing);
     overflow: hidden;
     min-height: 600px; /* Adjustable based on your video */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 720px;
+    height: 800px;
 }
 
 .background-video {
@@ -142,7 +177,7 @@
     z-index: 1;
     width: 90%;
     max-width: 1200px;
-    padding: 20px;
+    padding: var(--spacing-md);
 }
 
 .title-video {
@@ -152,7 +187,7 @@
     color: rgba(244, 244, 244, 0.8);
     text-shadow: 0 -0.2em 0.33em rgba(255, 255, 255, 0.6);
     white-space: nowrap;
-    margin-bottom: 20px;
+    margin-bottom: var(--space-md); /* 24px */
 }
 
 .subtitle-video{
@@ -160,7 +195,7 @@
     font-weight: 300;
     font-size: 1rem;
     color: rgba(200, 200, 200, 0.8);
-    margin-bottom: 30px;
+    margin-bottom: var(--space-lg); 
 }
 
 .extra1-r {
@@ -189,13 +224,14 @@ body.dark-mode .extra1-r {
     /* =========================== */
     .menu-div {
         width: 1400px;
-        height: 120px;
+        height: 80px;
         background-color: var(--background);
         display: flex;
         align-items: flex-end; /* Align content to bottom */
         justify-content: space-between;
-        margin: 0 auto;
-        padding: 0 0 8px; /* Add bottom margin */
+       
+        padding-bottom: var(--space-sm); /* Adicionado espaçamento abaixo do header */
+
     }
     
 /* =========================== */
@@ -247,9 +283,7 @@ a {
     color: inherit; /* Keeps the link color consistent */
 }
 
-a:hover {
-    color: inherit; /* No color change on hover */
-}
+
 
 
     
@@ -269,11 +303,14 @@ a:hover {
     .content-div {
         display: flex;
         max-width: var(--max-width);
-        margin: var(--spacing) auto;
-        gap: 64px;
+        min-height: 690px;
+        margin: var(--section-spacing) auto;
+        gap: var(--space-xxl); /* 64px between columns */
         flex-wrap: wrap;
         align-items: center;
         justify-content: center; 
+        
+
     }
 
     .column-1 img {
@@ -285,15 +322,22 @@ a:hover {
     .column-2 {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
+        height: 100%;
         width: 100%;
         max-width: 646px;
-        gap: 64px;
+        
     }
 
 /* =========================== */
 /*         TEXT BLOCKS         */
 /* =========================== */
+
+/* Text container should grow to push gallery down */
+.text-line {
+    flex: 1; /* Takes available space */
+    margin-bottom: var(--space-md);
+}
 .text-line h1 {
     font-family: var(--font-secondary);
     font-size: 56px; /* Change pt to px */
@@ -302,9 +346,10 @@ a:hover {
 }
 .text-line h2 {
     font-family: var(--font-secondary);
-    font-size: 40px; /* Change pt to px */
-    letter-spacing: 5%;
-    line-height: 150%;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    line-height: 150%; /* Tighter than 150% *//
+     margin-bottom: 24px; /* 16px after title */
 }
 
 .text-line h3 {
@@ -316,10 +361,10 @@ a:hover {
 
 .text-line p {
     font-family: var(--font-primary);
-    font-size: 18px; /* Change pt to px */
-    letter-spacing: 5%;
-    line-height: 150%;
-    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1.8; /* More breathing room than 150% */
+    margin-bottom: var(--space-lg); /* 32px gap above gallery */
 }
 
 
@@ -327,9 +372,14 @@ a:hover {
     /*         GALLERY 1           */
     /* =========================== */
     .gallery-div-1 {
-        display: flex;
-        gap: 22px;
+        align-self: bottom-end; 
+        gap: var(--space-sm); /* 24px */
+        padding-top: 0; /* Remove any extra padding */
+        margin-top: var(--space-md);s /* Keeps gallery pinned to bottom */
         flex-wrap: wrap;
+         margin-top: auto; /* Forces gallery to bottom */
+    padding-top: 0;
+    align-items: flex-end; /* Right-align gallery */
     }
 
     .gallery-div-1 img {
@@ -344,16 +394,18 @@ a:hover {
 /* =========================== */
 .gallery-div-2 {
     width: 100%;
-    max-width: 1400px; /* Limit the maximum width */
+    max-width: 1400px;
     margin: 0 auto;
-    justify-content: center; 
-    padding: 0;
-    display: flex; /* Flexbox for horizontal layout */
-    gap: 0px; /* Add space between items */
-    overflow-x: auto; /* Enable horizontal scroll */
-    scroll-snap-type: x mandatory; /* Ensures smooth horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     align-items: center;
+    padding: var(--space-xxl) 0; /* 64px top AND bottom */
+    margin-bottom: var(--space-xl); /* Additional 48px if needed */
+    gap: var(--space-md);
+    
+  
 }
 
 .gallery-item {
@@ -385,7 +437,7 @@ a:hover {
 /* Description styling */
 .description {
     text-align: center;
-    margin-top: 8px; /* Vertical spacing between image and description */
+    margin-top: var(--space-xs); /* 8px */
 }
 
 .description h2 {
@@ -410,15 +462,15 @@ a:hover {
 /* =========================== */
 .vertical-banner {
     width: 100%;
-    max-width: 1080px; /* Maximum width */
-    height: auto; /* Allow height to adjust based on content */
-    aspect-ratio: 9 / 16; /* Set aspect ratio for proportional height */
-    margin: 0 auto;
+    max-width: 1080px;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    margin: 64px auto; /* 64px em cima e embaixo, auto nas laterais para centralizar */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    position: relative;
+
 }
 
 .banner-item {
@@ -451,13 +503,14 @@ a:hover {
     width: 100%;
     max-width: 1000px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto var(--space-xl);
+    padding: var(--space-xl) var(--space-sm);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px; /* Espaço entre título e parágrafo */
-    padding: 32px 16px;
+    gap: var(--space-md); /* 24px */
+   
 }
 
 /* Estilo do título */
@@ -492,46 +545,43 @@ a:hover {
     color: var(--text-light);
 }
 
+.dark-mode .centered-title-2 {
+    color: var(--text-light);
+}
+
+
 .dark-mode .centered-description {
     color: var(--text-light);
 }
 
 
 
- /* =========================== */
+/* =========================== */
 /*     WORK SECTION STYLES     */
 /* =========================== */
-
 .work-section {
-    width: 1400px /* Full width */
-    max-width: var(--max-width); /* Restrict maximum width */
-    height: auto; /* Allow height to adjust based on content */
+    width: 1400px;
     display: flex;
-    flex-direction: row; /* Flex row for a side-by-side layout */
-    justify-content: center;  /* Center items horizontally */
-    align-items: center;
-    gap: 16px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 16px; /* Exact pixel value for precision */
+    margin-top: var(--space-lg); /* 32px top */
 
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
-
 
 /* =========================== */
 /*     WORK PREVIEW STYLES     */
 /* =========================== */
-
 .work-preview {
-    width: 320px;
-    height: 260px;
+    width: 338px; /* Adjusted from 320px to fit 1400px container */
+    height: 260px; /* Maintain original height */
+    aspect-ratio: 338/260; /* Explicit proportion */
     display: flex;
     flex-direction: column;
     gap: 8px;
-  
-    background-color: var(--background-dark); /* Modo padrão (claro) */
-    color: var(--text-light); /* Cor do texto no modo claro */
+    background-color: var(--background-dark);
+    color: var(--text-light);
     padding: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Modo escuro */
@@ -549,7 +599,7 @@ a:hover {
     height: 32px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs); /* 8px */
 }
 
 /* Ícone */
@@ -598,7 +648,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    padding: var(--spacing-xl) 0;
     margin: 0 auto;
     background-color: var(--background-light); /* Cor padrão (modo claro) */
     color: var(--text-dark);
@@ -618,7 +668,7 @@ a:hover {
 .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: var(--spacing-sm);
 }
 
 .footer-logo {
@@ -639,7 +689,7 @@ a:hover {
 .footer-right {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: var(--spacing-sm);
 }
 
 /* Links */
@@ -651,14 +701,11 @@ a:hover {
     transition: opacity 0.3s ease;
 }
 
-.footer-link:hover {
-    opacity: 0.7;
-}
 
 /* Redes sociais */
 .footer-socials {
     display: flex;
-    gap: 8px;
+    gap: var(--space-xs); /* 8px */
 }
 
 .footer-socials img {
@@ -668,139 +715,9 @@ a:hover {
     transition: opacity 0.3s ease;
 }
 
-.footer-socials a:hover img {
-    opacity: 0.7;
-}
 
 
-/* =========================== */
-/*         GENERAL LAYOUT      */
-/* =========================== */
 
-/* Tablets and Mobile */
-@media (max-width: 1024px) {
-
-    .content-div {
-        gap: 1rem;
-        margin: 1rem 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Adjust images in column-1 and gallery-div-1 */
-    .column-1 img, .gallery-div-1 img {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Ensure the gallery items are properly sized */
-    .gallery-div-1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    /* Adjust images inside the gallery */
-    .gallery-div-1 img {
-        width: 100%; /* Ensure images take full width */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 300px; /* Limit maximum width to control image size */
-    }
-
-    /* Make sure text content and preview divs align */
-    .text-line {
-        text-align: center;
-    }
-
-    .work-preview-div {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    /* Menu adjustments */
-    .menu-div {
-        padding: 0 16px 8px;
-    }
-
-    /* Centered title and description styles */
-    .centered-title {
-        font-size: 1.75rem;
-    }
-
-    .centered-description {
-        font-size: 0.9rem;
-        max-width: 90%;
-    }
-}
-
-/* =========================== */
-/*          FOOTER             */
-/* =========================== */
-
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .footer-right {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
-
-/* =========================== */
-/*        MENU DIV            */
-/* =========================== */
-
-@media (max-width: 768px) {
-    .menu-div {
-        width: 100%;
-        height: 80px;
-        padding: 0 16px 8px;
-    }
-
-    .menu-div .brand-text {
-        font-size: 1.5rem;
-    }
-
-    .menu-div nav ul {
-        gap: 1rem;
-    }
-
-    .menu-div nav a {
-        font-size: 0.9rem;
-    }
-}
-
-/* =========================== */
-/*         GALLERY 2           */
-/* =========================== */
-@media (max-width: 1024px) {
-    .gallery-div-2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;  /* Center align the gallery items */
-        gap: 1rem;
-    }
-
-    .gallery-item {
-        width: 100%; /* Make gallery items adjust to 100% width */
-        max-width: 300px; /* Limit maximum size */
-        height: auto;
-    }
-
-    .description h2 {
-        font-size: 1.25rem;
-    }
-
-    .description p {
-        font-size: 0.875rem;
-    }
-}
 
 /* =========================== */
 /*      VERTICAL BANNER        */
@@ -811,7 +728,7 @@ a:hover {
     width: 100%;
    max-width: 640px; /* Maximum width */
     aspect-ratio: 9 / 16; /* Set aspect ratio for proportional height */
-    margin: 0 auto;
+    margin: var(--space-xxl) auto; /* 64px */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -836,89 +753,8 @@ a:hover {
     object-fit: cover; /* Ensures the image covers the entire space */
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-    .vertical-banner {
-        width: 100%;
-        max-width: 1080px; /* Maximum width */
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        min-height: 300px; /* Minimum height for the container */
-    }
 
-    .banner-item {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 1s ease;
-    }
 
-    .banner-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the image covers the entire space */
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .vertical-banner {
-        width: 100%;
-        height: auto;
-        min-height: 250px; /* Set a minimum height to maintain proportions */
-    }
-    .banner-item {
-        width: 100%; /* Ensure the banner items scale appropriately */
-        height: 100%; /* Adjust based on content */
-    }
-
-    .content-div {
-        flex-direction: column;
-    }
-
-    .text-line {
-        order: -1; /* Move para cima da column-1 */
-    }
-
-    .column-1 {
-        order: 1; /* Mantém a imagem no meio */
-    }
-
-    .gallery-div-1 {
-        order: 2; /* Mantém a galeria abaixo */
-    }
-}
-
-/* Small mobile */
-@media (max-width: 480px) {
-    .vertical-banner {
-        width: 100%;
-        height: auto;
-        min-height: 200px; /* Set a smaller minimum height for smaller screens */
-        margin: 0 auto;
-        display: block;
-    }
-}
-
-/* =========================== */
-/*      WORK PREVIEW DIV       */
-/* =========================== */
-
-@media (max-width: 1024px) {
-    .work-preview-div {
-        width: 100%; /* Work preview should use full width */
-        max-width: 900px; /* Limit maximum size */
-        margin: 0 auto;
-    }
-}
 
 
 
