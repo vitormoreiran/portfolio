@@ -258,6 +258,9 @@ body.dark-mode .extra1-r {
     letter-spacing: 5%; /* Added for consistency */
     line-height: 150%;
 }
+.brand-text a {
+    text-decoration: none;
+  }
 
 /* =========================== */
 /*         DETAIL TEXT         */
