@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeModalBtn.addEventListener('click', closeModal);
 
     // Carrega os projetos do JSON e cria os cards dinamicamente
-    fetch('data/data.json')
+    fetch('../data/data.json')
         .then(response => response.json())
         .then(data => {
             data.projects.forEach(project => {
