@@ -1,0 +1,47 @@
+{
+  "en": {
+    "nav": {
+      "home": "HOME",
+      "about": "ABOUT",
+      "cv": "CV",
+      "gallery": "GALLERY"
+    },
+    "cv": {
+      "tagline": "Multimedia Designer | Visual Strategy and Innovation",
+      "aboutTitle": "About Me",
+      "aboutText": "I'm Vitor Moreira, a multimedia designer and digital creator specialized in strategic design, 3D animation, and immersive digital experiences... [restante do texto em inglês]",
+      "experienceTitle": "Professional Experience",
+      "educationTitle": "Education",
+      "skillsTitle": "Technical Skills"
+      // Adicione TODOS os textos da página aqui
+    }
+  },
+  "pt": {
+    "nav": {
+      "home": "HOME",
+      "about": "SOBRE",
+      "cv": "CURRÍCULO",
+      "gallery": "GALERIA"
+    },
+    "cv": {
+      "tagline": "Designer Multimídia | Estratégia Visual e Inovação",
+      "aboutTitle": "Sobre Mim",
+      "aboutText": "Sou Vitor Moreira, designer multimídia e criador digital especializado em design estratégico, animação 3D e experiências digitais imersivas... [texto original em português]"
+      // Mantenha todos os textos em português
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "INICIO",
+      "about": "SOBRE MÍ",
+      "cv": "CURRÍCULUM",
+      "gallery": "GALERÍA"
+    },
+    "cv": {
+      "tagline": "Diseñador Multimedia | Estrategia Visual e Innovación",
+      "aboutTitle": "Sobre Mí",
+      "aboutText": "Soy Vitor Moreira, diseñador multimedia y creador digital especializado en diseño estratégico, animación 3D y experiencias digitales inmersivas... [texto em espanhol]"
+      // Traduza todos os textos para espanhol
+    }
+  }
+}
