@@ -9,15 +9,28 @@
       "cv": {
         "tagline": "Multimedia Designer | Visual Strategy and Innovation",
         "aboutTitle": "About Me",
-        "aboutText": "I'm Vitor Moreira, a multimedia designer and digital creator specialized in strategic design, 3D animation, and immersive digital experiences... [restante do texto em inglês]",
+        "aboutText": "I'm Vitor Moreira, a multimedia designer and digital creator specialized in strategic design, 3D animation, and immersive digital experiences. My journey combines creativity, technology, and communication, with experience in advertising campaigns, visual identity, and audiovisual production. I've worked with brands like Renner, John Deere, Wired, and Balaclava, turning ideas into impactful solutions that connect brands and people. As a non-binary trans person, I bring a unique perspective to inclusive and innovative projects, using generative AI and programming to expand visual narratives and create new forms of digital interaction.",
         "experienceTitle": "Professional Experience",
+        "freelancerTitle": "Creative Consultant | Freelancer",
+        "freelancerPeriod": "Remote | 2023–2025",
+        "freelancerText": ["Development of creative concepts and visual identities for emerging brands and social projects.", "Creative leadership in 3D animation projects and immersive digital experiences, integrating AI and interactive design."],
+        "adtailTitle": "Junior Art Director | Adtail",
+        "adtailPeriod": "São Paulo, SP | 2023–2024",
+        "adtailText": ["Development of visual identities for premium brands, increasing engagement in multichannel campaigns.", "Automation of email marketing workflows, reducing production time and ensuring visual consistency.", "Strategic alignment with clients and teams for project delivery."],
         "educationTitle": "Education",
-        "skillsTitle": "Technical Skills"
+        "bachelorTitle": "Bachelor’s Degree in Advertising and Propaganda",
+        "bachelorPeriod": "UFPR | 2017–2021",
+        "techTitle": "Technical Degree in Information Technology",
+        "techPeriod": "ETEC | 2014–2016",
+        "footer": {
+          "interested": "Interested in working together?",
+          "letsTalk": "Let's talk"
+        }
       }
     },
     "pt": {
       "nav": {
-        "home": "INÍCIO",
+        "home": "HOME",
         "about": "SOBRE",
         "cv": "CURRÍCULO",
         "gallery": "GALERIA"
@@ -25,7 +38,23 @@
       "cv": {
         "tagline": "Designer Multimídia | Estratégia Visual e Inovação",
         "aboutTitle": "Sobre Mim",
-        "aboutText": "Sou Vitor Moreira, designer multimídia e criador digital especializado em design estratégico, animação 3D e experiências digitais imersivas... [texto original em português]"
+        "aboutText": "Sou Vitor Moreira, designer multimídia e criador digital especializado em design estratégico, animação 3D e experiências digitais imersivas. Minha trajetória combina criatividade, tecnologia e comunicação, com experiência em campanhas publicitárias, identidade visual e produção audiovisual. Já trabalhei com marcas como Renner, John Deere, Wired e Balaclava, transformando ideias em soluções impactantes que conectam marcas e pessoas. Como pessoa trans não-binária, trago uma perspectiva única para projetos inclusivos e inovadores, utilizando IA generativa e programação para expandir narrativas visuais e criar novas formas de interação digital.",
+        "experienceTitle": "Experiência Profissional",
+        "freelancerTitle": "Consultor Criativo | Freelancer",
+        "freelancerPeriod": "Remoto | 2023–2025",
+        "freelancerText": ["Elaboração de conceitos criativos e identidades visuais para marcas emergentes e projetos sociais.", "Liderança criativa em projetos de animação 3D e experiências digitais imersivas, integrando IA e design interativo."],
+        "adtailTitle": "Diretor de Arte Júnior | Adtail",
+        "adtailPeriod": "São Paulo, SP | 2023–2024",
+        "adtailText": ["Desenvolvimento de identidades visuais para marcas premium, aumentando engajamento em campanhas multicanal.", "Automatização de fluxos de e-mail marketing, reduzindo tempo de produção e garantindo consistência visual.", "Alinhamento estratégico com clientes e equipes para entrega de projetos."],
+        "educationTitle": "Formação",
+        "bachelorTitle": "Bacharelado em Publicidade e Propaganda",
+        "bachelorPeriod": "UFPR | 2017–2021",
+        "techTitle": "Técnico em Tecnologia da Informação",
+        "techPeriod": "ETEC | 2014–2016",
+        "footer": {
+          "interested": "Interessado em trabalhar juntos?",
+          "letsTalk": "Vamos conversar"
+        }
       }
     },
     "es": {
@@ -38,7 +67,23 @@
       "cv": {
         "tagline": "Diseñador Multimedia | Estrategia Visual e Innovación",
         "aboutTitle": "Sobre Mí",
-        "aboutText": "Soy Vitor Moreira, diseñador multimedia y creador digital especializado en diseño estratégico, animación 3D y experiencias digitales inmersivas... [texto em espanhol]"
+        "aboutText": "Soy Vitor Moreira, diseñador multimedia y creador digital especializado en diseño estratégico, animación 3D y experiencias digitales inmersivas. Mi trayectoria combina creatividad, tecnología y comunicación, con experiencia en campañas publicitarias, identidad visual y producción audiovisual. He trabajado con marcas como Renner, John Deere, Wired y Balaclava, transformando ideas en soluciones impactantes que conectan marcas y personas. Como persona trans no binaria, aporto una perspectiva única a proyectos inclusivos e innovadores, utilizando IA generativa y programación para expandir narrativas visuales y crear nuevas formas de interacción digital.",
+        "experienceTitle": "Experiencia Profesional",
+        "freelancerTitle": "Consultor Creativo | Freelancer",
+        "freelancerPeriod": "Remoto | 2023–2025",
+        "freelancerText": ["Elaboración de conceptos creativos e identidades visuales para marcas emergentes y proyectos sociales.", "Liderazgo creativo en proyectos de animación 3D y experiencias digitales inmersivas, integrando IA y diseño interactivo."],
+        "adtailTitle": "Director de Arte Junior | Adtail",
+        "adtailPeriod": "São Paulo, SP | 2023–2024",
+        "adtailText": ["Desarrollo de identidades visuales para marcas premium, aumentando el engagement en campañas multicanal.", "Automatización de flujos de email marketing, reduciendo el tiempo de producción y garantizando consistencia visual.", "Alineación estratégica con clientes y equipos para la entrega de proyectos."],
+        "educationTitle": "Formación",
+        "bachelorTitle": "Licenciatura en Publicidad y Propaganda",
+        "bachelorPeriod": "UFPR | 2017–2021",
+        "techTitle": "Técnico en Tecnología de la Información",
+        "techPeriod": "ETEC | 2014–2016",
+        "footer": {
+          "interested": "¿Interesado en trabajar juntos?",
+          "letsTalk": "Hablemos"
+        }
       }
     }
   }
