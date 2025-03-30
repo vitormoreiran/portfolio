@@ -1,245 +1,700 @@
 {
     "projects": [
         {
-            "title": "FOOD APP",
-            "subtitle": "UX/UI DESIGN",
-            "description": "Protótipo interativo de aplicativo de restaurante com fluxo de pedido em grupo feito no Figma.",
-            "category": "COMERCIAL > PROTÓTIPO > 2024",
+            "id": "food-app",
             "image": "assets/images/preview/food-app-preview.png",
             "modalImage": "assets/images/cards/food-app-card.png",
             "link": "https://drive.google.com/drive/folders/1nGv8PYzatV0bqt8QQ66tSKUTkYCCrRsj?usp=sharing",
-            "details": "Mais informações sobre o projeto FOOD APP."
+            "translations": {
+                "en": {
+                    "title": "FOOD APP",
+                    "subtitle": "UX/UI DESIGN",
+                    "description": "Interactive restaurant app prototype with group ordering flow made in Figma.",
+                    "category": "COMMERCIAL > PROTOTYPE > 2024",
+                    "details": "More information about the FOOD APP project."
+                },
+                "pt": {
+                    "title": "FOOD APP",
+                    "subtitle": "UX/UI DESIGN",
+                    "description": "Protótipo interativo de aplicativo de restaurante com fluxo de pedido em grupo feito no Figma.",
+                    "category": "COMERCIAL > PROTÓTIPO > 2024",
+                    "details": "Mais informações sobre o projeto FOOD APP."
+                },
+                "es": {
+                    "title": "FOOD APP",
+                    "subtitle": "DISEÑO UX/UI",
+                    "description": "Prototipo interactivo de aplicación de restaurante con flujo de pedidos grupales creado en Figma.",
+                    "category": "COMERCIAL > PROTOTIPO > 2024",
+                    "details": "Más información sobre el proyecto FOOD APP."
+                }
+            }
         },
         {
-            "title": "SOCIAL #02",
-            "subtitle": "SOCIAL ID",
-            "description": "Desenvolvimento de campanhas e identidade visual para redes sociais.<p>",
-            "category": "COMERCIAL > BRANDING > 2024",
+            "id": "social-02",
             "image": "assets/images/preview/social-02-preview.png",
             "modalImage": "assets/images/cards/social2-card.png",
             "link": "http://behance.net/gallery/142890267/SOCIAL-ID-2021-2022",
-            "details": "Mais informações sobre o projeto Social ID."
+            "translations": {
+                "en": {
+                    "title": "SOCIAL #02",
+                    "subtitle": "SOCIAL ID",
+                    "description": "Development of campaigns and visual identity for social media.",
+                    "category": "COMMERCIAL > BRANDING > 2024",
+                    "details": "More information about the Social ID project."
+                },
+                "pt": {
+                    "title": "SOCIAL #02",
+                    "subtitle": "SOCIAL ID",
+                    "description": "Desenvolvimento de campanhas e identidade visual para redes sociais.",
+                    "category": "COMERCIAL > BRANDING > 2024",
+                    "details": "Mais informações sobre o projeto Social ID."
+                },
+                "es": {
+                    "title": "SOCIAL #02",
+                    "subtitle": "IDENTIDAD SOCIAL",
+                    "description": "Desarrollo de campañas e identidad visual para redes sociales.",
+                    "category": "COMERCIAL > BRANDING > 2024",
+                    "details": "Más información sobre el proyecto Social ID."
+                }
+            }
         },
         {
-            "title": "SOCIAL #01",
-            "subtitle": "SOCIAL ID",
-            "description": "Desenvolvimento de campanhas e identidade visual para redes sociais.<p>",
-            "category": "COMERCIAL > BRANDING > 2024",
+            "id": "social-01",
             "image": "assets/images/preview/social-01-preview.png",
             "modalImage": "assets/images/cards/social1-card.png",
             "link": "http://behance.net/gallery/142890267/SOCIAL-ID-2021-2022",
-            "details": "Mais informações sobre o projeto Social ID."
+            "translations": {
+                "en": {
+                    "title": "SOCIAL #01",
+                    "subtitle": "SOCIAL ID",
+                    "description": "Development of campaigns and visual identity for social media.",
+                    "category": "COMMERCIAL > BRANDING > 2024",
+                    "details": "More information about the Social ID project."
+                },
+                "pt": {
+                    "title": "SOCIAL #01",
+                    "subtitle": "SOCIAL ID",
+                    "description": "Desenvolvimento de campanhas e identidade visual para redes sociais.",
+                    "category": "COMERCIAL > BRANDING > 2024",
+                    "details": "Mais informações sobre o projeto Social ID."
+                },
+                "es": {
+                    "title": "SOCIAL #01",
+                    "subtitle": "IDENTIDAD SOCIAL",
+                    "description": "Desarrollo de campañas e identidad visual para redes sociales.",
+                    "category": "COMERCIAL > BRANDING > 2024",
+                    "details": "Más información sobre el proyecto Social ID."
+                }
+            }
         },
         {
-            "title": "PARALLEL BIOME",
-            "subtitle": "UX/UI DESIGN",
-            "description": "Vídeo colaborativo com Gabriel KOI e Raiana Moraes, criado durante a residência artística para a S.E.E.D",
-            "category": "AUTORAL > VIDEO 3D > 2024",
+            "id": "parallel-biome",
             "image": "assets/images/preview/parallel-biome-preview.png",
             "modalImage": "assets/images/cards/parallel-biome-card.png",
             "link": "https://zora.co/collect/zora:0xd5fa58b8ce342c89e7864e01f18233fc07983e78/64?referrer=0x145c2A8fbf52b0fBFD8e5A5acc8047F49dD217e5",
-            "details": "Confira o vídeo PARALLEL BIOME."
+            "translations": {
+                "en": {
+                    "title": "PARALLEL BIOME",
+                    "subtitle": "UX/UI DESIGN",
+                    "description": "Collaborative video with Gabriel KOI and Raiana Moraes, created during the artistic residency for S.E.E.D",
+                    "category": "AUTHORIAL > 3D VIDEO > 2024",
+                    "details": "Check out the PARALLEL BIOME video."
+                },
+                "pt": {
+                    "title": "PARALLEL BIOME",
+                    "subtitle": "UX/UI DESIGN",
+                    "description": "Vídeo colaborativo com Gabriel KOI e Raiana Moraes, criado durante a residência artística para a S.E.E.D",
+                    "category": "AUTORAL > VIDEO 3D > 2024",
+                    "details": "Confira o vídeo PARALLEL BIOME."
+                },
+                "es": {
+                    "title": "PARALLEL BIOME",
+                    "subtitle": "DISEÑO UX/UI",
+                    "description": "Video colaborativo con Gabriel KOI y Raiana Moraes, creado durante la residencia artística para S.E.E.D",
+                    "category": "AUTORAL > VIDEO 3D > 2024",
+                    "details": "Mira el video PARALLEL BIOME."
+                }
+            }
         },
         {
-            "title": "ENJOY",
-            "subtitle": "VISUAL ID",
-            "description": "Identidade visual para um clube de benefícios que conecta formandos e marcas em um estilo de vida único.",
-            "category": "COMERCIAL > IDENTIDADE > 2024",
+            "id": "enjoy",
             "image": "assets/images/preview/enjoy-preview.png",
             "modalImage": "assets/images/cards/enjoy-card.png",
             "link": "https://www.behance.net/gallery/216471489/Enjoy-The-Journey",
-            "details": "Mais informações sobre o projeto ENJOY."
+            "translations": {
+                "en": {
+                    "title": "ENJOY",
+                    "subtitle": "VISUAL ID",
+                    "description": "Visual identity for a benefits club that connects graduates and brands in a unique lifestyle.",
+                    "category": "COMMERCIAL > IDENTITY > 2024",
+                    "details": "More information about the ENJOY project."
+                },
+                "pt": {
+                    "title": "ENJOY",
+                    "subtitle": "VISUAL ID",
+                    "description": "Identidade visual para um clube de benefícios que conecta formandos e marcas em um estilo de vida único.",
+                    "category": "COMERCIAL > IDENTIDADE > 2024",
+                    "details": "Mais informações sobre o projeto ENJOY."
+                },
+                "es": {
+                    "title": "ENJOY",
+                    "subtitle": "IDENTIDAD VISUAL",
+                    "description": "Identidad visual para un club de beneficios que conecta graduados y marcas en un estilo de vida único.",
+                    "category": "COMERCIAL > IDENTIDAD > 2024",
+                    "details": "Más información sobre el proyecto ENJOY."
+                }
+            }
         },
         {
-            "title": "AUTOPASS",
-            "subtitle": "E-MAIL MARKETING",
-            "description": "Campanha de e-mail marketing para o serviço Autopass, com otimização  de personas e key visuals em fluxo.",
-            "category": "COMERCIAL > CRM > 2023",
+            "id": "autopass",
             "image": "assets/images/preview/autopass-preview.png",
             "modalImage": "assets/images/cards/autopass-card.png",
             "link": "https://www.behance.net/gallery/205478011/AUTOPASS",
-            "details": "Mais informações sobre o projeto AUTOPASS."
+            "translations": {
+                "en": {
+                    "title": "AUTOPASS",
+                    "subtitle": "E-MAIL MARKETING",
+                    "description": "Email marketing campaign for Autopass service, with persona optimization and key visuals in flow.",
+                    "category": "COMMERCIAL > CRM > 2023",
+                    "details": "More information about the AUTOPASS project."
+                },
+                "pt": {
+                    "title": "AUTOPASS",
+                    "subtitle": "E-MAIL MARKETING",
+                    "description": "Campanha de e-mail marketing para o serviço Autopass, com otimização de personas e key visuals em fluxo.",
+                    "category": "COMERCIAL > CRM > 2023",
+                    "details": "Mais informações sobre o projeto AUTOPASS."
+                },
+                "es": {
+                    "title": "AUTOPASS",
+                    "subtitle": "EMAIL MARKETING",
+                    "description": "Campaña de email marketing para el servicio Autopass, con optimización de personas y elementos visuales clave en flujo.",
+                    "category": "COMERCIAL > CRM > 2023",
+                    "details": "Más información sobre el proyecto AUTOPASS."
+                }
+            }
         },
         {
-            "title": "CARRANO",
-            "subtitle": "E-MAIL MARKETING",
-            "description": "Campanha promocional por e-mail para a marca Carrano, focada em engajamento e conversão.",
-            "category": "COMERCIAL > CRM > 2023",
+            "id": "carrano",
             "image": "assets/images/preview/carrano-preview.png",
             "modalImage": "assets/images/cards/carrano-card.png",
             "link": "https://www.behance.net/gallery/205485373/CARRANO",
-            "details": "Mais informações sobre o projeto CARRANO."
+            "translations": {
+                "en": {
+                    "title": "CARRANO",
+                    "subtitle": "E-MAIL MARKETING",
+                    "description": "Promotional email campaign for Carrano brand, focused on engagement and conversion.",
+                    "category": "COMMERCIAL > CRM > 2023",
+                    "details": "More information about the CARRANO project."
+                },
+                "pt": {
+                    "title": "CARRANO",
+                    "subtitle": "E-MAIL MARKETING",
+                    "description": "Campanha promocional por e-mail para a marca Carrano, focada em engajamento e conversão.",
+                    "category": "COMERCIAL > CRM > 2023",
+                    "details": "Mais informações sobre o projeto CARRANO."
+                },
+                "es": {
+                    "title": "CARRANO",
+                    "subtitle": "EMAIL MARKETING",
+                    "description": "Campaña promocional por email para la marca Carrano, enfocada en engagement y conversión.",
+                    "category": "COMERCIAL > CRM > 2023",
+                    "details": "Más información sobre el proyecto CARRANO."
+                }
+            }
         },
         {
-            "title": "BRIFW",
-            "subtitle": "SOCIAL ID",
-            "description": "Identidade visual e social para a terceira edição do Brazil Immersive Fashion Week.",
-            "category": "COMERCIAL > IDENTIDADE > 2023",
+            "id": "brifw",
             "image": "assets/images/preview/brifw-preview.png",
             "modalImage": "assets/images/cards/brifw-card.png",
             "link": "https://www.behance.net/gallery/205486147/BRIFW3",
-            "details": "Mais informações sobre o projeto BRIFW."
+            "translations": {
+                "en": {
+                    "title": "BRIFW",
+                    "subtitle": "SOCIAL ID",
+                    "description": "Visual identity and social media for the third edition of Brazil Immersive Fashion Week.",
+                    "category": "COMMERCIAL > IDENTITY > 2023",
+                    "details": "More information about the BRIFW project."
+                },
+                "pt": {
+                    "title": "BRIFW",
+                    "subtitle": "SOCIAL ID",
+                    "description": "Identidade visual e social para a terceira edição do Brazil Immersive Fashion Week.",
+                    "category": "COMERCIAL > IDENTIDADE > 2023",
+                    "details": "Mais informações sobre o projeto BRIFW."
+                },
+                "es": {
+                    "title": "BRIFW",
+                    "subtitle": "IDENTIDAD SOCIAL",
+                    "description": "Identidad visual y redes sociales para la tercera edición del Brazil Immersive Fashion Week.",
+                    "category": "COMERCIAL > IDENTIDAD > 2023",
+                    "details": "Más información sobre el proyecto BRIFW."
+                }
+            }
         },
         {
-            "title": "MY TRUTH",
-            "subtitle": "EXPOSIÇÃO",
-            "description": "Diário virtual de arte multimídia, explorando identidade em colecionáveis digitais na blockchain.",
-            "category": "AUTORAL > MULTIMÍDIA > 2024",
+            "id": "my-truth",
             "image": "assets/images/preview/mytruth-preview.png",
             "modalImage": "assets/images/cards/mytruth-card.png",
             "link": "https://zora.co/manage/1155/zora:0x6f8df1258f368a1e5bd778c2cb6086e5d1b9049c",
-            "details": "Mais informações sobre o projeto MY TRUTH."
+            "translations": {
+                "en": {
+                    "title": "MY TRUTH",
+                    "subtitle": "EXHIBITION",
+                    "description": "Virtual multimedia art diary, exploring identity in digital collectibles on the blockchain.",
+                    "category": "AUTHORIAL > MULTIMEDIA > 2024",
+                    "details": "More information about the MY TRUTH project."
+                },
+                "pt": {
+                    "title": "MY TRUTH",
+                    "subtitle": "EXPOSIÇÃO",
+                    "description": "Diário virtual de arte multimídia, explorando identidade em colecionáveis digitais na blockchain.",
+                    "category": "AUTORAL > MULTIMÍDIA > 2024",
+                    "details": "Mais informações sobre o projeto MY TRUTH."
+                },
+                "es": {
+                    "title": "MY TRUTH",
+                    "subtitle": "EXPOSICIÓN",
+                    "description": "Diario virtual de arte multimedia, explorando identidad en coleccionables digitales en la blockchain.",
+                    "category": "AUTORAL > MULTIMEDIA > 2024",
+                    "details": "Más información sobre el proyecto MY TRUTH."
+                }
+            }
         },
         {
-            "title": "2LAYER",
-            "subtitle": "LANÇAMENTO",
-            "description": "Modelo 3D vestível desenvolvido para o modelo 2Layer do designer KasoRaro em parceria com a Rebu.",
-            "category": "COMERCIAL > VESTÍVEL > 2024",
+            "id": "2layer",
             "image": "assets/images/preview/2layer-preview.png",
             "modalImage": "assets/images/cards/2layer-card.png",
             "link": "https://drive.google.com/drive/folders/1nGv8PYzatV0bqt8QQ66tSKUTkYCCrRsj?usp=sharing",
-            "details": "Mais informações sobre o projeto 2LAYER."
+            "translations": {
+                "en": {
+                    "title": "2LAYER",
+                    "subtitle": "LAUNCH",
+                    "description": "3D wearable model developed for the 2Layer model by designer KasoRaro in partnership with Rebu.",
+                    "category": "COMMERCIAL > WEARABLE > 2024",
+                    "details": "More information about the 2LAYER project."
+                },
+                "pt": {
+                    "title": "2LAYER",
+                    "subtitle": "LANÇAMENTO",
+                    "description": "Modelo 3D vestível desenvolvido para o modelo 2Layer do designer KasoRaro em parceria com a Rebu.",
+                    "category": "COMERCIAL > VESTÍVEL > 2024",
+                    "details": "Mais informações sobre o projeto 2LAYER."
+                },
+                "es": {
+                    "title": "2LAYER",
+                    "subtitle": "LANZAMIENTO",
+                    "description": "Modelo 3D vestible desarrollado para el modelo 2Layer del diseñador KasoRaro en asociación con Rebu.",
+                    "category": "COMERCIAL > VESTIBLE > 2024",
+                    "details": "Más información sobre el proyecto 2LAYER."
+                }
+            }
         },
         {
-            "title": "TATUAGEM",
-            "subtitle": "REBU X RAÇA",
-            "description": "Clipe produzido pela Rebu Digital para o lançamento do álbum Tatuagem da banda Raça.",
-            "category": "COMERCIAL > VÍDEO > 2024",
+            "id": "tatuagem",
             "image": "assets/images/preview/tatuagem-preview.png",
             "modalImage": "assets/images/cards/tatuagem-card.png",
             "link": "https://www.youtube.com/watch?v=BHlOIPj8Ff4",
-            "details": "Mais informações sobre o projeto TATUAGEM REBU X RAÇA."
+            "translations": {
+                "en": {
+                    "title": "TATTOO",
+                    "subtitle": "REBU X RAÇA",
+                    "description": "Music video produced by Rebu Digital for the release of the album Tattoo by the band Raça.",
+                    "category": "COMMERCIAL > VIDEO > 2024",
+                    "details": "More information about the TATTOO REBU X RAÇA project."
+                },
+                "pt": {
+                    "title": "TATUAGEM",
+                    "subtitle": "REBU X RAÇA",
+                    "description": "Clipe produzido pela Rebu Digital para o lançamento do álbum Tatuagem da banda Raça.",
+                    "category": "COMERCIAL > VÍDEO > 2024",
+                    "details": "Mais informações sobre o projeto TATUAGEM REBU X RAÇA."
+                },
+                "es": {
+                    "title": "TATUAJE",
+                    "subtitle": "REBU X RAÇA",
+                    "description": "Videoclip producido por Rebu Digital para el lanzamiento del álbum Tatuaje de la banda Raça.",
+                    "category": "COMERCIAL > VIDEO > 2024",
+                    "details": "Más información sobre el proyecto TATUAJE REBU X RAÇA."
+                }
+            }
         },
         {
-            "title": "SCREEEN",
-            "subtitle": "INSTALAÇÃO",
-            "description": "Instalação interativa em vídeo, utilizando captação infravermelha e projeção em telas analógicas.",
-            "category": "AUTORAL > VÍDEO > 2024",
+            "id": "screen",
             "image": "assets/images/preview/screen-preview.png",
             "modalImage": "assets/images/cards/screen-card.png",
             "link": "https://zora.co/collect/zora:0xd5fa58b8ce342c89e7864e01f18233fc07983e78/97",
-            "details": "Mais informações sobre o projeto SCREEEN."
+            "translations": {
+                "en": {
+                    "title": "SCREEN",
+                    "subtitle": "INSTALLATION",
+                    "description": "Interactive video installation, using infrared capture and projection on analog screens.",
+                    "category": "AUTHORIAL > VIDEO > 2024",
+                    "details": "More information about the SCREEN project."
+                },
+                "pt": {
+                    "title": "SCREEEN",
+                    "subtitle": "INSTALAÇÃO",
+                    "description": "Instalação interativa em vídeo, utilizando captação infravermelha e projeção em telas analógicas.",
+                    "category": "AUTORAL > VÍDEO > 2024",
+                    "details": "Mais informações sobre o projeto SCREEEN."
+                },
+                "es": {
+                    "title": "PANTALLA",
+                    "subtitle": "INSTALACIÓN",
+                    "description": "Instalación de video interactiva, utilizando captura infrarroja y proyección en pantallas analógicas.",
+                    "category": "AUTORAL > VIDEO > 2024",
+                    "details": "Más información sobre el proyecto PANTALLA."
+                }
+            }
         },
         {
-            "title": "RITUAL",
-            "subtitle": "PROJETO VISUAL",
-            "description": "Projeto de animação 3D para instalação artística, explorando avatares e cenários.",
-            "category": "AUTORAL > 3D > 2024",
+            "id": "ritual",
             "image": "assets/images/preview/ritual-preview.png",
             "modalImage": "assets/images/cards/ritual-card.png",
             "link": "https://www.behance.net/gallery/205461129/RITUAL",
-            "details": "Mais informações sobre o projeto RITUAL."
+            "translations": {
+                "en": {
+                    "title": "RITUAL",
+                    "subtitle": "VISUAL PROJECT",
+                    "description": "3D animation project for artistic installation, exploring avatars and scenarios.",
+                    "category": "AUTHORIAL > 3D > 2024",
+                    "details": "More information about the RITUAL project."
+                },
+                "pt": {
+                    "title": "RITUAL",
+                    "subtitle": "PROJETO VISUAL",
+                    "description": "Projeto de animação 3D para instalação artística, explorando avatares e cenários.",
+                    "category": "AUTORAL > 3D > 2024",
+                    "details": "Mais informações sobre o projeto RITUAL."
+                },
+                "es": {
+                    "title": "RITUAL",
+                    "subtitle": "PROYECTO VISUAL",
+                    "description": "Proyecto de animación 3D para instalación artística, explorando avatares y escenarios.",
+                    "category": "AUTORAL > 3D > 2024",
+                    "details": "Más información sobre el proyecto RITUAL."
+                }
+            }
         },
         {
-            "title": "ENXERTO",
-            "subtitle": "TRANSMISSÃO",
-            "description": "Exposição interativa que investiga as transições digitais e o comportamento humano.",
-            "category": "AUTORAL > MULTIMÍDIA > 2023",
+            "id": "enxerto",
             "image": "assets/images/preview/enxerto-preview.png",
             "modalImage": "assets/images/cards/enxerto-card.png",
             "link": "https://drive.google.com/drive/folders/1j2rMX9_9_RZsYWS7pF7av4QZLukQd16U?usp=drive_link",
-            "details": "Mais informações sobre o projeto ENXERTO."
+            "translations": {
+                "en": {
+                    "title": "GRAFT",
+                    "subtitle": "TRANSMISSION",
+                    "description": "Interactive exhibition investigating digital transitions and human behavior.",
+                    "category": "AUTHORIAL > MULTIMEDIA > 2023",
+                    "details": "More information about the GRAFT project."
+                },
+                "pt": {
+                    "title": "ENXERTO",
+                    "subtitle": "TRANSMISSÃO",
+                    "description": "Exposição interativa que investiga as transições digitais e o comportamento humano.",
+                    "category": "AUTORAL > MULTIMÍDIA > 2023",
+                    "details": "Mais informações sobre o projeto ENXERTO."
+                },
+                "es": {
+                    "title": "INJERTO",
+                    "subtitle": "TRANSMISIÓN",
+                    "description": "Exposición interactiva que investiga las transiciones digitales y el comportamiento humano.",
+                    "category": "AUTORAL > MULTIMEDIA > 2023",
+                    "details": "Más información sobre el proyecto INJERTO."
+                }
+            }
         },
         {
-            "title": "LOVECORE 3",
-            "subtitle": "EVENTO",
-            "description": "Criação e execução de comunicação visual para o evento LoveCore3, com foco em e cultura digital.",
-            "category": "COMERCIAL > IDENTIDADE > 2024",
+            "id": "lovecore",
             "image": "assets/images/preview/lovecore-preview.png",
             "modalImage": "assets/images/cards/lovecore3-card.png",
             "link": "https://www.instagram.com/rebudigital/",
-            "details": "Mais informações sobre o projeto LOVECORE 3."
+            "translations": {
+                "en": {
+                    "title": "LOVECORE 3",
+                    "subtitle": "EVENT",
+                    "description": "Creation and execution of visual communication for the LoveCore3 event, focusing on digital culture.",
+                    "category": "COMMERCIAL > IDENTITY > 2024",
+                    "details": "More information about the LOVECORE 3 project."
+                },
+                "pt": {
+                    "title": "LOVECORE 3",
+                    "subtitle": "EVENTO",
+                    "description": "Criação e execução de comunicação visual para o evento LoveCore3, com foco em e cultura digital.",
+                    "category": "COMERCIAL > IDENTIDADE > 2024",
+                    "details": "Mais informações sobre o projeto LOVECORE 3."
+                },
+                "es": {
+                    "title": "LOVECORE 3",
+                    "subtitle": "EVENTO",
+                    "description": "Creación y ejecución de comunicación visual para el evento LoveCore3, con enfoque en cultura digital.",
+                    "category": "COMERCIAL > IDENTIDAD > 2024",
+                    "details": "Más información sobre el proyecto LOVECORE 3."
+                }
+            }
         },
         {
-            "title": "ILUVMDNA",
-            "subtitle": "PROMOCIONAL",
-            "description": "Série de objetos 3D interativos em homenagem ao show da Madonna no Rio de Janeiro.",
-            "category": "COMERCIAL > 3D > 2024",
+            "id": "iluvmdna",
             "image": "assets/images/preview/iluvmdna-preview.png",
             "modalImage": "assets/images/cards/iluvmdna-card.png",
             "link": "https://zora.co/collect/zora:0xbb2746fb0944bd16e51bbed7fb6834bab13b924e",
-            "details": "Mais informações sobre o projeto ILUVMDNA."
+            "translations": {
+                "en": {
+                    "title": "ILUVMDNA",
+                    "subtitle": "PROMOTIONAL",
+                    "description": "Series of interactive 3D objects in tribute to Madonna's show in Rio de Janeiro.",
+                    "category": "COMMERCIAL > 3D > 2024",
+                    "details": "More information about the ILUVMDNA project."
+                },
+                "pt": {
+                    "title": "ILUVMDNA",
+                    "subtitle": "PROMOCIONAL",
+                    "description": "Série de objetos 3D interativos em homenagem ao show da Madonna no Rio de Janeiro.",
+                    "category": "COMERCIAL > 3D > 2024",
+                    "details": "Mais informações sobre o projeto ILUVMDNA."
+                },
+                "es": {
+                    "title": "ILUVMDNA",
+                    "subtitle": "PROMOCIONAL",
+                    "description": "Serie de objetos 3D interactivos en homenaje al show de Madonna en Río de Janeiro.",
+                    "category": "COMERCIAL > 3D > 2024",
+                    "details": "Más información sobre el proyecto ILUVMDNA."
+                }
+            }
         },
         {
-            "title": "UDNTKNW",
-            "subtitle": "LANÇAMENTO",
-            "description": "Projeto 3D vestível colaborativo com artistas presentes na S.E.E.D + Bosque Gracias Art Residency.",
-            "category": "COMERCIAL > VESTÍVEL > 2024",
+            "id": "udntknw",
             "image": "assets/images/preview/udntknw-preview.png",
             "modalImage": "assets/images/cards/udntknw-card.png",
             "link": "https://www.behance.net/gallery/205467719/UDntKnwWhoWeAre",
-            "details": "Mais informações sobre o projeto UDNTKNW."
+            "translations": {
+                "en": {
+                    "title": "UDNTKNW",
+                    "subtitle": "RELEASE",
+                    "description": "Collaborative 3D wearable project with artists present at S.E.E.D + Bosque Gracias Art Residency.",
+                    "category": "COMMERCIAL > WEARABLE > 2024",
+                    "details": "More information about the UDNTKNW project."
+                },
+                "pt": {
+                    "title": "UDNTKNW",
+                    "subtitle": "LANÇAMENTO",
+                    "description": "Projeto 3D vestível colaborativo com artistas presentes na S.E.E.D + Bosque Gracias Art Residency.",
+                    "category": "COMERCIAL > VESTÍVEL > 2024",
+                    "details": "Mais informações sobre o projeto UDNTKNW."
+                },
+                "es": {
+                    "title": "UDNTKNW",
+                    "subtitle": "LANZAMIENTO",
+                    "description": "Proyecto 3D vestible colaborativo con artistas presentes en S.E.E.D + Bosque Gracias Art Residency.",
+                    "category": "COMERCIAL > VESTIBLE > 2024",
+                    "details": "Más información sobre el proyecto UDNTKNW."
+                }
+            }
         },
         {
-            "title": "A BOLHA",
-            "subtitle": "VIDEO PERFORMANCE",
-            "description": "Performance em vídeo explorando transformações digitais em narrativas de ficção científica.",
-            "category": "AUTORAL > VÍDEO 3D > 2022",
+            "id": "abolha",
             "image": "assets/images/preview/abolha-preview.png",
             "modalImage": "assets/images/cards/abolha-card.png",
             "link": "https://www.youtube.com/watch?v=iRqAdyGd_1k&ab_channel=Jaiussa",
-            "details": "Mais informações sobre o projeto A BOLHA."
+            "translations": {
+                "en": {
+                    "title": "THE BUBBLE",
+                    "subtitle": "VIDEO PERFORMANCE",
+                    "description": "Video performance exploring digital transformations in science fiction narratives.",
+                    "category": "AUTHORIAL > 3D VIDEO > 2022",
+                    "details": "More information about THE BUBBLE project."
+                },
+                "pt": {
+                    "title": "A BOLHA",
+                    "subtitle": "VIDEO PERFORMANCE",
+                    "description": "Performance em vídeo explorando transformações digitais em narrativas de ficção científica.",
+                    "category": "AUTORAL > VÍDEO 3D > 2022",
+                    "details": "Mais informações sobre o projeto A BOLHA."
+                },
+                "es": {
+                    "title": "LA BURBUJA",
+                    "subtitle": "PERFORMANCE DE VIDEO",
+                    "description": "Performance en video que explora transformaciones digitales en narrativas de ciencia ficción.",
+                    "category": "AUTORAL > VIDEO 3D > 2022",
+                    "details": "Más información sobre el proyecto LA BURBUJA."
+                }
+            }
         },
         {
-            "title": "MERCURIA",
-            "subtitle": "VISUAL ID",
-            "description": "Identidade visual desenvolvida para campanhas de divulgação da taróloga Mercuria.",
-            "category": "COMERCIAL > IDENTIDADE > 2022",
-            "image": "assets/imags/preview/mercuria-preview.png",
+            "id": "mercuria",
+            "image": "assets/images/preview/mercuria-preview.png",
             "modalImage": "assets/images/cards/mercuria-card.png",
             "link": "https://drive.google.com/drive/folders/1nGv8PYzatV0bqt8QQ66tSKUTkYCCrRsj?usp=sharing",
-            "details": "Mais informações sobre o projeto MERCURIA."
+            "translations": {
+                "en": {
+                    "title": "MERCURIA",
+                    "subtitle": "VISUAL ID",
+                    "description": "Visual identity developed for promotion campaigns of tarot reader Mercuria.",
+                    "category": "COMMERCIAL > IDENTITY > 2022",
+                    "details": "More information about the MERCURIA project."
+                },
+                "pt": {
+                    "title": "MERCURIA",
+                    "subtitle": "VISUAL ID",
+                    "description": "Identidade visual desenvolvida para campanhas de divulgação da taróloga Mercuria.",
+                    "category": "COMERCIAL > IDENTIDADE > 2022",
+                    "details": "Mais informações sobre o projeto MERCURIA."
+                },
+                "es": {
+                    "title": "MERCURIA",
+                    "subtitle": "IDENTIDAD VISUAL",
+                    "description": "Identidad visual desarrollada para campañas de promoción de la tarotista Mercuria.",
+                    "category": "COMERCIAL > IDENTIDAD > 2022",
+                    "details": "Más información sobre el proyecto MERCURIA."
+                }
+            }
         },
         {
-            "title": "FOGOSA 2.2",
-            "subtitle": "VISUALIZER",
-            "description": "Visuais de lançamento do clipe da parceria de Siamese e Clementaum desenvolvido para o Bloco Fogosa.",
-            "category": "COMERCIAL > CLIPE 3D > 2022",
+            "id": "fogosa",
             "image": "assets/images/preview/fogosa-preview.png",
             "modalImage": "assets/images/cards/fogosa-card.png",
             "link": "https://www.behance.net/gallery/141564005/FOGOSA-22-2022",
-            "details": "Mais informações sobre o projeto FOGOSA 2.2."
+            "translations": {
+                "en": {
+                    "title": "FOGOSA 2.2",
+                    "subtitle": "VISUALIZER",
+                    "description": "Release visuals for the music video of the collaboration between Siamese and Clementaum developed for Bloco Fogosa.",
+                    "category": "COMMERCIAL > 3D MUSIC VIDEO > 2022",
+                    "details": "More information about the FOGOSA 2.2 project."
+                },
+                "pt": {
+                    "title": "FOGOSA 2.2",
+                    "subtitle": "VISUALIZER",
+                    "description": "Visuais de lançamento do clipe da parceria de Siamese e Clementaum desenvolvido para o Bloco Fogosa.",
+                    "category": "COMERCIAL > CLIPE 3D > 2022",
+                    "details": "Mais informações sobre o projeto FOGOSA 2.2."
+                },
+                "es": {
+                    "title": "FOGOSA 2.2",
+                    "subtitle": "VISUALIZER",
+                    "description": "Visuales de lanzamiento del videoclip de la colaboración entre Siamese y Clementaum desarrollado para Bloco Fogosa.",
+                    "category": "COMERCIAL > VIDEOCLIP 3D > 2022",
+                    "details": "Más información sobre el proyecto FOGOSA 2.2."
+                }
+            }
         },
         {
-            "title": "L4MB3",
-            "subtitle": "STREET ART",
-            "description": "Série de arte de rua com colagens explorando ocupação urbana, arte impressa e digital.",
-            "category": "AUTORAL > IMPRESSO > 2022-24",
+            "id": "lambe",
             "image": "assets/images/preview/lambe-preview.png",
             "modalImage": "assets/images/cards/lambe-card.png",
             "link": "https://drive.google.com/drive/folders/1nGv8PYzatV0bqt8QQ66tSKUTkYCCrRsj?usp=sharing",
-            "details": "Mais informações sobre o projeto L4MB3."
+            "translations": {
+                "en": {
+                    "title": "L4MB3",
+                    "subtitle": "STREET ART",
+                    "description": "Series of street art with collages exploring urban occupation, printed and digital art.",
+                    "category": "AUTHORIAL > PRINTED > 2022-24",
+                    "details": "More information about the L4MB3 project."
+                },
+                "pt": {
+                    "title": "L4MB3",
+                    "subtitle": "STREET ART",
+                    "description": "Série de arte de rua com colagens explorando ocupação urbana, arte impressa e digital.",
+                    "category": "AUTORAL > IMPRESSO > 2022-24",
+                    "details": "Mais informações sobre o projeto L4MB3."
+                },
+                "es": {
+                    "title": "L4MB3",
+                    "subtitle": "ARTE URBANO",
+                    "description": "Serie de arte callejero con collages explorando ocupación urbana, arte impreso y digital.",
+                    "category": "AUTORAL > IMPRESO > 2022-24",
+                    "details": "Más información sobre el proyecto L4MB3."
+                }
+            }
         },
         {
-            "title": "3D STUDIES",
-            "subtitle": "EXPERIMENTAL",
-            "description": "Série de estudos experimentais em modelagem e animação 3D, design de som e ambientação.",
-            "category": "AUTORAL > 3D > 2020-25",
+            "id": "3d-studies",
             "image": "assets/images/preview/3dstudies-preview.png",
             "modalImage": "assets/images/cards/3dstudies-card.png",
             "link": "https://drive.google.com/drive/folders/1nGv8PYzatV0bqt8QQ66tSKUTkYCCrRsj?usp=sharing",
-            "details": "Mais informações sobre os estudos 3D."
+            "translations": {
+                "en": {
+                    "title": "3D STUDIES",
+                    "subtitle": "EXPERIMENTAL",
+                    "description": "Series of experimental studies in 3D modeling and animation, sound design and environment.",
+                    "category": "AUTHORIAL > 3D > 2020-25",
+                    "details": "More information about the 3D studies."
+                },
+                "pt": {
+                    "title": "3D STUDIES",
+                    "subtitle": "EXPERIMENTAL",
+                    "description": "Série de estudos experimentais em modelagem e animação 3D, design de som e ambientação.",
+                    "category": "AUTORAL > 3D > 2020-25",
+                    "details": "Mais informações sobre os estudos 3D."
+                },
+                "es": {
+                    "title": "ESTUDIOS 3D",
+                    "subtitle": "EXPERIMENTAL",
+                    "description": "Serie de estudios experimentales en modelado y animación 3D, diseño de sonido y ambientación.",
+                    "category": "AUTORAL > 3D > 2020-25",
+                    "details": "Más información sobre los estudios 3D."
+                }
+            }
         },
-
         {
-            "title": "PORÃO",
-            "subtitle": "TCC | UFPR",
-            "description": "Revista focada em design gráfico e arte impressa na cultura clubber brasileira durante a pandemia.",
-            "category": "COMERCIAL > IMPRESSO > 2022-24",
+            "id": "porao",
             "image": "assets/images/preview/porao-preview.png",
             "modalImage": "assets/images/cards/porao-preview.png",
             "link": "https://drive.google.com/drive/folders/1nGv8PYzatV0bqt8QQ66tSKUTkYCCrRsj?usp=sharing",
-            "details": "Mais informações sobre os estudos 3D."
+            "translations": {
+                "en": {
+                    "title": "BASEMENT",
+                    "subtitle": "TCC | UFPR",
+                    "description": "Magazine focused on graphic design and printed art in Brazilian clubber culture during the pandemic.",
+                    "category": "COMMERCIAL > PRINTED > 2022-24",
+                    "details": "More information about the 3D studies."
+                },
+                "pt": {
+                    "title": "PORÃO",
+                    "subtitle": "TCC | UFPR",
+                    "description": "Revista focada em design gráfico e arte impressa na cultura clubber brasileira durante a pandemia.",
+                    "category": "COMERCIAL > IMPRESSO > 2022-24",
+                    "details": "Mais informações sobre os estudos 3D."
+                },
+                "es": {
+                    "title": "SÓTANO",
+                    "subtitle": "TCC | UFPR",
+                    "description": "Revista enfocada en diseño gráfico y arte impreso en la cultura clubber brasileña durante la pandemia.",
+                    "category": "COMERCIAL > IMPRESO > 2022-24",
+                    "details": "Más información sobre los estudios 3D."
+                }
+            }
         },
         {
-            "title": "SINGLE 1",
-            "subtitle": "SSA MAPPING",
-            "description": "Projeto de mapping 3D reativo, criado para interagir com diferentes camadas de áudio no Mercado Modelo de Salvador.",
-            "category": "AUTORAL > VIDEO MAPPING > 2024",
+            "id": "single1",
             "image": "assets/images/preview/single1-preview.png",
             "modalImage": "assets/images/cards/single-card.png",
             "link": "#",
-            "details": "Mais informações sobre os estudos 3D."
+            "translations": {
+                "en": {
+                    "title": "SINGLE 1",
+                    "subtitle": "SSA MAPPING",
+                    "description": "Reactive 3D mapping project, created to interact with different audio layers at Mercado Modelo in Salvador.",
+                    "category": "AUTHORIAL > VIDEO MAPPING > 2024",
+                    "details": "More information about the 3D studies."
+                },
+                "pt": {
+                    "title": "SINGLE 1",
+                    "subtitle": "SSA MAPPING",
+                    "description": "Projeto de mapping 3D reativo, criado para interagir com diferentes camadas de áudio no Mercado Modelo de Salvador.",
+                    "category": "AUTORAL > VIDEO MAPPING > 2024",
+                    "details": "Mais informações sobre os estudos 3D."
+                },
+                "es": {
+                    "title": "SINGLE 1",
+                    "subtitle": "SSA MAPPING",
+                    "description": "Proyecto de mapping 3D reactivo, creado para interactuar con diferentes capas de audio en el Mercado Modelo de Salvador.",
+                    "category": "AUTORAL > VIDEO MAPPING > 2024",
+                    "details": "Más información sobre los estudios 3D."
+                }
+            }
         }
     ]
 }

@@ -6,8 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalDetails = document.getElementById('modal-details');
     const modalLink = document.getElementById('modal-link');
     const closeModalBtn = document.querySelector('.modal-close');
+    const languageSelector = document.getElementById('language-selector');
+    
+    let currentLanguage = languageSelector.value || 'en';
 
-    // Função para ativar seção visível no scroll
+    // Function to check visible sections
     function checkSections() {
         let scrollPos = window.scrollY;
         sections.forEach(section => {
@@ -19,83 +22,112 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    window.addEventListener('scroll', checkSections);
-    checkSections(); // Inicializa no carregamento
-
-    // Função para abrir modal
-    function openModal(imageSrc, link, details) {
-        modalImage.src = imageSrc;
-        modalLink.href = link;
-        modalDetails.innerHTML = details;
-        modal.style.display = 'flex';
+    // Function to open modal
+    function openModal(projectId) {
+        fetch('assets/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const project = data.projects.find(p => p.id === projectId);
+                const translation = project.translations[currentLanguage] || project.translations['en'];
+                
+                modalImage.src = project.modalImage;
+                modalImage.alt = translation.title;
+                modalLink.href = project.link;
+                
+                modalDetails.innerHTML = `
+                    <h3>${translation.title}</h3>
+                    <h4>${translation.subtitle}</h4>
+                    <p class="modal-category">${translation.category}</p>
+                    <p class="modal-description">${translation.description}</p>
+                    <p class="modal-details">${translation.details}</p>
+                `;
+                
+                modal.style.display = 'flex';
+            })
+            .catch(error => console.error('Error loading project details:', error));
     }
 
-    // Função para fechar modal
+    // Function to close modal
     function closeModal() {
         modal.style.display = 'none';
     }
 
-    closeModalBtn.addEventListener('click', closeModal);
+    // Function to render projects
+    function renderProjects(language) {
+        fetch('assets/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                projectsContainer.innerHTML = '';
+                
+                data.projects.forEach(project => {
+                    const translation = project.translations[language] || project.translations['en'];
+                    
+                    const card = document.createElement('div');
+                    card.classList.add('project-card');
+                    card.dataset.id = project.id;
 
-    // Carrega os projetos do JSON e cria os cards dinamicamente
-    fetch('assets/data/data.json')
-        .then(response => response.json())
-        .then(data => {
-            data.projects.forEach(project => {
-                const card = document.createElement('div');
-                card.classList.add('project-card');
+                    const cardImageDiv = document.createElement('div');
+                    cardImageDiv.classList.add('card-image');
+                    const img = document.createElement('img');
+                    img.src = project.image;
+                    img.alt = translation.title;
+                    cardImageDiv.appendChild(img);
 
-                const cardImageDiv = document.createElement('div');
-                cardImageDiv.classList.add('card-image');
+                    const cardTextDiv = document.createElement('div');
+                    cardTextDiv.classList.add('card-text');
 
-                const img = document.createElement('img');
-                img.src = project.image;
-                img.alt = project.title;
+                    const textContentDiv = document.createElement('div');
+                    textContentDiv.classList.add('text-content');
 
-                cardImageDiv.appendChild(img);
+                    const title = document.createElement('h2');
+                    title.classList.add('project-title');
+                    title.textContent = translation.title;
 
-                const cardTextDiv = document.createElement('div');
-                cardTextDiv.classList.add('card-text');
+                    const subtitle = document.createElement('h3');
+                    subtitle.classList.add('project-subtitle');
+                    subtitle.textContent = translation.subtitle;
 
-                const textContentDiv = document.createElement('div');
-                textContentDiv.classList.add('text-content');
+                    const description = document.createElement('p');
+                    description.classList.add('project-description');
+                    description.textContent = translation.description;
 
-                const title = document.createElement('h2');
-                title.classList.add('project-title');
-                title.textContent = project.title;
+                    textContentDiv.appendChild(title);
+                    textContentDiv.appendChild(subtitle);
+                    textContentDiv.appendChild(description);
 
-                const subtitle = document.createElement('h3');
-                subtitle.classList.add('project-subtitle');
-                subtitle.textContent = project.subtitle;
+                    const category = document.createElement('p');
+                    category.classList.add('project-category');
+                    category.textContent = translation.category;
 
-                const description = document.createElement('p');
-                description.classList.add('project-description');
-                description.textContent = project.description;
+                    const button = document.createElement('button');
+                    button.classList.add('cta-button-fixed');
+                    button.textContent = language === 'en' ? 'DETAILS' : 
+                                      language === 'pt' ? 'DETALHES' : 'DETALLES';
+                    button.addEventListener('click', () => openModal(project.id));
 
-                textContentDiv.appendChild(title);
-                textContentDiv.appendChild(subtitle);
-                textContentDiv.appendChild(description);
+                    cardTextDiv.appendChild(textContentDiv);
+                    cardTextDiv.appendChild(category);
+                    cardTextDiv.appendChild(button);
 
-                const category = document.createElement('p');
-                category.classList.add('project-category');
-                category.textContent = project.category;
+                    card.appendChild(cardImageDiv);
+                    card.appendChild(cardTextDiv);
 
-                const button = document.createElement('button');
-                button.classList.add('cta-button-fixed');
-                button.textContent = 'DETALHES';
-                button.addEventListener('click', () => {
-                    openModal(project.modalImage, project.link, project.details);
+                    projectsContainer.appendChild(card);
                 });
+            })
+            .catch(error => console.error('Error loading projects:', error));
+    }
 
-                cardTextDiv.appendChild(textContentDiv);
-                cardTextDiv.appendChild(category);
-                cardTextDiv.appendChild(button);
+    // Event listeners
+    window.addEventListener('scroll', checkSections);
+    closeModalBtn.addEventListener('click', closeModal);
+    
+    languageSelector.addEventListener('change', (e) => {
+        currentLanguage = e.target.value;
+        renderProjects(currentLanguage);
+    });
 
-                card.appendChild(cardImageDiv);
-                card.appendChild(cardTextDiv);
-
-                projectsContainer.appendChild(card);
-            });
-        })
-        .catch(error => console.error('Erro ao carregar os dados do JSON:', error));
+    // Initialize
+    checkSections();
+    renderProjects(currentLanguage);
 });

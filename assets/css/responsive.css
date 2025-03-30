@@ -1,216 +1,334 @@
-
 /* =========================== */
-/*         GENERAL LAYOUT      */
+/*      VARIÁVEIS RESPONSIVAS  */
 /* =========================== */
-
-/* Tablets and Mobile */
-@media (max-width: 1024px) {
-
+:root {
+    --responsive-space-sm: 16px;
+    --responsive-space-md: 24px;
+    --responsive-space-lg: 32px;
+    --responsive-space-xl: 48px;
+  }
+  
+  /* =========================== */
+  /*      ESTRUTURA PRINCIPAL    */
+  /* =========================== */
+  
+  /* Tablet (768px - 1024px) */
+  @media (max-width: 1024px) {
+    body {
+      overflow-x: hidden;
+    }
+  
     .content-div {
-        gap: 1rem;
-        margin: 1rem 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      gap: var(--responsive-space-md);
+      margin: var(--responsive-space-lg) auto;
+      flex-direction: column;
     }
-
-    /* Adjust images in column-1 and gallery-div-1 */
-    .column-1 img, .gallery-div-1 img {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Ensure the gallery items are properly sized */
-    .gallery-div-1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    /* Adjust images inside the gallery */
+  
+    .column-1 img, 
     .gallery-div-1 img {
-        width: 100%; /* Ensure images take full width */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 300px; /* Limit maximum width to control image size */
+      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
-
-    /* Make sure text content and preview divs align */
+  
     .text-line {
-        text-align: center;
+      text-align: center;
+      order: -1;
     }
-
-    .work-preview-div {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    /* Menu adjustments */
-    .menu-div {
-        padding: 0 16px 8px;
-    }
-
-    /* Centered title and description styles */
-    .centered-title {
-        font-size: 1.75rem;
-    }
-
-    .centered-description {
-        font-size: 0.9rem;
-        max-width: 90%;
-    }
-}
-
-/* =========================== */
-/*          FOOTER             */
-/* =========================== */
-
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .footer-right {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
-
-/* =========================== */
-/*        MENU DIV            */
-/* =========================== */
-
-@media (max-width: 768px) {
-    .menu-div {
-        width: 100%;
-        height: 80px;
-        padding: 0 16px 8px;
-    }
-
-    .menu-div .brand-text {
-        font-size: 1.5rem;
-    }
-
-    .menu-div nav ul {
-        gap: 1rem;
-    }
-
-    .menu-div nav a {
-        font-size: 0.9rem;
-    }
-}
-
-/* =========================== */
-/*         GALLERY 2           */
-/* =========================== */
-@media (max-width: 1024px) {
-    .gallery-div-2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;  /* Center align the gallery items */
-        gap: 1rem;
-    }
-
-    .gallery-item {
-        width: 100%; /* Make gallery items adjust to 100% width */
-        max-width: 300px; /* Limit maximum size */
-        height: auto;
-    }
-
-    .description h2 {
-        font-size: 1.25rem;
-    }
-
-    .description p {
-        font-size: 0.875rem;
-    }
-}
-
-
-/* Tablet */
-@media (max-width: 1024px) {
-    .vertical-banner {
-        width: 100%;
-        max-width: 1080px; /* Maximum width */
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        min-height: 300px; /* Minimum height for the container */
-    }
-
-    .banner-item {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 1s ease;
-    }
-
-    .banner-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the image covers the entire space */
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .vertical-banner {
-        width: 100%;
-        height: auto;
-        min-height: 250px; /* Set a minimum height to maintain proportions */
-    }
-    .banner-item {
-        width: 100%; /* Ensure the banner items scale appropriately */
-        height: 100%; /* Adjust based on content */
-    }
-
-    .content-div {
-        flex-direction: column;
-    }
-
-    .text-line {
-        order: -1; /* Move para cima da column-1 */
-    }
-
+  
     .column-1 {
-        order: 1; /* Mantém a imagem no meio */
+      order: 1;
     }
-
+  
     .gallery-div-1 {
-        order: 2; /* Mantém a galeria abaixo */
+      order: 2;
     }
-}
-
-
-/* Small mobile */
-@media (max-width: 480px) {
+  }
+  
+  /* =========================== */
+  /*        MENU DE NAVEGAÇÃO    */
+  /* =========================== */
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .menu-div {
+      width: 100%;
+      height: auto;
+      padding: var(--responsive-space-sm);
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .menu-div .brand-text {
+      font-size: 1.5rem;
+    }
+  
+    .menu-div nav ul {
+      gap: var(--responsive-space-sm);
+    }
+  }
+  
+  /* Mobile (até 768px) */
+  @media (max-width: 768px) {
+    .menu-div {
+      flex-direction: column;
+      padding: var(--responsive-space-sm) var(--responsive-space-md);
+      height: auto;
+    }
+  
+    .menu-div .brand-text {
+      margin-bottom: var(--responsive-space-sm);
+      font-size: 1.3rem;
+    }
+  
+    .menu-div nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  /* Mobile pequeno (até 480px) */
+  @media (max-width: 480px) {
+    .menu-div nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .menu-div nav a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* =========================== */
+  /*        GALERIAS             */
+  /* =========================== */
+  
+  @media (max-width: 1024px) {
+    .gallery-div-1, 
+    .gallery-div-2 {
+      justify-content: center;
+      gap: var(--responsive-space-md);
+      padding: var(--responsive-space-md) 0;
+    }
+  
+    .gallery-div-1 {
+      flex-wrap: wrap;
+    }
+  
+    .gallery-div-1 img {
+      max-width: 45%;
+    }
+  
+    .gallery-item {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .gallery-div-1 img {
+      max-width: 100%;
+    }
+  }
+  
+  /* =========================== */
+  /*      BANNER VERTICAL        */
+  /* =========================== */
+  
+  @media (max-width: 1024px) {
     .vertical-banner {
-        width: 100%;
-        height: auto;
-        min-height: 200px; /* Set a smaller minimum height for smaller screens */
-        margin: 0 auto;
-        display: block;
+      max-width: 90%;
+      min-height: 300px;
+      aspect-ratio: 16/9;
+      margin: var(--responsive-space-lg) auto;
     }
-}
+  }
+  
+  @media (max-width: 480px) {
+    .vertical-banner {
+      min-height: 200px;
+    }
+  }
+  
+  /* =========================== */
+  /*      SEÇÃO DE TRABALHOS     */
+  /* =========================== */
+  
+  @media (max-width: 1024px) {
+    .work-section {
+      width: 100%;
+      padding: 0 var(--responsive-space-md);
+      justify-content: center;
+    }
+  
+    .work-preview {
+      max-width: 48%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .work-preview {
+      max-width: 100%;
+    }
+  }
+  
+  /* =========================== */
+  /*          RODAPÉ             */
+  /* =========================== */
+  
+  @media (max-width: 1024px) {
+    .footer {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      padding: var(--responsive-space-xl) var(--responsive-space-md);
+      gap: var(--responsive-space-lg);
+    }
+  
+    .footer-left, 
+    .footer-right {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .footer-socials {
+      justify-content: center;
+      margin-top: var(--responsive-space-md);
+    }
+  }
+  
+  /* =========================== */
+  /*      ELEMENTOS DE TEXTO     */
+  /* =========================== */
+  
+  @media (max-width: 1024px) {
+    .centered-title {
+      font-size: 2rem;
+    }
+  
+    .centered-description {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+  
+    .text-line h1 {
+      font-size: 2.5rem;
+    }
+  
+    .text-line h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .centered-title {
+      font-size: 1.75rem;
+    }
+  
+    .text-line h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* =========================== */
+  /*      VIDEO CONTAINER        */
+  /* =========================== */
+  
+  @media (max-width: 1024px) {
+    .video-container {
+      width: 100%;
+      height: 500px;
+      min-height: auto;
+    }
+  
+    .title-video {
+      font-size: 2.5rem;
+      white-space: normal;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .video-container {
+      height: 400px;
+    }
+  
+    .title-video {
+      font-size: 2rem;
+    }
+  }
+  
+  /* =========================== */
+  /*      PROJETOS (EXTRA)       */
+  /* =========================== */
+  
+  @media (max-width: 1024px) {
+    .projects-container {
+      max-height: none;
+      height: auto;
+      overflow-y: visible;
+    }
+  
+    .project-card {
+      height: auto;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+  
+    .card-text {
+      position: static;
+      width: 90%;
+      padding: var(--responsive-space-lg);
+      color: var(--text-dark);
+    }
+  
+    body.dark-mode .card-text {
+      color: var(--text-light);
+    }
+  }
+
 
 /* =========================== */
-/*      WORK PREVIEW DIV       */
+/*  ZOOM PROGRESSIVO (1400-1024) - VERSÃO FINAL */
 /* =========================== */
-
-@media (max-width: 1024px) {
-    .work-preview-div {
-        width: 100%; /* Work preview should use full width */
-        max-width: 900px; /* Limit maximum size */
-        margin: 0 auto;
+@media (min-width: 1024px) and (max-width: 1400px) {
+    :root {
+      --zoom-min: 0.85;
+      --zoom-max: 1;
+      --zoom-factor: calc(
+        var(--zoom-min) + 
+        (var(--zoom-max) - var(--zoom-min)) * 
+        (100vw - 1024px) / (1400 - 1024)
+      );
     }
-}
-
+  
+    body {
+      zoom: var(--zoom-factor);
+      transform: scale(var(--zoom-factor));
+      transform-origin: top center;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+  
+    /* Exceções para o menu */
+    .menu-div {
+      transform: none !important;
+      zoom: 1 !important;
+      width: 95% !important;
+      max-width: 1400px;
+      margin: 0 auto !important;
+      padding: 10px 2.5% !important;
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+  
+    .menu-div .brand-text {
+      font-size: clamp(1.3rem, 1.5vw, 1.8rem) !important;
+    }
+  
+    .menu-div nav ul {
+      gap: clamp(12px, 1.5vw, 24px) !important;
+    }
+  }
