@@ -429,3 +429,273 @@
       }
     }
   }
+
+  {
+    "en": {
+      "nav": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "cv": "CV",
+        "gallery": "GALLERY"
+      },
+      "home": {
+        "subtitle": "Creative Strategist | Digital Storyteller | 3D Designer",
+        "description": "I create digital realities that push the boundaries of storytelling and technology, <br> crafting experiences that captivate and connect.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "ME"
+        }
+      },
+      "about": {
+        "intro": "Hey, it’s me! I explore how <strong>internet access and technology</strong> shape the ways we connect, share, and create.",
+        "background": "Growing up in <strong>Guaratinguetá, São Paulo</strong>, near South America's largest technical-military educational complex and the National Sanctuary in Aparecida do Norte, I became fascinated by how systems and cultures intersect. The <strong>internet became my gateway</strong> to knowledge and expression that weren’t available to most people around me, shaping how I navigate the world.",
+        "experience": "With a background in advertising and technology, I’ve worked as a <strong>full-time designer</strong> in marketing agencies and at web culture events like BRIFW and REBUDIGITAL. My work moves between <strong>digital storytelling, creative technology, and 3D design</strong>, experimenting with tools like <strong>Blender, TouchDesigner, and AI</strong>.",
+        "focus": "I focus on building <strong>immersive experiences</strong> for brands, collectives, and individuals, exploring how <strong>virtual landscapes and interactive media</strong> can reshape the way we experience identity and digital spaces.",
+        "vision": "More than a medium for creation, I see technology as a way to <strong>amplify underrepresented voices</strong> and reimagine narratives. My projects blend self-discovery with the exploration of digital environments, avatars, and the relationship between tech and culture. Through visuals, interactive experiences, and conversations, I aim to create work that <strong>sparks new perspectives and meaningful connections</strong>."
+      },
+      "footer": {
+        "interested": "Interested in working together?",
+        "letsTalk": "Let's talk"
+      }
+    },
+    "pt": {
+      "nav": {
+        "home": "HOME",
+        "about": "SOBRE",
+        "cv": "CURRÍCULO",
+        "gallery": "GALERIA"
+      },
+      "home": {
+        "subtitle": "Estrategista Criativo | Contador de Histórias Digital | Designer 3D",
+        "description": "Crio realidades digitais que expandem os limites da narrativa e da tecnologia, <br> desenvolvendo experiências que cativam e conectam.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "EU"
+        }
+      },
+      "about": {
+        "intro": "Oi, sou eu! Exploro como o <strong>acesso à internet e a tecnologia</strong> moldam as formas como nos conectamos, compartilhamos e criamos.",
+        "background": "Crescendo em <strong>Guaratinguetá, São Paulo</strong>, perto do maior complexo educacional técnico-militar da América do Sul e do Santuário Nacional em Aparecida do Norte, fiquei fascinado por como sistemas e culturas se cruzam. A <strong>internet se tornou meu portal</strong> para conhecimento e expressão que não estavam disponíveis para a maioria das pessoas ao meu redor, moldando como eu navego pelo mundo.",
+        "experience": "Com formação em publicidade e tecnologia, trabalhei como <strong>designer em tempo integral</strong> em agências de marketing e em eventos de cultura web como BRIFW e REBUDIGITAL. Meu trabalho transita entre <strong>narrativa digital, tecnologia criativa e design 3D</strong>, experimentando ferramentas como <strong>Blender, TouchDesigner e IA</strong>.",
+        "focus": "Eu me concentro em construir <strong>experiências imersivas</strong> para marcas, coletivos e indivíduos, explorando como <strong>paisagens virtuais e mídia interativa</strong> podem reformular a maneira como experimentamos identidade e espaços digitais.",
+        "vision": "Mais do que um meio de criação, vejo a tecnologia como uma forma de <strong>amplificar vozes sub-representadas</strong> e reimaginar narrativas. Meus projetos misturam autodescoberta com a exploração de ambientes digitais, avatares e a relação entre tecnologia e cultura. Por meio de visuais, experiências interativas e conversas, busco criar trabalhos que <strong>despertem novas perspectivas e conexões significativas</strong>."
+      },
+      "footer": {
+        "interested": "Interessado em trabalhar juntos?",
+        "letsTalk": "Vamos conversar"
+      }
+    },
+    "es": {
+      "nav": {
+        "home": "INICIO",
+        "about": "SOBRE MÍ",
+        "cv": "CURRÍCULUM",
+        "gallery": "GALERÍA"
+      },
+      "home": {
+        "subtitle": "Estratega Creativo | Narrador Digital | Diseñador 3D",
+        "description": "Creo realidades digitales que desafían los límites de la narrativa y la tecnología, <br> diseñando experiencias que cautivan y conectan.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "YO"
+        }
+      },
+      "about": {
+        "intro": "¡Hola, soy yo! Exploro cómo el <strong>acceso a internet y la tecnología</strong> moldean las formas en que nos conectamos, compartimos y creamos.",
+        "background": "Crecí en <strong>Guaratinguetá, São Paulo</strong>, cerca del mayor complejo educativo técnico-militar de América del Sur y del Santuario Nacional en Aparecida do Norte, y me fascinó cómo se cruzan los sistemas y las culturas. El <strong>internet se convirtió en mi puerta de entrada</strong> al conocimiento y la expresión que no estaban disponibles para la mayoría de las personas a mi alrededor, moldeando cómo navego por el mundo.",
+        "experience": "Con formación en publicidad y tecnología, he trabajado como <strong>diseñador a tiempo completo</strong> en agencias de marketing y en eventos de cultura web como BRIFW y REBUDIGITAL. Mi trabajo se mueve entre <strong>narrativa digital, tecnología creativa y diseño 3D</strong>, experimentando con herramientas como <strong>Blender, TouchDesigner e IA</strong>.",
+        "focus": "Me enfoco en construir <strong>experiencias inmersivas</strong> para marcas, colectivos e individuos, explorando cómo <strong>paisajes virtuales y medios interactivos</strong> pueden reformular la manera en que experimentamos la identidad y los espacios digitales.",
+        "vision": "Más que un medio para la creación, veo la tecnología como una forma de <strong>amplificar voces subrepresentadas</strong> y reimaginar narrativas. Mis proyectos combinan autodescubrimiento con la exploración de entornos digitales, avatares y la relación entre tecnología y cultura. A través de visuales, experiencias interactivas y conversaciones, busco crear trabajos que <strong>despierten nuevas perspectivas y conexiones significativas</strong>."
+      },
+      "footer": {
+        "interested": "¿Interesado en trabajar juntos?",
+        "letsTalk": "Hablemos"
+      }
+    }
+  }
+
+
+  {
+    "en": {
+      "nav": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "cv": "CV",
+        "gallery": "GALLERY"
+      },
+      "home": {
+        "subtitle": "Creative Strategist | Digital Storyteller | 3D Designer",
+        "description": "I create digital realities that push the boundaries of storytelling and technology, <br> crafting experiences that captivate and connect.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "ME"
+        }
+      },
+      "about": {
+        "intro": "Hey, it’s me! I explore how <strong>internet access and technology</strong> shape the ways we connect, share, and create.",
+        "background": "Growing up in <strong>Guaratinguetá, São Paulo</strong>, near South America's largest technical-military educational complex and the National Sanctuary in Aparecida do Norte, I became fascinated by how systems and cultures intersect. The <strong>internet became my gateway</strong> to knowledge and expression that weren’t available to most people around me, shaping how I navigate the world.",
+        "experience": "With a background in advertising and technology, I’ve worked as a <strong>full-time designer</strong> in marketing agencies and at web culture events like BRIFW and REBUDIGITAL. My work moves between <strong>digital storytelling, creative technology, and 3D design</strong>, experimenting with tools like <strong>Blender, TouchDesigner, and AI</strong>.",
+        "focus": "I focus on building <strong>immersive experiences</strong> for brands, collectives, and individuals, exploring how <strong>virtual landscapes and interactive media</strong> can reshape the way we experience identity and digital spaces.",
+        "vision": "More than a medium for creation, I see technology as a way to <strong>amplify underrepresented voices</strong> and reimagine narratives. My projects blend self-discovery with the exploration of digital environments, avatars, and the relationship between tech and culture. Through visuals, interactive experiences, and conversations, I aim to create work that <strong>sparks new perspectives and meaningful connections</strong>."
+      },
+      "footer": {
+        "interested": "Interested in working together?",
+        "letsTalk": "Let's talk"
+      }
+    },
+    "pt": {
+      "nav": {
+        "home": "HOME",
+        "about": "SOBRE",
+        "cv": "CURRÍCULO",
+        "gallery": "GALERIA"
+      },
+      "home": {
+        "subtitle": "Estrategista Criativo | Contador de Histórias Digital | Designer 3D",
+        "description": "Crio realidades digitais que expandem os limites da narrativa e da tecnologia, <br> desenvolvendo experiências que cativam e conectam.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "EU"
+        }
+      },
+      "about": {
+        "intro": "Oi, sou eu! Exploro como o <strong>acesso à internet e a tecnologia</strong> moldam as formas como nos conectamos, compartilhamos e criamos.",
+        "background": "Crescendo em <strong>Guaratinguetá, São Paulo</strong>, perto do maior complexo educacional técnico-militar da América do Sul e do Santuário Nacional em Aparecida do Norte, fiquei fascinado por como sistemas e culturas se cruzam. A <strong>internet se tornou meu portal</strong> para conhecimento e expressão que não estavam disponíveis para a maioria das pessoas ao meu redor, moldando como eu navego pelo mundo.",
+        "experience": "Com formação em publicidade e tecnologia, trabalhei como <strong>designer em tempo integral</strong> em agências de marketing e em eventos de cultura web como BRIFW e REBUDIGITAL. Meu trabalho transita entre <strong>narrativa digital, tecnologia criativa e design 3D</strong>, experimentando ferramentas como <strong>Blender, TouchDesigner e IA</strong>.",
+        "focus": "Eu me concentro em construir <strong>experiências imersivas</strong> para marcas, coletivos e indivíduos, explorando como <strong>paisagens virtuais e mídia interativa</strong> podem reformular a maneira como experimentamos identidade e espaços digitais.",
+        "vision": "Mais do que um meio de criação, vejo a tecnologia como uma forma de <strong>amplificar vozes sub-representadas</strong> e reimaginar narrativas. Meus projetos misturam autodescoberta com a exploração de ambientes digitais, avatares e a relação entre tecnologia e cultura. Por meio de visuais, experiências interativas e conversas, busco criar trabalhos que <strong>despertem novas perspectivas e conexões significativas</strong>."
+      },
+      "footer": {
+        "interested": "Interessado em trabalhar juntos?",
+        "letsTalk": "Vamos conversar"
+      }
+    },
+    "es": {
+      "nav": {
+        "home": "INICIO",
+        "about": "SOBRE MÍ",
+        "cv": "CURRÍCULUM",
+        "gallery": "GALERÍA"
+      },
+      "home": {
+        "subtitle": "Estratega Creativo | Narrador Digital | Diseñador 3D",
+        "description": "Creo realidades digitales que desafían los límites de la narrativa y la tecnología, <br> diseñando experiencias que cautivan y conectan.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "YO"
+        }
+      },
+      "about": {
+        "intro": "¡Hola, soy yo! Exploro cómo el <strong>acceso a internet y la tecnología</strong> moldean las formas en que nos conectamos, compartimos y creamos.",
+        "background": "Crecí en <strong>Guaratinguetá, São Paulo</strong>, cerca del mayor complejo educativo técnico-militar de América del Sur y del Santuario Nacional en Aparecida do Norte, y me fascinó cómo se cruzan los sistemas y las culturas. El <strong>internet se convirtió en mi puerta de entrada</strong> al conocimiento y la expresión que no estaban disponibles para la mayoría de las personas a mi alrededor, moldeando cómo navego por el mundo.",
+        "experience": "Con formación en publicidad y tecnología, he trabajado como <strong>diseñador a tiempo completo</strong> en agencias de marketing y en eventos de cultura web como BRIFW y REBUDIGITAL. Mi trabajo se mueve entre <strong>narrativa digital, tecnología creativa y diseño 3D</strong>, experimentando con herramientas como <strong>Blender, TouchDesigner e IA</strong>.",
+        "focus": "Me enfoco en construir <strong>experiencias inmersivas</strong> para marcas, colectivos e individuos, explorando cómo <strong>paisajes virtuales y medios interactivos</strong> pueden reformular la manera en que experimentamos la identidad y los espacios digitales.",
+        "vision": "Más que un medio para la creación, veo la tecnología como una forma de <strong>amplificar voces subrepresentadas</strong> y reimaginar narrativas. Mis proyectos combinan autodescubrimiento con la exploración de entornos digitales, avatares y la relación entre tecnología y cultura. A través de visuales, experiencias interactivas y conversaciones, busco crear trabajos que <strong>despierten nuevas perspectivas y conexiones significativas</strong>."
+      },
+      "footer": {
+        "interested": "¿Interesado en trabajar juntos?",
+        "letsTalk": "Hablemos"
+      }
+    }
+  }
+
+  {
+    "en": {
+      "shapeofiiii": {
+        "title": "Shape of IIII",
+        "description": "A plant form emerges from a divided cube, with each segment extruded, mirrored, and twisted. This balance between structure and flow echoes nature’s ability to grow and adapt.<br><br>Symbolizing growth through transformation, the design reflects how we evolve through effort, resilience, and a deeper connection with the world."
+      }
+    },
+    "pt": {
+      "shapeofiiii": {
+        "title": "Forma de IIII",
+        "description": "Uma forma vegetal emerge de um cubo dividido, com cada segmento extrudado, espelhado e torcido. Esse equilíbrio entre estrutura e fluxo reflete a capacidade da natureza de crescer e se adaptar.<br><br>Simbolizando o crescimento por meio da transformação, o design reflete como evoluímos através de esforço, resiliência e uma conexão mais profunda com o mundo."
+      }
+    },
+    "es": {
+      "shapeofiiii": {
+        "title": "Forma de IIII",
+        "description": "Una forma vegetal surge de un cubo dividido, con cada segmento extruido, espejado y retorcido. Este equilibrio entre estructura y flujo refleja la capacidad de la naturaleza para crecer y adaptarse.<br><br>Simbolizando el crecimiento a través de la transformación, el diseño refleja cómo evolucionamos mediante esfuerzo, resiliencia y una conexión más profunda con el mundo."
+      }
+    }
+  }
+
+
+  {
+    "en": {
+      "zalgo": {
+        "title": "ZALGO TEXT",
+        "description": "From the collectible excitement surrounding Dirty Angel [Unruly Edition] on Zora, the concept of creating a silkscreen printing pattern was born, and soon, these pieces will be worn by cyborgs across São Paulo."
+      }
+    },
+    "pt": {
+      "zalgo": {
+        "title": "TEXTO ZALGO",
+        "description": "A partir da empolgação colecionável em torno de Dirty Angel [Unruly Edition] no Zora, nasceu o conceito de criar um padrão de impressão em serigrafia, e em breve, essas peças serão usadas por ciborgues em São Paulo."
+      }
+    },
+    "es": {
+      "zalgo": {
+        "title": "TEXTO ZALGO",
+        "description": "A partir de la emoción coleccionable en torno a Dirty Angel [Unruly Edition] en Zora, nació el concepto de crear un patrón de impresión en serigrafía, y pronto, estas piezas serán usadas por cyborgs en São Paulo."
+      }
+    }
+  }
+
+
+  {
+    "en": {
+      "kids": {
+        "title": "KIDS",
+        "description": "Born with an invitation to create visual assets for NÃOVENHASEMROSTO’s debut album KIDS, an intense work that blends diverse musical styles with fast-paced rhythms, carrying a deep sense of nostalgia and childhood memories.<br><br>The 3D visuals for the album come to life with an avatar dressed in a unique vestment, featuring a sound-reactive system where red circles grow and dance to the music, emanating power, freedom, and joy from the mind of this child in a sinister world.",
+        "processTitle": "THE PROCESS AND LADY LETAL",
+        "processDescription": "The idea to use the album cover as a stamp for avatar clothing was inspired by Lady Letal, and led to the creation of a unique garment made of 100% polyester, the artist fingerprint, for the album promotion. The limited edition pieces were a hit, with all of them selling out.",
+        "gallery": {
+          "3dModel": "3D MODEL",
+          "nodeSystem": "NODE SYSTEM",
+          "garmentConcept": "GARMENT CONCEPT",
+          "irlGarment": "IRL GARMENT"
+        }
+      }
+    },
+    "pt": {
+      "kids": {
+        "title": "KIDS",
+        "description": "Nascido de um convite para criar recursos visuais para o álbum de estreia KIDS do NÃOVENHASEMROSTO, um trabalho intenso que mistura diversos estilos musicais com ritmos acelerados, carregando um profundo senso de nostalgia e memórias da infância.<br><br>Os visuais 3D do álbum ganham vida com um avatar vestido com uma vestimenta única, equipado com um sistema reativo ao som onde círculos vermelhos crescem e dançam ao ritmo da música, emanando poder, liberdade e alegria da mente dessa criança em um mundo sinistro.",
+        "processTitle": "O PROCESSO E LADY LETAL",
+        "processDescription": "A ideia de usar a capa do álbum como estampa para roupas de avatar foi inspirada por Lady Letal e levou à criação de uma peça única feita de 100% poliéster, a impressão digital do artista, para a promoção do álbum. As peças de edição limitada foram um sucesso, esgotando-se completamente.",
+        "gallery": {
+          "3dModel": "MODELO 3D",
+          "nodeSystem": "SISTEMA DE NÓS",
+          "garmentConcept": "CONCEITO DE VESTIMENTA",
+          "irlGarment": "VESTIMENTA REAL"
+        }
+      }
+    },
+    "es": {
+      "kids": {
+        "title": "KIDS",
+        "description": "Nacido de una invitación para crear recursos visuales para el álbum debut KIDS de NÃOVENHASEMROSTO, un trabajo intenso que mezcla diversos estilos musicales con ritmos acelerados, cargado de un profundo sentido de nostalgia y recuerdos de la infancia.<br><br>Los visuales 3D del álbum cobran vida con un avatar vestido con una vestimenta única, equipado con un sistema reactivo al sonido donde círculos rojos crecen y bailan al ritmo de la música, emanando poder, libertad y alegría desde la mente de este niño en un mundo siniestro.",
+        "processTitle": "EL PROCESO Y LADY LETAL",
+        "processDescription": "La idea de usar la portada del álbum como sello para la ropa del avatar se inspiró en Lady Letal y llevó a la creación de una prenda única hecha de 100% poliéster, la huella del artista, para la promoción del álbum. Las piezas de edición limitada fueron un éxito, agotándose por completo.",
+        "gallery": {
+          "3dModel": "MODELO 3D",
+          "nodeSystem": "SISTEMA DE NODOS",
+          "garmentConcept": "CONCEPTO DE PRENDA",
+          "irlGarment": "PRENDA REAL"
+        }
+      }
+    }
+  }
