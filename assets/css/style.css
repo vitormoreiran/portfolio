@@ -692,7 +692,7 @@ a {
 .footer-right {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 /* Links */
