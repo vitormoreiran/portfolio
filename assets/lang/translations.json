@@ -1,701 +1,473 @@
 {
-    "en": {
-      "nav": {
-        "home": "HOME",
-        "about": "ABOUT",
-        "cv": "CV",
-        "gallery": "GALLERY",
-        "portfolio": "PORTFOLIO",
-        "linkedin": "LINKEDIN",
-        "website": "WEBSITE"
-      },
-      "cv": {
-        "tagline": "Multimedia Designer | Visual Strategy and Innovation",
-        "contact": "vitormoreiran@gmail.com",
-        "address": "Vila Mariana, São Paulo - SP, Brazil",
-        "phone": "+55 (12) 99145-2549",
-        "aboutTitle": "About Me",
-        "aboutText": "I'm Vitor Moreira, a multimedia designer and digital creator specialized in strategic design, 3D animation and immersive digital experiences. My journey combines creativity, technology and communication, with experience in advertising campaigns, visual identity and audiovisual production. I've worked with brands like Renner, John Deere, Wired and Balaclava, turning ideas into impactful solutions that connect brands and people. As a non-binary trans person, I bring a unique perspective to inclusive and innovative projects, using generative AI and programming to expand visual narratives and create new forms of digital interaction.",
-        "experienceTitle": "Professional Experience",
-        "jobs": {
-          "freelancer": {
-            "title": "Creative Consultant | Freelancer",
-            "period": "Remote | 2023–2025",
-            "item1": "Development of creative concepts and visual identities for emerging brands and social projects.",
-            "item2": "Creative leadership in 3D animation projects and immersive digital experiences, integrating AI and interactive design."
-          },
-          "adtail": {
-            "title": "Junior Art Director | Adtail",
-            "period": "São Paulo, SP | 2023–2024",
-            "item1": "Development of visual identities for premium brands, increasing engagement in multichannel campaigns.",
-            "item2": "Automation of email marketing workflows, reducing production time and ensuring visual consistency.",
-            "item3": "Strategic alignment with clients and teams for project delivery."
-          },
-          "dacri": {
-            "title": "Design Assistant | Dacri Deviati",
-            "period": "Rio de Janeiro, RJ | 2022",
-            "item1": "Visual strategies for BRIFW, generating +100,000 impressions in 3 months and increasing brand visibility.",
-            "item2": "Creation of 3D logos, graphic materials and videos for social media.",
-            "item3": "Collaboration with sponsors and artists for material development."
-          },
-          "six": {
-            "title": "Junior Art Director | SIX Digital",
-            "period": "2021–2022",
-            "item1": "Creation of digital campaigns and graphic pieces for social media, generating leads for international clients (Brazil, Argentina, China, USA).",
-            "item2": "Development of printed and digital materials focused on results."
-          }
-        },
-        "educationTitle": "Education",
-        "education": {
-          "degree1": {
-            "title": "Bachelor's Degree in Advertising and Propaganda",
-            "period": "UFPR | 2017–2021"
-          },
-          "degree2": {
-            "title": "Technical Degree in Information Technology",
-            "period": "ETEC | 2014–2016"
-          },
-          "course1": {
-            "title": "Fog Zones: Art and Technology",
-            "period": "Instituto Ling | 2024–2025"
-          },
-          "course2": {
-            "title": "Art of Tomorrow: Investigative Encounters",
-            "period": "Museum of Tomorrow | 2023"
-          },
-          "course3": {
-            "title": "Avatars and CGI Influencers: The Future of Fashion",
-            "period": "BRIFW & Vogue | 2023"
-          }
-        },
-        "eventsTitle": "Events and Releases",
-        "events": {
-          "item1": "SSA Mapping Festival - Selected Artist | Salvador, BA",
-          "item2": "NFTBrasil - Selected Artist | São Paulo, SP",
-          "item3": "BRIFW4: Avatar Talent Show - Exhibitor | Remote",
-          "item4": "Paris Blockchain Week - Attendee | Remote",
-          "item5": "Rebu x Banda Raça - Tattoo - Production, Creative Direction and Editing | São Paulo, SP",
-          "more": "(Complete list available in portfolio)"
-        },
-        "letterTitle": "Cover Letter",
-        "letterText": "Hello! I'm Vitor Moreira, a multimedia designer and visual communicator passionate about connecting art, design and technology. Since 2020, I've been developing visual and interactive experiences that explore new narratives, collaborating with brands like Renner, John Deere and Balaclava. With a degree in Advertising and Propaganda (UFPR) and experience in emerging technologies, I apply innovation and strategy to create impactful projects. I'm looking for opportunities to expand my work in design, 3D and innovation, contributing to creative, inclusive and transformative initiatives.",
-        "contactTitle": "Contact",
-        "skillsTitle": "Areas of Expertise",
-        "skills": {
-          "item1": "Branding and Visual Identity",
-          "item2": "3D Animation and Audiovisual Production",
-          "item3": "Multichannel Campaigns",
-          "item4": "Creative Direction",
-          "item5": "Digital Marketing and UX/UI",
-          "item6": "Augmented Reality and Emerging Technologies"
-        },
-        "techSkillsTitle": "Technical Skills",
-        "techSkills": {
-          "item1": "Adobe Suite (Ps, Ai, Ae, Id, Pr)",
-          "item2": "Blender, DAZ 3D, CLO3D",
-          "item3": "Figma, Unreal Engine",
-          "item4": "TouchDesigner, Runway ML",
-          "item5": "Generative AI (Dall-E, MidJourney)",
-          "item6": "Trello, Asana, Notion"
-        },
-        "softSkillsTitle": "Soft Skills",
-        "softSkills": {
-          "item1": "Critical Thinking and Creativity",
-          "item2": "Flexibility and Adaptability",
-          "item3": "Empathy and Problem Solving",
-          "item4": "Time Management and Collaboration"
-        },
-        "languagesTitle": "Languages",
-        "languages": {
-          "item1": "English (Advanced)",
-          "item2": "Spanish (Intermediate)"
-        }
-      },
-      "footer": {
-        "interested": "Interested in working together?",
-        "letsTalk": "Let's talk"
-      },
-      "modal": {
-        "link": "Access link"
+  "en": {
+    "nav": {
+      "home": "HOME",
+      "about": "ABOUT",
+      "cv": "CV",
+      "gallery": "GALLERY",
+      "portfolio": "PORTFOLIO",
+      "linkedin": "LINKEDIN",
+      "website": "WEBSITE"
+    },
+    "home": {
+      "subtitle": "Creative Strategist | Digital Storyteller | 3D Designer",
+      "description": "I create digital realities that push the boundaries of storytelling and technology, crafting experiences that captivate and connect.",
+      "works": {
+        "shapeofiiii": "SHAPE OF IIII",
+        "kids": "KIDS",
+        "zalgo": "ZALGO",
+        "me": "ME"
       }
     },
-    "pt": {
-      "nav": {
-        "home": "HOME",
-        "about": "SOBRE",
-        "cv": "CURRÍCULO",
-        "gallery": "GALERIA",
-        "portfolio": "PORTFÓLIO",
-        "linkedin": "LINKEDIN",
-        "website": "SITE"
-      },
-      "cv": {
-        "tagline": "Designer Multimídia | Estratégia Visual e Inovação",
-        "contact": "vitormoreiran@gmail.com",
-        "address": "Vila Mariana, São Paulo - SP, Brasil",
-        "phone": "+55 (12) 99145-2549",
-        "aboutTitle": "Sobre Mim",
-        "aboutText": "Sou Vitor Moreira, designer multimídia e criador digital especializado em design estratégico, animação 3D e experiências digitais imersivas. Minha trajetória combina criatividade, tecnologia e comunicação, com experiência em campanhas publicitárias, identidade visual e produção audiovisual. Já trabalhei com marcas como Renner, John Deere, Wired e Balaclava, transformando ideias em soluções impactantes que conectam marcas e pessoas. Como pessoa trans não-binária, trago uma perspectiva única para projetos inclusivos e inovadores, utilizando IA generativa e programação para expandir narrativas visuais e criar novas formas de interação digital.",
-        "experienceTitle": "Experiência Profissional",
-        "jobs": {
-          "freelancer": {
-            "title": "Consultor Criativo | Freelancer",
-            "period": "Remoto | 2023–2025",
-            "item1": "Elaboração de conceitos criativos e identidades visuais para marcas emergentes e projetos sociais.",
-            "item2": "Liderança criativa em projetos de animação 3D e experiências digitais imersivas, integrando IA e design interativo."
-          },
-          "adtail": {
-            "title": "Diretor de Arte Júnior | Adtail",
-            "period": "São Paulo, SP | 2023–2024",
-            "item1": "Desenvolvimento de identidades visuais para marcas premium, aumentando engajamento em campanhas multicanal.",
-            "item2": "Automatização de fluxos de e-mail marketing, reduzindo tempo de produção e garantindo consistência visual.",
-            "item3": "Alinhamento estratégico com clientes e equipes para entrega de projetos."
-          },
-          "dacri": {
-            "title": "Assistente de Design | Dacri Deviati",
-            "period": "Rio de Janeiro, RJ | 2022",
-            "item1": "Estratégias visuais para BRIFW, gerando +100.000 impressões em 3 meses e ampliando visibilidade da marca.",
-            "item2": "Criação de logos 3D, materiais gráficos e vídeos para redes sociais.",
-            "item3": "Colaboração com patrocinadores e artistas para desenvolvimento de materiais."
-          },
-          "six": {
-            "title": "Diretor de Arte Júnior | SIX Digital",
-            "period": "2021–2022",
-            "item1": "Criação de campanhas digitais e peças gráficas para redes sociais, gerando leads para clientes internacionais (Brasil, Argentina, China, EUA).",
-            "item2": "Desenvolvimento de materiais impressos e digitais com foco em resultados."
-          }
+    "about": {
+      "intro": "Hey, it's me! I explore how <strong>internet access and technology</strong> shape the ways we connect, share, and create.",
+      "background": "Growing up in <strong>Guaratinguetá, São Paulo</strong>, near South America's largest technical-military educational complex and the National Sanctuary in Aparecida do Norte, I became fascinated by how systems and cultures intersect. The <strong>internet became my gateway</strong> to knowledge and expression that weren't available to most people around me, shaping how I navigate the world.",
+      "experience": "With a background in advertising and technology, I've worked as a <strong>full-time designer</strong> in marketing agencies and at web culture events like BRIFW and REBUDIGITAL. My work moves between <strong>digital storytelling, creative technology, and 3D design</strong>, experimenting with tools like <strong>Blender, TouchDesigner, and AI</strong>.",
+      "focus": "I focus on building <strong>immersive experiences</strong> for brands, collectives, and individuals, exploring how <strong>virtual landscapes and interactive media</strong> can reshape the way we experience identity and digital spaces.",
+      "vision": "More than a medium for creation, I see technology as a way to <strong>amplify underrepresented voices</strong> and reimagine narratives. My projects blend self-discovery with the exploration of digital environments, avatars, and the relationship between tech and culture. Through visuals, interactive experiences, and conversations, I aim to create work that <strong>sparks new perspectives and meaningful connections</strong>."
+    },
+    "cv": {
+      "tagline": "Multimedia Designer | Visual Strategy and Innovation",
+      "contact": "vitormoreiran@gmail.com",
+      "address": "Vila Mariana, São Paulo - SP, Brazil",
+      "phone": "+55 (12) 99145-2549",
+      "aboutTitle": "About Me",
+      "aboutText": "I'm Vitor Moreira, a multimedia designer and digital creator specialized in strategic design, 3D animation and immersive digital experiences. My journey combines creativity, technology and communication, with experience in advertising campaigns, visual identity and audiovisual production. I've worked with brands like Renner, John Deere, Wired and Balaclava, turning ideas into impactful solutions that connect brands and people. As a non-binary trans person, I bring a unique perspective to inclusive and innovative projects, using generative AI and programming to expand visual narratives and create new forms of digital interaction.",
+      "experienceTitle": "Professional Experience",
+      "jobs": {
+        "freelancer": {
+          "title": "Creative Consultant | Freelancer",
+          "period": "Remote | 2023–2025",
+          "item1": "Development of creative concepts and visual identities for emerging brands and social projects.",
+          "item2": "Creative leadership in 3D animation projects and immersive digital experiences, integrating AI and interactive design."
         },
-        "educationTitle": "Formação",
-        "education": {
-          "degree1": {
-            "title": "Bacharelado em Publicidade e Propaganda",
-            "period": "UFPR | 2017–2021"
-          },
-          "degree2": {
-            "title": "Técnico em Tecnologia da Informação",
-            "period": "ETEC | 2014–2016"
-          },
-          "course1": {
-            "title": "Zonas de Neblina: Arte e Tecnologia",
-            "period": "Instituto Ling | 2024–2025"
-          },
-          "course2": {
-            "title": "Arte do Amanhã: Encontros Investigativos",
-            "period": "Museu do Amanhã | 2023"
-          },
-          "course3": {
-            "title": "Avatares e CGI Influencers: O Futuro da Moda",
-            "period": "BRIFW & Vogue | 2023"
-          }
+        "adtail": {
+          "title": "Junior Art Director | Adtail",
+          "period": "São Paulo, SP | 2023–2024",
+          "item1": "Development of visual identities for premium brands, increasing engagement in multichannel campaigns.",
+          "item2": "Automation of email marketing workflows, reducing production time and ensuring visual consistency.",
+          "item3": "Strategic alignment with clients and teams for project delivery."
         },
-        "eventsTitle": "Eventos e Lançamentos",
-        "events": {
-          "item1": "SSA Mapping Festival - Artista Selecionado | Salvador, BA",
-          "item2": "NFTBrasil - Artista Selecionado | São Paulo, SP",
-          "item3": "BRIFW4: Avatar Talent Show - Expositor | Remoto",
-          "item4": "Paris Blockchain Week - Ouvinte | Remoto",
-          "item5": "Rebu x Banda Raça - Tatuagem - Produção, Direção Criativa e Edição | São Paulo, SP",
-          "more": "(Lista completa disponível no portfólio)"
+        "dacri": {
+          "title": "Design Assistant | Dacri Deviati",
+          "period": "Rio de Janeiro, RJ | 2022",
+          "item1": "Visual strategies for BRIFW, generating +100,000 impressions in 3 months and increasing brand visibility.",
+          "item2": "Creation of 3D logos, graphic materials and videos for social media.",
+          "item3": "Collaboration with sponsors and artists for material development."
         },
-        "letterTitle": "Carta de Apresentação",
-        "letterText": "Olá! Sou Vitor Moreira, designer multimídia e comunicador visual apaixonado por conectar arte, design e tecnologia. Desde 2020, desenvolvo experiências visuais e interativas que exploram novas narrativas, colaborando com marcas como Renner, John Deere e Balaclava. Com formação em Publicidade e Propaganda (UFPR) e experiência em tecnologias emergentes, aplico inovação e estratégia para criar projetos impactantes. Estou em busca de oportunidades para ampliar minha atuação em design, 3D e inovação, contribuindo para iniciativas criativas, inclusivas e transformadoras.",
-        "contactTitle": "Contato",
-        "skillsTitle": "Áreas de Atuação",
-        "skills": {
-          "item1": "Branding e Identidade Visual",
-          "item2": "Animação 3D e Produção Audiovisual",
-          "item3": "Campanhas Multicanal",
-          "item4": "Direção Criativa",
-          "item5": "Marketing Digital e UX/UI",
-          "item6": "Realidade Aumentada e Tecnologias Emergentes"
-        },
-        "techSkillsTitle": "Habilidades Técnicas",
-        "techSkills": {
-          "item1": "Adobe Suite (Ps, Ai, Ae, Id, Pr)",
-          "item2": "Blender, DAZ 3D, CLO3D",
-          "item3": "Figma, Unreal Engine",
-          "item4": "TouchDesigner, Runway ML",
-          "item5": "IA Generativa (Dall-E, MidJourney)",
-          "item6": "Trello, Asana, Notion"
-        },
-        "softSkillsTitle": "Habilidades Comportamentais",
-        "softSkills": {
-          "item1": "Pensamento Crítico e Criatividade",
-          "item2": "Flexibilidade e Adaptabilidade",
-          "item3": "Empatia e Resolução de Problemas",
-          "item4": "Gestão de Tempo e Colaboração"
-        },
-        "languagesTitle": "Idiomas",
-        "languages": {
-          "item1": "Inglês (Avançado)",
-          "item2": "Espanhol (Intermediário)"
+        "six": {
+          "title": "Junior Art Director | SIX Digital",
+          "period": "2021–2022",
+          "item1": "Creation of digital campaigns and graphic pieces for social media, generating leads for international clients (Brazil, Argentina, China, USA).",
+          "item2": "Development of printed and digital materials focused on results."
         }
       },
-      "footer": {
-        "interested": "Interessado em trabalhar juntos?",
-        "letsTalk": "Vamos conversar"
+      "educationTitle": "Education",
+      "education": {
+        "degree1": {
+          "title": "Bachelor's Degree in Advertising and Propaganda",
+          "period": "UFPR | 2017–2021"
+        },
+        "degree2": {
+          "title": "Technical Degree in Information Technology",
+          "period": "ETEC | 2014–2016"
+        },
+        "course1": {
+          "title": "Fog Zones: Art and Technology",
+          "period": "Instituto Ling | 2024–2025"
+        },
+        "course2": {
+          "title": "Art of Tomorrow: Investigative Encounters",
+          "period": "Museum of Tomorrow | 2023"
+        },
+        "course3": {
+          "title": "Avatars and CGI Influencers: The Future of Fashion",
+          "period": "BRIFW & Vogue | 2023"
+        }
       },
-      "modal": {
-        "link": "Acessar link"
+      "eventsTitle": "Events and Releases",
+      "events": {
+        "item1": "SSA Mapping Festival - Selected Artist | Salvador, BA",
+        "item2": "NFTBrasil - Selected Artist | São Paulo, SP",
+        "item3": "BRIFW4: Avatar Talent Show - Exhibitor | Remote",
+        "item4": "Paris Blockchain Week - Attendee | Remote",
+        "item5": "Rebu x Banda Raça - Tattoo - Production, Creative Direction and Editing | São Paulo, SP",
+        "more": "(Complete list available in portfolio)"
+      },
+      "letterTitle": "Cover Letter",
+      "letterText": "Hello! I'm Vitor Moreira, a multimedia designer and visual communicator passionate about connecting art, design and technology. Since 2020, I've been developing visual and interactive experiences that explore new narratives, collaborating with brands like Renner, John Deere and Balaclava. With a degree in Advertising and Propaganda (UFPR) and experience in emerging technologies, I apply innovation and strategy to create impactful projects. I'm looking for opportunities to expand my work in design, 3D and innovation, contributing to creative, inclusive and transformative initiatives.",
+      "contactTitle": "Contact",
+      "skillsTitle": "Areas of Expertise",
+      "skills": {
+        "item1": "Branding and Visual Identity",
+        "item2": "3D Animation and Audiovisual Production",
+        "item3": "Multichannel Campaigns",
+        "item4": "Creative Direction",
+        "item5": "Digital Marketing and UX/UI",
+        "item6": "Augmented Reality and Emerging Technologies"
+      },
+      "techSkillsTitle": "Technical Skills",
+      "techSkills": {
+        "item1": "Adobe Suite (Ps, Ai, Ae, Id, Pr)",
+        "item2": "Blender, DAZ 3D, CLO3D",
+        "item3": "Figma, Unreal Engine",
+        "item4": "TouchDesigner, Runway ML",
+        "item5": "Generative AI (Dall-E, MidJourney)",
+        "item6": "Trello, Asana, Notion"
+      },
+      "softSkillsTitle": "Soft Skills",
+      "softSkills": {
+        "item1": "Critical Thinking and Creativity",
+        "item2": "Flexibility and Adaptability",
+        "item3": "Empathy and Problem Solving",
+        "item4": "Time Management and Collaboration"
+      },
+      "languagesTitle": "Languages",
+      "languages": {
+        "item1": "English (Advanced)",
+        "item2": "Spanish (Intermediate)"
       }
     },
-    "es": {
-      "nav": {
-        "home": "INICIO",
-        "about": "SOBRE MÍ",
-        "cv": "CURRÍCULUM",
-        "gallery": "GALERÍA",
-        "portfolio": "PORTAFOLIO",
-        "linkedin": "LINKEDIN",
-        "website": "SITIO WEB"
-      },
-      "cv": {
-        "tagline": "Diseñador Multimedia | Estrategia Visual e Innovación",
-        "contact": "vitormoreiran@gmail.com",
-        "address": "Vila Mariana, São Paulo - SP, Brasil",
-        "phone": "+55 (12) 99145-2549",
-        "aboutTitle": "Sobre Mí",
-        "aboutText": "Soy Vitor Moreira, diseñador multimedia y creador digital especializado en diseño estratégico, animación 3D y experiencias digitales inmersivas. Mi trayectoria combina creatividad, tecnología y comunicación, con experiencia en campañas publicitarias, identidad visual y producción audiovisual. He trabajado con marcas como Renner, John Deere, Wired y Balaclava, transformando ideas en soluciones impactantes que conectan marcas y personas. Como persona trans no binaria, aporto una perspectiva única a proyectos inclusivos e innovadores, utilizando IA generativa y programación para expandir narrativas visuales y crear nuevas formas de interacción digital.",
-        "experienceTitle": "Experiencia Profesional",
-        "jobs": {
-          "freelancer": {
-            "title": "Consultor Creativo | Freelancer",
-            "period": "Remoto | 2023–2025",
-            "item1": "Elaboración de conceptos creativos e identidades visuales para marcas emergentes y proyectos sociales.",
-            "item2": "Liderazgo creativo en proyectos de animación 3D y experiencias digitales inmersivas, integrando IA y diseño interactivo."
-          },
-          "adtail": {
-            "title": "Director de Arte Junior | Adtail",
-            "period": "São Paulo, SP | 2023–2024",
-            "item1": "Desarrollo de identidades visuales para marcas premium, aumentando el engagement en campañas multicanal.",
-            "item2": "Automatización de flujos de email marketing, reduciendo el tiempo de producción y garantizando consistencia visual.",
-            "item3": "Alineación estratégica con clientes y equipos para la entrega de proyectos."
-          },
-          "dacri": {
-            "title": "Asistente de Diseño | Dacri Deviati",
-            "period": "Rio de Janeiro, RJ | 2022",
-            "item1": "Estrategias visuales para BRIFW, generando +100,000 impresiones en 3 meses y ampliando la visibilidad de la marca.",
-            "item2": "Creación de logos 3D, materiales gráficos y videos para redes sociales.",
-            "item3": "Colaboración con patrocinadores y artistas para el desarrollo de materiales."
-          },
-          "six": {
-            "title": "Director de Arte Junior | SIX Digital",
-            "period": "2021–2022",
-            "item1": "Creación de campañas digitales y piezas gráficas para redes sociales, generando leads para clientes internacionales (Brasil, Argentina, China, EUA).",
-            "item2": "Desarrollo de materiales impresos y digitales con foco en resultados."
-          }
+    "shapeofiiii": {
+      "title": "Shape of IIII",
+      "description": "A plant form emerges from a divided cube, with each segment extruded, mirrored, and twisted. This balance between structure and flow echoes nature's ability to grow and adapt.\n\nSymbolizing growth through transformation, the design reflects how we evolve through effort, resilience, and a deeper connection with the world."
+    },
+    "zalgo": {
+      "title": "ZALGO TEXT",
+      "description": "From the collectible excitement surrounding Dirty Angel [Unruly Edition] on Zora, the concept of creating a silkscreen printing pattern was born, and soon, these pieces will be worn by cyborgs across São Paulo."
+    },
+    "kids": {
+      "title": "KIDS",
+      "description": "Born with an invitation to create visual assets for NÃOVENHASEMROSTO's debut album KIDS, an intense work that blends diverse musical styles with fast-paced rhythms, carrying a deep sense of nostalgia and childhood memories.\n\nThe 3D visuals for the album come to life with an avatar dressed in a unique vestment, featuring a sound-reactive system where red circles grow and dance to the music, emanating power, freedom, and joy from the mind of this child in a sinister world.",
+      "processTitle": "THE PROCESS AND LADY LETAL",
+      "processDescription": "The idea to use the album cover as a stamp for avatar clothing was inspired by Lady Letal, and led to the creation of a unique garment made of 100% polyester, the artist fingerprint, for the album promotion. The limited edition pieces were a hit, with all of them selling out.",
+      "gallery": {
+        "3dModel": "3D MODEL",
+        "nodeSystem": "NODE SYSTEM",
+        "garmentConcept": "GARMENT CONCEPT",
+        "irlGarment": "IRL GARMENT"
+      }
+    },
+    "footer": {
+      "interested": "Interested in working together?",
+      "letsTalk": "Let's talk"
+    },
+    "modal": {
+      "link": "Access link"
+    }
+  },
+  "pt": {
+    "nav": {
+      "home": "HOME",
+      "about": "SOBRE",
+      "cv": "CURRÍCULO",
+      "gallery": "GALERIA",
+      "portfolio": "PORTFÓLIO",
+      "linkedin": "LINKEDIN",
+      "website": "SITE"
+    },
+    "home": {
+      "subtitle": "Estrategista Criativo | Contador de Histórias Digital | Designer 3D",
+      "description": "Crio realidades digitais que expandem os limites da narrativa e da tecnologia, desenvolvendo experiências que cativam e conectam.",
+      "works": {
+        "shapeofiiii": "SHAPE OF IIII",
+        "kids": "KIDS",
+        "zalgo": "ZALGO",
+        "me": "EU"
+      }
+    },
+    "about": {
+      "intro": "Oi, sou eu! Exploro como o <strong>acesso à internet e a tecnologia</strong> moldam as formas como nos conectamos, compartilhamos e criamos.",
+      "background": "Crescendo em <strong>Guaratinguetá, São Paulo</strong>, perto do maior complexo educacional técnico-militar da América do Sul e do Santuário Nacional em Aparecida do Norte, fiquei fascinado por como sistemas e culturas se cruzam. A <strong>internet se tornou meu portal</strong> para conhecimento e expressão que não estavam disponíveis para a maioria das pessoas ao meu redor, moldando como eu navego pelo mundo.",
+      "experience": "Com formação em publicidade e tecnologia, trabalhei como <strong>designer em tempo integral</strong> em agências de marketing e em eventos de cultura web como BRIFW e REBUDIGITAL. Meu trabalho transita entre <strong>narrativa digital, tecnologia criativa e design 3D</strong>, experimentando ferramentas como <strong>Blender, TouchDesigner e IA</strong>.",
+      "focus": "Eu me concentro em construir <strong>experiências imersivas</strong> para marcas, coletivos e indivíduos, explorando como <strong>paisagens virtuais e mídia interativa</strong> podem reformular a maneira como experimentamos identidade e espaços digitais.",
+      "vision": "Mais do que um meio de criação, vejo a tecnologia como uma forma de <strong>amplificar vozes sub-representadas</strong> e reimaginar narrativas. Meus projetos misturam autodescoberta com a exploração de ambientes digitais, avatares e a relação entre tecnologia e cultura. Por meio de visuais, experiências interativas e conversas, busco criar trabalhos que <strong>despertem novas perspectivas e conexões significativas</strong>."
+    },
+    "cv": {
+      "tagline": "Designer Multimídia | Estratégia Visual e Inovação",
+      "contact": "vitormoreiran@gmail.com",
+      "address": "Vila Mariana, São Paulo - SP, Brasil",
+      "phone": "+55 (12) 99145-2549",
+      "aboutTitle": "Sobre Mim",
+      "aboutText": "Sou Vitor Moreira, designer multimídia e criador digital especializado em design estratégico, animação 3D e experiências digitais imersivas. Minha trajetória combina criatividade, tecnologia e comunicação, com experiência em campanhas publicitárias, identidade visual e produção audiovisual. Já trabalhei com marcas como Renner, John Deere, Wired e Balaclava, transformando ideias em soluções impactantes que conectam marcas e pessoas. Como pessoa trans não-binária, trago uma perspectiva única para projetos inclusivos e inovadores, utilizando IA generativa e programação para expandir narrativas visuais e criar novas formas de interação digital.",
+      "experienceTitle": "Experiência Profissional",
+      "jobs": {
+        "freelancer": {
+          "title": "Consultor Criativo | Freelancer",
+          "period": "Remoto | 2023–2025",
+          "item1": "Elaboração de conceitos criativos e identidades visuais para marcas emergentes e projetos sociais.",
+          "item2": "Liderança criativa em projetos de animação 3D e experiências digitais imersivas, integrando IA e design interativo."
         },
-        "educationTitle": "Formación",
-        "education": {
-          "degree1": {
-            "title": "Licenciatura en Publicidad y Propaganda",
-            "period": "UFPR | 2017–2021"
-          },
-          "degree2": {
-            "title": "Técnico en Tecnología de la Información",
-            "period": "ETEC | 2014–2016"
-          },
-          "course1": {
-            "title": "Zonas de Niebla: Arte y Tecnología",
-            "period": "Instituto Ling | 2024–2025"
-          },
-          "course2": {
-            "title": "Arte del Mañana: Encuentros Investigativos",
-            "period": "Museo del Mañana | 2023"
-          },
-          "course3": {
-            "title": "Avatares e Influencers CGI: El Futuro de la Moda",
-            "period": "BRIFW & Vogue | 2023"
-          }
+        "adtail": {
+          "title": "Diretor de Arte Júnior | Adtail",
+          "period": "São Paulo, SP | 2023–2024",
+          "item1": "Desenvolvimento de identidades visuais para marcas premium, aumentando engajamento em campanhas multicanal.",
+          "item2": "Automatização de fluxos de e-mail marketing, reduzindo tempo de produção e garantindo consistência visual.",
+          "item3": "Alinhamento estratégico com clientes e equipes para entrega de projetos."
         },
-        "eventsTitle": "Eventos y Lanzamientos",
-        "events": {
-          "item1": "SSA Mapping Festival - Artista Seleccionado | Salvador, BA",
-          "item2": "NFTBrasil - Artista Seleccionado | São Paulo, SP",
-          "item3": "BRIFW4: Avatar Talent Show - Expositor | Remoto",
-          "item4": "Paris Blockchain Week - Oyente | Remoto",
-          "item5": "Rebu x Banda Raça - Tatuaje - Producción, Dirección Creativa y Edición | São Paulo, SP",
-          "more": "(Lista completa disponible en el portafolio)"
+        "dacri": {
+          "title": "Assistente de Design | Dacri Deviati",
+          "period": "Rio de Janeiro, RJ | 2022",
+          "item1": "Estratégias visuais para BRIFW, gerando +100.000 impressões em 3 meses e ampliando visibilidade da marca.",
+          "item2": "Criação de logos 3D, materiais gráficos e vídeos para redes sociais.",
+          "item3": "Colaboração com patrocinadores e artistas para desenvolvimento de materiais."
         },
-        "letterTitle": "Carta de Presentación",
-        "letterText": "¡Hola! Soy Vitor Moreira, diseñador multimedia y comunicador visual apasionado por conectar arte, diseño y tecnología. Desde 2020, desarrollo experiencias visuales e interactivas que exploran nuevas narrativas, colaborando con marcas como Renner, John Deere y Balaclava. Con formación en Publicidad y Propaganda (UFPR) y experiencia en tecnologías emergentes, aplico innovación y estrategia para crear proyectos impactantes. Estoy buscando oportunidades para ampliar mi trabajo en diseño, 3D e innovación, contribuyendo a iniciativas creativas, inclusivas y transformadoras.",
-        "contactTitle": "Contacto",
-        "skillsTitle": "Áreas de Especialización",
-        "skills": {
-          "item1": "Branding e Identidad Visual",
-          "item2": "Animación 3D y Producción Audiovisual",
-          "item3": "Campañas Multicanal",
-          "item4": "Dirección Creativa",
-          "item5": "Marketing Digital y UX/UI",
-          "item6": "Realidad Aumentada y Tecnologías Emergentes"
-        },
-        "techSkillsTitle": "Habilidades Técnicas",
-        "techSkills": {
-          "item1": "Adobe Suite (Ps, Ai, Ae, Id, Pr)",
-          "item2": "Blender, DAZ 3D, CLO3D",
-          "item3": "Figma, Unreal Engine",
-          "item4": "TouchDesigner, Runway ML",
-          "item5": "IA Generativa (Dall-E, MidJourney)",
-          "item6": "Trello, Asana, Notion"
-        },
-        "softSkillsTitle": "Habilidades Blandas",
-        "softSkills": {
-          "item1": "Pensamiento Crítico y Creatividad",
-          "item2": "Flexibilidad y Adaptabilidad",
-          "item3": "Empatía y Resolución de Problemas",
-          "item4": "Gestión de Tiempo y Colaboración"
-        },
-        "languagesTitle": "Idiomas",
-        "languages": {
-          "item1": "Inglés (Avanzado)",
-          "item2": "Español (Intermedio)"
+        "six": {
+          "title": "Diretor de Arte Júnior | SIX Digital",
+          "period": "2021–2022",
+          "item1": "Criação de campanhas digitais e peças gráficas para redes sociais, gerando leads para clientes internacionais (Brasil, Argentina, China, EUA).",
+          "item2": "Desenvolvimento de materiais impressos e digitais com foco em resultados."
         }
       },
-      "footer": {
-        "interested": "¿Interesado en trabajar juntos?",
-        "letsTalk": "Hablemos"
+      "educationTitle": "Formação",
+      "education": {
+        "degree1": {
+          "title": "Bacharelado em Publicidade e Propaganda",
+          "period": "UFPR | 2017–2021"
+        },
+        "degree2": {
+          "title": "Técnico em Tecnologia da Informação",
+          "period": "ETEC | 2014–2016"
+        },
+        "course1": {
+          "title": "Zonas de Neblina: Arte e Tecnologia",
+          "period": "Instituto Ling | 2024–2025"
+        },
+        "course2": {
+          "title": "Arte do Amanhã: Encontros Investigativos",
+          "period": "Museu do Amanhã | 2023"
+        },
+        "course3": {
+          "title": "Avatares e CGI Influencers: O Futuro da Moda",
+          "period": "BRIFW & Vogue | 2023"
+        }
       },
-      "modal": {
-        "link": "Acceder al enlace"
+      "eventsTitle": "Eventos e Lançamentos",
+      "events": {
+        "item1": "SSA Mapping Festival - Artista Selecionado | Salvador, BA",
+        "item2": "NFTBrasil - Artista Selecionado | São Paulo, SP",
+        "item3": "BRIFW4: Avatar Talent Show - Expositor | Remoto",
+        "item4": "Paris Blockchain Week - Ouvinte | Remoto",
+        "item5": "Rebu x Banda Raça - Tatuagem - Produção, Direção Criativa e Edição | São Paulo, SP",
+        "more": "(Lista completa disponível no portfólio)"
+      },
+      "letterTitle": "Carta de Apresentação",
+      "letterText": "Olá! Sou Vitor Moreira, designer multimídia e comunicador visual apaixonado por conectar arte, design e tecnologia. Desde 2020, desenvolvo experiências visuais e interativas que exploram novas narrativas, colaborando com marcas como Renner, John Deere e Balaclava. Com formação em Publicidade e Propaganda (UFPR) e experiência em tecnologias emergentes, aplico inovação e estratégia para criar projetos impactantes. Estou em busca de oportunidades para ampliar minha atuação em design, 3D e inovação, contribuindo para iniciativas criativas, inclusivas e transformadoras.",
+      "contactTitle": "Contato",
+      "skillsTitle": "Áreas de Atuação",
+      "skills": {
+        "item1": "Branding e Identidade Visual",
+        "item2": "Animação 3D e Produção Audiovisual",
+        "item3": "Campanhas Multicanal",
+        "item4": "Direção Criativa",
+        "item5": "Marketing Digital e UX/UI",
+        "item6": "Realidade Aumentada e Tecnologias Emergentes"
+      },
+      "techSkillsTitle": "Habilidades Técnicas",
+      "techSkills": {
+        "item1": "Adobe Suite (Ps, Ai, Ae, Id, Pr)",
+        "item2": "Blender, DAZ 3D, CLO3D",
+        "item3": "Figma, Unreal Engine",
+        "item4": "TouchDesigner, Runway ML",
+        "item5": "IA Generativa (Dall-E, MidJourney)",
+        "item6": "Trello, Asana, Notion"
+      },
+      "softSkillsTitle": "Habilidades Comportamentais",
+      "softSkills": {
+        "item1": "Pensamento Crítico e Criatividade",
+        "item2": "Flexibilidade e Adaptabilidade",
+        "item3": "Empatia e Resolução de Problemas",
+        "item4": "Gestão de Tempo e Colaboração"
+      },
+      "languagesTitle": "Idiomas",
+      "languages": {
+        "item1": "Inglês (Avançado)",
+        "item2": "Espanhol (Intermediário)"
       }
+    },
+    "shapeofiiii": {
+      "title": "Forma de IIII",
+      "description": "Uma forma vegetal emerge de um cubo dividido, com cada segmento extrudado, espelhado e torcido. Esse equilíbrio entre estrutura e fluxo reflete a capacidade da natureza de crescer e se adaptar.\n\nSimbolizando o crescimento por meio da transformação, o design reflete como evoluímos através de esforço, resiliência e uma conexão mais profunda com o mundo."
+    },
+    "zalgo": {
+      "title": "TEXTO ZALGO",
+      "description": "A partir da empolgação colecionável em torno de Dirty Angel [Unruly Edition] no Zora, nasceu o conceito de criar um padrão de impressão em serigrafia, e em breve, essas peças serão usadas por ciborgues em São Paulo."
+    },
+    "kids": {
+      "title": "KIDS",
+      "description": "Nascido de um convite para criar recursos visuais para o álbum de estreia KIDS do NÃOVENHASEMROSTO, um trabalho intenso que mistura diversos estilos musicais com ritmos acelerados, carregando um profundo senso de nostalgia e memórias da infância.\n\nOs visuais 3D do álbum ganham vida com um avatar vestido com uma vestimenta única, equipado com um sistema reativo ao som onde círculos vermelhos crescem e dançam ao ritmo da música, emanando poder, liberdade e alegria da mente dessa criança em um mundo sinistro.",
+      "processTitle": "O PROCESSO E LADY LETAL",
+      "processDescription": "A ideia de usar a capa do álbum como estampa para roupas de avatar foi inspirada por Lady Letal e levou à criação de uma peça única feita de 100% poliéster, a impressão digital do artista, para a promoção do álbum. As peças de edição limitada foram um sucesso, esgotando-se completamente.",
+      "gallery": {
+        "3dModel": "MODELO 3D",
+        "nodeSystem": "SISTEMA DE NÓS",
+        "garmentConcept": "CONCEITO DE VESTIMENTA",
+        "irlGarment": "VESTIMENTA REAL"
+      }
+    },
+    "footer": {
+      "interested": "Interessado em trabalhar juntos?",
+      "letsTalk": "Vamos conversar"
+    },
+    "modal": {
+      "link": "Acessar link"
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "INICIO",
+      "about": "SOBRE MÍ",
+      "cv": "CURRÍCULUM",
+      "gallery": "GALERÍA",
+      "portfolio": "PORTAFOLIO",
+      "linkedin": "LINKEDIN",
+      "website": "SITIO WEB"
+    },
+    "home": {
+      "subtitle": "Estratega Creativo | Narrador Digital | Diseñador 3D",
+      "description": "Creo realidades digitales que desafían los límites de la narrativa y la tecnología, diseñando experiencias que cautivan y conectan.",
+      "works": {
+        "shapeofiiii": "SHAPE OF IIII",
+        "kids": "KIDS",
+        "zalgo": "ZALGO",
+        "me": "YO"
+      }
+    },
+    "about": {
+      "intro": "¡Hola, soy yo! Exploro cómo el <strong>acceso a internet y la tecnología</strong> moldean las formas en que nos conectamos, compartimos y creamos.",
+      "background": "Crecí en <strong>Guaratinguetá, São Paulo</strong>, cerca del mayor complejo educativo técnico-militar de América del Sur y del Santuario Nacional en Aparecida do Norte, y me fascinó cómo se cruzan los sistemas y las culturas. El <strong>internet se convirtió en mi puerta de entrada</strong> al conocimiento y la expresión que no estaban disponibles para la mayoría de las personas a mi alrededor, moldeando cómo navego por el mundo.",
+      "experience": "Con formación en publicidad y tecnología, he trabajado como <strong>diseñador a tiempo completo</strong> en agencias de marketing y en eventos de cultura web como BRIFW y REBUDIGITAL. Mi trabajo se mueve entre <strong>narrativa digital, tecnología creativa y diseño 3D</strong>, experimentando con herramientas como <strong>Blender, TouchDesigner e IA</strong>.",
+      "focus": "Me enfoco en construir <strong>experiencias inmersivas</strong> para marcas, colectivos e individuos, explorando cómo <strong>paisajes virtuales y medios interactivos</strong> pueden reformular la manera en que experimentamos la identidad y los espacios digitales.",
+      "vision": "Más que un medio para la creación, veo la tecnología como una forma de <strong>amplificar voces subrepresentadas</strong> y reimaginar narrativas. Mis proyectos combinan autodescubrimiento con la exploración de entornos digitales, avatares y la relación entre tecnología y cultura. A través de visuales, experiencias interactivas y conversaciones, busco crear trabajos que <strong>despierten nuevas perspectivas y conexiones significativas</strong>."
+    },
+    "cv": {
+      "tagline": "Diseñador Multimedia | Estrategia Visual e Innovación",
+      "contact": "vitormoreiran@gmail.com",
+      "address": "Vila Mariana, São Paulo - SP, Brasil",
+      "phone": "+55 (12) 99145-2549",
+      "aboutTitle": "Sobre Mí",
+      "aboutText": "Soy Vitor Moreira, diseñador multimedia y creador digital especializado en diseño estratégico, animación 3D y experiencias digitales inmersivas. Mi trayectoria combina creatividad, tecnología y comunicación, con experiencia en campañas publicitarias, identidad visual y producción audiovisual. He trabajado con marcas como Renner, John Deere, Wired y Balaclava, transformando ideas en soluciones impactantes que conectan marcas y personas. Como persona trans no binaria, aporto una perspectiva única a proyectos inclusivos e innovadores, utilizando IA generativa y programación para expandir narrativas visuales y crear nuevas formas de interacción digital.",
+      "experienceTitle": "Experiencia Profesional",
+      "jobs": {
+        "freelancer": {
+          "title": "Consultor Creativo | Freelancer",
+          "period": "Remoto | 2023–2025",
+          "item1": "Elaboración de conceptos creativos e identidades visuales para marcas emergentes y proyectos sociales.",
+          "item2": "Liderazgo creativo en proyectos de animación 3D y experiencias digitales inmersivas, integrando IA y diseño interactivo."
+        },
+        "adtail": {
+          "title": "Director de Arte Junior | Adtail",
+          "period": "São Paulo, SP | 2023–2024",
+          "item1": "Desarrollo de identidades visuales para marcas premium, aumentando el engagement en campañas multicanal.",
+          "item2": "Automatización de flujos de email marketing, reduciendo el tiempo de producción y garantizando consistencia visual.",
+          "item3": "Alineación estratégica con clientes y equipos para la entrega de proyectos."
+        },
+        "dacri": {
+          "title": "Asistente de Diseño | Dacri Deviati",
+          "period": "Rio de Janeiro, RJ | 2022",
+          "item1": "Estrategias visuales para BRIFW, generando +100,000 impresiones en 3 meses y ampliando la visibilidad de la marca.",
+          "item2": "Creación de logos 3D, materiales gráficos y videos para redes sociales.",
+          "item3": "Colaboración con patrocinadores y artistas para el desarrollo de materiales."
+        },
+        "six": {
+          "title": "Director de Arte Junior | SIX Digital",
+          "period": "2021–2022",
+          "item1": "Creación de campañas digitales y piezas gráficas para redes sociales, generando leads para clientes internacionales (Brasil, Argentina, China, EUA).",
+          "item2": "Desarrollo de materiales impresos y digitales con foco en resultados."
+        }
+      },
+      "educationTitle": "Formación",
+      "education": {
+        "degree1": {
+          "title": "Licenciatura en Publicidad y Propaganda",
+          "period": "UFPR | 2017–2021"
+        },
+        "degree2": {
+          "title": "Técnico en Tecnología de la Información",
+          "period": "ETEC | 2014–2016"
+        },
+        "course1": {
+          "title": "Zonas de Niebla: Arte y Tecnología",
+          "period": "Instituto Ling | 2024–2025"
+        },
+        "course2": {
+          "title": "Arte del Mañana: Encuentros Investigativos",
+          "period": "Museo del Mañana | 2023"
+        },
+        "course3": {
+          "title": "Avatares e Influencers CGI: El Futuro de la Moda",
+          "period": "BRIFW & Vogue | 2023"
+        }
+      },
+      "eventsTitle": "Eventos y Lanzamientos",
+      "events": {
+        "item1": "SSA Mapping Festival - Artista Seleccionado | Salvador, BA",
+        "item2": "NFTBrasil - Artista Seleccionado | São Paulo, SP",
+        "item3": "BRIFW4: Avatar Talent Show - Expositor | Remoto",
+        "item4": "Paris Blockchain Week - Oyente | Remoto",
+        "item5": "Rebu x Banda Raça - Tatuaje - Producción, Dirección Creativa y Edición | São Paulo, SP",
+        "more": "(Lista completa disponible en el portafolio)"
+      },
+      "letterTitle": "Carta de Presentación",
+      "letterText": "¡Hola! Soy Vitor Moreira, diseñador multimedia y comunicador visual apasionado por conectar arte, diseño y tecnología. Desde 2020, desarrollo experiencias visuales e interactivas que exploran nuevas narrativas, colaborando con marcas como Renner, John Deere y Balaclava. Con formación en Publicidad y Propaganda (UFPR) y experiencia en tecnologías emergentes, aplico innovación y estrategia para crear proyectos impactantes. Estoy buscando oportunidades para ampliar mi trabajo en diseño, 3D e innovación, contribuyendo a iniciativas creativas, inclusivas y transformadoras.",
+      "contactTitle": "Contacto",
+      "skillsTitle": "Áreas de Especialización",
+      "skills": {
+        "item1": "Branding e Identidad Visual",
+        "item2": "Animación 3D y Producción Audiovisual",
+        "item3": "Campañas Multicanal",
+        "item4": "Dirección Creativa",
+        "item5": "Marketing Digital y UX/UI",
+        "item6": "Realidad Aumentada y Tecnologías Emergentes"
+      },
+      "techSkillsTitle": "Habilidades Técnicas",
+      "techSkills": {
+        "item1": "Adobe Suite (Ps, Ai, Ae, Id, Pr)",
+        "item2": "Blender, DAZ 3D, CLO3D",
+        "item3": "Figma, Unreal Engine",
+        "item4": "TouchDesigner, Runway ML",
+        "item5": "IA Generativa (Dall-E, MidJourney)",
+        "item6": "Trello, Asana, Notion"
+      },
+      "softSkillsTitle": "Habilidades Blandas",
+      "softSkills": {
+        "item1": "Pensamiento Crítico y Creatividad",
+        "item2": "Flexibilidad y Adaptabilidad",
+        "item3": "Empatía y Resolución de Problemas",
+        "item4": "Gestión de Tiempo y Colaboración"
+      },
+      "languagesTitle": "Idiomas",
+      "languages": {
+        "item1": "Inglés (Avanzado)",
+        "item2": "Español (Intermedio)"
+      }
+    },
+    "shapeofiiii": {
+      "title": "Forma de IIII",
+      "description": "Una forma vegetal surge de un cubo dividido, con cada segmento extruido, espejado y retorcido. Este equilibrio entre estructura y flujo refleja la capacidad de la naturaleza para crecer y adaptarse.\n\nSimbolizando el crecimiento a través de la transformación, el diseño refleja cómo evolucionamos mediante esfuerzo, resiliencia y una conexión más profunda con el mundo."
+    },
+    "zalgo": {
+      "title": "TEXTO ZALGO",
+      "description": "A partir de la emoción coleccionable en torno a Dirty Angel [Unruly Edition] en Zora, nació el concepto de crear un patrón de impresión en serigrafía, y pronto, estas piezas serán usadas por cyborgs en São Paulo."
+    },
+    "kids": {
+      "title": "KIDS",
+      "description": "Nacido de una invitación para crear recursos visuales para el álbum debut KIDS de NÃOVENHASEMROSTO, un trabajo intenso que mezcla diversos estilos musicales con ritmos acelerados, cargado de un profundo sentido de nostalgia y recuerdos de la infancia.\n\nLos visuales 3D del álbum cobran vida con un avatar vestido con una vestimenta única, equipado con un sistema reactivo al sonido donde círculos rojos crecen y bailan al ritmo de la música, emanando poder, libertad y alegría desde la mente de este niño en un mundo siniestro.",
+      "processTitle": "EL PROCESO Y LADY LETAL",
+      "processDescription": "La idea de usar la portada del álbum como sello para la ropa del avatar se inspiró en Lady Letal y llevó a la creación de una prenda única hecha de 100% poliéster, la huella del artista, para la promoción del álbum. Las piezas de edición limitada fueron un éxito, agotándose por completo.",
+      "gallery": {
+        "3dModel": "MODELO 3D",
+        "nodeSystem": "SISTEMA DE NODOS",
+        "garmentConcept": "CONCEPTO DE PRENDA",
+        "irlGarment": "PRENDA REAL"
+      }
+    },
+    "footer": {
+      "interested": "¿Interesado en trabajar juntos?",
+      "letsTalk": "Hablemos"
+    },
+    "modal": {
+      "link": "Acceder al enlace"
     }
   }
-
-  {
-    "en": {
-      "nav": {
-        "home": "HOME",
-        "about": "ABOUT",
-        "cv": "CV",
-        "gallery": "GALLERY"
-      },
-      "home": {
-        "subtitle": "Creative Strategist | Digital Storyteller | 3D Designer",
-        "description": "I create digital realities that push the boundaries of storytelling and technology, <br> crafting experiences that captivate and connect.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "ME"
-        }
-      },
-      "footer": {
-        "interested": "Interested in working together?",
-        "letsTalk": "Let's talk"
-      }
-    },
-    "pt": {
-      "nav": {
-        "home": "HOME",
-        "about": "SOBRE",
-        "cv": "CURRÍCULO",
-        "gallery": "GALERIA"
-      },
-      "home": {
-        "subtitle": "Estrategista Criativo | Contador de Histórias Digital | Designer 3D",
-        "description": "Crio realidades digitais que expandem os limites da narrativa e da tecnologia, <br> desenvolvendo experiências que cativam e conectam.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "EU"
-        }
-      },
-      "footer": {
-        "interested": "Interessado em trabalhar juntos?",
-        "letsTalk": "Vamos conversar"
-      }
-    },
-    "es": {
-      "nav": {
-        "home": "INICIO",
-        "about": "SOBRE MÍ",
-        "cv": "CURRÍCULUM",
-        "gallery": "GALERÍA"
-      },
-      "home": {
-        "subtitle": "Estratega Creativo | Narrador Digital | Diseñador 3D",
-        "description": "Creo realidades digitales que desafían los límites de la narrativa y la tecnología, <br> diseñando experiencias que cautivan y conectan.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "YO"
-        }
-      },
-      "footer": {
-        "interested": "¿Interesado en trabajar juntos?",
-        "letsTalk": "Hablemos"
-      }
-    }
-  }
-
-  {
-    "en": {
-      "nav": {
-        "home": "HOME",
-        "about": "ABOUT",
-        "cv": "CV",
-        "gallery": "GALLERY"
-      },
-      "home": {
-        "subtitle": "Creative Strategist | Digital Storyteller | 3D Designer",
-        "description": "I create digital realities that push the boundaries of storytelling and technology, <br> crafting experiences that captivate and connect.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "ME"
-        }
-      },
-      "about": {
-        "intro": "Hey, it’s me! I explore how <strong>internet access and technology</strong> shape the ways we connect, share, and create.",
-        "background": "Growing up in <strong>Guaratinguetá, São Paulo</strong>, near South America's largest technical-military educational complex and the National Sanctuary in Aparecida do Norte, I became fascinated by how systems and cultures intersect. The <strong>internet became my gateway</strong> to knowledge and expression that weren’t available to most people around me, shaping how I navigate the world.",
-        "experience": "With a background in advertising and technology, I’ve worked as a <strong>full-time designer</strong> in marketing agencies and at web culture events like BRIFW and REBUDIGITAL. My work moves between <strong>digital storytelling, creative technology, and 3D design</strong>, experimenting with tools like <strong>Blender, TouchDesigner, and AI</strong>.",
-        "focus": "I focus on building <strong>immersive experiences</strong> for brands, collectives, and individuals, exploring how <strong>virtual landscapes and interactive media</strong> can reshape the way we experience identity and digital spaces.",
-        "vision": "More than a medium for creation, I see technology as a way to <strong>amplify underrepresented voices</strong> and reimagine narratives. My projects blend self-discovery with the exploration of digital environments, avatars, and the relationship between tech and culture. Through visuals, interactive experiences, and conversations, I aim to create work that <strong>sparks new perspectives and meaningful connections</strong>."
-      },
-      "footer": {
-        "interested": "Interested in working together?",
-        "letsTalk": "Let's talk"
-      }
-    },
-    "pt": {
-      "nav": {
-        "home": "HOME",
-        "about": "SOBRE",
-        "cv": "CURRÍCULO",
-        "gallery": "GALERIA"
-      },
-      "home": {
-        "subtitle": "Estrategista Criativo | Contador de Histórias Digital | Designer 3D",
-        "description": "Crio realidades digitais que expandem os limites da narrativa e da tecnologia, <br> desenvolvendo experiências que cativam e conectam.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "EU"
-        }
-      },
-      "about": {
-        "intro": "Oi, sou eu! Exploro como o <strong>acesso à internet e a tecnologia</strong> moldam as formas como nos conectamos, compartilhamos e criamos.",
-        "background": "Crescendo em <strong>Guaratinguetá, São Paulo</strong>, perto do maior complexo educacional técnico-militar da América do Sul e do Santuário Nacional em Aparecida do Norte, fiquei fascinado por como sistemas e culturas se cruzam. A <strong>internet se tornou meu portal</strong> para conhecimento e expressão que não estavam disponíveis para a maioria das pessoas ao meu redor, moldando como eu navego pelo mundo.",
-        "experience": "Com formação em publicidade e tecnologia, trabalhei como <strong>designer em tempo integral</strong> em agências de marketing e em eventos de cultura web como BRIFW e REBUDIGITAL. Meu trabalho transita entre <strong>narrativa digital, tecnologia criativa e design 3D</strong>, experimentando ferramentas como <strong>Blender, TouchDesigner e IA</strong>.",
-        "focus": "Eu me concentro em construir <strong>experiências imersivas</strong> para marcas, coletivos e indivíduos, explorando como <strong>paisagens virtuais e mídia interativa</strong> podem reformular a maneira como experimentamos identidade e espaços digitais.",
-        "vision": "Mais do que um meio de criação, vejo a tecnologia como uma forma de <strong>amplificar vozes sub-representadas</strong> e reimaginar narrativas. Meus projetos misturam autodescoberta com a exploração de ambientes digitais, avatares e a relação entre tecnologia e cultura. Por meio de visuais, experiências interativas e conversas, busco criar trabalhos que <strong>despertem novas perspectivas e conexões significativas</strong>."
-      },
-      "footer": {
-        "interested": "Interessado em trabalhar juntos?",
-        "letsTalk": "Vamos conversar"
-      }
-    },
-    "es": {
-      "nav": {
-        "home": "INICIO",
-        "about": "SOBRE MÍ",
-        "cv": "CURRÍCULUM",
-        "gallery": "GALERÍA"
-      },
-      "home": {
-        "subtitle": "Estratega Creativo | Narrador Digital | Diseñador 3D",
-        "description": "Creo realidades digitales que desafían los límites de la narrativa y la tecnología, <br> diseñando experiencias que cautivan y conectan.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "YO"
-        }
-      },
-      "about": {
-        "intro": "¡Hola, soy yo! Exploro cómo el <strong>acceso a internet y la tecnología</strong> moldean las formas en que nos conectamos, compartimos y creamos.",
-        "background": "Crecí en <strong>Guaratinguetá, São Paulo</strong>, cerca del mayor complejo educativo técnico-militar de América del Sur y del Santuario Nacional en Aparecida do Norte, y me fascinó cómo se cruzan los sistemas y las culturas. El <strong>internet se convirtió en mi puerta de entrada</strong> al conocimiento y la expresión que no estaban disponibles para la mayoría de las personas a mi alrededor, moldeando cómo navego por el mundo.",
-        "experience": "Con formación en publicidad y tecnología, he trabajado como <strong>diseñador a tiempo completo</strong> en agencias de marketing y en eventos de cultura web como BRIFW y REBUDIGITAL. Mi trabajo se mueve entre <strong>narrativa digital, tecnología creativa y diseño 3D</strong>, experimentando con herramientas como <strong>Blender, TouchDesigner e IA</strong>.",
-        "focus": "Me enfoco en construir <strong>experiencias inmersivas</strong> para marcas, colectivos e individuos, explorando cómo <strong>paisajes virtuales y medios interactivos</strong> pueden reformular la manera en que experimentamos la identidad y los espacios digitales.",
-        "vision": "Más que un medio para la creación, veo la tecnología como una forma de <strong>amplificar voces subrepresentadas</strong> y reimaginar narrativas. Mis proyectos combinan autodescubrimiento con la exploración de entornos digitales, avatares y la relación entre tecnología y cultura. A través de visuales, experiencias interactivas y conversaciones, busco crear trabajos que <strong>despierten nuevas perspectivas y conexiones significativas</strong>."
-      },
-      "footer": {
-        "interested": "¿Interesado en trabajar juntos?",
-        "letsTalk": "Hablemos"
-      }
-    }
-  }
-
-
-  {
-    "en": {
-      "nav": {
-        "home": "HOME",
-        "about": "ABOUT",
-        "cv": "CV",
-        "gallery": "GALLERY"
-      },
-      "home": {
-        "subtitle": "Creative Strategist | Digital Storyteller | 3D Designer",
-        "description": "I create digital realities that push the boundaries of storytelling and technology, <br> crafting experiences that captivate and connect.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "ME"
-        }
-      },
-      "about": {
-        "intro": "Hey, it’s me! I explore how <strong>internet access and technology</strong> shape the ways we connect, share, and create.",
-        "background": "Growing up in <strong>Guaratinguetá, São Paulo</strong>, near South America's largest technical-military educational complex and the National Sanctuary in Aparecida do Norte, I became fascinated by how systems and cultures intersect. The <strong>internet became my gateway</strong> to knowledge and expression that weren’t available to most people around me, shaping how I navigate the world.",
-        "experience": "With a background in advertising and technology, I’ve worked as a <strong>full-time designer</strong> in marketing agencies and at web culture events like BRIFW and REBUDIGITAL. My work moves between <strong>digital storytelling, creative technology, and 3D design</strong>, experimenting with tools like <strong>Blender, TouchDesigner, and AI</strong>.",
-        "focus": "I focus on building <strong>immersive experiences</strong> for brands, collectives, and individuals, exploring how <strong>virtual landscapes and interactive media</strong> can reshape the way we experience identity and digital spaces.",
-        "vision": "More than a medium for creation, I see technology as a way to <strong>amplify underrepresented voices</strong> and reimagine narratives. My projects blend self-discovery with the exploration of digital environments, avatars, and the relationship between tech and culture. Through visuals, interactive experiences, and conversations, I aim to create work that <strong>sparks new perspectives and meaningful connections</strong>."
-      },
-      "footer": {
-        "interested": "Interested in working together?",
-        "letsTalk": "Let's talk"
-      }
-    },
-    "pt": {
-      "nav": {
-        "home": "HOME",
-        "about": "SOBRE",
-        "cv": "CURRÍCULO",
-        "gallery": "GALERIA"
-      },
-      "home": {
-        "subtitle": "Estrategista Criativo | Contador de Histórias Digital | Designer 3D",
-        "description": "Crio realidades digitais que expandem os limites da narrativa e da tecnologia, <br> desenvolvendo experiências que cativam e conectam.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "EU"
-        }
-      },
-      "about": {
-        "intro": "Oi, sou eu! Exploro como o <strong>acesso à internet e a tecnologia</strong> moldam as formas como nos conectamos, compartilhamos e criamos.",
-        "background": "Crescendo em <strong>Guaratinguetá, São Paulo</strong>, perto do maior complexo educacional técnico-militar da América do Sul e do Santuário Nacional em Aparecida do Norte, fiquei fascinado por como sistemas e culturas se cruzam. A <strong>internet se tornou meu portal</strong> para conhecimento e expressão que não estavam disponíveis para a maioria das pessoas ao meu redor, moldando como eu navego pelo mundo.",
-        "experience": "Com formação em publicidade e tecnologia, trabalhei como <strong>designer em tempo integral</strong> em agências de marketing e em eventos de cultura web como BRIFW e REBUDIGITAL. Meu trabalho transita entre <strong>narrativa digital, tecnologia criativa e design 3D</strong>, experimentando ferramentas como <strong>Blender, TouchDesigner e IA</strong>.",
-        "focus": "Eu me concentro em construir <strong>experiências imersivas</strong> para marcas, coletivos e indivíduos, explorando como <strong>paisagens virtuais e mídia interativa</strong> podem reformular a maneira como experimentamos identidade e espaços digitais.",
-        "vision": "Mais do que um meio de criação, vejo a tecnologia como uma forma de <strong>amplificar vozes sub-representadas</strong> e reimaginar narrativas. Meus projetos misturam autodescoberta com a exploração de ambientes digitais, avatares e a relação entre tecnologia e cultura. Por meio de visuais, experiências interativas e conversas, busco criar trabalhos que <strong>despertem novas perspectivas e conexões significativas</strong>."
-      },
-      "footer": {
-        "interested": "Interessado em trabalhar juntos?",
-        "letsTalk": "Vamos conversar"
-      }
-    },
-    "es": {
-      "nav": {
-        "home": "INICIO",
-        "about": "SOBRE MÍ",
-        "cv": "CURRÍCULUM",
-        "gallery": "GALERÍA"
-      },
-      "home": {
-        "subtitle": "Estratega Creativo | Narrador Digital | Diseñador 3D",
-        "description": "Creo realidades digitales que desafían los límites de la narrativa y la tecnología, <br> diseñando experiencias que cautivan y conectan.",
-        "works": {
-          "shapeofiiii": "SHAPE OF IIII",
-          "kids": "KIDS",
-          "zalgo": "ZALGO",
-          "me": "YO"
-        }
-      },
-      "about": {
-        "intro": "¡Hola, soy yo! Exploro cómo el <strong>acceso a internet y la tecnología</strong> moldean las formas en que nos conectamos, compartimos y creamos.",
-        "background": "Crecí en <strong>Guaratinguetá, São Paulo</strong>, cerca del mayor complejo educativo técnico-militar de América del Sur y del Santuario Nacional en Aparecida do Norte, y me fascinó cómo se cruzan los sistemas y las culturas. El <strong>internet se convirtió en mi puerta de entrada</strong> al conocimiento y la expresión que no estaban disponibles para la mayoría de las personas a mi alrededor, moldeando cómo navego por el mundo.",
-        "experience": "Con formación en publicidad y tecnología, he trabajado como <strong>diseñador a tiempo completo</strong> en agencias de marketing y en eventos de cultura web como BRIFW y REBUDIGITAL. Mi trabajo se mueve entre <strong>narrativa digital, tecnología creativa y diseño 3D</strong>, experimentando con herramientas como <strong>Blender, TouchDesigner e IA</strong>.",
-        "focus": "Me enfoco en construir <strong>experiencias inmersivas</strong> para marcas, colectivos e individuos, explorando cómo <strong>paisajes virtuales y medios interactivos</strong> pueden reformular la manera en que experimentamos la identidad y los espacios digitales.",
-        "vision": "Más que un medio para la creación, veo la tecnología como una forma de <strong>amplificar voces subrepresentadas</strong> y reimaginar narrativas. Mis proyectos combinan autodescubrimiento con la exploración de entornos digitales, avatares y la relación entre tecnología y cultura. A través de visuales, experiencias interactivas y conversaciones, busco crear trabajos que <strong>despierten nuevas perspectivas y conexiones significativas</strong>."
-      },
-      "footer": {
-        "interested": "¿Interesado en trabajar juntos?",
-        "letsTalk": "Hablemos"
-      }
-    }
-  }
-
-  {
-    "en": {
-      "shapeofiiii": {
-        "title": "Shape of IIII",
-        "description": "A plant form emerges from a divided cube, with each segment extruded, mirrored, and twisted. This balance between structure and flow echoes nature’s ability to grow and adapt.<br><br>Symbolizing growth through transformation, the design reflects how we evolve through effort, resilience, and a deeper connection with the world."
-      }
-    },
-    "pt": {
-      "shapeofiiii": {
-        "title": "Forma de IIII",
-        "description": "Uma forma vegetal emerge de um cubo dividido, com cada segmento extrudado, espelhado e torcido. Esse equilíbrio entre estrutura e fluxo reflete a capacidade da natureza de crescer e se adaptar.<br><br>Simbolizando o crescimento por meio da transformação, o design reflete como evoluímos através de esforço, resiliência e uma conexão mais profunda com o mundo."
-      }
-    },
-    "es": {
-      "shapeofiiii": {
-        "title": "Forma de IIII",
-        "description": "Una forma vegetal surge de un cubo dividido, con cada segmento extruido, espejado y retorcido. Este equilibrio entre estructura y flujo refleja la capacidad de la naturaleza para crecer y adaptarse.<br><br>Simbolizando el crecimiento a través de la transformación, el diseño refleja cómo evolucionamos mediante esfuerzo, resiliencia y una conexión más profunda con el mundo."
-      }
-    }
-  }
-
-
-  {
-    "en": {
-      "zalgo": {
-        "title": "ZALGO TEXT",
-        "description": "From the collectible excitement surrounding Dirty Angel [Unruly Edition] on Zora, the concept of creating a silkscreen printing pattern was born, and soon, these pieces will be worn by cyborgs across São Paulo."
-      }
-    },
-    "pt": {
-      "zalgo": {
-        "title": "TEXTO ZALGO",
-        "description": "A partir da empolgação colecionável em torno de Dirty Angel [Unruly Edition] no Zora, nasceu o conceito de criar um padrão de impressão em serigrafia, e em breve, essas peças serão usadas por ciborgues em São Paulo."
-      }
-    },
-    "es": {
-      "zalgo": {
-        "title": "TEXTO ZALGO",
-        "description": "A partir de la emoción coleccionable en torno a Dirty Angel [Unruly Edition] en Zora, nació el concepto de crear un patrón de impresión en serigrafía, y pronto, estas piezas serán usadas por cyborgs en São Paulo."
-      }
-    }
-  }
-
-
-  {
-    "en": {
-      "kids": {
-        "title": "KIDS",
-        "description": "Born with an invitation to create visual assets for NÃOVENHASEMROSTO’s debut album KIDS, an intense work that blends diverse musical styles with fast-paced rhythms, carrying a deep sense of nostalgia and childhood memories.<br><br>The 3D visuals for the album come to life with an avatar dressed in a unique vestment, featuring a sound-reactive system where red circles grow and dance to the music, emanating power, freedom, and joy from the mind of this child in a sinister world.",
-        "processTitle": "THE PROCESS AND LADY LETAL",
-        "processDescription": "The idea to use the album cover as a stamp for avatar clothing was inspired by Lady Letal, and led to the creation of a unique garment made of 100% polyester, the artist fingerprint, for the album promotion. The limited edition pieces were a hit, with all of them selling out.",
-        "gallery": {
-          "3dModel": "3D MODEL",
-          "nodeSystem": "NODE SYSTEM",
-          "garmentConcept": "GARMENT CONCEPT",
-          "irlGarment": "IRL GARMENT"
-        }
-      }
-    },
-    "pt": {
-      "kids": {
-        "title": "KIDS",
-        "description": "Nascido de um convite para criar recursos visuais para o álbum de estreia KIDS do NÃOVENHASEMROSTO, um trabalho intenso que mistura diversos estilos musicais com ritmos acelerados, carregando um profundo senso de nostalgia e memórias da infância.<br><br>Os visuais 3D do álbum ganham vida com um avatar vestido com uma vestimenta única, equipado com um sistema reativo ao som onde círculos vermelhos crescem e dançam ao ritmo da música, emanando poder, liberdade e alegria da mente dessa criança em um mundo sinistro.",
-        "processTitle": "O PROCESSO E LADY LETAL",
-        "processDescription": "A ideia de usar a capa do álbum como estampa para roupas de avatar foi inspirada por Lady Letal e levou à criação de uma peça única feita de 100% poliéster, a impressão digital do artista, para a promoção do álbum. As peças de edição limitada foram um sucesso, esgotando-se completamente.",
-        "gallery": {
-          "3dModel": "MODELO 3D",
-          "nodeSystem": "SISTEMA DE NÓS",
-          "garmentConcept": "CONCEITO DE VESTIMENTA",
-          "irlGarment": "VESTIMENTA REAL"
-        }
-      }
-    },
-    "es": {
-      "kids": {
-        "title": "KIDS",
-        "description": "Nacido de una invitación para crear recursos visuales para el álbum debut KIDS de NÃOVENHASEMROSTO, un trabajo intenso que mezcla diversos estilos musicales con ritmos acelerados, cargado de un profundo sentido de nostalgia y recuerdos de la infancia.<br><br>Los visuales 3D del álbum cobran vida con un avatar vestido con una vestimenta única, equipado con un sistema reactivo al sonido donde círculos rojos crecen y bailan al ritmo de la música, emanando poder, libertad y alegría desde la mente de este niño en un mundo siniestro.",
-        "processTitle": "EL PROCESO Y LADY LETAL",
-        "processDescription": "La idea de usar la portada del álbum como sello para la ropa del avatar se inspiró en Lady Letal y llevó a la creación de una prenda única hecha de 100% poliéster, la huella del artista, para la promoción del álbum. Las piezas de edición limitada fueron un éxito, agotándose por completo.",
-        "gallery": {
-          "3dModel": "MODELO 3D",
-          "nodeSystem": "SISTEMA DE NODOS",
-          "garmentConcept": "CONCEPTO DE PRENDA",
-          "irlGarment": "PRENDA REAL"
-        }
-      }
-    }
-  }
+}
