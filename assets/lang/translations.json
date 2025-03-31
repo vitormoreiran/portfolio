@@ -360,3 +360,72 @@
       }
     }
   }
+
+  {
+    "en": {
+      "nav": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "cv": "CV",
+        "gallery": "GALLERY"
+      },
+      "home": {
+        "subtitle": "Creative Strategist | Digital Storyteller | 3D Designer",
+        "description": "I create digital realities that push the boundaries of storytelling and technology, <br> crafting experiences that captivate and connect.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "ME"
+        }
+      },
+      "footer": {
+        "interested": "Interested in working together?",
+        "letsTalk": "Let's talk"
+      }
+    },
+    "pt": {
+      "nav": {
+        "home": "HOME",
+        "about": "SOBRE",
+        "cv": "CURRÍCULO",
+        "gallery": "GALERIA"
+      },
+      "home": {
+        "subtitle": "Estrategista Criativo | Contador de Histórias Digital | Designer 3D",
+        "description": "Crio realidades digitais que expandem os limites da narrativa e da tecnologia, <br> desenvolvendo experiências que cativam e conectam.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "EU"
+        }
+      },
+      "footer": {
+        "interested": "Interessado em trabalhar juntos?",
+        "letsTalk": "Vamos conversar"
+      }
+    },
+    "es": {
+      "nav": {
+        "home": "INICIO",
+        "about": "SOBRE MÍ",
+        "cv": "CURRÍCULUM",
+        "gallery": "GALERÍA"
+      },
+      "home": {
+        "subtitle": "Estratega Creativo | Narrador Digital | Diseñador 3D",
+        "description": "Creo realidades digitales que desafían los límites de la narrativa y la tecnología, <br> diseñando experiencias que cautivan y conectan.",
+        "works": {
+          "shapeofiiii": "SHAPE OF IIII",
+          "kids": "KIDS",
+          "zalgo": "ZALGO",
+          "me": "YO"
+        }
+      },
+      "footer": {
+        "interested": "¿Interesado en trabajar juntos?",
+        "letsTalk": "Hablemos"
+      }
+    }
+  }
