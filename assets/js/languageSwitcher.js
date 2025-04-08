@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
   
         // Atualiza o conteúdo do elemento
-        element.textContent = text;
+        element.innerHTML = text;
       });
   
       // Atualiza o atributo lang do HTML
