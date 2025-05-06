@@ -131,17 +131,14 @@
     background-color: var(--background-dark);
     color: var(--text-light);
   }
-  
   body.dark-mode header,
   body.dark-mode header * {
     background-color: var(--background-dark);
     color: var(--text-light) !important;
   }
-  
   body.dark-mode .footer-line {
     background-color: var(--background-dark);
   }
-  
   body.dark-mode .title-video {
     color: var(--text-light);
     text-shadow: 0 2px 4px rgba(0,0,0,0.7);
@@ -175,7 +172,7 @@
   }
   
   /* ==========================================================================
-     5. Header & Menu
+     5. Header & Menu (corrigido para ser igual ao footer)
      ========================================================================== */
   .header-div img {
     width: 100%;
@@ -183,66 +180,71 @@
     height: auto;
     margin-bottom: var(--space-xl);
   }
-  
-  /*--- HEADER STRUCTURE MIRRORING FOOTER ---*/
   .menu-div {
     width: 100%;
     max-width: var(--max-width);
-    min-height: 80px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--space-xl);
+    padding: var(--space-xl) 0;
     margin: 0 auto;
-    background: transparent;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
   }
   .menu-div-left {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex: 1 1 0;
+    gap: var(--space-sm);
+    width: auto;
+    justify-content: flex-start;
+    margin: 0;
   }
   .menu-div-right {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex: 1 1 0;
-    justify-content: flex-end;
+    gap: var(--space-md);
+    width: auto;
+    justify-content: flex-start;
+    margin: 0;
   }
   .menu-div .brand-text {
-    font-family: var(--font-secondary);
     font-size: 18px;
+    font-family: var(--font-secondary);
+    font-weight: bold;
     color: var(--text-dark);
     white-space: nowrap;
-  }
-  .menu-div .brand-text a {
-    text-decoration: none;
-    color: inherit;
   }
   .menu-div nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 24px;
     padding: 0;
     margin: 0;
+    align-items: center;
   }
   .menu-div nav a {
     color: var(--text-dark);
     text-decoration: none;
     font-family: var(--font-primary);
     font-size: 14px;
-    letter-spacing: 5%;
+    letter-spacing: 0.05em;
     line-height: 150%;
+    transition: opacity 0.3s ease;
   }
-  .language-switcher select {
-    font-family: var(--font-primary);
-    font-size: 14px;
-    padding: 2px 6px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
-    color: var(--text-dark);
-    cursor: pointer;
+  .menu-div nav a:hover,
+  .menu-div nav a:focus {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+  .brand-text a {
+    text-decoration: none;
+    color: inherit;
   }
   
   /* ==========================================================================
@@ -260,7 +262,6 @@
     justify-content: center;
     height: 800px;
   }
-  
   .background-video {
     position: absolute;
     top: 50%;
@@ -271,7 +272,6 @@
     object-fit: cover;
     z-index: -1;
   }
-  
   .title-container {
     position: relative;
     text-align: center;
@@ -280,7 +280,6 @@
     max-width: 1200px;
     padding: var(--space-md);
   }
-  
   .title-video {
     font-family: var(--font-secondary);
     font-size: clamp(2rem, 6vw, 4rem);
@@ -408,7 +407,7 @@
     margin-top: var(--space-md);
     padding-top: 0;
     width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* keep them in one row, no wrapping */
   }
   .gallery-div-1 img {
     width: 100%;
@@ -534,64 +533,65 @@
     max-width: 720px;
   }
   
-  /* ==========================================================================
+    /* ==========================================================================
      11. Work Section & Previews
      ========================================================================== */
-  .work-section {
-    width: 100%;
-    max-width: var(--max-width);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: var(--space-lg);
-    padding: 0 var(--space-md);
-    justify-content: flex-start;
-  }
-  .work-preview {
-    width: calc(25% - 12px);
-    min-width: 240px;
-    max-width: 338px;
-    height: 260px;
-    aspect-ratio: 338/260;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background-color: var(--background-dark);
-    color: var(--text-light);
-    padding: 8px;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-  }
-  .work-info {
-    width: 100%;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-  }
-  .work-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-  }
-  .work-description {
-    font-size: 14px;
-    font-family: var(--font-primary);
-    flex-grow: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .work-image-container {
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-  }
-  .work-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+     .work-section {
+      width: 100%;
+      max-width: var(--max-width);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: var(--space-lg);
+      padding: 0 var(--space-md);
+      justify-content: flex-start;
+    }
+    .work-preview {
+      width: calc(25% - 12px);
+      min-width: 240px;
+      max-width: 338px;
+      height: 260px;
+      aspect-ratio: 338/260;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background-color: var(--background-dark);
+      color: var(--text-light);
+      padding: 8px;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+    .work-info {
+      width: 100%;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+    .work-icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+    .work-description {
+      font-size: 14px;
+      font-family: var(--font-primary);
+      flex-grow: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .work-image-container {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+    .work-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
   
   /* ==========================================================================
      12. Footer
@@ -818,7 +818,7 @@
     .menu-div {
       flex-direction: row;
       align-items: center;
-      gap: var(--space-lg);
+      gap: var(--responsive-space-md);
       padding: 0 var(--responsive-space-lg);
     }
     .menu-div .brand-text {
@@ -827,11 +827,7 @@
     .menu-div nav ul {
       gap: var(--responsive-space-md);
     }
-    .menu-div-left,
-    .menu-div-right {
-      width: 100%;
-      justify-content: center;
-    }
+  
     .work-section {
       gap: var(--responsive-space-md);
       padding: 0 var(--responsive-space-md);
@@ -841,6 +837,7 @@
       max-width: 100%;
       margin-bottom: var(--responsive-space-md);
     }
+  
     .content-div {
       flex-direction: column;
       gap: var(--space-xl);
@@ -863,10 +860,6 @@
       width: 96px;
       height: 96px;
     }
-    .gallery-div-1 img {
-      max-width: 110px;
-      height: 110px;
-    }
   }
   
   /* =========== Mobile (max-width: 768px) =========== */
@@ -877,21 +870,50 @@
       gap: var(--responsive-space-sm);
       padding: var(--responsive-space-sm) var(--responsive-space-md);
     }
-    .menu-div-left,
-    .menu-div-right {
+    .menu-div-left {
       width: 100%;
       justify-content: center;
-    }
-    .menu-div .brand-text {
+      align-items: center;
+      flex-direction: row;
       margin-bottom: var(--responsive-space-sm);
-      font-size: 1rem;
       text-align: center;
     }
-    .menu-div nav ul {
-      flex-direction: column;
+    .menu-div-right {
+      width: 100%;
+      justify-content: center; /* <-- Isso centraliza os filhos em linha */
       align-items: center;
       gap: var(--responsive-space-sm);
+      text-align: center; /* Opcional, para garantir */
     }
+    .menu-div nav ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;   /* <-- ESSENCIAL para centralizar os itens */
+      align-items: center;
+      gap: var(--responsive-space-sm);
+      text-align: center; /* Opcional, para garantir */
+      padding: 0;
+      margin: 0;
+    }
+    .menu-div nav li {
+      text-align: center; /* Garante centralização dos textos dos links */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .menu-div nav a {
+      text-align: center;  /* Centraliza o texto do link */
+      display: block;      /* Para ocupar todo o espaço do li */
+    }
+    .menu-div .brand-text {
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+      justify-content: center;   /* <-- ESSENCIAL para centralizar os itens */
+      align-items: center;
+    }
+
     .work-section {
       gap: var(--responsive-space-sm);
       padding: 0 var(--responsive-space-xs, 8px);
@@ -902,6 +924,7 @@
       max-width: 100%;
       margin-bottom: var(--responsive-space-sm);
     }
+  
     .content-div {
       gap: var(--space-lg);
       padding: 0 var(--responsive-space-sm);
@@ -913,11 +936,7 @@
       width: 72px;
       height: 72px;
     }
-    .gallery-div-1 img {
-      max-width: 72px;
-      height: 72px;
-    }
-  }
+  
   
   /* =========== Small Mobile (max-width: 480px) =========== */
   @media (max-width: 480px) {
