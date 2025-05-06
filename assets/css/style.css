@@ -1,19 +1,38 @@
-@font-face {
+/* ==========================================================================
+   TABLE OF CONTENTS
+   ==========================================================================
+   1. Font Imports & Variables
+   2. Utility Classes & Reset
+   3. General Body Styles
+   4. Dark Mode Styles
+   5. Header & Menu
+   6. Video Container & Title
+   7. Content & Text Blocks
+   8. Gallery Styles
+   9. Vertical Banner
+   10. Centered Text Div
+   11. Work Section & Previews
+   12. Footer
+   13. Projects Section
+   14. CV/Resume Section (from style-cv.css)
+   15. Responsive Layouts (Tablet, Mobile, Scaling, etc.)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. Font Imports & Variables
+   ========================================================================== */
+   @font-face {
     font-family: 'MingLiU';
     src: url('../../fonts/mingliu.woff2') format('woff2'),
          url('../../fonts/mingliu.ttf') format('truetype');
-    font-weight: normal; /* Instead of 400 */
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
-
-
-/* =========================== */
-    /*          VARIÁVEIS          */
-    /* =========================== */
-    :root {
-    /* Colors/Fonts */
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+  
+  :root {
     --primary-color: #0F0F0F;
     --secondary-color: #050505;
     --background-color: #F2F2F2;
@@ -24,143 +43,225 @@
     --background-dark: #222222;
     --text-light: #ffffff;
     --text-dark: #040404;
-
+  
     /* Spacing System */
     --space-unit: 8px;
-    --space-xxs: calc(var(--space-unit) * 0.5);  /* 4px */
-    --space-xs: var(--space-unit);               /* 8px */
-    --space-sm: calc(var(--space-unit) * 2);     /* 16px */
-    --space-md: calc(var(--space-unit) * 3);     /* 24px */
-    --space-lg: calc(var(--space-unit) * 4);     /* 32px */
-    --space-xl: calc(var(--space-unit) * 6);     /* 48px */
-    --space-xxl: calc(var(--space-unit) * 8);    /* 64px */
-    --space-xxxl: calc(var(--space-unit) * 10); /* 80px */
-    --space-4xl: calc(var(--space-unit) * 12); /* 96px - for future use */
-
-    /* Component Spacing */
+    --space-xxs: calc(var(--space-unit) * 0.5);
+    --space-xs: var(--space-unit);
+    --space-sm: calc(var(--space-unit) * 2);
+    --space-md: calc(var(--space-unit) * 3);
+    --space-lg: calc(var(--space-unit) * 4);
+    --space-xl: calc(var(--space-unit) * 6);
+    --space-xxl: calc(var(--space-unit) * 8);
+    --space-xxxl: calc(var(--space-unit) * 10);
+    --space-4xl: calc(var(--space-unit) * 12);
+  
     --header-spacing: var(--space-md);
     --section-spacing: var(--space-xxl);
     --component-spacing: var(--space-lg);
     --text-spacing: var(--space-sm);
-}
-
-/* Utility Classes (consistent naming) */
-.m-0 { margin: 0; }
-.m-xs { margin: var(--space-xs); }
-.m-sm { margin: var(--space-sm); }
-/* ... */
-
-.p-0 { padding: 0; }
-.p-xs { padding: var(--space-xs); }
-.p-sm { padding: var(--space-sm); }
-/* ... */
-
-.mt-xxs { margin-top: var(--space-xxs); }
-.mt-xs { margin-top: var(--space-xs); }
-/* ... */
-
-.section-spacing {
-    margin-bottom: var(--section-spacing); /* Now points to --space-xxl (64px) */
-}
-    /* =========================== */
-    /*         RESET CSS           */
-    /* =========================== */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    /* =========================== */
-    /*          GERAL              */
-    /* =========================== */
-    body {
-        font-family: var(--font-primary);
-        background-color: var(--background-light);
-        color: var(--text-dark);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-      
-    }
-
-    body, h1, h2, h3, p {
-        font-synthesis: none;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    
-
-    /* =========================== */
-    /*     DARK MODE STYLES        */
-    /* =========================== */
-    body.dark-mode {
-        background-color: var(--background-dark);
-        color: var(--text-light);
-    }
-
-    body.dark-mode header {
-        background-color: var(--background-dark);
-        color: var(--text-light) !important;  /* Ensures the header text color is set */
-    }
-    
-    body.dark-mode header * {
-        color: var(--text-light) !important;  /* Forces all text inside header to follow the dark mode color */
-    }
-
-    body.dark-mode .footer-line {
-        background-color: var(--background-dark); /* Dark footer */
-    }
-
-    /* =========================== */
-    /*     BUTTON FOR LIGHT/DARK    */
-    /* =========================== */
-    .mode-toggle-btn {
-                border: none;
-                padding: 10px 15px;
-        font-size: 18px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
   
-
-    .mode-toggle-btn:focus {
-        outline: none;
-    }
-
-    /* =========================== */
-/*       HEADER IMAGE          */
-/* =========================== */
-.header-div img {
-    width: 100%;
-    max-width: 1400px;
+    /* Responsive spacing for media queries */
+    --responsive-space-sm: 16px;
+    --responsive-space-md: 24px;
+    --responsive-space-lg: 32px;
+    --responsive-space-xl: 48px;
+  }
+  
+  /* ==========================================================================
+     2. Utility Classes & Reset
+     ========================================================================== */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .m-0 { margin: 0; }
+  .m-xs { margin: var(--space-xs); }
+  .m-sm { margin: var(--space-sm); }
+  .p-0 { padding: 0; }
+  .p-xs { padding: var(--space-xs); }
+  .p-sm { padding: var(--space-sm); }
+  .mt-xxs { margin-top: var(--space-xxs); }
+  .mt-xs { margin-top: var(--space-xs); }
+  .section-spacing { margin-bottom: var(--section-spacing); }
+  .text-center { text-align: center; }
+  
+  img, video {
+    max-width: 100%;
     height: auto;
+    display: block;
     object-fit: cover;
-    margin-bottom: var(--space-xl); /* 48px spacing below header */    
-}
-
-/* =========================== */
-/*       VIDEO CONTAINER       */
-/* =========================== */
-.video-container {
-    width: 1400px;
+  }
+  
+  a {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: inherit;
+  }
+  
+  /* ==========================================================================
+     3. General Body Styles
+     ========================================================================== */
+  body {
+    font-family: var(--font-primary);
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body, h1, h2, h3, p {
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* ==========================================================================
+     4. Dark Mode Styles
+     ========================================================================== */
+  body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+  }
+  
+  body.dark-mode header,
+  body.dark-mode header * {
+    background-color: var(--background-dark);
+    color: var(--text-light) !important;
+  }
+  
+  body.dark-mode .footer-line {
+    background-color: var(--background-dark);
+  }
+  
+  body.dark-mode .title-video {
+    color: var(--text-light);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  }
+  body.dark-mode .subtitle-video,
+  body.dark-mode .extra1-r,
+  body.dark-mode .centered-title,
+  body.dark-mode .centered-title-2,
+  body.dark-mode .centered-description {
+    color: rgba(255,255,255,0.9);
+  }
+  body.dark-mode .footer {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+  }
+  .dark-mode .work-preview {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+  }
+  
+  /* Light/Dark mode toggle button */
+  .mode-toggle-btn {
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .mode-toggle-btn:focus {
+    outline: none;
+  }
+  
+  /* ==========================================================================
+     5. Header & Menu
+     ========================================================================== */
+  .header-div img {
+    width: 100%;
+    max-width: var(--max-width);
+    height: auto;
+    margin-bottom: var(--space-xl);
+  }
+  
+  /*--- HEADER STRUCTURE MIRRORING FOOTER ---*/
+  .menu-div {
+    width: 100%;
+    max-width: var(--max-width);
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-xl);
+    margin: 0 auto;
+    background: transparent;
+  }
+  .menu-div-left {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+  }
+  .menu-div-right {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+    justify-content: flex-end;
+  }
+  .menu-div .brand-text {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    color: var(--text-dark);
+    white-space: nowrap;
+  }
+  .menu-div .brand-text a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .menu-div nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-div nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    letter-spacing: 5%;
+    line-height: 150%;
+  }
+  .language-switcher select {
+    font-family: var(--font-primary);
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    color: var(--text-dark);
+    cursor: pointer;
+  }
+  
+  /* ==========================================================================
+     6. Video Container & Title
+     ========================================================================== */
+  .video-container {
+    width: 100%;
     max-width: var(--max-width);
     position: relative;
     margin-bottom: var(--section-spacing);
     overflow: hidden;
-    min-height: 600px; /* Adjustable based on your video */
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 800px;
-}
-
-.background-video {
+  }
+  
+  .background-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -169,340 +270,238 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
-
-.title-container {
+  }
+  
+  .title-container {
     position: relative;
     text-align: center;
     z-index: 1;
     width: 90%;
     max-width: 1200px;
-    padding: var(--spacing-md);
-}
-
-.title-video {
+    padding: var(--space-md);
+  }
+  
+  .title-video {
     font-family: var(--font-secondary);
-    font-size: 4rem;
+    font-size: clamp(2rem, 6vw, 4rem);
     line-height: 1.2;
-    color: rgba(244, 244, 244, 0.8);
-    text-shadow: 0 -0.2em 0.33em rgba(255, 255, 255, 0.6);
+    color: rgba(244,244,244,0.8);
+    text-shadow: 0 -0.2em 0.33em rgba(255,255,255,0.6);
     white-space: nowrap;
-    margin-bottom: var(--space-md); /* 24px */
-}
-
-.subtitle-video{
+    margin-bottom: var(--space-md);
+  }
+  .subtitle-video {
     font-family: var(--font-secondary);
     font-weight: 300;
     font-size: 1rem;
-    color: rgba(200, 200, 200, 0.8);
-    margin-bottom: var(--space-lg); 
-}
-
-.extra1-r {
+    color: rgba(200,200,200,0.8);
+    margin-bottom: var(--space-lg);
+  }
+  .extra1-r {
     font-family: var(--font-secondary);
     font-size: 1rem;
     line-height: 150%;
     font-weight: 200;
     letter-spacing: 5%;
-    color:  var(--text-dark);
+    color: var(--text-dark);
     max-width: 800px;
     margin: 0 auto;
-}
-
-body.dark-mode .title-video {
-    color: var(--text-light);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-body.dark-mode .subtitle-video,
-body.dark-mode .extra1-r {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-    /* =========================== */
-    /*         MENU SETTINGS       */
-    /* =========================== */
-    .menu-div {
-        width: 1400px;
-        height: 80px;
-        background-color: var(--background);
-        display: flex;
-        align-items: flex-end; /* Align content to bottom */
-        justify-content: space-between;
-       
-        padding-bottom: var(--space-sm); /* Adicionado espaçamento abaixo do header */
-
-    }
-    
-/* =========================== */
-/*         MENU TEXT           */
-/* =========================== */
-
-.menu-div .brand-text {
-    font-family: var(--font-secondary);
-    font-size: 18px;
-    color: var(--text-dark);
-}
-
-.menu-div nav ul {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-}
-
-.menu-div nav a {
-    color: var(--text-dark);
-    text-decoration: none;
-    font-family: var(--font-primary);
-    font-size: 14px;
-    letter-spacing: 5%; /* Added for consistency */
-    line-height: 150%;
-}
-.brand-text a {
-    text-decoration: none;
   }
-
-/* =========================== */
-/*         DETAIL TEXT         */
-/* =========================== */
-
-.detail-text {
-    font-family: var(--font-primary);
-    font-size: 14pt;
-    letter-spacing: 5%;
-    line-height: 150%;
-}
-    
-.extra-text {
-    font-family: var(--font-secondary);
-    font-size: 24pt;
-    letter-spacing: 5%;
-    line-height: 150%;
-}
-
-a {
-    text-decoration: underline;
-    text-underline-position: under; /* Moves the underline slightly lower */
-    color: inherit; /* Keeps the link color consistent */
-}
-
-
-
-
-    
-    /* =========================== */
-    /*       HEADER IMAGE          */
-    /* =========================== */
-    .header-div img {
-        width: 100%;
-        max-width: 1400px;
-        height: auto;
-        object-fit: cover; /* Ensures the image covers the space without distortion */
-    }
-
-    /* =========================== */
-    /*        CONTENT AREA         */
-    /* =========================== */
-    .content-div {
-        display: flex;
-        max-width: var(--max-width);
-        min-height: 690px;
-        margin: var(--section-spacing) auto;
-        gap: var(--space-xxl); /* 64px between columns */
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center; 
-        
-
-    }
-
-    .column-1 img {
-        width: 100%;
-        max-width: 690px;
-        height: 690px;
-    }
-
-    .column-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        width: 100%;
-        max-width: 646px;
-        
-    }
-
-/* =========================== */
-/*         TEXT BLOCKS         */
-/* =========================== */
-
-/* Text container should grow to push gallery down */
-.text-line {
-    flex: 1; /* Takes available space */
+  
+  /* ==========================================================================
+     7. Content & Text Blocks
+     ========================================================================== */
+  .content-div {
+    display: flex;
+    flex-direction: row;
+    max-width: var(--max-width);
+    min-height: 690px;
+    margin: var(--section-spacing) auto;
+    gap: var(--space-xxl);
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0 var(--space-xl);
+    box-sizing: border-box;
+  }
+  
+  .column-1 {
+    width: 50%;
+    min-width: 320px;
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .column-1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--space-lg);
+  }
+  .gallery-row {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: auto;
+  }
+  .gallery-row .gallery-thumb {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    background: #eee;
+    border-radius: 0;
+    display: block;
+  }
+  
+  .column-2 {
+    width: 50%;
+    max-width: 646px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    margin-left: var(--space-xl);
+  }
+  
+  .text-line {
+    flex: 1;
     margin-bottom: var(--space-md);
-}
-.text-line h1 {
+    text-align: left;
+  }
+  .text-line h1 {
     font-family: var(--font-secondary);
-    font-size: 56px; /* Change pt to px */
+    font-size: clamp(2rem, 5vw, 56px);
     letter-spacing: 5%;
     line-height: 150%;
-}
-.text-line h2 {
+  }
+  .text-line h2 {
     font-family: var(--font-secondary);
-    font-size: 40px;
+    font-size: clamp(1.2rem, 4vw, 40px);
     letter-spacing: 0.05em;
-    line-height: 150%; /* Tighter than 150% *//
-     margin-bottom: 24px; /* 16px after title */
-}
-
-.text-line h3 {
+    line-height: 150%;
+    margin-bottom: 24px;
+  }
+  .text-line h3 {
     font-family: var(--font-secondary);
-    font-size: 24px; /* Change pt to px */
+    font-size: clamp(1rem, 3vw, 24px);
     letter-spacing: 5%;
     line-height: 150%;
-}
-
-.text-line p {
+  }
+  .text-line p {
     font-family: var(--font-primary);
     font-size: 18px;
     letter-spacing: 0.05em;
-    line-height: 1.8; /* More breathing room than 150% */
-    margin-bottom: var(--space-lg); /* 32px gap above gallery */
-}
-
-
-    /* =========================== */
-    /*         GALLERY 1           */
-    /* =========================== */
-    .gallery-div-1 {
-        align-self: bottom-end; 
-        gap: var(--space-sm); /* 24px */
-        padding-top: 0; /* Remove any extra padding */
-        margin-top: var(--space-md);s /* Keeps gallery pinned to bottom */
-        flex-wrap: wrap;
-         margin-top: auto; /* Forces gallery to bottom */
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+  }
+  
+  /* ==========================================================================
+     8. Gallery Styles
+     ========================================================================== */
+  .gallery-div-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
     padding-top: 0;
-    align-items: flex-end; /* Right-align gallery */
-    }
-
-    .gallery-div-1 img {
-        width: 100%;
-        max-width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }
-
-/* =========================== */
-/*         GALLERY 2           */
-/* =========================== */
-.gallery-div-2 {
     width: 100%;
-    max-width: 1400px;
+    flex-wrap: nowrap;
+  }
+  .gallery-div-1 img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+  }
+  .gallery-div-2 {
+    width: 100%;
+    max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     align-items: center;
-    padding: var(--space-xxl) 0; /* 64px top AND bottom */
-    margin-bottom: var(--space-xl); /* Additional 48px if needed */
+    padding: var(--space-xxl) 0;
+    margin-bottom: var(--space-xl);
     gap: var(--space-md);
-    
-  
-}
-
-.gallery-item {
+  }
+  .gallery-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px; /* Fixed width for each item */
-    height: 400px; /* Height will adjust automatically */
+    width: 300px;
+    height: 400px;
     box-sizing: border-box;
-    scroll-snap-align: start; /* Snap each item into view */
-}
-
-/* Image container styles */
-.gallery-item .img-wrapper {
+    scroll-snap-align: start;
+  }
+  .gallery-item .img-wrapper {
     width: 100%;
-    height: 360px; /* Limit the height */
-    overflow: hidden; /* Hide anything outside the container */
-}
-
-/* Image styles */
-.gallery-item img {
-    width: 100%; /* Image will take up full width */
-    height: 100%; /* Ensure image fills the container height */
-    object-fit: cover; /* Ensures that the image fills the container without distortion */
-    display: block; /* Prevents small gaps under images */
-}
-
-/* Description styling */
-.description {
+    height: 360px;
+    overflow: hidden;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .description {
     text-align: center;
-    margin-top: var(--space-xs); /* 8px */
-}
-
-.description h2 {
+    margin-top: var(--space-xs);
+  }
+  .description h2 {
     margin: 0;
     font-size: 24px;
     font-family: var(--font-secondary);
-}
-
-.description p {
+  }
+  .description p {
     font-size: 16px;
     font-family: var(--font-primary);
     line-height: 1.5;
-}
-
-
-
-/* =========================== */
-/*     VERTICAL BANNER         */
-/* =========================== */
-/* =========================== */
-/*     VERTICAL BANNER         */
-/* =========================== */
-.vertical-banner {
+  }
+  
+  /* ==========================================================================
+     9. Vertical Banner
+     ========================================================================== */
+  .vertical-banner {
     width: 100%;
     max-width: 1080px;
     height: auto;
-    aspect-ratio: 9 / 16;
-    margin: 64px auto; /* 64px em cima e embaixo, auto nas laterais para centralizar */
+    aspect-ratio: 9/16;
+    margin: 64px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
-}
-
-.banner-item {
+    position: relative;
+  }
+  .banner-item {
     position: absolute;
     width: 100%;
-    height: 100%; /* Ensures the banner item fills the full height */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: opacity 1s ease;
-}
-
-.banner-item img {
+  }
+  .banner-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire space */
-}
-
-
-
-
-
-
-/* =========================== */
-/*     CENTERED TEXT DIV       */
-/* =========================== */
-
-.centered-text {
+    object-fit: cover;
+  }
+  
+  /* ==========================================================================
+     10. Centered Text Div
+     ========================================================================== */
+  .centered-text {
     width: 100%;
     max-width: 1000px;
     text-align: center;
@@ -512,72 +511,48 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--space-md); /* 24px */
-   
-}
-
-/* Estilo do título */
-.centered-title {
-    font-size: 36px;
+    gap: var(--space-md);
+  }
+  .centered-title {
+    font-size: clamp(1.5rem, 4vw, 36px);
     font-family: var(--font-secondary);
     color: var(--primary-color);
     margin: 0;
-}
-
-/* Estilo do título */
-.centered-title-2 {
-    font-size: 24px;
+  }
+  .centered-title-2 {
+    font-size: clamp(1.2rem, 3vw, 24px);
     font-family: var(--font-secondary);
     color: var(--primary-color);
     margin: 0;
-}
-/* Estilo do parágrafo */
-.centered-description {
-    font-size: 18px;
+  }
+  .centered-description {
+    font-size: clamp(1rem, 2vw, 18px);
     font-family: var(--font-primary);
     color: var(--text-dark);
     line-height: 1.6;
     margin: 0;
-    max-width: 720px; /* Limite para melhor legibilidade */
-}
-
-/* =========================== */
-/*      MODO ESCURO (DARK)     */
-/* =========================== */
-.dark-mode .centered-title {
-    color: var(--text-light);
-}
-
-.dark-mode .centered-title-2 {
-    color: var(--text-light);
-}
-
-
-.dark-mode .centered-description {
-    color: var(--text-light);
-}
-
-
-
-/* =========================== */
-/*     WORK SECTION STYLES     */
-/* =========================== */
-.work-section {
-    width: 1400px;
+    max-width: 720px;
+  }
+  
+  /* ==========================================================================
+     11. Work Section & Previews
+     ========================================================================== */
+  .work-section {
+    width: 100%;
+    max-width: var(--max-width);
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* Exact pixel value for precision */
-    margin-top: var(--space-lg); /* 32px top */
-
-}
-
-/* =========================== */
-/*     WORK PREVIEW STYLES     */
-/* =========================== */
-.work-preview {
-    width: 338px; /* Adjusted from 320px to fit 1400px container */
-    height: 260px; /* Maintain original height */
-    aspect-ratio: 338/260; /* Explicit proportion */
+    gap: 16px;
+    margin-top: var(--space-lg);
+    padding: 0 var(--space-md);
+    justify-content: flex-start;
+  }
+  .work-preview {
+    width: calc(25% - 12px);
+    min-width: 240px;
+    max-width: 338px;
+    height: 260px;
+    aspect-ratio: 338/260;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -585,194 +560,101 @@ a {
     color: var(--text-light);
     padding: 8px;
     transition: all 0.3s ease;
-}
-
-/* Modo escuro */
-.dark-mode .work-preview {
-    background-color: var(--background-dark);
-    color: var(--text-light);
-}
-
-/* =========================== */
-/*      FIRST LINE (INFO)      */
-/* =========================== */
-
-.work-info {
+    box-sizing: border-box;
+  }
+  .work-info {
     width: 100%;
     height: 32px;
     display: flex;
     align-items: center;
-    gap: var(--space-xs); /* 8px */
-}
-
-/* Ícone */
-.work-icon {
+    gap: var(--space-xs);
+  }
+  .work-icon {
     width: 20px;
     height: 20px;
-    object-fit: contain; /* Garante que o ícone não se deforme */
-}
-
-/* Texto da descrição */
-.work-description {
+    object-fit: contain;
+  }
+  .work-description {
     font-size: 14px;
     font-family: var(--font-primary);
     flex-grow: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-/* =========================== */
-/*      SECOND LINE (IMAGE)    */
-/* =========================== */
-
-.work-image-container {
+  }
+  .work-image-container {
     width: 100%;
     height: 220px;
     overflow: hidden;
-}
-
-/* Imagem do preview */
-.work-image {
+  }
+  .work-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-
-/* =========================== */
-/*          FOOTER             */
-/* =========================== */
-
-.footer {
-    width: 1400px;
+  }
+  
+  /* ==========================================================================
+     12. Footer
+     ========================================================================== */
+  .footer {
+    width: 100%;
     max-width: var(--max-width);
     min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-xl) 0;
+    padding: var(--space-xl) 0;
     margin: 0 auto;
-    background-color: var(--background-light); /* Cor padrão (modo claro) */
+    background-color: var(--background-light);
     color: var(--text-dark);
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Modo escuro */
-.dark-mode .footer {
-    background-color: var(--background-dark);
-    color: var(--text-light);
-}
-
-/* =========================== */
-/*      LEFT SECTION           */
-/* =========================== */
-
-.footer-left {
+  }
+  .footer-left {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
-}
-
-.footer-logo {
+    gap: var(--space-sm);
+  }
+  .footer-logo {
     font-size: 18px;
     font-family: var(--font-secondary);
     font-weight: bold;
-}
-
-.footer-description {
+  }
+  .footer-description {
     font-size: 14px;
     font-family: var(--font-primary);
-}
-
-/* =========================== */
-/*      RIGHT SECTION          */
-/* =========================== */
-
-.footer-right {
+  }
+  .footer-right {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
-}
-
-/* Links */
-.footer-link {
+    gap: var(--space-md);
+  }
+  .footer-link {
     font-size: 14px;
     font-family: var(--font-primary);
     text-decoration: none;
     color: inherit;
     transition: opacity 0.3s ease;
-}
-
-
-/* Redes sociais */
-.footer-socials {
+  }
+  .footer-socials {
     display: flex;
-    gap: var(--space-xs); /* 8px */
-}
-
-.footer-socials img {
+    gap: var(--space-xs);
+  }
+  .footer-socials img {
     width: 20px;
     height: 20px;
     object-fit: contain;
     transition: opacity 0.3s ease;
-}
-
-
-
-
-
-/* =========================== */
-/*      VERTICAL BANNER        */
-/* =========================== */
-
-/* Default Styles (For Desktop) */
-.vertical-banner {
-    width: 100%;
-   max-width: 640px; /* Maximum width */
-    aspect-ratio: 9 / 16; /* Set aspect ratio for proportional height */
-    margin: var(--space-xxl) auto; /* 64px */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.banner-item {
-    position: absolute;
-    width: 100%;
-    height: 100%; /* Ensure the banner item fills the full height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.banner-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire space */
-}
-
-
-
-
-
-
-
-
-/* EXTRA THINGS */
-
-/* Mantenha estas classes do styles.css para os projetos */
-#projects {
+  }
+  
+  /* ==========================================================================
+     13. Projects Section
+     ========================================================================== */
+  #projects {
     width: 100%;
     scroll-snap-align: start;
     position: relative;
-}
-
-.projects-container {
+  }
+  .projects-container {
     width: 100%;
     height: 100vh;
     max-height: 960px;
@@ -780,9 +662,8 @@ a {
     scroll-snap-type: y mandatory;
     -webkit-overflow-scrolling: touch;
     margin: 0 auto;
-}
-
-.project-card {
+  }
+  .project-card {
     width: 100%;
     height: 100vh;
     max-height: 960px;
@@ -791,19 +672,286 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-.card-image img {
+    flex-direction: row;
+  }
+  .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.card-text {
+  }
+  .card-text {
     position: absolute;
     bottom: 160px;
     left: 100px;
     width: 452px;
     color: white;
     z-index: 2;
-}
+  }
+  
+  /* ==========================================================================
+     14. CV/Resume Section (from style-cv.css)
+     ========================================================================== */
+  .intro {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 0px 120px 0px;
+    box-sizing: border-box;
+  }
+  .gradient {
+    width: 100%;
+    max-width: 1440px;
+    height: 16vw;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gradient::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    background: radial-gradient(circle at 65% 35%, #E1C858 5%, #B59466 25%, #CE473D 45%, #6AC460 65%, #E1C858 90%);
+    animation: animateGradient 10s infinite linear alternate;
+    filter: blur(80px);
+  }
+  @keyframes animateGradient {
+    0%   { transform: scale(1) translate(-5%, -5%); }
+    25%  { transform: scale(1.2) translate(5%, 10%); }
+    50%  { transform: scale(1.4) translate(-10%, -15%); }
+    75%  { transform: scale(1.2) translate(10%, 5%); }
+    100% { transform: scale(1) translate(-5%, -5%); }
+  }
+  .gradient img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #cv {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .cv-header {
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  .cv-name {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  .cv-tagline {
+    font-size: 1.1rem;
+    color: #B59466;
+    margin-bottom: 1rem;
+  }
+  .cv-section {
+    margin-bottom: 2.5rem;
+  }
+  .cv-section-title {
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-transform: uppercase;
+  }
+  .cv-item {
+    margin-bottom: 2rem;
+  }
+  .cv-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .cv-period {
+    font-size: 0.9rem;
+    color: #B59466;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+  .cv-description {
+    margin-top: 0.75rem;
+    padding-left: 1rem;
+  }
+  .cv-description li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    list-style: none;
+  }
+  .cv-description li:before {
+    content: "—";
+    position: absolute;
+    left: -1rem;
+    color: #E1C858;
+  }
+  @media (max-width: 768px) {
+    .cv-name { font-size: 2rem; }
+    .column-1, .column-2 { width: 100%; flex: none; }
+    .cv-contact-mobile { display: block; }
+    .cv-side-section:first-child { display: none; }
+  }
+  
+  /* ==========================================================================
+     15. Responsive Layouts (Tablet, Mobile, Scaling, etc.)
+     ========================================================================== */
+  
+  /* =========== Tablet (max-width: 1024px) =========== */
+  @media (max-width: 1024px) {
+    body { overflow-x: hidden; }
+  
+    .menu-div {
+      flex-direction: row;
+      align-items: center;
+      gap: var(--space-lg);
+      padding: 0 var(--responsive-space-lg);
+    }
+    .menu-div .brand-text {
+      font-size: 1.2rem;
+    }
+    .menu-div nav ul {
+      gap: var(--responsive-space-md);
+    }
+    .menu-div-left,
+    .menu-div-right {
+      width: 100%;
+      justify-content: center;
+    }
+    .work-section {
+      gap: var(--responsive-space-md);
+      padding: 0 var(--responsive-space-md);
+    }
+    .work-preview {
+      width: calc(50% - 12px);
+      max-width: 100%;
+      margin-bottom: var(--responsive-space-md);
+    }
+    .content-div {
+      flex-direction: column;
+      gap: var(--space-xl);
+      padding: 0 var(--responsive-space-md);
+      align-items: stretch;
+    }
+    .column-1,
+    .column-2 {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+    }
+    .gallery-row {
+      gap: var(--responsive-space-md);
+      margin-bottom: var(--space-lg);
+      margin-top: 0;
+      justify-content: flex-start;
+    }
+    .gallery-row .gallery-thumb {
+      width: 96px;
+      height: 96px;
+    }
+    .gallery-div-1 img {
+      max-width: 110px;
+      height: 110px;
+    }
+  }
+  
+  /* =========== Mobile (max-width: 768px) =========== */
+  @media (max-width: 768px) {
+    .menu-div {
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--responsive-space-sm);
+      padding: var(--responsive-space-sm) var(--responsive-space-md);
+    }
+    .menu-div-left,
+    .menu-div-right {
+      width: 100%;
+      justify-content: center;
+    }
+    .menu-div .brand-text {
+      margin-bottom: var(--responsive-space-sm);
+      font-size: 1rem;
+      text-align: center;
+    }
+    .menu-div nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--responsive-space-sm);
+    }
+    .work-section {
+      gap: var(--responsive-space-sm);
+      padding: 0 var(--responsive-space-xs, 8px);
+    }
+    .work-preview {
+      width: 100%;
+      min-width: unset;
+      max-width: 100%;
+      margin-bottom: var(--responsive-space-sm);
+    }
+    .content-div {
+      gap: var(--space-lg);
+      padding: 0 var(--responsive-space-sm);
+    }
+    .gallery-row {
+      gap: var(--space-xs);
+    }
+    .gallery-row .gallery-thumb {
+      width: 72px;
+      height: 72px;
+    }
+    .gallery-div-1 img {
+      max-width: 72px;
+      height: 72px;
+    }
+  }
+  
+  /* =========== Small Mobile (max-width: 480px) =========== */
+  @media (max-width: 480px) {
+    .vertical-banner { min-height: 200px; }
+  }
+  
+  /* =========== Progressive Scaling between 1024px and 1400px =========== */
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    :root {
+      --zoom-min: 0.85;
+      --zoom-max: 1;
+      --zoom-factor: calc(
+        var(--zoom-min) +
+        (var(--zoom-max) - var(--zoom-min)) *
+        (100vw - 1024px) / (1400 - 1024)
+      );
+    }
+    .menu-div {
+      width: 95% !important;
+      max-width: 1400px;
+      margin: 0 auto !important;
+      padding: 10px 2.5% !important;
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+    .menu-div .brand-text {
+      font-size: clamp(1.3rem, 1.5vw, 1.8rem) !important;
+    }
+    .menu-div nav ul {
+      gap: clamp(12px, 1.5vw, 24px) !important;
+    }
+  }
+  
+  /* ==========================================================================
+     End of style.css
+     ==========================================================================
+   */
