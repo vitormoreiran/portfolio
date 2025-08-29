@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Como arquitetar um futuro onde sejamos capazes de viver? | Viran</title>
+
+  <!-- Pico + tema do site -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    /* ——— ajustes mínimos desta página ——— */
+    .especial-hero{
+      padding-block: var(--s6);
+      border-bottom:1px solid var(--muted);
+      display:grid; gap: var(--s3);
+    }
+    .especial-hero .section-title{ margin:0; }
+    .subtitle{ opacity:.85; max-width:60ch; }
+
+    .stage{ position:relative; border:1px solid var(--muted); background:var(--paper); }
+    .stage::after{ /* proporção 16:9 sem JS */
+      content:""; display:block; padding-top:56.25%;
+    }
+    .stage > canvas{
+      position:absolute; inset:0; width:100%; height:100%; display:block;
+    }
+
+    .controls{
+      display:flex; gap:16px; align-items:center; flex-wrap:wrap;
+      margin-top: var(--s4);
+    }
+    .controls label{ display:flex; gap:8px; align-items:center; }
+    .controls select, .controls input[type="range"]{
+      border:1px solid var(--muted); background:transparent; color:var(--ink);
+      padding:.35rem .5rem;
+    }
+    .legend{
+      display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+      margin-top: var(--s3);
+    }
+    .swatch{ width:14px; height:14px; border:1px solid var(--muted); display:inline-block; }
+    .flow-text{ max-width: 72ch; }
+
+    /* ——— estilos do sistema atualizado ——— */
+    .presets{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+    .presets button{ border:1px solid var(--muted); padding:.25rem .5rem; }
+    .aqi-wrap{ margin-top:10px; display:grid; gap:8px; }
+    .aqi-legend{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    .swatch.big{ width:18px; height:12px; }
+    .s-good{ background:#00e400; }  /* 0–50   */
+    .s-mod { background:#ffff00; }  /* 51–100 */
+    .s-usg { background:#ff7e00; }  /* 101–150*/
+    .s-unh { background:#ff0000; }  /* 151–200*/
+    .s-vuh { background:#8f3f97; }  /* 201–300*/
+    .s-haz { background:#7e0023; }  /* 301+   */
+    .grad{ height:10px; width:100%; background:
+      linear-gradient(90deg,#00e400 0%,#ffff00 20%,#ff7e00 40%,#ff0000 60%,#8f3f97 80%,#7e0023 100%);
+      border:1px solid var(--muted);
+    }
+    .pill{ display:inline-block; padding:.2rem .5rem; border:1px solid var(--muted); border-radius:999px; }
+    .tech{ border:1px dashed var(--muted); padding:12px; font-size:var(--fs-meta,.9rem); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho no mesmo padrão do index -->
+  <header class="container site-head">
+    <nav>
+      <ul>
+        <li><strong><a class="brand-link" href="../index.html#arquivo" aria-label="Voltar ao Arquivo">Viran</a></strong></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="../index.html#eixos">Eixos</a></li>
+        <li><a href="../index.html#arquivo">Arquivo</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container section">
+    <!-- HERO curto -->
+    <header class="especial-hero">
+      <h1 class="section-title">Como arquitetar um futuro onde sejamos capazes de viver?</h1>
+      <p class="subtitle">Exploração audiovisual que traduz índice global de qualidade do ar em células de cor e movimento — projetadas em quatro empenas no cruzamento entre a Paulista e a Consolação.</p>
+      <p class="meta">Nível: <strong>Curadoria</strong> · Eixo: <strong>Tecnologias</strong> · <span class="ext-badge">.HTML</span></p>
+      <ul class="chips">
+        <li>programação visual</li><li>IA generativa</li><li>visualidade algorítmica</li>
+      </ul>
+    </header>
+
+    <!-- =================== SISTEMA (ATUALIZADO) =================== -->
+    <section aria-labelledby="h-palco" class="section">
+      <h2 id="h-palco" class="section-title">Projeção simulada</h2>
+
+      <div class="stage" aria-label="Simulação generativa de células horizontais mapeadas por AQI">
+        <canvas id="stage"></canvas>
+      </div>
+
+      <div class="controls" role="group" aria-label="Controles de visualização">
+        <label>AQI
+          <input id="aqi" type="range" min="0" max="500" value="90" step="1" aria-describedby="aqiOut">
+        </label>
+        <output id="aqiOut" class="pill" aria-live="polite">AQI 90 — Moderado</output>
+
+        <label>Intensidade <input id="intensity" type="range" min="10" max="100" value="60"></label>
+        <label>Velocidade <input id="speed" type="range" min="1" max="200" value="90"></label>
+        <label>Densidade <input id="density" type="range" min="16" max="72" value="36"></label>
+
+        <label><input id="glitch" type="checkbox"> glitch</label>
+        <label><input id="quad" type="checkbox"> 4 empenas</label>
+        <button id="toggle" class="chip-btn" type="button" aria-pressed="true">Pausar</button>
+      </div>
+
+      <div class="presets" role="group" aria-label="Presets AQI">
+        <button data-aqi="30">Bom</button>
+        <button data-aqi="80">Moderado</button>
+        <button data-aqi="130">Sensível</button>
+        <button data-aqi="180">Ruim</button>
+        <button data-aqi="250">Muito ruim</button>
+        <button data-aqi="360">Perigoso</button>
+      </div>
+
+      <div class="aqi-wrap">
+        <div class="grad" aria-hidden="true"></div>
+        <div class="aqi-legend meta" aria-label="Legenda AQI">
+          <span class="swatch big s-good" title="Bom (0–50)"></span> Bom (0–50)
+          <span class="swatch big s-mod"  title="Moderado (51–100)"></span> Moderado (51–100)
+          <span class="swatch big s-usg"  title="Sensível (101–150)"></span> Sensível (101–150)
+          <span class="swatch big s-unh"  title="Ruim (151–200)"></span> Ruim (151–200)
+          <span class="swatch big s-vuh"  title="Muito ruim (201–300)"></span> Muito ruim (201–300)
+          <span class="swatch big s-haz"  title="Perigoso (301+)"></span> Perigoso (301+)
+        </div>
+      </div>
+
+      <p class="tech">
+        <strong>Leitura:</strong> barras horizontais simulam células de fachada. A cor segue a faixa AQI;
+        densidade, largura e ruído variam com a intensidade e o próprio AQI. “4 empenas” divide o palco em
+        quatro painéis sincronizados (como no cruzamento Paulista × Consolação). <em>glitch</em> injeta
+        instabilidade temporal controlada.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- NARRATIVA — blocos enxutos com seus textos -->
+    <section class="section flow-text" aria-labelledby="h-sobre">
+      <h2 id="h-sobre" class="section-title">Sobre mim</h2>
+      <p>Me chamo Vitor Moreiran, assino como Viran, sou comunicador, diretor de arte e artista transmídia. Tenho 25 anos e minha trajetória começou entre Guaratinguetá e Aparecida do Norte, desdobrando-se hoje em São Paulo. Trabalho na interseção entre tecnologia e cultura — 3D, inteligência artificial e programação visual — com uma prática crítica e sensível que atravessa questões sociais e propõe novos imaginários a partir do Sul Global.</p>
+    </section>
+
+    <section class="section flow-text" aria-labelledby="h-dados">
+      <h2 id="h-dados" class="section-title">Como transformar dados técnicos em algo sensível</h2>
+      <p>O projeto transforma dados atmosféricos em presença visual. Com TouchDesigner, mapeio fachadas e converto centenas de células de luz em registros de instantes que se acumulam — memória visual. Cada execução do sistema é única: minha intervenção, o recorte temporal e pequenas falhas constroem diferenças reais.</p>
+      <p>Índices abstratos de qualidade do ar viram cor, ritmo e textura. A informação deixa de ser número e passa a ser experiência — fruto do encontro entre dados, máquinas e corpo humano.</p>
+    </section>
+
+    <section class="section flow-text" aria-labelledby="h-glitch">
+      <h2 id="h-glitch" class="section-title">Afeto, glitch e visão de futuro</h2>
+      <p>Glitch não é só erro: é um campo de descoberta. Sistemas técnicos têm limites, instabilidades e decisões humanas em cada etapa. Assumir o glitch é admitir que tecnologia e afeto se atravessam. O futuro não é controle: é possibilidade criada no agora.</p>
+    </section>
+
+    <section class="section flow-text" aria-labelledby="h-mais">
+      <h2 id="h-mais" class="section-title">Mais sobre a pesquisa</h2>
+      <p>Com a estrutura do Boulevard de Artes, investiguei como tecnologia e dados sensibilizam o espaço urbano. Cada fachada torna-se superfície viva, com pontos que registram o tempo. O corpo humano opera, sente e constrói a obra. A tecnologia não é neutra: depende de recursos, cadeias de produção e escolhas humanas. A sensibilidade emerge desse encontro.</p>
+      <p>Nesta fase, apresento a escala cromática de qualidade do ar em quatro pontos do planeta. Mesmo que os dados em tempo real variem, o que permanece é a pergunta: como arquitetar um futuro onde sejamos capazes de viver?</p>
+    </section>
+
+    <footer class="section" style="display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;">
+      <nav class="meta"><a href="../index.html#arquivo">← Voltar ao arquivo</a></nav>
+      <nav class="meta" aria-label="Navegação entre obras">
+        <!-- Preencha se houver anterior/próxima -->
+        <!-- <a href="./projeto-anterior.html">← Anterior</a> · <a href="./proximo-projeto.html">Próxima →</a> -->
+      </nav>
+    </footer>
+  </main>
+
+  <footer class="container site-foot">
+    <small>© 2025 Viran. São Paulo.</small>
+  </footer>
+
+  <!-- =================== JS do sistema (atualizado) =================== -->
+  <script>
+  (() => {
+    const cv = document.getElementById('stage');
+    const ctx = cv.getContext('2d', { alpha: true });
+
+    const ui = {
+      aqi: document.getElementById('aqi'),
+      aqiOut: document.getElementById('aqiOut'),
+      intensity: document.getElementById('intensity'),
+      speed: document.getElementById('speed'),
+      density: document.getElementById('density'),
+      glitch: document.getElementById('glitch'),
+      quad: document.getElementById('quad'),
+      toggle: document.getElementById('toggle')
+    };
+
+    // presets
+    document.querySelectorAll('.presets button').forEach(b=>{
+      b.addEventListener('click', ()=>{
+        ui.aqi.value = b.dataset.aqi;
+        updateAqiLabel();
+      });
+    });
+
+    // AQI → cor + rótulo
+    function aqiBand(aqi){
+      if (aqi <= 50)   return {c:'#00e400', name:'Bom'};
+      if (aqi <= 100)  return {c:'#ffff00', name:'Moderado'};
+      if (aqi <= 150)  return {c:'#ff7e00', name:'Sensível'};
+      if (aqi <= 200)  return {c:'#ff0000', name:'Ruim'};
+      if (aqi <= 300)  return {c:'#8f3f97', name:'Muito ruim'};
+      return {c:'#7e0023', name:'Perigoso'};
+    }
+    function updateAqiLabel(){
+      const v = parseInt(ui.aqi.value,10);
+      const {name} = aqiBand(v);
+      ui.aqiOut.textContent = `AQI ${v} — ${name}`;
+    }
+    ui.aqi.addEventListener('input', updateAqiLabel);
+    updateAqiLabel();
+
+    // layout responsivo
+    function fit(){
+      const r = cv.parentElement.getBoundingClientRect();
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      cv.width = Math.floor(r.width * dpr);
+      cv.height = Math.floor(r.height * dpr);
+      cv.style.width = r.width + 'px';
+      cv.style.height = r.height + 'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    window.addEventListener('resize', fit); fit();
+
+    // gera células (por faixa)
+    let cells = [];
+    function makeCells(rows=36){
+      cells = [];
+      for(let r=0; r<rows; r++){
+        const y = (r + 0.5) / rows;
+        const perRow = 30;
+        for(let i=0; i<perRow; i++){
+          cells.push({
+            y,
+            x: Math.random(),
+            w: 0.04 + Math.random()*0.18,
+            a: 0.6 + Math.random()*0.6,
+            s: Math.random()*0.6+0.2
+          });
+        }
+      }
+    }
+    makeCells(parseInt(ui.density.value,10));
+    ui.density.addEventListener('input', ()=>{
+      makeCells(parseInt(ui.density.value,10));
+    });
+
+    let t = 0, playing = true;
+    ui.toggle.addEventListener('click', () => {
+      playing = !playing;
+      ui.toggle.textContent = playing ? 'Pausar' : 'Reproduzir';
+      ui.toggle.setAttribute('aria-pressed', playing);
+      if (playing) requestAnimationFrame(loop);
+    });
+
+    function loop(){
+      if(!playing) return;
+
+      const w = cv.clientWidth;
+      const h = cv.clientHeight;
+      ctx.clearRect(0,0,w,h);
+
+      // fundo do tema
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--paper').trim();
+      ctx.fillRect(0,0,w,h);
+
+      const aqi = parseInt(ui.aqi.value,10);
+      const {c:baseCol} = aqiBand(aqi);
+      const speed = (parseInt(ui.speed.value,10) / 100) * 0.8 + 0.05;
+      const intens = parseInt(ui.intensity.value,10) / 100;
+      const glitch = ui.glitch.checked ? 1 : 0;
+      const rows = parseInt(ui.density.value,10);
+
+      t += 0.016;
+
+      // modo 4 empenas divide o palco em 4 colunas
+      const panels = ui.quad.checked ? 4 : 1;
+      for(let p=0; p<panels; p++){
+        const pw = w / panels;
+        const px = p * pw;
+
+        for (const c of cells){
+          // posição relativa ao painel
+          const drift = glitch ? (Math.sin((t*3 + c.y*10 + c.x*5 + p)) * 0.002) : 0;
+          c.x -= (speed * (0.4 + c.s*0.6)) * 0.002 + drift;
+          if (c.x + c.w < 0) c.x += 1.2;
+
+          const y = Math.floor(c.y * h);
+          const barH = Math.max(2, Math.floor(h/rows) - 1);
+
+          // alpha responde à intensidade e ao AQI (pior ar → mais presente)
+          const a = Math.min(0.9, 0.25 + intens*0.6 + (aqi/400)*0.5) * c.a;
+
+          // leve variação cromática por linha (efeito “cascata”)
+          const shade = Math.max(0, Math.min(1, 0.85 + Math.sin((c.y*12)+t*0.6+p*0.3)*0.15));
+          ctx.fillStyle = mixColor(baseCol, '#ffffff', 1 - shade, a);
+
+          const bx = px + Math.floor(c.x * pw);
+          const bw = Math.floor(c.w * pw * (0.6 + intens*0.8));
+          ctx.fillRect(bx, y, bw, barH);
+        }
+      }
+
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+
+    // mistura cor base com branco + alpha
+    function mixColor(hex, white, k, alpha){
+      const a = parseInt(hex.slice(1),16);
+      const b = parseInt(white.slice(1),16);
+      const r = Math.round(((a>>16)&255)*(1-k) + ((b>>16)&255)*k);
+      const g = Math.round(((a>>8)&255)*(1-k) + ((b>>8)&255)*k);
+      const bl= Math.round((a&255)*(1-k) + (b&255)*k);
+      return `rgba(${r},${g},${bl},${alpha})`;
+    }
+  })();
+  </script>
+</body>
+</html>

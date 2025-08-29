@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obra — Título Simples | Viran</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="../styles.css">
+  <!-- Model-viewer (só se usar GLB/GLTF) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <!-- Toolbar superior -->
+ <!-- Toolbar full-bleed -->
+<div class="obra-bar">
+  <header id="topo" class="obra-toolbar">
+    <nav>
+      <ul>
+        <li><a class="brand-link" href="../index.html#arquivo">Viran</a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="../index.html#arquivo">← Arquivo</a></li>
+        <li><a href="./obra-anterior.html" rel="prev">← Anterior</a></li>
+        <li><a href="./obra-proxima.html" rel="next">Próxima →</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+  <!-- Linha separadora que ocupa a tela toda -->
+  <div class="obra-sep" aria-hidden="true"></div>
+
+  <!-- Shell (info à esquerda / mídia à direita) -->
+  <main class="container obra-shell">
+    <aside class="obra-info">
+      <h1 class="obra-titulo">Título da Obra</h1>
+      <p class="meta">Nível: <strong>Linguagem</strong> · Eixo: <strong>Imagens</strong> · <span class="ext-badge">.MP4</span></p>
+
+      <p class="obra-legenda">Legenda breve / créditos. Texto curto de 1–2 linhas no máximo.</p>
+
+      <ul class="chips">
+        <li><a href="../index.html?q=glitch#arquivo">glitch</a></li>
+        <li><a href="../index.html?q=3d#arquivo">3D</a></li>
+        <li><a href="../index.html?q=estética%20queer#arquivo">estética queer</a></li>
+      </ul>
+
+      <nav class="obra-links">
+        <!-- opcional: <a href="../assets/pdf/ficha-tecnica.pdf">Ficha técnica (PDF)</a> -->
+      </nav>
+    </aside>
+
+    <section class="obra-media">
+      <!-- escolha UMA mídia -->
+      <figure class="obra-player">
+        <video src="../assets/image/comorquitetarumfuturo-1.mp4" controls playsinline preload="metadata"></video>
+      </figure>
+
+      <!--
+      <figure class="obra-player">
+        <img src="../assets/image/obra-x.webp" alt="descrição curta da obra">
+      </figure>
+      -->
+
+      <!--
+      <figure class="obra-player">
+        <model-viewer src="../assets/glb/obra-x.glb" camera-controls ar autoplay></model-viewer>
+      </figure>
+      -->
+    </section>
+  </main>
+
+  <script>
+    // Define --head-h com a altura real do header para posicionar a linha e calcular a altura útil
+    (function(){
+      function setH(){
+        const h = document.getElementById('topo')?.offsetHeight || 0;
+        document.documentElement.style.setProperty('--head-h', h + 'px');
+      }
+      window.addEventListener('resize', setH);
+      window.addEventListener('load', setH);
+      setH();
+    })();
+  </script>
+</body>
+</html>

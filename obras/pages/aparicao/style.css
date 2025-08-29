@@ -1,0 +1,245 @@
+/* style.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Libre Baskerville', serif;
+
+  color: #f2f2f2;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  overflow-y: scroll;
+
+   background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: perspective(600px) rotateX(10deg);
+  transform-origin: top center;
+  z-index: -2;
+  pointer-events: none;
+  background: transparent;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  overflow: hidden;
+  background: #1e1e1e;
+}
+
+.background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  opacity: 0.6;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.background::before,
+.background::after {
+  content: '';
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.background::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .content {
+    padding: 4rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+
+.content * {
+  transform-origin: center;
+}
+
+.content p {
+  text-shadow: 0 0 0.4px rgba(172, 172, 172, 0.1);
+  filter: contrast(1.05);
+}
+
+@keyframes shimmer {
+  0%, 100% { text-shadow: 0 0 0.5px rgba(148, 148, 148, 0.05); }
+  50% { text-shadow: 0 0 2px rgba(255,255,255,0.15); }
+}
+
+.content p {
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+
+h1 {
+  font-size: 2rem;x
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(255, 255, 255, 0.3);
+  font-style: italic;
+  color: #d0d0d0;
+}
+
+.inline-image {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.split-block {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 3rem 0;
+  align-items: center;
+   flex-wrap: wrap;
+}
+
+.split-block img {
+   width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.split-block p {
+  flex: 1 1 100%;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .split-block {
+    flex-direction: column;
+  }
+  .split-block img, .split-block p {
+    width: 100%;
+  }
+}
+
+.blur-gradient-top,
+.blur-gradient-bottom {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: 11;
+  pointer-events: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%);
+}
+
+.blur-gradient-top {
+  top: 0;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.blur-gradient-bottom {
+  bottom: 0;
+}
+
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 1rem;
+}
+
+.playlist-grid video {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+@media (max-width: 768px) {
+  .playlist-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.back-home {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.back-home img {
+  width: 100px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.back-home img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.intro-paragraph {
+  font-size: 0.7em;
+  color: #c2c2c2;
+  font-style: italic;
+  max-width: 700px;
+  margin: 1.5em auto;
+  
+}

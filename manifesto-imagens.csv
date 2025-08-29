@@ -1,0 +1,10 @@
+slot,path,width,height,ratio,notes
+S1,assets/image/viran-portrait@1200.webp,1200,1500,4:5,
+S1,assets/image/viran-portrait@1600.webp,1600,2000,4:5,
+A1,assets/thumb/obra-01@800.webp,800,450,16:9,
+A1,assets/thumb/obra-01@1200.webp,1200,675,16:9,
+A2,assets/thumb/obra-02@800.webp,800,450,16:9,
+A2,assets/thumb/obra-02@1200.webp,1200,675,16:9,
+A3,assets/thumb/obra-03@800.webp,800,450,16:9,
+A3,assets/thumb/obra-03@1200.webp,1200,675,16:9,
+L,guides/list-4x3@800.png,800,600,4:3,

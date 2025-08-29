@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Como arquitetar um futuro onde sejamos capazes de viver? | Viran</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <!-- SEO básico -->
+  <meta name="description" content="Pesquisa editorial e sistema audiovisual: fachadas como pele sensível de dados. Tempo como matéria, ar como política e cidade como arquivo vivo.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://seu-dominio/obra-caufoscdv2.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://seu-dominio/obra-caufoscdv2.html">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Como arquitetar um futuro onde sejamos capazes de viver?">
+  <meta property="og:description" content="Arte, tecnologia e tempo na pele sensível da cidade. Uma pesquisa sobre fachadas sensíveis a dados e temporalidade como linguagem.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://seu-dominio/media/capa-obra.jpg">
+  <meta property="og:url" content="https://seu-dominio/obra-caufoscdv2.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Como arquitetar um futuro onde sejamos capazes de viver?">
+  <meta name="twitter:description" content="Pesquisa editorial e sistema audiovisual na cidade.">
+  <meta name="twitter:image" content="https://seu-dominio/media/capa-obra.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    "name": "Como arquitetar um futuro onde sejamos capazes de viver?",
+    "creator": {"@type": "Organization", "name": "Viran"},
+    "artMedium": "Projeção mapeada; sistema audiovisual generativo",
+    "artform": "new media art",
+    "inLanguage": "pt-BR",
+    "keywords": ["qualidade do ar", "projeção mapeada", "arte generativa", "fachada sensível", "cidade", "dados"],
+    "locationCreated": {"@type": "Place", "name": "Avenida Paulista × Rua da Consolação, São Paulo, Brasil"}
+  }
+  </script>
+
+  <style>
+    html{ scroll-behavior:smooth; }
+    .especial-hero{ padding-block: 2.5rem; border-bottom:1px solid var(--muted); display:grid; gap:.75rem; }
+    .subtitle{ opacity:.85; max-width:60ch; }
+    .stage{ position:relative; border:1px solid var(--muted); background:var(--paper); }
+    .stage::after{ content:""; display:block; padding-top:56.25%; }
+    .stage > canvas{ position:absolute; inset:0; width:100%; height:100%; display:block; }
+    .controls{ display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-top: 1rem; }
+    .controls label{ display:flex; gap:8px; align-items:center; }
+    .pill{ display:inline-block; padding:.2rem .5rem; border:1px solid var(--muted); border-radius:999px; }
+    .aqi-wrap{ margin-top:10px; display:grid; gap:8px; }
+    .aqi-legend{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    .swatch{ width:14px; height:14px; border:1px solid var(--muted); display:inline-block; }
+    .swatch.big{ width:18px; height:12px; }
+    .s-good{ background:#00e400; } .s-mod{ background:#ffff00; } .s-usg{ background:#ff7e00; }
+    .s-unh{ background:#ff0000; } .s-vuh{ background:#8f3f97; } .s-haz{ background:#7e0023; }
+    .grad{ height:10px; width:100%; background:linear-gradient(90deg,#00e400 0%,#ffff00 20%,#ff7e00 40%,#ff0000 60%,#8f3f97 80%,#7e0023 100%); border:1px solid var(--muted); }
+
+    .section{ padding-block: 2rem; }
+    .section + .section{ border-top:1px solid var(--muted); }
+    .flow-text{ max-width: 74ch; }
+    .callout{ border-left:4px solid var(--ink); padding:.75rem 1rem; background: color-mix(in oklab, var(--ink) 6%, var(--paper)); }
+    .meta { opacity:.85; }
+
+    .layout{ margin-top: 1rem; }
+    .layout-grid{ display:block; }
+    @media (min-width: 992px){
+      .layout-grid{ display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2rem; align-items:start; }
+      .toc-col{ display:block; position:sticky; top: 16px; max-height: calc(100vh - 32px); overflow:auto; border:1px solid var(--muted); border-radius:.25rem; padding:.85rem; background: var(--paper); }
+    }
+    .toc-col h3{ font-size:1rem; margin:.25rem 0 .5rem; }
+    .toc-list{ margin:0; padding-left:1.1rem; display:grid; gap:.25rem; }
+    .toc-list a{ text-decoration:none; }
+    .toc-list a:hover{ text-decoration:underline; }
+
+    .toc-btn{ border:1px solid var(--muted); padding:.35rem .6rem; border-radius:999px; background:transparent; }
+    @media (min-width: 992px){ .toc-btn{ display:none; } }
+    .toc-drawer[hidden]{ display:none; }
+    .toc-drawer{ position:fixed; inset:0; z-index:9999; background: rgba(0,0,0,.4); }
+    .toc-drawer .panel{ position:absolute; right:0; top:0; bottom:0; width:min(86vw,360px); background: var(--paper); border-left:1px solid var(--muted); padding:1rem; overflow:auto; box-shadow:-12px 0 24px rgba(0,0,0,.08); }
+    .toc-close{ border:1px solid var(--muted); background:transparent; padding:.35rem .6rem; border-radius:999px; }
+    .media-grid{ display:grid; gap:.75rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+    .media-grid figure{ margin:0; border:1px solid var(--muted); border-radius:.25rem; overflow:hidden; }
+    .media-grid img, .media-grid video{ display:block; width:100%; height:auto; }
+    .media-grid figcaption{ padding:.5rem .75rem; font-size:.9rem; opacity:.85; }
+    .subfoot{ display:flex; gap:16px; justify-content:space-between; flex-wrap:wrap; margin-top: 1rem; }
+    .tech{ border:1px dashed var(--muted); padding:12px; font-size:.95rem; }
+  
+    /* Acessibilidade de âncoras */
+    :target{ scroll-margin-top: 12vh; }
+    h2[id]{ scroll-margin-top: 14vh; }
+
+    /* TOC ativo */
+    .toc-list a.active{ text-decoration:underline; font-weight:600; }
+
+    /* Preferência do usuário: reduzir movimento */
+    @media (prefers-reduced-motion: reduce){
+      .stage > canvas{ opacity:.9; }
+    }
+
+    /* Print amigável */
+    @media print{
+      .controls, .aqi-wrap, .stage, .toc-btn, .toc-drawer, .toc-col{ display:none !important; }
+      .section{ break-inside: avoid; }
+    }
+
+  </style>
+</head>
+<body>
+  <!--<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>-->
+
+  <header class="container site-head">
+    <nav>
+      <ul>
+        <li><strong><a class="brand-link" href="../index.html#arquivo" aria-label="Voltar ao Arquivo">Viran</a></strong></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="../index.html#eixos">Eixos</a></li>
+        <li><a href="../index.html#arquivo">Arquivo</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+    <!-- <li><button id="tocToggle" class="toc-btn" aria-controls="tocDrawer" aria-expanded="false" aria-label="Abrir sumário da página">☰ Sumário</button></li>-->
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container section">
+    <header class="especial-hero">
+      <h1 class="section-title">Como arquitetar um futuro onde sejamos capazes de viver?</h1>
+      <p class="subtitle">Sistema audiovisual que traduz índice global de qualidade do ar em células de cor e movimento — projetadas em quatro empenas no cruzamento entre a Paulista e a Consolação. Tempo como matéria, dados como presença.</p>
+      <p class="meta">Nível: <strong>Linguagem</strong> · Eixo: <strong>Sistema</strong> · <span class="ext-badge">.HTML</span></p>
+      <ul class="chips">
+        <li>programação visual</li><li>IA generativa</li><li>visualidade algorítmica</li><li>ferramentas afetivas</li><li>arte e sistema</li>
+      </ul>
+    </header>
+
+    <section aria-labelledby="h-palco" class="section">
+      <h2 id="h-palco">Projeção simulada</h2>
+      <div class="stage" aria-label="Simulação generativa de células horizontais mapeadas por AQI">
+        <canvas id="stage"></canvas>
+      </div>
+      <div class="controls" role="group" aria-label="Controles de visualização">
+        <label>AQI <input id="aqi" type="range" min="0" max="500" value="90" step="1" aria-describedby="aqiOut"></label>
+        <output id="aqiOut" class="pill" aria-live="polite">AQI 90 — Moderado</output>
+        <label>Intensidade <input id="intensity" type="range" min="10" max="100" value="60"></label>
+        <label>Velocidade <input id="speed" type="range" min="1" max="200" value="90"></label>
+        <label>Densidade <input id="density" type="range" min="16" max="72" value="36"></label>
+        <label><input id="glitch" type="checkbox"> glitch</label>
+        <label><input id="quad" type="checkbox"> 4 empenas</label>
+        <button id="toggle" class="chip-btn" type="button" aria-pressed="true">Pausar</button>
+      </div>
+      <div class="aqi-wrap">
+        <div class="grad" aria-hidden="true"></div>
+        <div class="aqi-legend meta" aria-label="Legenda AQI">
+          <span class="swatch big s-good" title="Bom (0–50)"></span> Bom (0–50)
+          <span class="swatch big s-mod"  title="Moderado (51–100)"></span> Moderado (51–100)
+          <span class="swatch big s-usg"  title="Sensível (101–150)"></span> Sensível (101–150)
+          <span class="swatch big s-unh"  title="Ruim (151–200)"></span> Ruim (151–200)
+          <span class="swatch big s-vuh"  title="Muito ruim (201–300)"></span> Muito ruim (201–300)
+          <span class="swatch big s-haz"  title="Perigoso (301+)"></span> Perigoso (301+)
+        </div>
+      </div>
+      <p class="tech"><strong>Leitura:</strong> as barras horizontais são células de fachada. A cor segue a faixa AQI; densidade, largura e ruído respondem à intensidade e ao próprio AQI. “4 empenas” divide o palco em quatro painéis sincronizados, como no cruzamento Paulista × Consolação. O modo <em>glitch</em> injeta pequenas hesitações temporais.</p>
+    </section>
+
+    <section class="layout">
+      <div class="layout-grid">
+        <div class="content-col">
+
+          <section id="intro" class="section flow-text">
+            <h2>1. Introdução — a pergunta como método</h2>
+            <p>“Como arquitetar um futuro onde sejamos capazes de viver?” é pergunta e método. É um gesto de pesquisa que suspende a certeza para abrir espaço à escuta. Ao ser inscrita no espaço público, a pergunta convoca a cidade a pensar o próprio ar, o próprio tempo e as superfícies por onde a vida passa.</p>
+            <p>A pesquisa se materializa como sistema capaz de transformar fachadas em pele sensível de dados. Entre a Avenida Paulista e a Rua da Consolação, quatro empenas compõem um único corpo visual. Grades de células 3D descem em progressão contínua: cada instante não apaga o anterior, o sedimenta. A arquitetura torna-se organismo de tempo e dado.</p>
+          </section>
+
+         <!-- <section id="escopo" class="section flow-text">
+            <h2>2. Escopo e versões — o que é a pesquisa, o que é a primeira exibição</h2>
+            <p>No coração do sistema, três invariantes: mapeamento de fachada, lógica celular e progressão linear sem descarte. Esses princípios garantem identidade e legibilidade, independentemente do contexto. Na primeira exibição, as limitações de captura local levaram à adoção de um mapeamento global da qualidade do ar. As fachadas assumem as faixas cromáticas internacionalmente reconhecidas — verde, amarelo, vermelho, roxo — para tornar pública uma informação que quase sempre permanece invisível.</p>
+            <p>A escala atual organiza 105 células distribuídas nas empenas. A etapa anterior, de prototipagem, operava com 78 células em 12 linhas; a exibição consolidada alcança 13 linhas para ampliar a leitura temporal e espacial. O que se vê é uma cascata que preserva o rastro do agora.</p>
+          </section>
+        -->
+          <section id="construcao" class="section flow-text">
+            <h2>2. Construção do sistema — do edifício ao algoritmo</h2>
+            <p>Cada prédio foi mapeado e segmentado diretamente no TouchDesigner, com apoio de inteligência artificial para calibrar proporções e garantir uma malha coerente com a volumetria real. O objeto 3D resultante converte os vértices em pontos sensíveis — partículas paramétricas que recebem estados de cor, ativação e deslocamento. Em exibição, as dimensões do ambiente ficam controladas para sustentar um movimento linear e estável a longa distância.</p>
+            <p>A lógica temporal é simples e rigorosa: novas células entram no topo em intervalos constantes e empurram as anteriores para baixo. A compressão vertical por linha preserva proporções e evidencia limites físicos da arquitetura. Forma-se, assim, uma textura temporal: fluxo que acumula memória.</p>
+            <p>O pipeline percorreu duas etapas. Na prototipagem, um grid de 78 células investigou legibilidade e ritmo. Na consolidação, 105 células alinharam o índice cromático à escala global do ar e estabilizaram a parametrização para as quatro empenas. Durante a exibição, a cor responde ao mundo — via mapeamento global — e o tempo corre em linha reta.</p>
+          </section>
+
+          <section id="nucleo-formal" class="section flow-text">
+            <h2>3. Núcleo formal — gramática de tempo e acúmulo</h2>
+            <p>Progressão linear e acúmulo sem descarte definem a gramática da obra. A cada passo temporal, soma-se presença. O presente não substitui; sedimenta. A cascata deixa de ser mero efeito para se tornar um algoritmo de responsabilidade temporal. Em vez do feed que tritura o passado, vemos o rastro do instante recente.</p>
+          </section>
+
+          <section id="fundamentos" class="section flow-text">
+            <h2>4. Fundamentos — cidade, corpo, dado</h2>
+            <p>Seguindo a intuição de Hito Steyerl, a arquitetura aparece como superfície ativa, um campo de negociação do sensível onde o dado ambiental ganha forma pública. Com John Maeda, o dado deixa de ser instrumento de previsão e controle para tornar-se matéria de experiência. Em diálogo com Haraway, Preciado, Mombaça, Bruno e Legacy Russell, o glitch e a hesitação operam como método: pequenos desvios reabrem o visível e recusam a transparência total do algoritmo. A cidade é pele — porosa, viva, conflitiva.</p>
+          </section>
+
+          <section id="politica-do-ar" class="section flow-text">
+            <h2>5. Política do ar — o que vemos quando vemos cor</h2>
+            <p>Verde, amarelo, vermelho e roxo não são ornamentos. São narrativas respiratórias que publicizam o invisível e explicitam o vínculo ambiente–corpo–política. Ao escalar a cromática à medida da cidade, o trabalho converte índices em presença e expõe desigualdades que atravessam corpos e territórios.</p>
+          </section>
+
+        <!--  <section id="etica" class="section flow-text">
+            <h2>7. Ética e limites — como escolhemos ver</h2>
+            <p>O sistema prioriza dados públicos e agregados, rejeita qualquer rastreamento individual e explicita seu recorte curatorial: quatro cores, quatro fachadas, uma cidade. A exibição opera com cuidado — horários, luminância, ângulo e cadência pensados para a vizinhança e para a poluição luminosa, com consumo energético mensurado e reportado. Esta versão não é tempo real local; trata-se de uma curadoria global informada ao público, no local e nas redes.</p>
+          </section>
+
+          <section id="mediacao" class="section flow-text">
+            <h2>8. Mediação e acesso — como a pergunta chega às pessoas</h2>
+            <p>Uma placa curta apresenta o que se vê, o que significa, como foi feito e por que agora. Um QR direciona a um micro-site com FAQ, áudio-guia, LIBRAS e leitura fácil. Nas redes, a narrativa se condensa em quarenta segundos: silêncio da fachada, entrada da cascata, close na textura temporal e o convite final — respire, observe, imagine.</p>
+          </section>
+
+          <section id="avaliacao" class="section flow-text">
+            <h2>9. Avaliação — aprender com a cidade</h2>
+            <p>A pesquisa escuta a cidade por duas vias complementares. Na qualitativa, diário de campo, pontos de parada, conversas e relatos de voz coletados via QR. Na quantitativa leve, permanência, variação por horário, leituras de QR e menções de contexto. Métricas agregadas servem apenas para aprimorar o processo, não para perfilar ninguém.</p>
+          </section>
+        
+          <section id="tecnica" class="section flow-text">
+            <h2>10. Técnica — do dado à luz</h2>
+            <p>O motor é TouchDesigner, operando sobre um objeto 3D da fachada em que vértices tornam-se partículas sensíveis. A segmentação e a parametrização contam com IA e dados programados. A cor deriva do índice de qualidade do ar; tamanho, velocidade e ruído, quando aplicáveis, modulam leitura e textura. O mapeamento alinha a projeção à volumetria com nitidez priorizada. A temporalidade tem passo fixo e percorre um ciclo completo em torno de vinte minutos, preservando o acúmulo.</p>
+          </section>
+        -->
+          <section id="impacto" class="section flow-text">
+            <h2>6. Impacto tecnológico — o que este sistema acrescenta ao campo</h2>
+            <p>O projeto propõe uma metodologia replicável de fachada sensível que se adapta a edifícios, cidades e bases de dados distintas sem perder identidade. Articula arquitetura, programação visual, IA aplicada ao mapeamento, design de informação e projeção monumental em um pipeline coerente. Ao insistir no acúmulo, introduz uma política de tempo para a visualização urbana — <b>um contra-ritmo à estética do descarte</b>. A ética é parte do desenho: dado público, transparência e cuidado.</p>
+          </section>
+<!--
+          <section id="continuidade" class="section flow-text">
+            <h2>12. O que o sistema permite — continuidade e variantes</h2>
+            <p>As próximas versões reintroduzem reatividade local — sensores de temperatura, ruído e partículas — sem abdicar da temporalidade como eixo. Outras camadas entram na conversa, como ilhas de calor, estiagem, fumaça de queimadas e mobilidade, sempre em chave agregada. Uma rede de fachadas pode colocar cidades em sincronia ou descompasso produtivo. Em janelas curtas, o público doa um minuto de respiração em texto ou áudio; esse material entra como ruído poético na cascata.</p>
+          </section>-->
+
+          <section id="conclusao" class="section flow-text">
+            <h2>7. Conclusão — a cidade como arquivo vivo</h2>
+            <p>Três verdades simples e difíceis orientam a pesquisa: o tempo é material, o ar é político e a fachada é pele comum. Converter dados em presença não “explica” a cidade; prepara a escuta. Ao insistir no acúmulo, o sistema recusa o regime do descarte e propõe uma tecnologia artística para reprogramar o que a cidade mostra. Nesta primeira exibição, a paleta fixa de qualidade do ar garante legibilidade pública, enquanto a dinâmica celular sustenta a dimensão do tempo. Sensores, redes e participação já estão inscritos no desenho que agora se apresenta.</p>
+          </section>
+
+          <section id="midia" class="section">
+            <h2>8. Mídia da obra</h2>
+            <p class="meta">Disponíveis a partir de 29/08/2025</p><!--
+            <div class="media-grid">
+              <figure>
+                <img loading="lazy" decoding="async" src="../media/placeholder.webp" alt="Foto ampla da fachada com projeção">
+                <figcaption>Vista geral — Paulista × Consolação.</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" decoding="async" src="../media/placeholder.webp" alt="Close das células em cascata">
+                <figcaption>Textura temporal em detalhe.</figcaption>
+              </figure>
+              <figure>
+                <video preload="metadata" controls preload="metadata" poster="../media/placeholder.webp">
+                  <source src="../media/obra-trecho.mp4" type="video/mp4">
+                </video>
+                <figcaption>Trecho curto (30–45s) — evolução cromática.</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" decoding="async" src="../media/placeholder.webp" alt="Mapa das quatro empenas">
+                <figcaption>Mapa de alinhamento das quatro empenas.</figcaption>
+              </figure>
+            </div>-->
+          </section>
+<!-- =================== VISÃO DA IA =================== -->
+<section id="visao-ia" class="section flow-text" aria-labelledby="h-visao-ia">
+  <h2 id="h-visao-ia" class="section-title">Visão da IA</h2>
+
+  <h3>Arquitetando um Futuro Habitável: Visão e Caminhos</h3>
+  <p><strong>Versão Sintética (Resumo Executivo)</strong></p>
+  <p>Visão de futuro: Uma sociedade onde a vida floresce dentro dos limites do planeta, garantindo bem-estar, dignidade e oportunidades para todos. Isso significa alinhar nossos hábitos e sistemas produtivos à capacidade de regeneração da Terra, enquanto asseguramos moradia, saúde, educação, tempo livre e participação comunitária para cada pessoa.</p>
+  
+  <p><strong>Princípios-chave:</strong> Respeito aos limites planetários (clima, água, biodiversidade); justiça social e equidade; cuidado e bem-estar como infraestrutura; participação democrática e transparência; inovação regenerativa; cultura de suficiência.</p>
+
+  <p><strong>Transformações sistêmicas:</strong> Transição para energia limpa; reorganização do uso do solo e alimentação; cidades no modelo 15 minutos; economia circular; fortalecimento da economia do cuidado.</p>
+
+  <p><strong>Governança e financiamento:</strong> Estruturas de decisão multiníveis; políticas de transição justa (taxar poluentes, remover subsídios fósseis, reinvestir em energia limpa e infraestrutura verde); participação cidadã efetiva.</p>
+
+  <p><strong>Qualidade de vida e cultura:</strong> Mais tempo livre, bairros verdes, ar limpo, cultura de colaboração e suficiência.</p>
+
+  <p><strong>Indicadores de sucesso:</strong> Redução de emissões per capita, aumento da energia renovável, expansão de áreas verdes, melhora nos índices de saúde e bem-estar, diminuição das desigualdades.</p>
+
+  <p><strong>Roteiro de ação:</strong> Medidas imediatas “ganha-ganha” (energia solar, ciclovias, reciclagem, reflorestamento) e planos setoriais com marcos para 5, 10 e 20 anos.</p>
+
+  <p><strong>Compromisso coletivo:</strong> Governos, empresas e cidadãos unidos num contrato social verde. Cada passo dado hoje nos aproxima de um amanhã habitável e justo.</p>
+
+         <!-- <section id="anexos" class="section flow-text">
+            <h2>Anexos práticos</h2>
+            <p><strong>Placa curta (local).</strong> Quatro fachadas, quatro cores para a qualidade do ar. As células descem como cascata: cada instante fica e compõe a memória do agora. Esta versão usa índices globais — verde, amarelo, vermelho, roxo. O sistema foi criado para que a arquitetura sinta: dados viram luz e a cidade ganha pele sensível. Pergunta-guia: Como arquitetar um futuro onde sejamos capazes de viver?</p>
+            <p><strong>FAQ (QR).</strong> O que são as células, por que quatro cores, se é ao vivo, como foi feito e como participar. O conteúdo inclui áudio-guia, LIBRAS e leitura fácil.</p>
+            <p><strong>Checklist de responsabilidade.</strong> Luminância calibrada e horários acordados; nota pública de energia e compensação; política de dados; rotas de segurança; acessibilidade plena.</p>
+            <p><strong>Quadro de avaliação.</strong> Registros de campo e conversas, tempo de permanência e leituras de QR, além de um relatório sintético com achados e próximos passos.</p>
+          </section> -->
+        </div>
+
+        <aside class="toc-col" aria-labelledby="h-toc">
+          <h3 id="h-toc">Sumário</h3>
+          <nav>
+            <ol class="toc-list">
+              <li><a href="#intro">1. Introdução</a></li>
+              <!--<li><a href="#escopo">2. Escopo e versões</a></li>-->
+              <li><a href="#construcao">2. Construção do sistema</a></li>
+              <li><a href="#nucleo-formal">3. Núcleo formal</a></li>
+              <li><a href="#fundamentos">4. Fundamentos</a></li>
+              <li><a href="#politica-do-ar">5. Política do ar</a></li>
+             <!-- <li><a href="#etica">7. Ética e limites</a></li>
+              <li><a href="#mediacao">8. Mediação e acesso</a></li>
+              <li><a href="#avaliacao">9. Avaliação</a></li>
+              <li><a href="#tecnica">10. Técnica</a></li>-->
+              <li><a href="#impacto">6. Impacto tecnológico</a></li>
+            <!--  <li><a href="#continuidade">12. Continuidade e variantes</a></li>-->
+              <li><a href="#conclusao">7. Conclusão</a></li>
+              <li><a href="#midia">8. Mídia</a></li>
+              <li><a href="#visao-ia">9. Visão da IA</a></li>
+
+             <!-- <li><a href="#anexos">Anexos</a></li>-->
+            </ol>
+          </nav>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="subfoot">
+      <nav class="meta"><a href="../index.html#arquivo">← Voltar ao arquivo</a></nav>
+      <nav class="meta" aria-label="Navegação entre obras"></nav>
+    </footer>
+  
+  <noscript>
+    <section class="container section">
+      <div class="callout">
+        Este projeto inclui uma simulação generativa que requer JavaScript. Sem ele, você ainda pode ler a pesquisa editorial acima.
+      </div>
+    </section>
+  </noscript>
+
+  </main>
+
+  <footer class="container site-foot">
+    <small>© 2025 Viran. São Paulo.</small>
+  </footer>
+
+  <aside id="tocDrawer" class="toc-drawer" hidden aria-hidden="true">
+    <div class="panel" role="dialog" aria-labelledby="tocTitle" aria-modal="true">
+      <header>
+        <h3 id="tocTitle" style="margin:0;">Sumário</h3>
+        <button id="tocClose" class="toc-close" aria-label="Fechar sumário">×</button>
+      </header>
+      <nav style="margin-top:.5rem;">
+        <a href="#intro">1. Introdução</a>
+        <a href="#escopo">2. Escopo e versões</a>
+        <a href="#construcao">3. Construção do sistema</a>
+        <a href="#nucleo-formal">4. Núcleo formal</a>
+        <a href="#fundamentos">5. Fundamentos</a>
+        <a href="#politica-do-ar">6. Política do ar</a>
+        <a href="#etica">7. Ética e limites</a>
+        <a href="#mediacao">8. Mediação e acesso</a>
+        <a href="#avaliacao">9. Avaliação</a>
+        <a href="#tecnica">10. Técnica</a>
+        <a href="#impacto">11. Impacto tecnológico</a>
+        <a href="#continuidade">12. Continuidade e variantes</a>
+        <a href="#conclusao">13. Conclusão</a>
+        <a href="#midia">Mídia</a>
+        <a href="#anexos">Anexos</a>
+      </nav>
+    </div>
+  </aside>
+
+  <script>
+  (() => {
+    const cv = document.getElementById('stage');
+    const ctx = cv.getContext('2d', { alpha: true });
+
+    const ui = {
+      aqi: document.getElementById('aqi'),
+      aqiOut: document.getElementById('aqiOut'),
+      intensity: document.getElementById('intensity'),
+      speed: document.getElementById('speed'),
+      density: document.getElementById('density'),
+      glitch: document.getElementById('glitch'),
+      quad: document.getElementById('quad'),
+      toggle: document.getElementById('toggle')
+    };
+
+    function aqiBand(aqi){
+      if (aqi <= 50)   return {c:'#00e400', name:'Bom'};
+      if (aqi <= 100)  return {c:'#ffff00', name:'Moderado'};
+      if (aqi <= 150)  return {c:'#ff7e00', name:'Sensível'};
+      if (aqi <= 200)  return {c:'#ff0000', name:'Ruim'};
+      if (aqi <= 300)  return {c:'#8f3f97', name:'Muito ruim'};
+      return {c:'#7e0023', name:'Perigoso'};
+    }
+    function updateAqiLabel(){
+      const v = parseInt(ui.aqi.value,10);
+      const {name} = aqiBand(v);
+      ui.aqiOut.textContent = `AQI ${v} — ${name}`;
+    }
+    ui.aqi.addEventListener('input', updateAqiLabel);
+    updateAqiLabel();
+
+    function fit(){
+      const r = cv.parentElement.getBoundingClientRect();
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      cv.width = Math.floor(r.width * dpr);
+      cv.height = Math.floor(r.height * dpr);
+      cv.style.width = r.width + 'px';
+      cv.style.height = r.height + 'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    window.addEventListener('resize', fit); fit();
+
+    let cells = [];
+    function makeCells(rows=36){
+      cells = [];
+      for(let r=0; r<rows; r++){
+        const y = (r + 0.5) / rows;
+        const perRow = 30;
+        for(let i=0; i<perRow; i++){
+          cells.push({ y, x: Math.random(), w: 0.04 + Math.random()*0.18, a: 0.6 + Math.random()*0.6, s: Math.random()*0.6+0.2 });
+        }
+      }
+    }
+    makeCells(parseInt(ui.density.value,10));
+    ui.density.addEventListener('input', ()=> makeCells(parseInt(ui.density.value,10)));
+
+    let t = 0, playing = true;
+    ui.toggle.addEventListener('click', () => {
+      playing = !playing;
+      ui.toggle.textContent = playing ? 'Pausar' : 'Reproduzir';
+      ui.toggle.setAttribute('aria-pressed', playing);
+      if (playing) requestAnimationFrame(loop);
+    });
+
+    function loop(){
+      if(!playing) return;
+      const w = cv.clientWidth, h = cv.clientHeight;
+      ctx.clearRect(0,0,w,h);
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--paper').trim();
+      ctx.fillRect(0,0,w,h);
+
+      const aqi = parseInt(ui.aqi.value,10);
+      const {c:baseCol} = aqiBand(aqi);
+      const speed = (parseInt(ui.speed.value,10) / 100) * 0.8 + 0.05;
+      const intens = parseInt(ui.intensity.value,10) / 100;
+      const glitch = ui.glitch.checked ? 1 : 0;
+      const rows = parseInt(ui.density.value,10);
+      t += 0.016;
+
+      const panels = ui.quad.checked ? 4 : 1;
+      for(let p=0; p<panels; p++){
+        const pw = w / panels, px = p * pw;
+        for (const c of cells){
+          const drift = glitch ? (Math.sin((t*3 + c.y*10 + c.x*5 + p)) * 0.002) : 0;
+          c.x -= (speed * (0.4 + c.s*0.6)) * 0.002 + drift;
+          if (c.x + c.w < 0) c.x += 1.2;
+          const y = Math.floor(c.y * h);
+          const barH = Math.max(2, Math.floor(h/rows) - 1);
+          const a = Math.min(0.9, 0.25 + intens*0.6 + (aqi/400)*0.5) * c.a;
+          const shade = Math.max(0, Math.min(1, 0.85 + Math.sin((c.y*12)+t*0.6+p*0.3)*0.15));
+          ctx.fillStyle = mixColor(baseCol, '#ffffff', 1 - shade, a);
+          const bx = px + Math.floor(c.x * pw);
+          const bw = Math.floor(c.w * pw * (0.6 + intens*0.8));
+          ctx.fillRect(bx, y, bw, barH);
+        }
+      }
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+
+    function mixColor(hex, white, k, alpha){
+      const a = parseInt(hex.slice(1),16), b = parseInt(white.slice(1),16);
+      const r = Math.round(((a>>16)&255)*(1-k) + ((b>>16)&255)*k);
+      const g = Math.round(((a>>8)&255)*(1-k) + ((b>>8)&255)*k);
+      const bl= Math.round((a&255)*(1-k) + (b&255)*k);
+      return `rgba(${r},${g},${bl},${alpha})`;
+    }
+
+    const drawer = document.getElementById('tocDrawer');
+    const toggleBtn = document.getElementById('tocToggle');
+    const closeBtn = document.getElementById('tocClose');
+    function openDrawer(){ drawer.hidden = false; drawer.setAttribute('aria-hidden','false'); toggleBtn?.setAttribute('aria-expanded','true'); }
+    function closeDrawer(){ drawer.hidden = true;  drawer.setAttribute('aria-hidden','true');  toggleBtn?.setAttribute('aria-expanded','false'); }
+    toggleBtn?.addEventListener('click', openDrawer);
+    closeBtn?.addEventListener('click', closeDrawer);
+    drawer?.addEventListener('click', (e)=>{ if(e.target === drawer) closeDrawer(); });
+    drawer?.querySelectorAll('a[href^="#"]').forEach(a=> a.addEventListener('click', closeDrawer));
+
+    // === Destacar item ativo no Sumário ===
+    const tocLinks = Array.from(document.querySelectorAll('.toc-list a'));
+    const sections = tocLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(entry => {
+        const id = '#' + entry.target.id;
+        const link = tocLinks.find(a => a.getAttribute('href') === id);
+        if (link){
+          if (entry.isIntersecting){
+            tocLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0.01 });
+
+    sections.forEach(sec => obs.observe(sec));
+
+    // === Preferências de movimento: iniciar pausado se o usuário prefere reduzir ===
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced){
+      playing = false;
+      ui.toggle.textContent = 'Reproduzir';
+      ui.toggle.setAttribute('aria-pressed', 'false');
+    }
+
+  })();
+  </script>
+</body>
+</html>

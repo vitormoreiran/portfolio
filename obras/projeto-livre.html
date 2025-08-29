@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Especial — Nome | Viran</title>
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    /* CSS específico deste projeto (exemplo) */
+    .stage{ position:relative; aspect-ratio:16/9; border:1px solid var(--muted); }
+    .stage canvas{ position:absolute; inset:0; width:100%; height:100%; display:block; }
+    .controls{ margin-top:16px; display:flex; gap:12px; align-items:center; }
+    .controls input{ border:1px solid var(--muted); padding:.4rem .6rem; background:transparent; color:var(--ink); }
+  </style>
+</head>
+<body>
+  <header class="container site-head" style="border-bottom:1px solid var(--muted); padding-block:12px;">
+    <nav>
+      <ul><li><a class="brand-link" href="../index.html#arquivo">← Arquivo</a></li></ul>
+      <ul class="menu">
+        <li><a href="../index.html#eixos">Eixos</a></li>
+        <li><a href="../index.html#diretrizes">Diretrizes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section especial">
+    <header style="margin-bottom:24px;">
+      <h1 class="section-title" style="margin-bottom:8px;">Projeto Especial — Nome</h1>
+      <p class="meta">Nível: <strong>Curadoria</strong> · Eixo: <strong>Tecnologias</strong> · <span class="ext-badge">.HTML</span></p>
+      <ul class="chips">
+        <li><a href="../index.html?q=programação%20visual#arquivo">programação visual</a></li>
+        <li><a href="../index.html?q=IA%20generativa#arquivo">IA generativa</a></li>
+        <li><a href="../index.html?q=visualidade%20algorítmica#arquivo">visualidade algorítmica</a></li>
+      </ul>
+    </header>
+
+    <!-- PALCO LIVRE (ex.: canvas/WebGL/WebAudio) -->
+    <section>
+      <div class="stage">
+        <canvas id="c"></canvas>
+      </div>
+      <div class="controls">
+        <label>Intensidade <input id="int" type="range" min="0" max="100" value="60"></label>
+        <button id="toggle" class="chip-btn" type="button">Pausar</button>
+      </div>
+    </section>
+
+    <footer style="margin-top:24px;display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;">
+      <nav class="meta"><a href="../index.html#arquivo">← Voltar ao arquivo</a></nav>
+      <nav class="meta" aria-label="Navegação entre obras">
+        <a href="./projeto-detalhado.html">← Anterior</a>
+      </nav>
+    </footer>
+  </main>
+
+  <script>
+  // JS específico do projeto — exemplo visual leve
+  (function(){
+    const canvas = document.getElementById('c');
+    const g = canvas.getContext('2d');
+    let running = true, t = 0;
+    function resize(){
+      const r = canvas.parentElement.getBoundingClientRect();
+      canvas.width = Math.max(640, r.width);
+      canvas.height = Math.max(360, r.height);
+    }
+    window.addEventListener('resize', resize); resize();
+
+    const int = document.getElementById('int');
+    const toggle = document.getElementById('toggle');
+    toggle.addEventListener('click', ()=>{ running = !running; toggle.textContent = running ? 'Pausar' : 'Reproduzir'; });
+
+    function loop(){
+      if(running){
+        t += 0.02;
+        const w = canvas.width, h = canvas.height;
+        g.clearRect(0,0,w,h);
+        for(let i=0;i<150;i++){
+          const x = (Math.sin(i*0.17 + t)*0.5+0.5) * w;
+          const y = (Math.cos(i*0.11 + t)*0.5+0.5) * h;
+          const s = (i % 7 + 1) * (int.value/100) * 2 + 2;
+          g.beginPath(); g.arc(x,y,s,0,Math.PI*2);
+          g.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--ink').trim();
+          g.globalAlpha = 0.25; g.stroke();
+        }
+        g.globalAlpha = 1;
+      }
+      requestAnimationFrame(loop);
+    }
+    loop();
+  })();
+  </script>
+</body>
+</html>

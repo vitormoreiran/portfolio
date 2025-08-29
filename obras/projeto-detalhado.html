@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto — Nome Detalhado | Viran</title>
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="color-scheme" content="light dark">
+</head>
+<body>
+  <header class="container site-head" style="border-bottom:1px solid var(--muted); padding-block:12px;">
+    <nav>
+      <ul><li><a class="brand-link" href="../index.html#arquivo">← Arquivo</a></li></ul>
+      <ul class="menu">
+        <li><a href="../index.html#eixos">Eixos</a></li>
+        <li><a href="../index.html#diretrizes">Diretrizes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section projeto">
+    <header style="margin-bottom:24px;">
+      <h1 class="section-title" style="margin-bottom:8px;">Nome do Projeto</h1>
+      <p class="lead" style="max-width:70ch;margin:0 0 8px;">Resumo em 2–3 linhas sobre contexto, processo e objetivo.</p>
+      <p class="meta">Nível: <strong>Pesquisa</strong> · Eixo: <strong>Sistemas</strong> · <span class="ext-badge">.PDF</span></p>
+      <ul class="chips">
+        <li><a href="../index.html?q=rede#arquivo">rede</a></li>
+        <li><a href="../index.html?q=performance#arquivo">performance</a></li>
+        <li><a href="../index.html?q=curadoria%20expandida#arquivo">curadoria expandida</a></li>
+      </ul>
+    </header>
+
+    <!-- GALERIA FLEX (imagens + vídeo + embed) -->
+    <section class="projeto-galeria" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:24px;">
+      <img src="../assets/image/proj01-1.webp" alt="vista 1" style="width:100%;height:auto;border:1px solid var(--muted);aspect-ratio:16/9;object-fit:cover;">
+      <img src="../assets/image/proj01-2.webp" alt="vista 2" style="width:100%;height:auto;border:1px solid var(--muted);aspect-ratio:4/3;object-fit:cover;">
+      <video src="../assets/video/proj01.mp4" controls playsinline style="width:100%;border:1px solid var(--muted);"></video>
+
+      <!-- EMBED (Vimeo, YouTube, mapa, etc.) -->
+      <div style="position:relative;padding-top:56.25%;border:1px solid var(--muted);">
+        <iframe src="https://player.vimeo.com/video/000000000" title="Vimeo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
+      </div>
+    </section>
+
+    <!-- TEXTO CURTO + LINKS -->
+    <section class="projeto-texto" style="display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start;">
+      <div>
+        <h2 style="margin:0 0 12px;">Processo</h2>
+        <p>Texto curto descrevendo método, ferramentas e colaborações. Mantemos a linguagem enxuta para leitura rápida.</p>
+        <p>Se precisar, use uma segunda seção para créditos e ficha técnica.</p>
+      </div>
+      <aside>
+        <h2 style="margin:0 0 12px;">Links</h2>
+        <ul>
+          <li><a href="https://linkexterno.com" target="_blank" rel="noopener">Apresentação completa</a></li>
+          <li><a href="https://instagram.com/..." target="_blank" rel="noopener">Postagem</a></li>
+          <li><a href="../assets/pdf/proj01.pdf">PDF do projeto</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer style="margin-top:24px;display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;">
+      <nav class="meta"><a href="../index.html#arquivo">← Voltar ao arquivo</a></nav>
+      <nav class="meta" aria-label="Navegação entre obras">
+        <a href="./obra-simples.html">← Anterior</a> · <a href="./projeto-livre.html">Próxima →</a>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>

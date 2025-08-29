@@ -1,125 +1,312 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descrição do site para SEO e acessibilidade.">
-    <meta name="keywords" content="design, 3D, arte digital, portfólio">
-    <meta name="author" content="Vitor Moreiran">
-    <title>Vitor Moreiran - Intro</title>
-    <link rel="stylesheet" href="assets/css/style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Viran — artista transmídia. Arquivo de obras e projetos em arte e tecnologia.">
+  <title>Viran — Arquivo</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <!-- Fonts: Inter (texto) + Newsreader (títulos) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700;6..72,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <header class="container site-head">
+    <nav>
+      <ul>
+        <li><strong><a class="brand-link" href="#quem">Viran</a></strong></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#eixos">Eixos</a></li>
+        <li><a href="#arquivo">Arquivo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container">
+
+    <!-- ====================== STATEMENT / QUEM ====================== -->
+    <section id="quem" class="statement">
+      <div aria-hidden="true" class="decor"></div>
    
-        <div class="menu-div">
-          <div class="menu-div-left">
-            <div class="brand-text"><a href="index.html">vitormoreiran</a></div>
-          </div>
-          <div class="menu-div-right">
-            <nav>
-              <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li class="language-switcher">
-                  <select id="language-selector">
-                    <option value="en">EN</option>
-                    <option value="pt">PT</option>
-                    <option value="es">ES</option>
-                  </select>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-     
-    
-    <main>
-        <section class="header-div">
-            <div class="video-container">
-                <video class="background-video" autoplay playsinline muted loop>
-                    <source src="assets/images/0000.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
-                <div class="title-container">
-                    <div class="title-video">Vitor Moreiran</div>
-                    <div class="subtitle-video" data-translate="home.subtitle">Designer Multimídia | Estratégia Visual e Inovação</div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="centered-text">
-            <div class="extra1-r" data-translate="home.description">
-                Crio realidades digitais que expandem os limites da narrativa e da tecnologia, <br> desenvolvendo experiências que cativam e conectam.
-            </div>
-        </section>
-        
-        <section class="work-section">
-            <a href="shapeofiiii.html" class="work-preview">
-                <div class="work-info">
-                    <img src="assets/images/preview-icon-04.png" alt="Ícone" class="work-icon">
-                    <p class="work-description" data-translate="home.works.shapeofiiii">SHAPE OF IIII</p>
-                </div>
-                <div class="work-image-container">
-                    <img src="assets/images/workpreview-shape.png" alt="Prévia do trabalho" class="work-image">
-                </div>
-            </a>
-            <a href="kids.html" class="work-preview">
-                <div class="work-info">
-                    <img src="assets/images/preview-icon-03.png" alt="Ícone" class="work-icon">
-                    <p class="work-description" data-translate="home.works.kids">KIDS</p>
-                </div>
-                <div class="work-image-container">
-                    <img src="assets/images/workpreview-kids.png" alt="Prévia do trabalho" class="work-image">
-                </div>
-            </a>
-            <a href="zalgo.html" class="work-preview">
-                <div class="work-info">
-                    <img src="assets/images/preview-icon-02.png" alt="Ícone" class="work-icon">
-                    <p class="work-description" data-translate="home.works.zalgo">ZALGO</p>
-                </div>
-                <div class="work-image-container">
-                    <img src="assets/images/workpreview-zalgo.png" alt="Prévia do trabalho" class="work-image">
-                </div>
-            </a>
-            <a href="me.html" class="work-preview">
-                <div class="work-info">
-                    <img src="assets/images/preview-icon-01.png" alt="Ícone" class="work-icon">
-                    <p class="work-description" data-translate="home.works.me">EU</p>
-                </div>
-                <div class="work-image-container">
-                    <img src="assets/images/workpreview-me.png" alt="Prévia do trabalho" class="work-image">
-                </div>
-            </a>
-        </section>
-    </main>
-    
-    <section class="centered-text">
-        <h1 class="centered-title-2">
-            <br><br>
-            <span data-translate="footer.interested">Interessado em trabalhar juntos?</span> <br>
-            <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20working%20together!" target="_blank" class="underline-link" data-translate="footer.letsTalk">Vamos conversar</a>
-            <br><br>
-        </h1>
+
+      <div class="statement-grid">
+        <figure class="statement-photo">
+          <img src="assets/image/A.gif"
+               srcset="assets/image/A.gif 1200w, assets/image/A.gif 1600w"
+               sizes="(max-width: 900px) 100vw, 42vw"
+               alt="Retrato do artista Viran"
+               width="1200" height="1500"
+               fetchpriority="high" decoding="async">
+          <figcaption>avatar602</figcaption>
+        </figure>
+
+        <div class="statement-text">
+  <h1 class="brand">Viran</h1>
+  <p class="lead">Artista transmídia que explora a fricção entre cultura e tecnologia.</p>
+  <p>Trabalho com 3D, inteligência artificial e programação visual para criar experiências visuais que deslocam normas e sugerem novos imaginários.</p>
+  <p><a class="cta" href="#arquivo">Ver Arquivo →</a></p>
+</div>
+
+      </div>
     </section>
 
-    <div class="menu-div">
-        <div class="menu-div-left">
-          <div class="brand-text"><a href="index.html">vitormoreiran</a></div>
-        </div>
-        <div class="menu-div-right">
-            <p><a href="mailto:vitormoreiran@gmail.com" class="footer-link">vitormoreiran@gmail.com</a></p>
-            <p><a href="tel:+5512991452549" class="footer-link">+55 (12) 99145-2549</a></p>
-            <p>São Paulo, SP - Brasil</p>
-           
-        </div>
-      </div>
+    <hr>
 
-   
-    
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/languageSwitcher.js"></script>
+    <!-- ====================== DIRETRIZES (overview curto) ====================== -->
+    <section id="diretrizes" class="section">
+      <h2 class="section-title"></h2>
+      <p class="lead">Minha produção se orienta por três linhas principais: <strong>linguagem</strong> (formas sensíveis e algorítmicas de aparecer no mundo), <strong>pesquisa</strong> (observação, teste e elaboração crítica em diálogo com a tecnologia) e <strong>curadoria</strong> (organização de relações que constroem experiências e imaginários coletivos).</p>
+    </section>
+
+    <hr>
+
+    <!-- ====================== EIXOS (simplificados) ====================== -->
+    <section id="eixos" class="section">
+     
+      <div class="grid">
+
+        <article class="card-plain">
+          <header>
+            <h3>Imagens Dissidentes</h3>
+            <p class="meta">Estéticas da Contradição</p>
+          </header>
+          <p>Linguagens visuais não normativas, desvio como força estética, culturas visuais subterrâneas.</p>
+          <ul class="chips">
+            <li>glitch</li><li>underground</li><li>estética queer</li>
+            <li>erro</li><li>ruído</li><li>colagem</li>
+          </ul>
+        </article>
+
+
+        <article class="card-plain">
+          <header>
+            <h3>Tecnologias de Travessia</h3>
+            <p class="meta">Ferramentas que atravessam corpo e mundo</p>
+          </header>
+          <p>Uso crítico e afetivo de tecnologias emergentes, espiritualidade técnica e imaginários alternativos.</p>
+          <ul class="chips">
+            <li>programação visual</li><li>IA generativa</li><li>visualidade algorítmica</li>
+            <li>espiritualidade híbrida</li><li>arte e sistema</li>
+          </ul>
+        </article>
+
+        <article class="card-plain">
+          <header>
+            <h3>Sistemas de Visibilidade</h3>
+            <p class="meta">Criação, Circulação e Presença</p>
+          </header>
+          <p>Linguagens para rede, performance e presença pública como coreografia de afeto e design.</p>
+          <ul class="chips">
+            <li>direção de arte</li><li>sensorialidade</li><li>performance</li>
+            <li>curadoria expandida</li><li>circulação</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <hr>
+
+<!-- ====================== ARQUIVO ====================== -->
+<section id="arquivo" class="section" aria-labelledby="h-arquivo">
+  <div class="archive-head">
+    <h2 id="h-arquivo" class="section-title">Arquivo</h2>
+
+    <div class="view-actions" role="group" aria-label="Exibição">
+      <button id="viewGrid" class="chip-btn" aria-pressed="true" title="Ver em grade">▦ grade</button>
+      <button id="viewList" class="chip-btn" aria-pressed="false" title="Ver em lista">≣ lista</button>
+    </div>
+  </div>
+
+  <form role="search" class="filters" id="filterForm" autocomplete="off">
+    <!--
+    <label for="q" class="sr-only">Buscar</label>
+    <input id="q" name="q" type="search" placeholder="título, tag, extensão (ex.: glitch, IA, .MP4)">
+    <div class="filter-row">
+      <label class="sr-only" for="nivel">Nível</label>
+      <select id="nivel" name="nivel" aria-label="Filtrar por nível">
+        <option value="">Nível (todos)</option>
+        <option value="linguagem">Linguagem</option>
+        <option value="pesquisa">Pesquisa</option>
+        <option value="curadoria">Curadoria</option>
+      </select>
+      <label class="sr-only" for="eixo">Eixo</label>
+      <select id="eixo" name="eixo" aria-label="Filtrar por eixo">
+        <option value="">Eixo (todos)</option>
+        <option value="imagens">Imagens</option>
+        <option value="sistemas">Sistemas</option>
+        <option value="tecnologias">Tecnologias</option>
+      </select>
+    </div>
+    -->
+    <output id="count" role="status" aria-live="polite" class="count"></output>
+  </form>
+
+  <div class="works" id="works" data-view="grid">
+
+    <!-- CARD 1 -->
+  <article data-nivel="linguagem" data-eixo="imagens" data-tags="glitch,3d" data-ext=".MP4">
+      <figure class="work">
+   <a href="obras/obra-caufoscdv2 (2).html">
+           <img
+          src="assets/thumb/B.png"
+          srcset="assets/thumb/B.png 800w, assets/thumb/B.png 1200w"
+          sizes="(max-width: 649px) 100vw, (max-width: 1199px) 33vw, 360px"
+          alt="Miniatura da obra Estética Algorítmica com glitch"
+          width="800" height="450" loading="lazy" decoding="async"
+        >
+        </a>
+        <figcaption class="work-cap">
+          <h3 class="work-title">Como arquitetar um futuro onde sejamos capazes de viver?</h3>
+          <p class="meta">Nível: Linguagem · Eixo: Sistemas · <span class="ext-badge">.live</span></p>
+          <ul class="chips compact">
+            <li>glitch</li>
+            <li>sensorialidade</li>
+            <li>circulação</li>
+            
+          </ul>
+          <p class="work-desc">Sistema audiovisual que traduz índice global de qualidade do ar em células de cor e movimento.</p>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- CARD 2 -->
+    <article data-nivel="pesquisa" data-eixo="sistemas" data-tags="rede,performance" data-ext=".PDF">
+      <figure class="work">
+        <a href="obras/pages/aparicao/index.html"><img
+          src="assets/thumb/C.png"
+          srcset="assets/thumb/C.png 800w, assets/thumb/C.png 1200w"
+          sizes="(max-width: 649px) 100vw, (max-width: 1199px) 33vw, 360px"
+          alt="Miniatura da obra Sistemas de Presença"
+          width="800" height="450" loading="lazy" decoding="async"
+        >
+        </a>
+        <figcaption class="work-cap">
+          <h3 class="work-title">Não sabíamos que iríamos morrer</h3>
+          <p class="meta">Nível: Pesquisa · Eixo: Tecnologias · <span class="ext-badge">.html</span></p>
+          <ul class="chips compact">
+            <li>rede</li>
+            <li>performance</li>
+          </ul>
+          <p class="work-desc">Instalação visual interativa de captação de imagens e registros digitais.</p>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- CARD 3 -->
+    <article data-nivel="curadoria" data-eixo="tecnologias" data-tags="ia, estética queer, erro, ruído, colagem" data-ext=".GLB">
+      <figure class="work">
+        
+        <a href="obras/pages/eunaoconhecovoce/eunaoconhecovoce.html">
+          <img
+          src="assets/thumb/D.png"
+          srcset="assets/thumb/D.png 800w, assets/thumb/D.png 1200w"
+          sizes="(max-width: 649px) 100vw, (max-width: 1199px) 33vw, 360px"
+          alt="Miniatura da obra Travessias com IA"
+          width="800" height="450" loading="lazy" decoding="async"
+        >
+        </a>
+        <figcaption class="work-cap">
+          <h3 class="work-title">Eu não conheço você</h3>
+          <p class="meta">Nível: Linguagem · Eixo: Imagens · <span class="ext-badge">.txt</span></p>
+          <ul class="chips compact">
+            <li>IA</li>
+            <li>Colagem</li>
+          </ul>
+          <p class="work-desc">Digramação textual rítmica que explora contradições entre a festa e a guerra.</p>
+        </figcaption>
+      </figure>
+    </article>
+
+  </div>
+</section>
+
+<!-- dentro da seção #arquivo, a galeria permanece igual -->
+
+<!-- ====================== CONTATO ====================== -->
+<section id="contato" class="section" aria-labelledby="h-contato">
+  <h2 id="h-contato" class="section-title">Contato</h2>
+  <p>vitormoreiran@gmail.com · @vitormoreiran</p>
+</section>
+
+</main>
+
+<footer class="container site-foot">
+  <small>© 2025 Viran. São Paulo.</small>
+</footer>
+
+<script>
+  (function(){
+    const works = Array.from(document.querySelectorAll('#works article'));
+    const q = document.getElementById('q');
+    const nivel = document.getElementById('nivel');
+    const eixo = document.getElementById('eixo');
+    const count = document.getElementById('count');
+    const chips = Array.from(document.querySelectorAll('[data-filter]'));
+    const viewGrid = document.getElementById('viewGrid');
+    const viewList = document.getElementById('viewList');
+    const worksWrap = document.getElementById('works');
+    const paperToggle = document.getElementById('paperToggle');
+
+    const norm = s => (s||'').toLowerCase();
+
+    function aplicar(){
+      const t = norm(q.value),
+            n = norm(nivel.value),
+            e = norm(eixo.value);
+      let vis = 0;
+
+      works.forEach(card=>{
+        const title = norm(card.querySelector('.work-title')?.textContent);
+        const tags = norm(card.dataset.tags);
+        const ext = norm(card.dataset.ext);
+        const nv = norm(card.dataset.nivel);
+        const ex = norm(card.dataset.eixo);
+
+        const ok = (!t || title.includes(t)||tags.includes(t)||ext.includes(t))
+                 && (!n || nv===n)
+                 && (!e || ex===e);
+
+        card.hidden = !ok;
+        if(ok) vis++;
+      });
+
+      if(count) count.textContent = vis + ' itens';
+    }
+
+    [q,nivel,eixo].forEach(el=>el && el.addEventListener('input', aplicar));
+
+    chips.forEach(c =>
+      c.addEventListener('click', ()=>{
+        q.value = (q.value ? q.value+' ' : '') + c.dataset.filter;
+        aplicar();
+      })
+    );
+
+    function setView(v){
+      worksWrap.dataset.view = v;
+      viewGrid.setAttribute('aria-pressed', v==='grid');
+      viewList.setAttribute('aria-pressed', v==='list');
+    }
+
+    viewGrid.addEventListener('click', ()=>setView('grid'));
+    viewList.addEventListener('click', ()=>setView('list'));
+
+    paperToggle.addEventListener('click', ()=>{
+      const warm = document.documentElement.toggleAttribute('data-warm');
+      paperToggle.setAttribute('aria-pressed', warm);
+    });
+
+    aplicar();
+  })();
+</script>
+
 </body>
 </html>
